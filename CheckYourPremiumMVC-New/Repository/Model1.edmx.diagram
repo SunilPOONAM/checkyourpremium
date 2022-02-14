@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a5f7d66fd7c640ad9c1a0e4e6711c770" Name="Diagram1">
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.All_Company_Details" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.AssigneeRelation" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Bajaj_Occupation" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Bajaj_Relation" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.bhartiAxaCredential" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Car_Insurence_Record_Saved" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Category_tbl" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Company" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Company1" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Comparision_Health_tbl" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Desease" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Encrypt_Password" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Godigit_Responce_Data" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Health_Insurance_Record_Saved" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.healthRelation" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI__NATIONALITY__tbl" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_Country_tbl" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_Education_tbl" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_MARITAL_STATUS_tbl" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_Occupation_tbl" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_Organisation_tbl" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_State_tbl" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ICICI_Trustee_Type_tbl" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.InsuredRelation" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Kotak_Plan_tbl" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Login_Tbl" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.LoginReg_tbl" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Master" Width="1.5" PointX="14.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Moter_RTO" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Motor_FuelType" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Motor_Insurance_Record" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Motor_Nominee_Relation" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Motor_State" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ParentCategory" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Plan_Benifit" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.PolicyPlan" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.ProposerDetail" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Reg_tbl" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.RiskCover_options" Width="1.5" PointX="16.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.sales_store" Width="1.5" PointX="12.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Sub_category" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tb_GodigitGender" Width="1.5" PointX="14.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BajajBlockCity" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BajajResponce_Data" Width="1.5" PointX="18.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BajajZone" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BhartiAxa_PlanName" Width="1.5" PointX="18.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BhartiAxaBanned_Country" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BhartiAxaPaymentStaus" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BlockCity" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BodyType_Master" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BuyInfoData" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_BuyPlanInfo" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_Country" Width="1.5" PointX="4.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_CoverFrequency" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_EdelWise_Suminsured" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_FrequncyType" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_Fule_Master" Width="1.5" PointX="14.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GetPremiumData" Width="1.5" PointX="20.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GetPremiumRequestData" Width="1.5" PointX="16.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GetPremiumResponce" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_Godigit_Document" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Tbl_Godigit_Profession" Width="1.5" PointX="8.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_Godigit_Relation" Width="1.5" PointX="18.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GodigitCounty" Width="1.5" PointX="20.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GodigitPakege" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GodigitPurpose" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GodigitState" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_GSTType" Width="1.5" PointX="10.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_HC_Relation" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_HealthPremiumChartData" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_HEIV_Qualification" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_HEIV_Relation" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_IndiaFirst__CoverageOptions" Width="1.5" PointX="0.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_IndiaFirstCityData" Width="1.5" PointX="2.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_INSURA_Company" Width="1.5" PointX="12.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_IPA_Occupation" Width="1.5" PointX="24.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_MakeType_Master" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_MasterSumInsured" Width="1.5" PointX="24.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_MaterialStatus" Width="1.5" PointX="24.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_ModelType_Master" Width="1.5" PointX="24.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_OccupationMaster" Width="1.5" PointX="24.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_PinCode" Width="1.5" PointX="18.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_PremiumType" Width="1.5" PointX="20.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_ProductPlan_Data" Width="1.5" PointX="24.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_Scheme" Width="1.5" PointX="22.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_StarCountyList" Width="1.5" PointX="24.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_State" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tbl_travelCountry" Width="1.5" PointX="8.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tblBannedCountry" Width="1.5" PointX="0.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tblCity" Width="1.5" PointX="2.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tblCountry" Width="1.5" PointX="26.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tblRelationMaster" Width="1.5" PointX="26.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.tblState" Width="1.5" PointX="26.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Term_Life_Insurance" Width="1.5" PointX="26.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Tow_Weeler_Record_Insert" Width="1.5" PointX="26.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Travel_Insurance" Width="1.5" PointX="26.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravelDestination" Width="1.5" PointX="26.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravelInsuranceSearchBy" Width="1.5" PointX="4.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravellerDetail" Width="1.5" PointX="10.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravelPlan" Width="1.5" PointX="12.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravelProposalDetail" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.TravelPurposeMaster" Width="1.5" PointX="18.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Two_Wheeler_Master" Width="1.5" PointX="20.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.VisaType" Width="1.5" PointX="22.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Car_Insurance" Width="1.5" PointX="24.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Contact_Us" Width="1.5" PointX="26.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.RTO_MASTERS" Width="1.5" PointX="28.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.View_HealthChartData" Width="1.5" PointX="28.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.View_TermLifeInsurance" Width="1.5" PointX="6.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.View_TravelInsurance" Width="1.5" PointX="28.75" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="CheckyourpremiumliveModel.FK_PolicyPlans_Companies" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CheckyourpremiumliveModel.Compare_TermLife" Width="1.5" PointX="0.75" PointY="29.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

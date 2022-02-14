@@ -1,0 +1,140 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-14851318",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001092366",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400243043",
+    "transactionDate" : "29-01-2020T10:49:03",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V27430A2682E37D0844B1F70DCC026388BE87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=AD3BA8C07928031BC964269677EACE5E"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-32351272",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001092388",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400243050",
+    "transactionDate" : "29-01-2020T10:50:11",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2FDE1AC3E66D2EF36B45C7F12B46B61C1E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=DCA431CDD98677EDFD918C1B1C1BF0EC"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-16347337",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001092399",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400243065",
+    "transactionDate" : "29-01-2020T10:57:03",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V263EED9A10200635F56D5B271C377B5E6E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=644E34E119AA884715EBCDF692D7BD89"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-27521452", "type": "I", "purpose": "L", "customer": { "firstName": "Poonam Yadav", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "lko", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "6777777777", "email": "p@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-01-29", "packageName": "R14", "geography": "UCI", "travelEndDate": "2020-01-31", "travelStartDate": "2020-01-30", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (504) Gateway Timeout.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-26503158",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001092408",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400243073",
+    "transactionDate" : "29-01-2020T11:02:37",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V25BE55517A7F2B1DDA85356EF4C6DC1B2E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=C3651290B0C8ADE6F3A1F228D928B2F3"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10946","totalPremium":"13197.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"290","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9276","hcbPremium":"1856","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10946","totalPremium":"13197.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"290","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9276","hcbPremium":"1856","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10946","totalPremium":"13197.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"290","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9276","hcbPremium":"1856","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"15991.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"440","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"1785","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":0,"sumAssured":"500000","Amount":"14030","serviceTax":"2526","totalPremium":"16556","NoOfAdults":"1","NoOfChildren":"0","Plan":"Comprehensive Individual","startOn":"January 30, 2020","endOn":"January 29, 2021","policyCategory":"fresh","proposerName":"Poonam Yadav","proposerEmail":"p@gmail.com","proposerPhone":"6897900909","proposerAddressOne":"hng ","proposerAddressTwo":"hkmjh","proposerAreaId":"61776","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"jh","proposerResidenceAddressTwo":"jij","proposerResidenceAreaId":"61382","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"January 29, 2001","panNumber":"","gstTypeId":"gghn ","gstIdNumber":"567587","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"4000000","criticalIllness":"false","insureds[0]":{"dob":"January 23, 2020","sumInsuredId":1,"name":"pihu","sex":"Female","illness":"","description":"","relationshipId":0,"occupationId":4,"hospitalCash":"0","height":0,"weight":0,"isPersonalAccidentApplicable":"true","engageManualLabour":"hjgk","engageWinterSports":"hgkkkkkkk","buyBackPED":1},"insureds[1]":{"dob":"","sumInsuredId":2,"name":"","sex":"","illness":"","description":"ghngg","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0,"isPersonalAccidentApplicable":"","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"hjm","nomineeAge":"20","nomineeRelationship":"Grand Son","nomineePercentClaim":"50","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"hh","nomineeAgeTwo":"20","nomineeRelationshipTwo":"Grand Daughter","nomineePercentClaimTwo":"50","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"COMPREHENSIVEIND","travelStartOn":"","travelEndOn":"","planId":10101,"postalCode":0,"period":1,"searchId":16268,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/Sorry! Looks like something went wrong at our end. If you would like to reach out to us please write to us at support@@starhealth.in./token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":"Sorry! Looks like something went wrong at our end. If you would like to reach out to us please write to us at support@@starhealth.in."}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.

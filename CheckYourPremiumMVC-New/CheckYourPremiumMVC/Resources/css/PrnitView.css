@@ -1,0 +1,52 @@
+﻿
+@media (min-width: 1200px) {
+    .containere {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .containere {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .containere {
+        width: 750px;
+    }
+}
+.containere {
+  padding-right: 15px;
+    padding-left: 15px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containere .pageone{
+    float: left;
+    width: 100%;
+    background: #fff;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+.containere .pageone h5{
+       text-align:left;
+    font-weight: bold;
+    font-size: 13px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    padding: 5px;
+    background: #dcb8b8;
+        margin-bottom: 0px;
+        margin-top:0px;
+}
+
+@media print {
+  header{
+      display:none;
+  }
+
+    .containere .pageone h5 {
+        background: #ccc;
+    }
+}

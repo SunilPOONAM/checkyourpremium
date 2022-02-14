@@ -1,0 +1,586 @@
+﻿@model Domain.SearchTravelInsurance
+@{
+    ViewBag.Title = "GetQuoteTravel";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+@*<link href="~/Resources/css/quotesHealth.css" rel="stylesheet" />*@
+<script src="~/Resources/js/jquery.min.js"></script>
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+
+<link href="~/Resources/css/quotesTravelInsurance.css" rel="stylesheet" />
+<link href="~/Resources/compare/css/modelStyle.css" rel="stylesheet" />
+<link href="~/Resources/css/HealthPlnQResult.css" rel="stylesheet" />
+
+<link href="~/Resources/compare/css/style.css" rel="stylesheet" />
+
+<style>
+
+
+    .no-footer td:nth-child(4) {
+    font-size: 15px;
+        color: #333;
+        font-weight: bold;
+
+    }
+    .no-footer td:nth-child(4) span{
+    font-size: 15px;
+
+    }
+
+        #mytable tbody tr td p{
+            font-weight: bold;
+        color: #d50000;
+        text-align: center;
+        }
+          #mytable tbody tr td.left.sorting_1 p{
+            font-weight: bold;
+        color: #064a77;
+        text-align: center;
+        }
+        .btnlts {
+
+        box-shadow: 0px 0px 0px rgb(206, 211, 214);
+
+    }
+         h1{
+         font-family: 'Poppins', sans-serif !important;
+        margin-bottom: 0;
+            }
+            .text-centerq {
+        text-align: center;
+        margin-top: 0;
+        color: #035bb5;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #333;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 22px;
+            display: block;
+    }
+
+        .no-footer td, .no-footer th {
+            border: 1px solid #5d5d5d !important;
+        }
+
+        .sticky-wrap td:nth-child(3) {
+            text-align: right;
+        }
+
+        .sticky-wrap td:nth-child(4) {
+            text-align: center;
+        }
+
+        .sticky-wrap td:nth-child(5) {
+            text-align: center;
+        }
+
+        .sticky-wrap td:nth-child(6) {
+            text-align: center;
+        }
+
+        .no-footer td span {
+            background: none;
+            box-shadow: none;
+            min-height: auto;
+            display: initial;
+            padding: 0;
+            align-items: center;
+            text-align: center;
+            font-weight: normal !important;
+            font-size: 13px;
+            position: relative;
+            top: 1px;
+            right: 2px;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        #mytable {
+            width: 100% !important;
+        }
+
+        table.dataTable.no-footer {
+            border-bottom: 0px solid #111 !important;
+        }
+
+        table.dataTable {
+            border-bottom: 0px solid #111 !important;
+        }
+
+        p.label-txgt {
+            font-family: 'Poppins', sans-serif !important;
+            float: left;
+        }
+
+        .no-footer td:nth-child(4) {
+            text-align: center;
+        }
+
+        .containerg-tabls {
+            box-shadow: none !important;
+        }
+
+           .conterty {
+        display:block;
+    }
+
+        .healthlbl {
+        margin-bottom: 0;
+    }
+
+        section{
+            padding: 0 1% 0 0;
+    }
+
+
+    .btnlts div {
+    display: block !important;
+        float: left;
+        width: 100%;
+        background: none !important;
+        font-family: 'Poppins', sans-serif !important;
+        color: #333 !important;
+        letter-spacing: 1px;
+    }
+
+    .btnlts div span:nth-child(1){
+        font-weight:bold;
+        color:#000;
+        letter-spacing: 1px;
+    }
+    .btnlts {
+        padding-right: 7px;
+    }
+    .btnlts {
+    background:none !important;
+    }
+
+    .trveQuoteds{
+        box-shadow: 0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1);
+        padding-bottom: 15px;
+        border-radius: 18px;
+        padding: 0.8rem;
+    }
+
+    select.healthinpt {
+
+    padding-left: 0 !important;
+    }
+
+
+    #slidesa{
+    padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+
+<style>
+    .dlwefjlerj ul.product li {
+        border-bottom: 1px solid #eaeef1 !important;
+        line-height: 43px;
+    }
+
+
+    .product li {
+        border-bottom: 1px solid #e2e2e2;
+        height: 51px;
+    }
+
+        .product li:last-child {
+        }
+</style>
+<div class="clearfix"></div>
+
+<section>
+    <div>
+
+        <input type="hidden" id="ageself" value="@ViewData["ageSelf"].ToString()" />
+        <input type="hidden" id="agespouse" value="@ViewData["ageSpouse"].ToString()" />
+        <input type="hidden" id="agechild1" value="@ViewData["ageChild1"].ToString()" />
+        <input type="hidden" id="agechild2" value="@ViewData["ageChild2"].ToString()" />
+        <input type="hidden" id="agefather" value="@ViewData["ageFather"].ToString()" />
+        <input type="hidden" id="agemother" value="@ViewData["ageMother"].ToString()" />
+
+        <input type="hidden" id="hdndestination" value="@ViewData["destination"].ToString()" />
+        <input type="hidden" id="stayDays" value="@ViewData["stayDays"].ToString()" />
+        <input type="hidden" id="hdnTravellerId" value="@ViewData["TId"].ToString()" />
+        <input type="hidden" id="hdnTripType" value="@ViewData["TId"].ToString()" />
+        <input type="hidden" id="hdntravellername" value="@ViewData["travellername"].ToString()" />
+        <input type="hidden" id="hdntripstartdate" value="@ViewData["tripstartdate"].ToString()" />
+        <input type="hidden" id="hdntripenddate" value="@ViewData["tripenddate"].ToString()" />
+        <input type="hidden" id="hdncity" value="@ViewData["city"].ToString()" />
+        <input type="hidden" id="hdnphone" value="@ViewData["phone"].ToString()" />
+        <input type="hidden" id="hdnemail" value="@ViewData["email"].ToString()" />
+
+        @*<input type="hidden" id="hdnBookingid" value="@ViewData["BookingId"].ToString()">*@
+        <div class="col-xs-12 col-sm-3 col-md-3">
+            <div class="trveQuoteds">
+                <h1><span class="text-centerq">Travel Insurance Quotes</span></h1>
+                <div class="btnlts">
+                    <div><span>Hello:</span> @ViewData["travellerName"].ToString()<span></span></div>
+                    <div><span>Age :</span> <span>@ViewData["ageSelf"].ToString()</span><span>Year Old</span></div>
+                    @*<div><span>Stay Days :</span> <span> @ViewData["stayDays"].ToString() </span></div>*@
+                </div>
+
+                <div id="slidesa" class="some_class" style="display:block;">
+                    <div class="row-health">
+                        <div class="middle-two">
+                            <label class="healthlbl">
+                                <p class="label-txt">Destination</p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinpt">*@
+                                @*@Html.DropDownListFor(model => model.destination, (SelectList)ViewData["Destinations"], "Select", new { @class = "healthinpt", @style = "margin-bottom: 0;" })*@
+                                @Html.DropDownListFor(model => model.destination, (SelectList)ViewData["Destinations"], "Select Year", new { @class = "healthinpt" })
+
+                            </label>
+
+                            <label class="healthlbl" style="width: 100%;">
+                                <p class="label-txt">Cover Amount:</p>
+                                @Html.DropDownListFor(model => model.SumInsured, (SelectList)ViewData["CoverageAmount"], new { @class = "healthinpt", @style = "margin-bottom: 0;" })
+
+
+                            </label>
+
+                            <label class="healthlbl">
+                                <p class="label-txt">Duration</p>
+                                <input type="text" id="txtDuration" class="healthinpt">
+
+                            </label>
+
+
+
+                            <label class="healthlbl">
+                                <p class="label-txt">Trip Type :</p>
+                                <select id="txtTriptype" class="healthinpt">
+                                    <option value="Single">Single</option>
+                                    <option value="Multi">Multi</option>
+                                </select>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="lftgDtn" style="visibility:hidden">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-9" style="padding:0px;">
+            <div class="table-container-wrap">
+
+
+                <div class="praposal-newBikeContainers">
+                    <div class="containerg-tabls">
+
+                        <div id="content">
+
+                            <section class="demo" id="basic">
+                                <div class="table-responsive">
+
+                                    <table id="mytable">
+                                        <thead>
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Plan Info</th>
+                                                <th>Sum Insured<span class="font-12">($)</span></th>
+                                                <th>Premium<span class="font-12">(Rs)</span></th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+
+
+
+                                </div>
+
+                            </section>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--preview panel-->
+<div class="w3-container  w3-center">
+    <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
+        <div class="w3-row">
+            @*<div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>Added for comparison</h4>
+                </div>*@
+            <div class="w3-margin-top">
+
+                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+            </div>
+        </div>
+        <div class=" titleMargin w3-container comparePan">
+        </div>
+    </div>
+</div>
+<!--end of preview panel-->
+<!-- comparision popup-->
+<div id="id01" class="w3-animate-zoom w3-white w3-modal modPos" style="background:rgba(255, 255, 255,0.9); padding-top: 4rem;">
+    <div class="w3-container" style="position:absolute;z-index:99999999999;">
+        <a onclick="document.getElementById('id01').style.display='none'" class="whiteFont w3-padding w3-closebtn closeBtn clsdfg">&times;</a>
+    </div>
+    <div class="w3-row contentPop w3-margin-top">
+    </div>
+
+</div>
+<!--end of comparision popup-->
+<!--  warning model  -->
+<div id="WarningModal" class="w3-modal">
+    <div class="w3-modal-content warningModal">
+        <header class="w3-container w3-teal">
+            <h3><span>&#x26a0;</span>Error</h3>
+        </header>
+        <div class="w3-container">
+            <h4>Maximum of Three products are allowed for comparision</h4>
+
+        </div>
+        <footer class="w3-container w3-right-align">
+            <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'" class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+        </footer>
+    </div>
+</div>
+
+<!--  end of warning model  -->
+<script>
+    function NavigateDetail(PlanId, CompanyId) {
+        if (PlanId == 0) {
+            document.location.href = "/TravelInsurance/GetDetailGodigit/" + PlanId + "?tid=" + $("#hdnTravellerId").val() + "&SumInsuried=" + $("#SumInsured").val();
+        }
+        else if (CompanyId == "10004") {
+            document.location.href = "/TravelInsurance/GetDetailBhartiAxa/" + PlanId + "?tid=" + $("#hdnTravellerId").val() + "&SumInsuried=" + $("#SumInsured").val();
+        }
+        else {
+            document.location.href = "/TravelInsurance/GetDetail/" + PlanId + "?tid=" + $("#hdnTravellerId").val();
+        }
+    }
+
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Resources/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="~/Resources/js/jquery.stickysort.js"></script>
+<script>
+    function BindPremium(txtTriptype, Suminsured) {
+
+        $('#mytable').dataTable().fnDestroy();
+        var _searchData = "";
+        var dataTable = $('#mytable').DataTable({
+            "responsive": true,
+            "xscroll": true,
+            "paging": false,
+            "stateSave": false,
+            "ordering": true,
+            "order": [[2, "desc"]],
+            "info": false,
+            "oLanguage": {
+                "sEmptyTable": "No record"
+            },
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "processing": true,
+            "serverSide": true,
+            "searching": false,
+            "lengthChange": false,
+            "ajax": {
+                url: "/TravelInsurance/BindPremiumList", // json datasource
+                type: "Post",  // method  , by default get
+
+                data: { "searchTxt": _searchData, "ageSelf": $("#ageself").val(), "destination": $("#destination").val(), "stayDays": $("#stayDays").val(), "txtTriptype": txtTriptype, "Suminsured": Suminsured, "travellerName": $("#hdntravellername").val(), "tripStartDate": $("#hdntripstartdate").val(), "tripEndDate": $("#hdntripenddate").val(), "City": $("#hdncity").val(), "Phone": $("#hdnphone").val(), "Email": $("#hdnemail").val(), "agespouse": $("#agespouse").val(), "agechild1": $("#agechild1").val(), "agechild2": $("#agechild2").val(), "agefather": $("#agefather").val(), "agemother": $("#agemother").val(), "ID": $("#hdnTripType").val() },
+
+                error: function () {  // error handling
+                    jQuery("#example1").append('<tbody class="business-user-grid-error"><tr><th colspan="4">No record</th></tr></tbody>');
+
+                }
+            },
+            "columnDefs": [{
+                "targets": 0,
+                "orderable": false,
+                "sClass": "dataTableCenter"
+            }, {
+                "targets": 2,
+                "orderable": false,
+                "sClass": "left"
+            }]
+        });
+        return dataTable;
+    }
+    $(function () {
+        BindPremium($("#txtTriptype").val(), $("#SumInsured").val());
+
+        $('#destination').change(function () {
+            if ($("#txtTriptype").val() == "") {
+                var data = $("#hdndestination").val($("#destination").val());
+                BindPremium($("#txtTriptype").val(), $("#SumInsured").val());
+            }
+            else {
+                var data = $("#hdndestination").val($("#destination").val());
+                BindPremium($("#txtTriptype").val(), $("#SumInsured").val());
+            }
+            // var data = $("#hdndestination").val($("#destination").val());
+            //BindPremium();
+
+        })
+        $('#txtDuration').keyup(function () {
+            if ($("#txtTriptype").val() == "") {
+                var Duration = $("#txtDuration").val();
+                var d = $('#stayDays').val(Duration);
+                BindPremium($("#txtTriptype").val(), $("#SumInsured").val());
+            }
+            else {
+                var Duration = $("#txtDuration").val();
+                var d = $('#stayDays').val(Duration);
+                BindPremium($("#txtTriptype").val(), $("#SumInsured").val());
+            }
+            // BindPremium();
+        });
+        $('#SumInsured').change(function () {
+
+            BindPremium($('#txtTriptype').val(), $('#SumInsured').val());
+
+        })
+        $('#txtTriptype').change(function () {
+            var datt = $("#txtTriptype").val();
+            BindPremium($("#txtTriptype").val());
+        })
+
+        // We select for tables universally - you can change the selector to target the tables you want
+        // Basic table
+        $('#basic table').stickySort();
+
+        // Basic table with sort
+        $('#basic-sort table').stickySort({ sortable: true });
+
+        // Biaxial
+        $('#biaxial .bx1').stickySort();
+        $('#biaxial .bx2').stickySort({ sortable: true });
+
+        // Final
+        $('#final table').stickySort({ sortable: true });
+
+        // The codes below has no impact on the functionality of StickySort functionality
+        //-----------------------------------------------------------------------------------------------------------------
+        // Smooth scrolling plugin by Chris Coiyer
+        // Source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        // Section toggle
+        $('section.demo h2')
+        .append('<a href="#" title="Collapse section" class="toggle">Collapse</a>')
+        .on('click', 'a', function (e) {
+            e.preventDefault();
+            if (!$(this).data('state') || $(this).data('state') == 0) {
+                $(this)
+                .data('state', 1)
+                .attr('title', 'Expand section')
+                .text('Expand')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideUp();
+            } else {
+                $(this)
+                .data('state', 0)
+                .attr('title', 'Collapse section')
+                .text('Collapse')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideDown();
+            }
+        });
+
+        // Unrelated to sticky header function
+        $('table').each(function () {
+            if ($(this).attr('data-color') != undefined) {
+                $(this).find('tbody td').each(function () {
+                    if ($(this).text().match(/^\d+$/)) {
+                        $(this).css({
+                            'background-color': 'hsl(' + parseInt($(this).text()) + ',75%,85%)'
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var stay = $("#stayDays").val();
+        $('#txtDuration').val(stay);
+    });
+</script>
+
+
+<script>
+    $(".btnlts").click(function () {
+        $("#slidesa").addClass("some_class").slideToggle("slow");
+
+    });
+</script>
+
+<script>
+    $(function () {
+        $(".preload").fadeOut(50000, function () {
+            $(".conterty").fadeIn(50000);
+        });
+    });
+</script>
+
+<script>
+    $("#iddetails").click(function () {
+        $("#idtable").css("display", "block");
+    })
+    function HideTable(tablid) {
+        var color = $("#" + tablid).css("display");
+        if (color == "none") {
+            $("#" + tablid).css('display', 'block');
+        }
+        else if (color == "block") {
+            $("#" + tablid).css('display', 'none');
+        }
+        else {
+            $("#" + tablid).css('display', 'none');
+        }
+
+    }
+</script>
+<div class="preload">
+    <div class="loader">
+        <h1>Please wait........</h1>
+    </div>
+</div>

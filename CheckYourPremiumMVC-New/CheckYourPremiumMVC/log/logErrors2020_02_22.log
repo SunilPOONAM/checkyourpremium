@@ -1,0 +1,584 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038238,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"3700","servicetaxamt":"0","educessamt":"0","totalpremium":"4366","finalpremium":"4366","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038240,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"666","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"6382","servicetaxamt":"0","educessamt":"0","totalpremium":"7531","finalpremium":"7531","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038242,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"1149","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038244,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"6382","servicetaxamt":"0","educessamt":"0","totalpremium":"7531","finalpremium":"7531","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038246,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"1149","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038248,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"6382","servicetaxamt":"0","educessamt":"0","totalpremium":"7531","finalpremium":"7531","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038250,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"1149","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038252,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"6382","servicetaxamt":"0","educessamt":"0","totalpremium":"7531","finalpremium":"7531","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038254,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"1149","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"1e8aa4d66e3d4c88832f63a1cadc662c","premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"1e8aa4d66e3d4c88832f63a1cadc662c","redirectToken":"0479a8995084b4acaee72e9b753fc356"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038256,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-61452323",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114513",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265317",
+    "transactionDate" : "22-02-2020T12:33:13",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V24F684ED45AFEEE39A215ACB288118FAE511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=701FE3FD4AECB39C44EACE3E37169ED2"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-55178266",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114515",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265319",
+    "transactionDate" : "22-02-2020T12:44:20",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2315BC3AE5AA0F9F47B21C340D081200C511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=ADB9CB5237BA213056B32CB2D12AEA84"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-35492070", "type": "I", "purpose": "L", "customer": { "firstName": "ggheh rhrthr", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "rhrthrjh", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "7874747484", "email": "n@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-02-22", "packageName": "", "geography": "UCI", "travelEndDate": "2020-02-27", "travelStartDate": "2020-02-22", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"02/22/2020","travelEndOn":"02/27/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"02/22/1995","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"02/22/2020","travelEndOn":"02/27/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"02/22/1995","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"02/22/2020","travelEndOn":"02/27/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"02/22/1995","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-56423959",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114520",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265325",
+    "transactionDate" : "22-02-2020T13:17:35",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2CC034DE7A97B3E29D5FE42734A083AF4511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=A4F8C6DBB25E9D0B7F7FCF13FA6989F0"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-44703458",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114522",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265327",
+    "transactionDate" : "22-02-2020T13:21:11",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2F4E5266930B2911B6B658C6373DDBF4A511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=437CF966C657FA12ACC406266075D429"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-53562878",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114525",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265329",
+    "transactionDate" : "22-02-2020T13:27:40",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V207A6E518668F6423061E4E026DA2B0ACDAA3BB7617BA81A5BD9EAD714F0217D76315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=2F512B3795C5A8596C26615383A8335D"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"f875f745a75d4453b34176e2bd6ac041","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"f875f745a75d4453b34176e2bd6ac041","redirectToken":"bc69b82f936854fe8b63c089cb0689a9"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"a4db57aa3f414010b32bed50c7f82bd8","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"010feddade3f4ea1acf8c308029f99f0","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038258,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"6382","servicetaxamt":"0","educessamt":"0","totalpremium":"7531","finalpremium":"7531","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038260,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"1149","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":21045,"serviceTax":3788,"totalPremium":24833}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-61597381",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114535",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265344",
+    "transactionDate" : "22-02-2020T14:10:59",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V27A640723A603F795BA1D1AB714D3B3FE511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=567D177BA3C12CC56EF42DC9D570B663"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-68185567",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114536",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265345",
+    "transactionDate" : "22-02-2020T14:13:49",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2583F698EDCD8D0DF06EBDCBC811F96EFDAA3BB7617BA81A5BD9EAD714F0217D76315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=9E2677857E373EDC8FA57816CD29BA23"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-4689128",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114537",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265346",
+    "transactionDate" : "22-02-2020T14:14:59",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V27810C73C872ADEDD9ECA53B53F325E47511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLinkSent" : false,
+    "paymentLink" : "Failed"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"a18ed05811ca4aac82b7f844c535f307","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038264,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"3295","servicetaxamt":"0","educessamt":"0","totalpremium":"3888","finalpremium":"3888","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038266,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"593","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":9411,"serviceTax":1694,"totalPremium":11105}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"8d42227eab2744daac72c992ca863993","premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"b9211486791a42eeb658ecd0e48abefc","premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"eb764c699523459fa37eba1e9e29473b","premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4629b837785347d0a14a2a71e4d0d161","premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-94622961",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114553",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265362",
+    "transactionDate" : "22-02-2020T15:51:38",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2936F5C1905F8936F798F341FEFA5339F511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=56F6AE5AE5C7E12EF411E0388934C920"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"d8b26802adf54121a5971cb3801e6557","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"d8b26802adf54121a5971cb3801e6557","redirectToken":"f15cca8372ed80e3ffb53d625a52f4c6"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-54921995",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114555",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265364",
+    "transactionDate" : "22-02-2020T16:05:57",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2FC04C051AD3E7C48D84B25D0149B6F7CDAA3BB7617BA81A5BD9EAD714F0217D76315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=67616FFA9FC1B6ACF488AC9940292E75"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-60581817",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114556",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265365",
+    "transactionDate" : "22-02-2020T16:07:13",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2D1F5BC08297F7D679B4C6727C6DB52AFDAA3BB7617BA81A5BD9EAD714F0217D76315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=0F9BF7E03807758585EDAC9081D6281E"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038274,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038276,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"3295","servicetaxamt":"0","educessamt":"0","totalpremium":"3888","finalpremium":"3888","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038278,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"593","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038280,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"0","servicetaxamt":"0","educessamt":"0","totalpremium":"0","finalpremium":"0","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":5038282,"servicetaxmstobj":{"taxcode":"07_IGST17","taxtype":"IGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"0","addtaxval2":"0","addtaxval3":"0","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"NA","addtaxval2desc":"NA","addtaxval3desc":"NA","addtaxval4desc":"Integrated GST","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-29968094",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114560",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265369",
+    "transactionDate" : "22-02-2020T16:32:35",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V22A5B7619B8998E71E5A0164E7654DC49DAA3BB7617BA81A5BD9EAD714F0217D76315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=D64360B53D3DC0F574A501394D017C7A"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-11229531",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001114561",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400265370",
+    "transactionDate" : "22-02-2020T16:56:21",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2539231E4A5A186CE815D8B99AAEB9EF1511CDFF2BB16A507BC50426AC865CE81FC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=E7BCA161513BA3023D72DC76177B94F2"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}

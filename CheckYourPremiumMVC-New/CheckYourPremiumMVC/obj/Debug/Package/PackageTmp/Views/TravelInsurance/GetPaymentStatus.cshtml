@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "GetPaymentStatus";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+
+}
+<form id="frm" method="post">
+    <div align="center">
+
+        <h2>Payment Status: @ViewBag.PolicyStatus</h2>
+        @if (@ViewBag.Note != "")
+        {
+            <h3>@ViewBag.Note</h3> }
+        else
+        {
+            <h3>Policy Number: @ViewBag.PolicyNumber</h3>
+            <h3>Reference Number: @ViewBag.ReferenceNumber</h3>
+
+        } 
+         <a id="downloadDoc" class="btn btn-primary" target="_blank"> Download Policy Document</a>&nbsp;
+        <a href="/" class="btn btn-primary"> Home</a>
+        <input type="hidden" name="referenceId" id="refid" value="@ViewBag.RefId" />
+       @* <input type="hidden" name="refid" id="refid" value="d9c1465c4b0c4270ace2744886f988e7" />*@
+
+
+
+        @*<input type="button" id="downloadDoc" value="Download Policy Document" />*@
+        <script>
+            $(document).ready(function () {
+                
+                $("#downloadDoc").attr("href", 'http://localhost:8217/TravelInsurance/Download?refid=' + $("#refid").val());
+            });
+
+        </script>
+
+    </div>
+
+</form>

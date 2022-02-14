@@ -1,0 +1,784 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-55946316",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085431",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236034",
+    "transactionDate" : "18-01-2020T10:33:26",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2C6E307F4E1634F209AF02C929511099280220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=7F27F9D650D63E811F7BD322E5590141"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-53051213",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085433",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236036",
+    "transactionDate" : "18-01-2020T10:41:32",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V22F82EFB84E9F1BE30C9CC95D044B17D080220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=2AC16B353FB6FCFF37FE1A89E11D6AFF"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-35478048", "type": "I", "purpose": "L", "customer": { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-01-13", "packageName": "R13", "geography": "UCI", "travelEndDate": "2020-01-13", "travelStartDate": "2020-01-13", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-87084070",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085451",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236054",
+    "transactionDate" : "18-01-2020T11:46:47",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V26511C6AE748A4C7AD337E837A9E4B86380220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=34399E394C706A338D1D58DFC4663397"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-87865102",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085452",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236055",
+    "transactionDate" : "18-01-2020T11:47:30",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2981482905DB68FE2A7A42DC1F01DBA1E80220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=C416E998255FF2242433395CE9142036"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-28197331",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085457",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236061",
+    "transactionDate" : "18-01-2020T12:09:59",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V26A67D3EFFDDB53EF98D1EBC4063A9AC380220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=C45ED5E1310CBF04A208936762398078"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-73675132",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085458",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236062",
+    "transactionDate" : "18-01-2020T12:12:14",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V20DD89E3D7950FEDE74DCD611D4B7FB0880220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=A302A68BFBBCFC979FFDD45CA4B16495"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-38294742",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085459",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236063",
+    "transactionDate" : "18-01-2020T12:12:53",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V26D1FC4A62DEA220410774314B5BA584480220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=9E46CD393715D06DB81E2A2688DDF499"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-69962666",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085460",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236064",
+    "transactionDate" : "18-01-2020T12:18:05",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V253EACD36DE122495DFDD66123830532780220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=CEA81513274F550E03E8CE5B66C2278B"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-83629403",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085464",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236068",
+    "transactionDate" : "18-01-2020T12:44:35",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2B133EDE43EE0C31D5DFEB8AFB6687BBB80220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=3AEB01AC2D1B15541C95F6BB160BA457"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-34405309", "type": "I", "purpose": "L", "customer": { "firstName": "Divya", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "lucknow", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "9877574747", "email": "divya@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-01-18", "packageName": "R13", "geography": "UCI", "travelEndDate": "2020-01-20", "travelStartDate": "2020-01-19", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (504) Gateway Timeout.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-67717900",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085466",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236070",
+    "transactionDate" : "18-01-2020T12:56:12",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2B40CA3E6AB0E3E04132FA6ADCCFC3CDB80220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=A729257E9141D9BE530063D6BF3A2028"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-39910163",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085470",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236074",
+    "transactionDate" : "18-01-2020T13:05:09",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V23C24A9EECC5923CA73F51B70CD89BF9A80220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=E5E7A515F302EC4A2A530A426A431664"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-controller=
+InnerExceptionMessage : Value was either too large or too small for an Int32.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-53367957",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085472",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236076",
+    "transactionDate" : "18-01-2020T13:10:42",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V263323D156716EED045DEE4E85F11CAFC80220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=D0CC34798A495370C5806ABCBB9B6FD2"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-88383819",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085474",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236078",
+    "transactionDate" : "18-01-2020T13:18:54",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V252F63A1906093D479712F2C9D880B99280220831F9F020BFAD887E30B401BDA8C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F60E8E2C037E283EEB5A209B5BBD465D"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-controller=
+InnerExceptionMessage : Value was either too large or too small for an Int32.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-10889016",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085475",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236079",
+    "transactionDate" : "18-01-2020T13:27:40",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V29B4AD98CEF844A89C06196EF4BC3EAAB1D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=C796C919F62D477E191EBB11BE786935"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-27272622",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085476",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236080",
+    "transactionDate" : "18-01-2020T13:30:05",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2BACC691B7BA91FB46FEB1092D93C945D1D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=B572F87AE9B212D15D2712955EE33766"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-business=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-60535008",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085480",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236084",
+    "transactionDate" : "18-01-2020T14:03:22",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V20C94448E40BFAFBFC4E9464A2D8C6F671D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=CF3EC619D3BDBCD4851BFB0399B43712"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-14797865",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085481",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236085",
+    "transactionDate" : "18-01-2020T14:03:25",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V284F6764DC339639E6FE6C11440F025821D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=FB6FC506CE56B352CEDEC117DE316730"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-business=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-4144513",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085484",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236090",
+    "transactionDate" : "18-01-2020T14:35:55",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2352747E8AE1C47D51A31BBD42F9934141D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=3909B27BC2B33147B4B63EA8148DD2AE"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-6130279",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085488",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236099",
+    "transactionDate" : "18-01-2020T15:25:18",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V230B6CCAB3D7D9BA37131380D6AFFED551D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=79E0EDE2B0A0D4EF0093C3C2E1277281"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-5296231",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085490",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236101",
+    "transactionDate" : "18-01-2020T15:58:58",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2468C5C18C6C438CC3CC70F63F944C5131D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=45B46A4CE949DB89079D69850837724F"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-28431115",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085491",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236102",
+    "transactionDate" : "18-01-2020T16:02:30",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V261966A76017357DFACD8E2B948430C041D93F326969674E706997DBB540D43EFC7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=3828ACFB82B627070AD0E590FD84AAA6"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-55852942",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085492",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236103",
+    "transactionDate" : "18-01-2020T16:09:22",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2B61AF14077B8778932F1801D09B511248EB956D47E7CB510B2E52E0EDE126D24C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=B86AE53A3CEC108A5925351EADEAA9E1"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-61646920",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085502",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236119",
+    "transactionDate" : "18-01-2020T16:54:25",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2550A740F25E1E002CA66330E208CAC588EB956D47E7CB510B2E52E0EDE126D24C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=814D04359989CBCCCF87395B6EABB15E"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-68178272",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085508",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236127",
+    "transactionDate" : "18-01-2020T17:36:54",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2FFB46C7D255B685580D2D914F772F8B28EB956D47E7CB510B2E52E0EDE126D24C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=9D4E9A30CDED1F369DA8137851AA27ED"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-34260885",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085509",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236128",
+    "transactionDate" : "18-01-2020T17:40:38",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V245F8D4378FDB4B8647EE8DD9663EC2568EB956D47E7CB510B2E52E0EDE126D24C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=3151338D9D8DC18721C8B219A20BC6C5"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-business=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-51729823", "type": "I", "purpose": "L", "customer": { "firstName": "Divya", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Lucknow", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "9867857483", "email": "divya@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-01-18", "packageName": "R13", "geography": "UCI", "travelEndDate": "2020-01-20", "travelStartDate": "2020-01-19", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (504) Gateway Timeout.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-37994619",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001085511",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400236130",
+    "transactionDate" : "18-01-2020T17:48:06",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V241525F7095DB32B5ADA6915648AC660D8EB956D47E7CB510B2E52E0EDE126D24C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=5E1394110E1C1C34B5F5594E89539D8C"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : getdetail-business=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-70557389", "type": "I", "purpose": "L", "customer": { "firstName": "Divya", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Lucknow", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "9867857483", "email": "divya@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-01-18", "packageName": "R13", "geography": "UCI", "travelEndDate": "2020-01-20", "travelStartDate": "2020-01-19", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (504) Gateway Timeout.

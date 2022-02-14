@@ -1,0 +1,324 @@
+﻿@model Domain.RegistrationDetails
+
+@{
+    ViewBag.Title = "Registration";
+   Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="~/Resources/css/registration.css" rel="stylesheet" />
+
+    <link href="registration.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>
+
+        /*header {
+            display: none !important;
+        }*/
+
+        .thumbnail__links{
+            display:none;
+        }
+        
+        
+         .list-inline {
+            position: absolute !important;
+            top: 1rem !important;
+        }
+        .container__child.signup__thumbnail h5 {
+            font-size: 4rem;
+            font-family: 'Merienda One', cursive;
+            color: #333;
+            position: relative;
+            z-index: 999999;
+            top: 2rem;
+        }
+
+        .contertyf {
+            background: #fff;
+        }
+        .signup__thumbnail .singCont{
+           width: 9vw;
+    position: absolute;
+    z-index: 99999;
+    top: 0rem;
+    right: 0;
+    margin: 2rem;
+        }
+
+        .signup__thumbnail .singCont img{
+            width:100%;
+        }
+        .thumbnail__logo {
+            align-self: inherit;
+            width: 327px !important;
+            position: relative !important;
+            top: 1rem !important;
+        }
+
+
+        .signup__container{
+            box-shadow:none;
+        }
+        .signup__overlay {
+          background-color:transparent;
+                }
+
+        .contertyf {
+            background: #fff;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <div class="signup__container" style="margin-bottom:10%">
+        <div class="container__child signup__thumbnail" style="margin-bottom:10%">
+           <h5>Please register here...</h5>
+    
+            <div class="thumbnail__logo">
+                <img src="~/Resources/images/2204031.png" class="img-responsive" />
+
+            </div>
+            @*<div class="thumbnail__content text-center">
+                <div>
+
+                </div>
+            </div>*@
+            <div class="thumbnail__links">
+                <ul class="list-inline m-b-0 text-center">
+                    <li><a href="https://developers.facebook.com/apps/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.behance.net/alexdevero" target="_blank"><fa class="fa fa-google-plus"></fa></a></li>
+                    <li><a href="https://github.com/alexdevero" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/alexdevero" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="signup__overlay"></div>
+        </div>
+
+        <style>
+            .form-control.gbht{
+                background:#fff;
+                border: 1px solid #ccc;
+            }
+
+            .gj-datepicker-md [role=right-icon] {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    font-size: 20px;
+    color: #757474;
+}
+
+            .ab {
+                color: black;
+                height: 34px;
+                padding: 6px 12px;
+                width: 100%;
+                border: 1px solid #ccc;
+            }
+
+            #password-strength-status {
+                font-size: 11px;
+            }
+        </style>
+        <div class="container__child signup__form">
+            <form action="/RegistrationLogin/Registration" method="post" >
+                <div class="form-group col-md-6">
+                    <label for="username">First Name</label>
+                    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @autocomplete = "true", required = "true" })
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="username">Last Name</label>
+                    @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @autocomplete = "true", required = "true" })
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email ID</label>
+                   @* @Html.TextBoxFor(model => model.EmailId, new { @class = "form-control",  @autocomplete = "off", required = "true",@onkeyup="return forceLower(this);"})*@
+                    @Html.TextBoxFor(model => model.EmailId, new { @class = "ab", @type = "email", @autocomplete = "true", required = "true", @onkeyup = "this.value=this.value.toLowerCase()" })
+                
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">DOB</label>
+                    @Html.TextBoxFor(model => model.DOB, new { @class = "form-control gbht", @autocomplete = "true", required = "true" })
+                    @*<input class="form-control" id="datepicker" width="270" />*@
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-md-12 rdios" for=" email">Gender</label>
+                    @Html.DropDownListFor(model => model.Gender, (SelectList)ViewData["Gender"], "Select", new { @class = "form-control", required = "true" })
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Mobile No.</label>
+                    @Html.TextBoxFor(model => model.MobileNo, new { @class = "form-control", @minlength = "10", @maxlength = "10", @autocomplete = "true", required = "true" })
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                    <div class="form-group col-md-6" style="padding-left: 0;">
+                        <label for="password">Address</label>
+                        @Html.TextBoxFor(model => model.Address, new { @class = "form-control", @autocomplete = "true", required = "true" })
+                    </div>
+                    <div class="form-group col-md-6" style="padding-right: 0;">
+                        <label for="password">Country</label>
+                        @Html.DropDownListFor(model => model.Country, (SelectList)ViewData["country"], new { @class = "form-control", required = "true" })
+
+                    </div>
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @autocomplete = "true", @onKeyUp = "checkPasswordStrength();", required = "true" ,@type="Password" })
+                    <br />
+                    <div id="password-strength-status" style="color:#209454"></div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="passwordRepeat">Repeat Password</label>
+                    @Html.TextBoxFor(model => model.ConfirmPassword, new { @class = "form-control", @autocomplete = "true", @onKeyUp = "PasswordMatch();", required = "true", @type = "Password" })
+                    <br />
+                    <div id="password-Match-status" style="color:#ff0000"></div>
+                </div>
+                <div class="m-t-lg col-md-12">
+                    <ul class="list-inline">
+                        <li>
+                            <input id="btnRegister" class="btn btn--form" type="submit" value="Register" onclick=" resetform()"/>
+                        </li>
+                        <li>
+                            <a class="signup__link" href="LoginDetails">I am already a member</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("ok");
+            $('#btnRegister').attr('disabled', true);
+            if ($('#password-strength-status').val() == "Strong") {
+                $('#btnRegister').attr('disabled', false);
+            }
+        });
+
+    </script>
+    <script type="text/javascript">
+        function checkPasswordStrength() {
+            //alert("ok");
+            var number = /([0-9])/;
+            var alphabets = /([a-zA-Z])/;
+            var special_characters = /([~,!,@@,$,%,^,&,*,-,_,+,=,?,>,<])/;
+            if ($('#Password').val().length < 6) {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('weak-password');
+                $('#password-strength-status').html("Weak (should be atleast 6 characters.)");
+                $('#btnRegister').attr('disabled', true);
+            } else {
+                if ($('#Password').val().match(number) && $('#Password').val().match(alphabets) && $('#Password').val().match(special_characters)) {
+                    $('#password-strength-status').removeClass();
+                    $('#password-strength-status').addClass('strong-password');
+                    $('#password-strength-status').html("Strong");
+                    $('#btnRegister').attr('disabled', false);
+                } else {
+                    $('#password-strength-status').removeClass();
+                    $('#password-strength-status').addClass('medium-password');
+                    $('#password-strength-status').html("Medium (should include alphabets, numbers and special characters.)");
+                    $('#btnRegister').attr('disabled', true);
+                }
+            }
+        }
+        //$("#RepeatNewPass").onkeyup(function () {
+
+        //})
+        function PasswordMatch() {
+            var newpass = $("#Password").val();
+            var newchnagepass = $("#ConfirmPassword").val();
+            if (newchnagepass != newpass) {
+                $('#password-Match-status').removeClass();
+                $('#password-Match-status').addClass('Matching-password');
+                $('#password-Match-status').html("Password is not matching new password.");
+                $('#btnRegister').attr('disabled', true);
+            }
+            else {
+                $('#password-Match-status').removeClass();
+                $('#password-Match-status').html("");
+                $('#btnRegister').attr('disabled', false);
+
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnRegister").click(function () {
+                var password = $("#Password").val();
+                var confirmPassword = $("#ConfirmPassword").val();
+                if (password != confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+ 
+    <script>
+    $(document).ready(function () {
+
+        $("#MobileNo").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+    </script>
+    <script>
+        function forceLower(strInput) 
+        {
+            var d= $("#EmailId").val($(this).val().toLowerCase());
+            alert(d);
+        }​
+    </script>
+    <script>
+        $("#DOB").datepicker({
+            autoclose: true,
+
+            dateFormat: "dd-mm-yy",
+            changeMonth: true,
+            changeYear: true,
+        });
+    </script>
+
+
+
+  
+
+    <script type="text/javascript">
+    $(function () {
+        $("#btnRegister").click(function () {
+            var password = $("#Password").val();
+            var confirmPassword = $("#ConfirmPassword").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        });
+    });
+    </script>
+</body>
+</html>
+
+
+

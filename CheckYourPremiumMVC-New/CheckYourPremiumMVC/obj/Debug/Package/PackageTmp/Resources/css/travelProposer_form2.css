@@ -1,0 +1,424 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	/*background: url('../images/golden-ga.jpg') center no-repeat;*/
+    background:#0f73c8 !important;
+	background-size: cover;
+	color: #333;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif !important;
+}
+.dtaboxes label{
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.dtaboxes span{
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.dfg{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+         .text-centerd {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1em;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 35px;
+    background: #e9ebef;
+    padding-left: 6px;
+    border-radius: 0;
+    border: 1px solid;
+}
+
+         .fgfhdfo.txts{
+             text-align:right !important;
+         }
+
+           .fgfhdfo.txts span{
+             text-align:right !important;
+         }
+
+  .text-centers {
+    text-align: left;
+    margin-top: 0;
+    font-size: 2em;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 35px;
+    padding-left: 6px;
+    border-radius: 0;
+    position:relative;
+}
+
+   .text-centers span{
+    position: absolute;
+    right: 0;
+    font-size: 0.5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.faGg{
+    float:left;
+    clear:both;
+    position:relative;
+    width:100%;
+    margin-bottom: 8px;
+}
+
+.faGg h1 span{
+color:#333;
+  font-size:0.9em;
+  display:inline-block;
+  position:relative;
+  left:3px;
+}
+form label:nth-of-type(even) {
+    border-left: 1px solid #333;
+    padding-left: 0.25em;
+}
+
+ .dfg{
+     padding-left:0px;
+     padding-right:0px;
+ }
+span.validated {
+    position: absolute;
+    font-size: 0.5em;
+    left: 10px;
+    width: 100%;
+    top: 42px;
+    color: #f00;
+    display: none;
+}
+
+.uploadFimg{
+    background:#c8d3dc;
+    border-radius:8px;
+        margin-bottom: 2rem;
+}
+
+.containerb{
+	border-radius: 0.3em;
+	box-shadow: 0 0 0em 0 rgba(51,51,51,0.25);
+	display: block;
+	overflow: hidden;
+	-webkit-transform:translate(1%, 1%);
+	-ms-transform: translate(1%, 1%);
+	transform: translate(1%, 1%);
+    padding: 2.3em 1em 1em 1em;
+    position: relative;
+    top: 1%;
+    left: 1%;
+    z-index: 1;
+    width: 100%;
+    float: left;
+}
+
+.containerba{
+	border-radius: 0.3em;
+	display: block;
+	overflow: hidden;
+	-webkit-transform:translate(1%, 1%);
+	-ms-transform: translate(1%, 1%);
+	transform: translate(1%, 1%);
+    padding: 0.8em 1em 0em 1em;
+    position: relative;
+    top: 1%;
+    left: 1%;
+    z-index: 1;
+    width: 100%;
+    float: left;
+}
+
+.containerbag{
+border-radius: 0;
+    display: block;
+    overflow: hidden;
+    -webkit-transform: translate(1%, 1%);
+    -ms-transform: translate(1%, 1%);
+    transform: translate(1%, 1%);
+    padding: 1em 1em 1em 1em;
+    position: relative;
+    top: 1%;
+    left: 1%;
+    z-index: 1;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    text-align: right;
+}
+
+
+.containera{
+	border-radius: 0.3em;
+	box-shadow: 0 0 1em 0 rgba(51,51,51,0.25);
+	display: block;
+	max-width: 655px;
+	overflow: hidden;
+	-webkit-transform:translate(1%, 1%);
+	-ms-transform: translate(1%, 1%);
+	transform: translate(1%, 1%);
+	padding: 2em;
+	position: relative;
+		top: 1%;
+		left: 1%;
+		z-index: 1;
+	width: 100%;
+}
+.containera:before{
+	background: url('http://tfgms.com/sandbox/dailyui/bg-1.jpg') center no-repeat;
+	background-size: cover;
+	content: '';
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	height: 100vh;
+	position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: -1;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100vw;
+}
+.containera:after{
+	/*background:rgba(170, 196, 245,0.9);*/
+    background:#fff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	width: 100%;
+}
+form button.submit{
+	background: rgba(255,255,255,0.25);
+	border: 1px solid #333;
+	line-height: 1em;
+	padding: 0.5em 0.5em;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+form button:hover,
+form button:focus,
+form button:active,
+form button.loading{
+	background: #333;
+	color: #fff;
+	outline: none;
+}
+form button.success{
+	background: #27ae60;
+	border-color: #27ae60; 
+	color: #fff;
+}
+@-webkit-keyframes spin{
+	from{ transform: rotate(0deg); }
+	to{ transform: rotate(360deg); }
+}
+@keyframes spin{
+	from{ transform: rotate(0deg); }
+	to{ transform: rotate(360deg); }
+}
+form button span.loading-spinner{
+	-webkit-animation: spin 0.5s linear infinite;
+	animation: spin 0.5s linear infinite;
+	border: 2px solid #fff;
+	border-top-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+}
+
+form label{
+	border-bottom: 1px solid #333;
+	display: block;
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+form label.col-one-half{
+	float: left;
+	width: 50%;
+}
+form label.col-one-half:nth-of-type(even){
+	border-left: 1px solid #333;
+	padding-left: 0.25em;
+}
+form label input{
+    background: none;
+    border: none;
+    line-height: 1em;
+    font-weight: 400;
+    padding: 0.125em 0.25em;
+    width: 100%;
+    font-size: 0.7em;
+    color: #000;
+}
+
+form label select{
+    background: none;
+    border: none;
+    line-height: 1em;
+    font-weight: 400;
+    padding: 0.125em 0.25em;
+    width: 100%;
+    font-size: 0.7em;
+    color: #000;
+}
+form label select:focus{
+	outline: none;
+}
+
+form label input:focus{
+	outline: none;
+}
+form label input:-webkit-autofill{
+	background-color: transparent !important;
+}
+form label span.label-text{
+	display: block;
+	font-size: 0.6em;
+	font-weight: bold;
+	padding-left: 0.5em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+    letter-spacing: 1px;
+    color:#005298;
+}
+form label.checkbox{
+	border-bottom: 0;
+	text-align: center;
+}
+form label.checkbox input{
+	display: none;
+}
+form label.checkbox span{
+	font-size: 0.5em;
+}
+form label.checkbox span:before{
+	content: '\e157';
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-size: 1.125em;
+	padding-right: 0.25em;
+	position: relative;
+		top: 1px;
+}
+form label.checkbox input:checked + span:before{content: '\e067';}
+form label.invalid{border-color: #c0392b !important;}
+form label.invalid span.label-text{color: #c0392b;}
+form label.password{position: relative;}
+form label.password button.toggle-visibility{
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.75em;
+	line-height: 1em;
+	position: absolute;
+		top: 50%;
+		right: 0.5em;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+}
+form label.password button.toggle-visibility:hover,
+form label.password button.toggle-visibility:focus,
+form label.password button.toggle-visibility:active{
+	color: #000;
+	outline: none;
+}
+form label.password button.toggle-visibility span{vertical-align: middle;}
+
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+}
+h1 img{
+	height: auto;
+	margin: 0 auto;
+	max-width: 240px;
+	width: 100%;
+}
+html{
+	font-size: 18px;
+	height: 100%;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+.fgfhdfr{
+    width:120px;
+}
+
+.planData{
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.fgfhdfo label{
+    color: #000;
+}
+
+.boxifieds{
+    background: #044882;
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #031b52;
+    border-top: 1px solid #031b52;
+    position:relative;
+}
+
+.logsImgs{
+width: auto;
+    position: absolute;
+    left: 1rem;
+    bottom: 0rem;
+    z-index: 999;
+}
+
+.fgfhdfo div{
+    color:#fff;
+}

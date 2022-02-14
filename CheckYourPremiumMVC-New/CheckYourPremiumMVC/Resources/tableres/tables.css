@@ -1,0 +1,228 @@
+﻿
+
+table.dataTable tbody tr.even {
+    width:254%;
+        padding: 0;
+}
+
+
+
+table#mytable > tbody > tr.even > td.dataTableCenter > table > tbody > tr > td {
+    text-align: center !important;
+    padding-left: 4px !important;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+
+}
+#mytable {
+ 
+    border-right: 0px solid #333 !important;
+}
+table {
+    border: 0px solid #ccc !important;
+ }
+
+table tr {
+    border: 0px solid #ddd !important;
+    }
+
+
+    table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+        table caption {
+            font-size: 1.5em;
+            margin: .5em 0 .75em;
+        }
+
+        table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: .35em;
+        }
+
+        table th,
+        table td {
+               padding: .625em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+        }
+
+        table th {
+             font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #2957a4;
+    color: #fff;
+    border: 1px solid #333;
+    font-weight: normal;
+        }
+
+
+           section {
+        padding: 0 1% 0 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        table {
+            border: 0;
+        }
+
+            table caption {
+                font-size: 1.3em;
+            }
+
+            table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+
+            table tr {
+                border-bottom: 3px solid #ddd;
+                display: block;
+                margin-bottom: .625em;
+            }
+
+            table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: .8em;
+                text-align: right;
+            }
+
+
+
+               table.dataTable tbody tr.even td::before {
+                   display:none;
+                }
+               /*table.dataTable tbody tr.odd td::before {
+   
+   
+    font-weight: normal;
+    text-transform:capitalize;
+    position: relative;
+    top: 9px;
+    background: #2957a4;
+    color: #fff;
+    font-size: 13px;
+}*/
+
+               table.dataTable tbody td p{
+                   float: none;
+                       margin-bottom: 15px !important;
+               }
+
+               table.dataTable tbody td {
+    padding: 0px 0px !important;
+    
+      }
+
+               table.dataTable tbody tr.even {
+    width: auto;
+   
+}
+
+               .left {
+    margin-right: 0;
+}
+
+               table tr {
+    padding: 0;
+}
+
+                table td::before {
+                    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+                    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    background: #0c69a7;
+    float: left;
+    color: #fff;
+    margin-bottom: 10px;
+                }
+
+                table td:last-child {
+                    border-bottom: 0;
+                }
+
+
+section {
+    padding: 0 0% 0 0  !important;
+}
+
+                
+table.dataTable {
+    border-collapse: collapse !important;
+
+}
+#mytable {
+ 
+    border-right: 0px solid #333 !important;
+}
+table {
+    border: 0px solid #ccc !important;
+ }
+
+table tr {
+    border: 0px solid #ddd !important;
+    }
+
+#mytable_wrapper {
+    border-right: 0px solid #333;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.relPos {
+    position: relative;
+    width: auto;
+    float: none !important;
+    margin: 1rem !important;
+    border: 1px solid #e2e1e1 !important;
+    padding: 1px 15px 1px 15px !important;
+    display: flex;
+    height: auto;
+    align-items: flex-end !important;
+    background: #fff !important;
+    flex-basis: 180px;
+    flex-shrink: 1;
+    z-index: 99999999999999999999999;
+}
+
+.w3-container {
+ 
+    display: flex !important;
+}
+
+    }

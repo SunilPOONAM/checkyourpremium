@@ -1,0 +1,1666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CheckyrpremiumModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="All_Company_Details">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Benefit" Type="varchar(max)" />
+    <Property Name="Co_Pay" Type="varchar(max)" />
+    <Property Name="Room_Rent" Type="varchar(max)" />
+    <Property Name="Day_Care_Treatment" Type="varchar(max)" />
+    <Property Name="Restoration_Benefit" Type="varchar(max)" />
+    <Property Name="Pre_Hospitalization" Type="varchar(max)" />
+    <Property Name="Post_Hospitalization" Type="varchar(max)" />
+    <Property Name="Ambulance_Charges" Type="varchar(max)" />
+    <Property Name="Company_Id" Type="varchar" MaxLength="50" />
+    <Property Name="Company_Plan" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AssigneeRelation">
+    <Key>
+      <PropertyRef Name="AssigneeRelationshipId" />
+    </Key>
+    <Property Name="AssigneeRelationshipId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssigneeRelationshipName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="InsuranceType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Bajaj_Occupation">
+    <Key>
+      <PropertyRef Name="OccupationId" />
+    </Key>
+    <Property Name="OccupationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OccupationValue" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Bajaj_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Relation" Type="varchar" MaxLength="200" />
+    <Property Name="RelationId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="bhartiAxaCredentials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CredentialType" Type="varchar" MaxLength="50" />
+    <Property Name="CredentialValue" Type="varchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.Car_Insurance' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Car_Insurance">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Make_Id" />
+      <PropertyRef Name="Make" />
+      <PropertyRef Name="Model_Id" />
+      <PropertyRef Name="Model" />
+      <PropertyRef Name="Variant_Id" />
+      <PropertyRef Name="Variant" />
+      <PropertyRef Name="CC" />
+      <PropertyRef Name="Seating_Capacity" />
+      <PropertyRef Name="Fuel_Id" />
+      <PropertyRef Name="Fuel_Type" />
+      <PropertyRef Name="Segment_ID" />
+      <PropertyRef Name="Vehicle_Segment" />
+      <PropertyRef Name="Location_ID" />
+      <PropertyRef Name="LOCATION" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="Main_Vehicle_Type_ID" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="Make_Id" Type="bigint" Nullable="false" />
+    <Property Name="Make" Type="varchar(max)" Nullable="false" />
+    <Property Name="Model_Id" Type="bigint" Nullable="false" />
+    <Property Name="Model" Type="varchar(max)" Nullable="false" />
+    <Property Name="Variant_Id" Type="int" Nullable="false" />
+    <Property Name="Variant" Type="varchar(max)" Nullable="false" />
+    <Property Name="CC" Type="int" Nullable="false" />
+    <Property Name="Seating_Capacity" Type="int" Nullable="false" />
+    <Property Name="Fuel_Id" Type="bigint" Nullable="false" />
+    <Property Name="Fuel_Type" Type="varchar(max)" Nullable="false" />
+    <Property Name="Segment_ID" Type="bigint" Nullable="false" />
+    <Property Name="Vehicle_Segment" Type="varchar(max)" Nullable="false" />
+    <Property Name="Location_ID" Type="bigint" Nullable="false" />
+    <Property Name="LOCATION" Type="varchar(max)" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Main_Vehicle_Type_ID" Type="bigint" Nullable="false" />
+    <Property Name="No_Of_Wheels" Type="varchar" MaxLength="50" />
+    <Property Name="PlanID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Car_Insurence_Record_Saved">
+    <Key>
+      <PropertyRef Name="Email_ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City_RTO" Type="varchar" MaxLength="100" />
+    <Property Name="Model" Type="varchar" MaxLength="100" />
+    <Property Name="Fuel_Type" Type="varchar" MaxLength="200" />
+    <Property Name="Year" Type="varchar" MaxLength="50" />
+    <Property Name="Full_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email_ID" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Mobile_No" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Category_tbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Companies">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LogoImage" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ContactNo" Type="nchar" MaxLength="150" Nullable="false" />
+    <Property Name="EmailID" Type="nchar" MaxLength="150" Nullable="false" />
+    <Property Name="Logo" Type="image" Nullable="false" />
+    <Property Name="TIN" Type="nchar" MaxLength="150" />
+    <Property Name="STNo" Type="nchar" MaxLength="150" />
+    <Property Name="CIN" Type="nchar" MaxLength="150" />
+    <Property Name="CompanyID" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Comparision_Health_tbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Benefit" Type="varchar(max)" />
+    <Property Name="Co_Pay" Type="varchar(max)" />
+    <Property Name="Room_Rent" Type="varchar(max)" />
+    <Property Name="OPD" Type="varchar(max)" />
+    <Property Name="Day_Care_Treatment" Type="varchar(max)" />
+    <Property Name="Medical_Checkup" Type="varchar(max)" />
+    <Property Name="Pre_Existing_Disease_Covered_After" Type="varchar(max)" />
+    <Property Name="Domicilliary_Expenses" Type="varchar(max)" />
+    <Property Name="Organ_Donar_Expenses" Type="varchar(max)" />
+    <Property Name="Hospital_Cash_Daily_Limit" Type="varchar(max)" />
+    <Property Name="Maternity_Benefit" Type="varchar(max)" />
+    <Property Name="New_Born_Baby" Type="varchar(max)" />
+    <Property Name="Pre_Hospitalization" Type="varchar(max)" />
+    <Property Name="Post_Hospitalization" Type="varchar(max)" />
+    <Property Name="Ambulance_Charges" Type="varchar(max)" />
+    <Property Name="Health_Check_Up" Type="varchar(max)" />
+    <Property Name="Restoration_Benefit" Type="varchar(max)" />
+    <Property Name="Free_Look_Period" Type="varchar(max)" />
+    <Property Name="Company_Id" Type="varchar" MaxLength="50" />
+    <Property Name="Company_Plan" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.Contact_Us' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Contact_Us">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="250" />
+    <Property Name="Subject" Type="nvarchar(max)" />
+    <Property Name="message" Type="nvarchar(max)" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Desease">
+    <Key>
+      <PropertyRef Name="DeseaseId" />
+    </Key>
+    <Property Name="DeseaseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiseaseDescription" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Encrypt_Password">
+    <Key>
+      <PropertyRef Name="Usert_ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usert_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Password" Type="varchar" MaxLength="250" />
+    <Property Name="User_Password_Decrypt" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Godigit_Responce_Data">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingID" Type="varchar(max)" />
+    <Property Name="paxId" Type="int" />
+    <Property Name="policyPremium" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Sgst" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Cgst" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Ugst" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="igst" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="invoiceNumber" Type="varchar" MaxLength="200" />
+    <Property Name="policyNetPremium" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="policyID" Type="varchar" MaxLength="200" />
+    <Property Name="transactionDate" Type="varchar" MaxLength="200" />
+    <Property Name="code" Type="int" />
+    <Property Name="message" Type="varchar" MaxLength="150" />
+    <Property Name="policyStatus" Type="varchar" MaxLength="150" />
+    <Property Name="applicationId" Type="varchar(max)" />
+    <Property Name="paymentLink" Type="varchar(max)" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="PlanName" Type="varchar(max)" />
+    <Property Name="Adult" Type="varchar" MaxLength="50" />
+    <Property Name="Child" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Health_Insurance_Record_Saved">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Income" Type="nvarchar" MaxLength="50" />
+    <Property Name="Self" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adult" Type="nvarchar" MaxLength="50" />
+    <Property Name="Child" Type="nvarchar" MaxLength="50" />
+    <Property Name="Self_Age" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="smalldatetime" />
+    <Property Name="ServiceTax" Type="nvarchar" MaxLength="50" />
+    <Property Name="spouce_Age" Type="varchar" MaxLength="50" />
+    <Property Name="child1_Age" Type="varchar" MaxLength="50" />
+    <Property Name="child2_Age" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="healthRelations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssigneeRelationshipName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AssigneeRelationshipId" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="InsuranceType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="InsuredRelation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RelationshipId" Type="int" />
+    <Property Name="InsuredRelationshipName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Login_Tbl">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Password" Type="varchar" MaxLength="150" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+    <Property Name="islocked" Type="int" />
+    <Property Name="attemptcount" Type="int" />
+    <Property Name="Times" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LoginReg_tbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmailId" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Masters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="25" />
+    <Property Name="VariableText" Type="nvarchar(max)" />
+    <Property Name="VariableValue" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="Moter_RTO">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="RegisteredCityName" Type="varchar" MaxLength="50" />
+    <Property Name="RegisteredStateName" Type="varchar" MaxLength="100" />
+    <Property Name="RTOCode" Type="varchar" MaxLength="50" />
+    <Property Name="New" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Motor_FuelType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FuelType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Motor_Insurance_Record">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rto" Type="nvarchar" MaxLength="50" />
+    <Property Name="CarBrand" Type="nvarchar" MaxLength="50" />
+    <Property Name="CarModel" Type="nvarchar" MaxLength="50" />
+    <Property Name="FualType" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegistrationYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClaimLastYear" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="CarVariant" Type="nvarchar" MaxLength="50" />
+    <Property Name="CarNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Motor_Nominee Relation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomineeRelation" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Motor_State">
+    <Key>
+      <PropertyRef Name="StateCode" />
+    </Key>
+    <Property Name="StateCode" Type="int" Nullable="false" />
+    <Property Name="StateName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ParentCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentCategory" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Plan_Benifit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanType" Type="varchar" MaxLength="200" />
+    <Property Name="PlanBenifit" Type="varchar(max)" />
+    <Property Name="PDF" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="PolicyPlans">
+    <Key>
+      <PropertyRef Name="PlanID" />
+    </Key>
+    <Property Name="PlanID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar(max)" />
+    <Property Name="PlanType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PlanName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PlanDesc" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PlanImage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ST_Included" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProposerDetail">
+    <Key>
+      <PropertyRef Name="ProposerId" />
+    </Key>
+    <Property Name="ProposerId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProposerName" Type="varchar" MaxLength="150" />
+    <Property Name="proposerEmail" Type="varchar" MaxLength="50" />
+    <Property Name="proposerPhone" Type="varchar" MaxLength="50" />
+    <Property Name="proposerAddressOne" Type="varchar(max)" />
+    <Property Name="proposerAddressTwo" Type="varchar" MaxLength="50" />
+    <Property Name="proposerAreaId" Type="bigint" />
+    <Property Name="gstTypeId" Type="varchar" MaxLength="50" />
+    <Property Name="gstIdNumber" Type="varchar" MaxLength="50" />
+    <Property Name="eiaNumber" Type="varchar" MaxLength="50" />
+    <Property Name="proposerDob" Type="datetime" />
+    <Property Name="placeOfVisit" Type="varchar" MaxLength="150" />
+    <Property Name="travelPurposeId" Type="int" />
+    <Property Name="physicianName" Type="varchar" MaxLength="150" />
+    <Property Name="physicianContactNumber" Type="varchar" MaxLength="50" />
+    <Property Name="FkSearchId" Type="bigint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="PlanId" Type="bigint" />
+    <Property Name="travelStartOn" Type="datetime" />
+    <Property Name="travelEndOn" Type="datetime" />
+    <Property Name="SearchType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Reg_tbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Dob" Type="date" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ConfirmPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar(max)" Nullable="false" />
+    <Property Name="EmailId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Picture" Type="varchar(max)" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RiskCover_options">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Options" Type="varchar" MaxLength="100" />
+    <Property Name="RiskCoverOptions" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.RTO_MASTERS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTO_MASTERS">
+    <Key>
+      <PropertyRef Name="RTO_ID" />
+    </Key>
+    <Property Name="RTO_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RTO_CODE" Type="varchar" MaxLength="50" />
+    <Property Name="RTO_CITY" Type="varchar" MaxLength="50" />
+    <Property Name="RTO_STATE" Type="varchar" MaxLength="50" />
+    <Property Name="Zone" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sales_store">
+    <Key>
+      <PropertyRef Name="SalesStore_M_ID" />
+    </Key>
+    <Property Name="SalesStore_M_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Store_Code" Type="nvarchar(max)" />
+    <Property Name="Store_Name" Type="varchar(max)" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="PinCode" Type="varchar" MaxLength="100" />
+    <Property Name="ManagerName" Type="varchar(max)" />
+    <Property Name="Area" Type="varchar" MaxLength="100" />
+    <Property Name="Company_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank" Type="varchar(max)" />
+    <Property Name="AccountNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="IFSC_Code" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sub_category">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_Name" Type="varchar(max)" />
+    <Property Name="CompanyCode" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="ItemType" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tb_GodigitGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GenderValue" Type="varchar" MaxLength="50" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_BajajBlockCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PolicyCity" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_BajajResponce_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Contractid" Type="varchar" MaxLength="50" />
+    <Property Name="Quotrefno" Type="varchar" MaxLength="50" />
+    <Property Name="RefNO" Type="varchar" MaxLength="150" />
+    <Property Name="ScurityNo" Type="varchar" MaxLength="150" />
+    <Property Name="PolicyRef" Type="varchar" MaxLength="150" />
+    <Property Name="NetPremium" Type="int" />
+    <Property Name="Servicetaxamt" Type="int" />
+    <Property Name="edueAmt" Type="int" />
+    <Property Name="TotalPremium" Type="int" />
+    <Property Name="FinalPremium" Type="int" />
+    <Property Name="TransactionId" Type="int" />
+    <Property Name="taxCode" Type="varchar" MaxLength="50" />
+    <Property Name="TaxType" Type="varchar" MaxLength="50" />
+    <Property Name="AddTaxValue" Type="int" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="PalnID" Type="varchar" MaxLength="50" />
+    <Property Name="IDData" Type="int" />
+    <Property Name="SumInsured" Type="varchar" MaxLength="50" />
+    <Property Name="Adult" Type="int" />
+    <Property Name="Spouse" Type="int" />
+    <Property Name="Child" Type="int" />
+    <Property Name="ProductCode" Type="int" />
+    <Property Name="MemberCombo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_BajajZone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Zone" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxa_PlanName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="PlanName" Type="varchar(max)" />
+    <Property Name="PlanId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxaBanned_Country">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxaPaymentStaus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productID" Type="varchar" MaxLength="50" />
+    <Property Name="orderNo" Type="varchar" MaxLength="150" />
+    <Property Name="amount" Type="varchar" MaxLength="150" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+    <Property Name="transactionRef" Type="varchar" MaxLength="150" />
+    <Property Name="policyNo" Type="varchar" MaxLength="150" />
+    <Property Name="link" Type="varchar(max)" />
+    <Property Name="emailId" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_BlockCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlockCity" Type="varchar" MaxLength="150" />
+    <Property Name="PinCode" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_BodyType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleBody" Type="varchar" MaxLength="150" />
+    <Property Name="VehicleID" Type="int" />
+    <Property Name="ISActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Country">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="County" Type="varchar" MaxLength="100" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_CoverFrequency">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CoverFrequency" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_EdelWise_Suminsured">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Suminsured" Type="int" />
+    <Property Name="Sumisurredvalue" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_FrequncyType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrequncyValue" Type="int" />
+    <Property Name="FrequncyType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Fule_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FuleType" Type="varchar" MaxLength="150" />
+    <Property Name="FulelID" Type="int" />
+    <Property Name="ISActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Age" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+    <Property Name="Smoke" Type="varchar" MaxLength="50" />
+    <Property Name="Income" Type="varchar" MaxLength="200" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="CustID" Type="varchar" MaxLength="50" />
+    <Property Name="SumInsurred" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Term" Type="int" />
+    <Property Name="frequency" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumRequestData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADB" Type="varchar" MaxLength="50" />
+    <Property Name="ATPD" Type="varchar" MaxLength="50" />
+    <Property Name="CI" Type="varchar" MaxLength="50" />
+    <Property Name="HCB" Type="varchar" MaxLength="50" />
+    <Property Name="LAAge" Type="varchar" MaxLength="50" />
+    <Property Name="LADOB" Type="varchar" MaxLength="50" />
+    <Property Name="LAEmail" Type="varchar" MaxLength="200" />
+    <Property Name="LAFullName" Type="varchar" MaxLength="200" />
+    <Property Name="LAGender" Type="varchar" MaxLength="50" />
+    <Property Name="LANumber" Type="varchar" MaxLength="50" />
+    <Property Name="LAProposerSame" Type="varchar" MaxLength="50" />
+    <Property Name="LATobacco" Type="varchar" MaxLength="50" />
+    <Property Name="PEBased" Type="varchar" MaxLength="100" />
+    <Property Name="Term" Type="varchar" MaxLength="100" />
+    <Property Name="WOP" Type="varchar" MaxLength="100" />
+    <Property Name="additionalBenefit" Type="varchar" MaxLength="100" />
+    <Property Name="age" Type="varchar" MaxLength="50" />
+    <Property Name="betterHalfBenefit" Type="varchar" MaxLength="100" />
+    <Property Name="bond" Type="varchar" MaxLength="100" />
+    <Property Name="childAge" Type="varchar" MaxLength="50" />
+    <Property Name="childGender" Type="varchar" MaxLength="50" />
+    <Property Name="claimsOption" Type="varchar" MaxLength="100" />
+    <Property Name="cliDOB" Type="varchar" MaxLength="50" />
+    <Property Name="cliGender" Type="varchar" MaxLength="50" />
+    <Property Name="distributionChannel" Type="varchar" MaxLength="100" />
+    <Property Name="flexibleBenefitYear" Type="varchar" MaxLength="100" />
+    <Property Name="frequency" Type="varchar" MaxLength="50" />
+    <Property Name="fullName" Type="varchar" MaxLength="200" />
+    <Property Name="index" Type="varchar" MaxLength="50" />
+    <Property Name="investmentStrategy" Type="varchar" MaxLength="100" />
+    <Property Name="largeCap" Type="varchar" MaxLength="100" />
+    <Property Name="managed" Type="varchar" MaxLength="100" />
+    <Property Name="maturityAge" Type="varchar" MaxLength="50" />
+    <Property Name="maturityOption" Type="varchar" MaxLength="100" />
+    <Property Name="moneyMarket" Type="varchar" MaxLength="100" />
+    <Property Name="payoutMonths" Type="varchar" MaxLength="100" />
+    <Property Name="payoutOption" Type="varchar" MaxLength="100" />
+    <Property Name="payoutPercentageIncreasingIncome" Type="varchar" MaxLength="100" />
+    <Property Name="payoutPercentageLevelIncome" Type="varchar" MaxLength="100" />
+    <Property Name="payoutPercentageLumpsum" Type="varchar" MaxLength="100" />
+    <Property Name="pdf" Type="varchar" MaxLength="100" />
+    <Property Name="policyOption" Type="varchar" MaxLength="100" />
+    <Property Name="policyTerm" Type="varchar" MaxLength="100" />
+    <Property Name="postponement" Type="varchar" MaxLength="100" />
+    <Property Name="premiumPayingTerm" Type="varchar" MaxLength="100" />
+    <Property Name="product" Type="varchar" MaxLength="100" />
+    <Property Name="risingStar" Type="varchar" MaxLength="100" />
+    <Property Name="smoke" Type="varchar" MaxLength="100" />
+    <Property Name="spouseAge" Type="varchar" MaxLength="100" />
+    <Property Name="spouseDOB" Type="varchar" MaxLength="100" />
+    <Property Name="spouseFirstName" Type="varchar" MaxLength="100" />
+    <Property Name="spouseGender" Type="varchar" MaxLength="100" />
+    <Property Name="spouseLastName" Type="varchar" MaxLength="100" />
+    <Property Name="spouseTobaccoUser" Type="varchar" MaxLength="100" />
+    <Property Name="staff" Type="varchar" MaxLength="50" />
+    <Property Name="sumAssured" Type="varchar" MaxLength="100" />
+    <Property Name="top250" Type="varchar" MaxLength="100" />
+    <Property Name="topUpBenefitPercentage" Type="varchar" MaxLength="100" />
+    <Property Name="tranId" Type="varchar" MaxLength="100" />
+    <Property Name="workSiteFlag" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumResponce">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="accidentalDeathPremium" Type="varchar" MaxLength="100" />
+    <Property Name="basePremium" Type="varchar" MaxLength="100" />
+    <Property Name="betterHalfPremium" Type="varchar" MaxLength="100" />
+    <Property Name="criticalIllnessPremium" Type="varchar" MaxLength="100" />
+    <Property Name="error" Type="varchar" MaxLength="100" />
+    <Property Name="hcbPremium" Type="varchar" MaxLength="50" />
+    <Property Name="pdfName" Type="varchar(max)" />
+    <Property Name="permanentDisabilityPremium" Type="varchar" MaxLength="50" />
+    <Property Name="premium" Type="varchar" MaxLength="50" />
+    <Property Name="premiumWaiver" Type="varchar" MaxLength="100" />
+    <Property Name="sumAssured" Type="varchar" MaxLength="100" />
+    <Property Name="totalPremium" Type="varchar" MaxLength="100" />
+    <Property Name="Company" Type="int" />
+    <Property Name="PlanName" Type="varchar" MaxLength="200" />
+    <Property Name="CustID" Type="varchar" MaxLength="50" />
+    <Property Name="CoverAge" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Godigit_Document">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentType" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_Godigit_Profession">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="profession" Type="varchar" MaxLength="150" />
+    <Property Name="professionId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Godigit_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Relation" Type="varchar" MaxLength="200" />
+    <Property Name="RelationID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitCounty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryID" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="100" />
+    <Property Name="CountryCover" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitPakege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PakageCode" Type="varchar" MaxLength="50" />
+    <Property Name="Ageto" Type="int" />
+    <Property Name="AgeFrom" Type="int" />
+    <Property Name="PakageName" Type="varchar(max)" />
+    <Property Name="Suminsured" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitPurpose">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Purpose" Type="varchar" MaxLength="50" />
+    <Property Name="Purposevalue" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="150" />
+    <Property Name="StateID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_GSTType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="GSTType" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_HC_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RelationType" Type="varchar" MaxLength="200" />
+    <Property Name="TAC_CODE" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_HealthPremiumChartData">
+    <Key>
+      <PropertyRef Name="PremiumChartID" />
+    </Key>
+    <Property Name="PremiumChartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PremiumDesc" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgeFrom" Type="float" />
+    <Property Name="AgeFromDuration" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgeTo" Type="float" />
+    <Property Name="AgeToDuration" Type="nvarchar" MaxLength="255" />
+    <Property Name="SumInsured" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Premium" Type="nvarchar" MaxLength="255" />
+    <Property Name="Duration" Type="nvarchar" MaxLength="255" />
+    <Property Name="Type" Type="nvarchar" MaxLength="255" />
+    <Property Name="Individual" Type="int" />
+    <Property Name="Adults" Type="int" />
+    <Property Name="Childrens" Type="int" />
+    <Property Name="PlanID" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Floater" Type="nvarchar" MaxLength="255" />
+    <Property Name="BeforeServiceTax" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="SchemeId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_HEIV_Qualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Qualification" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tbl_HEIV_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Relation" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tbl_IndiaFirst_ CoverageOptions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Coverage_Options" Type="varchar" MaxLength="100" />
+    <Property Name="Max_M_Age" Type="int" />
+    <Property Name="Minimum_Sum_Assured" Type="varchar" MaxLength="200" />
+    <Property Name="Maximum_Sum_Assured" Type="varchar" MaxLength="200" />
+    <Property Name="Tag" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_IndiaFirstCityData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Pincode" Type="int" />
+    <Property Name="City" Type="varchar" MaxLength="150" />
+    <Property Name="State" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_INSURA_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar(max)" />
+    <Property Name="CREATED" Type="varchar" MaxLength="50" />
+    <Property Name="CREATED_DATE" Type="varchar" MaxLength="50" />
+    <Property Name="UPDATED_BY" Type="varchar" MaxLength="50" />
+    <Property Name="UPDATED_DATE" Type="varchar" MaxLength="50" />
+    <Property Name="TAC_CODE" Type="int" />
+    <Property Name="TYPE" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_IPA_Occupation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Occupation" Type="varchar(max)" />
+    <Property Name="RISK_GRADE" Type="int" />
+    <Property Name="TTD_BENEFIT" Type="varchar" MaxLength="50" />
+    <Property Name="DECLINE_STATUS" Type="varchar" MaxLength="100" />
+    <Property Name="TAC_CODE" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_MakeType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Make" Type="varchar" MaxLength="150" />
+    <Property Name="MakeID" Type="int" />
+    <Property Name="ISActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_MasterSumInsured">
+    <Key>
+      <PropertyRef Name="SumInsuredId" />
+    </Key>
+    <Property Name="SumInsuredId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="int" />
+    <Property Name="SumInsured" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PlanName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_MaterialStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_ModelType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ModelType" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="ISActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_OccupationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OccupationCode" Type="int" />
+    <Property Name="Occupation" Type="varchar" MaxLength="150" />
+    <Property Name="OType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_PinCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PinCode" Type="varchar" MaxLength="50" />
+    <Property Name="CityId" Type="bigint" Nullable="false" />
+    <Property Name="IsInactive" Type="bit" />
+    <Property Name="District" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_PremiumType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Premium_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Tag" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_ProductPlan_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanName" Type="varchar" MaxLength="150" />
+    <Property Name="companyId" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_Scheme">
+    <Key>
+      <PropertyRef Name="SchemeId" />
+    </Key>
+    <Property Name="SchemeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="schemeCode" Type="bigint" />
+    <Property Name="Scheme" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tbl_StarCountyList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="150" />
+    <Property Name="Code" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbl_State">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="int" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_travelCountry">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="County" Type="varchar" MaxLength="100" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="InsuranceType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblBannedCountry">
+    <Key>
+      <PropertyRef Name="CODE" />
+    </Key>
+    <Property Name="CODE" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="COUNTRY" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tblCity">
+    <Key>
+      <PropertyRef Name="City_ID" />
+    </Key>
+    <Property Name="City_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City_Name" Type="nvarchar(max)" />
+    <Property Name="State_ID" Type="bigint" />
+    <Property Name="CityCode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="Country_ID" />
+    </Key>
+    <Property Name="Country_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country_Name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblRelationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RelationCode" Type="int" />
+    <Property Name="Relation" Type="varchar" MaxLength="150" />
+    <Property Name="RelationType" Type="varchar" MaxLength="150" />
+    <Property Name="companyid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="State_ID" />
+    </Key>
+    <Property Name="State_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="State_Name" Type="nvarchar(max)" />
+    <Property Name="Country_ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Term_Life_Insurance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DOB" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile_No" Type="varchar" MaxLength="50" />
+    <Property Name="Email_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tow_Weeler_Record_Insert">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="150" />
+    <Property Name="CITY" Type="nvarchar(max)" />
+    <Property Name="Varient" Type="nvarchar(max)" />
+    <Property Name="year" Type="nvarchar" MaxLength="50" />
+    <Property Name="previousins" Type="nvarchar" MaxLength="150" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Travel_Insurance">
+    <Key>
+      <PropertyRef Name="Travel_id" />
+    </Key>
+    <Property Name="Travel_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Age_From" Type="int" />
+    <Property Name="Age_To" Type="int" />
+    <Property Name="Plans" Type="nvarchar(max)" />
+    <Property Name="Currency" Type="varchar" MaxLength="50" />
+    <Property Name="SumInsured" Type="decimal" Precision="20" Scale="0" />
+    <Property Name="CoverType" Type="varchar(max)" />
+    <Property Name="TripType" Type="varchar" MaxLength="50" />
+    <Property Name="No_Of_Memebers" Type="int" />
+    <Property Name="TermFrom" Type="int" />
+    <Property Name="TermTo" Type="int" />
+    <Property Name="Premium" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Plan_ID" Type="bigint" />
+    <Property Name="PCode" Type="bigint" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="destinationId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TravelDestination">
+    <Key>
+      <PropertyRef Name="DestinationId" />
+    </Key>
+    <Property Name="DestinationId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Destination" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="TravelInsuranceSearchBy">
+    <Key>
+      <PropertyRef Name="SearchId" />
+    </Key>
+    <Property Name="SearchId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TravellerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="age" Type="int" />
+    <Property Name="city" Type="varchar" MaxLength="150" />
+    <Property Name="contactno" Type="varchar" MaxLength="50" />
+    <Property Name="emailid" Type="varchar" MaxLength="50" />
+    <Property Name="destination" Type="nvarchar" MaxLength="250" />
+    <Property Name="startDate" Type="datetime" />
+    <Property Name="endDate" Type="datetime" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="ageSpouse" Type="int" />
+    <Property Name="ageChild1" Type="int" />
+    <Property Name="ageChild2" Type="int" />
+    <Property Name="ageBrother" Type="int" />
+    <Property Name="ageMother" Type="int" />
+    <Property Name="ageFather" Type="int" />
+  </EntityType>
+  <EntityType Name="TravellerDetails">
+    <Key>
+      <PropertyRef Name="TravellerId" />
+    </Key>
+    <Property Name="TravellerId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TravellerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="MaritalStatus" Type="bit" />
+    <Property Name="IsPassport" Type="bit" />
+    <Property Name="PassportNo" Type="varchar" MaxLength="50" />
+    <Property Name="NomineeName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Relation" Type="varchar" MaxLength="50" />
+    <Property Name="PassportExpiry" Type="datetime" />
+    <Property Name="Illness" Type="nvarchar" MaxLength="150" />
+    <Property Name="visaType" Type="varchar" MaxLength="150" />
+    <Property Name="FkSearchId" Type="bigint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="searchType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TravelPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanCode" Type="bigint" Nullable="false" />
+    <Property Name="PlanName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SumInsured" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SumInsuredCode" Type="int" Nullable="false" />
+    <Property Name="Currency" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PlanID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="TravelProposalDetail">
+    <Key>
+      <PropertyRef Name="ProposalId" />
+    </Key>
+    <Property Name="ProposalId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReferenceId" Type="varchar(max)" />
+    <Property Name="FkSearchId" Type="bigint" />
+    <Property Name="IsBillPayed" Type="bit" />
+    <Property Name="BilledDate" Type="datetime" />
+    <Property Name="RefType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TravelPurposeMaster">
+    <Key>
+      <PropertyRef Name="PurposeId" />
+    </Key>
+    <Property Name="PurposeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Purpose" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Two_Wheeler_Master">
+    <Key>
+      <PropertyRef Name="TwoWheeler_Insu_ID" />
+    </Key>
+    <Property Name="TwoWheeler_Insu_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Make" Type="varchar(max)" />
+    <Property Name="Model" Type="varchar(max)" />
+    <Property Name="Variance" Type="varchar(max)" />
+    <Property Name="Reg_Date" Type="date" />
+    <Property Name="Rto_Location" Type="varchar(max)" />
+    <Property Name="Email" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="VisaType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VType" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.View_HealthChartData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_HealthChartData">
+    <Key>
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="PremiumChartID" />
+    </Key>
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LogoImage" Type="nvarchar(max)" />
+    <Property Name="PremiumChartID" Type="int" Nullable="false" />
+    <Property Name="PremiumDesc" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgeFrom" Type="float" />
+    <Property Name="AgeFromDuration" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgeTo" Type="float" />
+    <Property Name="AgeToDuration" Type="nvarchar" MaxLength="255" />
+    <Property Name="SumInsured" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Premium" Type="nvarchar" MaxLength="255" />
+    <Property Name="Duration" Type="nvarchar" MaxLength="255" />
+    <Property Name="Type" Type="nvarchar" MaxLength="255" />
+    <Property Name="Individual" Type="int" />
+    <Property Name="Adults" Type="int" />
+    <Property Name="Childrens" Type="int" />
+    <Property Name="PlanID" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Floater" Type="nvarchar" MaxLength="255" />
+    <Property Name="BeforeServiceTax" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="SchemeId" Type="int" />
+    <Property Name="suminsuredCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.View_TermLifeInsurance' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_TermLifeInsurance">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CompanyName" />
+    </Key>
+    <Property Name="CompanyID" Type="bigint" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="accidentalDeathPremium" Type="varchar" MaxLength="100" />
+    <Property Name="basePremium" Type="varchar" MaxLength="100" />
+    <Property Name="betterHalfPremium" Type="varchar" MaxLength="100" />
+    <Property Name="criticalIllnessPremium" Type="varchar" MaxLength="100" />
+    <Property Name="error" Type="varchar" MaxLength="100" />
+    <Property Name="hcbPremium" Type="varchar" MaxLength="50" />
+    <Property Name="pdfName" Type="varchar(max)" />
+    <Property Name="permanentDisabilityPremium" Type="varchar" MaxLength="50" />
+    <Property Name="premium" Type="varchar" MaxLength="50" />
+    <Property Name="premiumWaiver" Type="varchar" MaxLength="100" />
+    <Property Name="sumAssured" Type="varchar" MaxLength="100" />
+    <Property Name="totalPremium" Type="varchar" MaxLength="100" />
+    <Property Name="Company" Type="int" />
+    <Property Name="PlanName" Type="varchar" MaxLength="200" />
+    <Property Name="CustID" Type="varchar" MaxLength="50" />
+    <Property Name="CoverAge" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LogoImage" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Checkyrpremiumnew.dbo.View_TravelInsurance' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_TravelInsurance">
+    <Key>
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Travel_id" />
+    </Key>
+    <Property Name="CompanyName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Travel_id" Type="bigint" Nullable="false" />
+    <Property Name="Age_From" Type="int" />
+    <Property Name="Age_To" Type="int" />
+    <Property Name="Plans" Type="nvarchar(max)" />
+    <Property Name="Currency" Type="varchar" MaxLength="50" />
+    <Property Name="SumInsured" Type="decimal" Precision="20" Scale="0" />
+    <Property Name="CoverType" Type="varchar(max)" />
+    <Property Name="TripType" Type="varchar" MaxLength="50" />
+    <Property Name="No_Of_Memebers" Type="int" />
+    <Property Name="TermFrom" Type="int" />
+    <Property Name="TermTo" Type="int" />
+    <Property Name="Premium" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Plan_ID" Type="bigint" />
+    <Property Name="PCode" Type="bigint" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="destinationId" Type="bigint" />
+    <Property Name="Destination" Type="nvarchar(max)" />
+    <Property Name="LogoImage" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_PolicyPlans_Companies">
+    <End Role="Companies" Type="Self.Companies" Multiplicity="1" />
+    <End Role="PolicyPlans" Type="Self.PolicyPlans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="PolicyPlans">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Car_Insurance_Store" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="bigint" Mode="In" />
+    <Parameter Name="Make_Id" Type="bigint" Mode="In" />
+    <Parameter Name="Make" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Model_Id" Type="bigint" Mode="In" />
+    <Parameter Name="Model" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Variant_Id" Type="int" Mode="In" />
+    <Parameter Name="Variant" Type="varchar(max)" Mode="In" />
+    <Parameter Name="CC" Type="int" Mode="In" />
+    <Parameter Name="Seating_Capacity" Type="int" Mode="In" />
+    <Parameter Name="Fuel_Id" Type="bigint" Mode="In" />
+    <Parameter Name="Fuel_Type" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Segment_ID" Type="bigint" Mode="In" />
+    <Parameter Name="Vehicle_Segment" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Location_ID" Type="bigint" Mode="In" />
+    <Parameter Name="LOCATION" Type="varchar(max)" Mode="In" />
+    <Parameter Name="Price" Type="decimal" Mode="In" />
+    <Parameter Name="Main_Vehicle_Type_ID" Type="bigint" Mode="In" />
+    <Parameter Name="No_Of_Wheels" Type="varchar" Mode="In" />
+    <Parameter Name="PlanID" Type="bigint" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="CarInsertRcord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="City_RTO" Type="varchar" Mode="In" />
+    <Parameter Name="Model" Type="varchar" Mode="In" />
+    <Parameter Name="Fuel_Type" Type="varchar" Mode="In" />
+    <Parameter Name="Year" Type="varchar" Mode="In" />
+    <Parameter Name="Full_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Email_ID" Type="varchar" Mode="In" />
+    <Parameter Name="Mobile_No" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="CityStore" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="City_ID" Type="bigint" Mode="In" />
+    <Parameter Name="City_Name" Type="varchar(max)" Mode="In" />
+    <Parameter Name="State_ID" Type="bigint" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ContactUs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Subject" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="message" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Date" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="encrypt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Usert_ID" Type="varchar" Mode="In" />
+    <Parameter Name="User_Password" Type="varchar" Mode="In" />
+    <Parameter Name="User_Password_Decrypt" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GetExtraField" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar(max)">
+    <Parameter Name="premium" Type="float" Mode="In" />
+    <Parameter Name="planid" Type="int" Mode="In" />
+    <Parameter Name="companyId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Health_Insurence_Store" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="City" Type="nvarchar" Mode="In" />
+    <Parameter Name="Income" Type="nvarchar" Mode="In" />
+    <Parameter Name="Self" Type="nvarchar" Mode="In" />
+    <Parameter Name="Child" Type="nvarchar" Mode="In" />
+    <Parameter Name="Grand_father" Type="nvarchar" Mode="In" />
+    <Parameter Name="Father_In_low" Type="nvarchar" Mode="In" />
+    <Parameter Name="Adult" Type="nvarchar" Mode="In" />
+    <Parameter Name="Self_Age" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceTax" Type="nvarchar" Mode="In" />
+    <Parameter Name="Action" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="RTOMASTER_Store" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RTO_ID" Type="int" Mode="In" />
+    <Parameter Name="RTO_CODE" Type="varchar" Mode="In" />
+    <Parameter Name="RTO_CITY" Type="varchar" Mode="In" />
+    <Parameter Name="RTO_STATE" Type="varchar" Mode="In" />
+    <Parameter Name="Zone" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_HealthInsuranceList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ageSelf" Type="int" Mode="In" />
+    <Parameter Name="adult" Type="int" Mode="In" />
+    <Parameter Name="children" Type="int" Mode="In" />
+    <Parameter Name="term" Type="int" Mode="In" />
+    <Parameter Name="suminsured" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tbl_GetPremiumRequestData_Store" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ADB" Type="varchar" Mode="In" />
+    <Parameter Name="ATPD" Type="varchar" Mode="In" />
+    <Parameter Name="CI" Type="varchar" Mode="In" />
+    <Parameter Name="HCB" Type="varchar" Mode="In" />
+    <Parameter Name="LAAge" Type="varchar" Mode="In" />
+    <Parameter Name="LADOB" Type="varchar" Mode="In" />
+    <Parameter Name="LAEmail" Type="varchar" Mode="In" />
+    <Parameter Name="LAFullName" Type="varchar" Mode="In" />
+    <Parameter Name="LAGender" Type="varchar" Mode="In" />
+    <Parameter Name="LANumber" Type="varchar" Mode="In" />
+    <Parameter Name="LAProposerSame" Type="varchar" Mode="In" />
+    <Parameter Name="LATobacco" Type="varchar" Mode="In" />
+    <Parameter Name="PEBased" Type="varchar" Mode="In" />
+    <Parameter Name="Term" Type="varchar" Mode="In" />
+    <Parameter Name="WOP" Type="varchar" Mode="In" />
+    <Parameter Name="additionalBenefit" Type="varchar" Mode="In" />
+    <Parameter Name="age" Type="varchar" Mode="In" />
+    <Parameter Name="betterHalfBenefit" Type="varchar" Mode="In" />
+    <Parameter Name="bond" Type="varchar" Mode="In" />
+    <Parameter Name="childAge" Type="varchar" Mode="In" />
+    <Parameter Name="childGender" Type="varchar" Mode="In" />
+    <Parameter Name="claimsOption" Type="varchar" Mode="In" />
+    <Parameter Name="cliDOB" Type="varchar" Mode="In" />
+    <Parameter Name="cliGender" Type="varchar" Mode="In" />
+    <Parameter Name="distributionChannel" Type="varchar" Mode="In" />
+    <Parameter Name="flexibleBenefitYear" Type="varchar" Mode="In" />
+    <Parameter Name="frequency" Type="varchar" Mode="In" />
+    <Parameter Name="fullName" Type="varchar" Mode="In" />
+    <Parameter Name="index" Type="varchar" Mode="In" />
+    <Parameter Name="investmentStrategy" Type="varchar" Mode="In" />
+    <Parameter Name="largeCap" Type="varchar" Mode="In" />
+    <Parameter Name="managed" Type="varchar" Mode="In" />
+    <Parameter Name="maturityAge" Type="varchar" Mode="In" />
+    <Parameter Name="maturityOption" Type="varchar" Mode="In" />
+    <Parameter Name="moneyMarket" Type="varchar" Mode="In" />
+    <Parameter Name="payoutMonths" Type="varchar" Mode="In" />
+    <Parameter Name="payoutOption" Type="varchar" Mode="In" />
+    <Parameter Name="payoutPercentageIncreasingIncome" Type="varchar" Mode="In" />
+    <Parameter Name="payoutPercentageLevelIncome" Type="varchar" Mode="In" />
+    <Parameter Name="payoutPercentageLumpsum" Type="varchar" Mode="In" />
+    <Parameter Name="pdf" Type="varchar" Mode="In" />
+    <Parameter Name="policyOption" Type="varchar" Mode="In" />
+    <Parameter Name="policyTerm" Type="varchar" Mode="In" />
+    <Parameter Name="postponement" Type="varchar" Mode="In" />
+    <Parameter Name="premiumPayingTerm" Type="varchar" Mode="In" />
+    <Parameter Name="product" Type="varchar" Mode="In" />
+    <Parameter Name="risingStar" Type="varchar" Mode="In" />
+    <Parameter Name="smoke" Type="varchar" Mode="In" />
+    <Parameter Name="spouseAge" Type="varchar" Mode="In" />
+    <Parameter Name="spouseDOB" Type="varchar" Mode="In" />
+    <Parameter Name="spouseFirstName" Type="varchar" Mode="In" />
+    <Parameter Name="spouseGender" Type="varchar" Mode="In" />
+    <Parameter Name="spouseLastName" Type="varchar" Mode="In" />
+    <Parameter Name="spouseTobaccoUser" Type="varchar" Mode="In" />
+    <Parameter Name="staff" Type="varchar" Mode="In" />
+    <Parameter Name="sumAssured" Type="varchar" Mode="In" />
+    <Parameter Name="top250" Type="varchar" Mode="In" />
+    <Parameter Name="topUpBenefitPercentage" Type="varchar" Mode="In" />
+    <Parameter Name="tranId" Type="varchar" Mode="In" />
+    <Parameter Name="workSiteFlag" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="tbl_GetPremiumResponce_Store" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="accidentalDeathPremium" Type="nvarchar" Mode="In" />
+    <Parameter Name="basePremium" Type="varchar" Mode="In" />
+    <Parameter Name="betterHalfPremium" Type="varchar" Mode="In" />
+    <Parameter Name="criticalIllnessPremium" Type="varchar" Mode="In" />
+    <Parameter Name="error" Type="varchar" Mode="In" />
+    <Parameter Name="hcbPremium" Type="varchar" Mode="In" />
+    <Parameter Name="pdfName" Type="varchar(max)" Mode="In" />
+    <Parameter Name="permanentDisabilityPremium" Type="varchar" Mode="In" />
+    <Parameter Name="premium" Type="varchar" Mode="In" />
+    <Parameter Name="premiumWaiver" Type="varchar" Mode="In" />
+    <Parameter Name="sumAssured" Type="varchar" Mode="In" />
+    <Parameter Name="totalPremium" Type="varchar" Mode="In" />
+    <Parameter Name="company" Type="varchar(max)" Mode="In" />
+    <Parameter Name="PlanName" Type="varchar(max)" Mode="In" />
+    <Parameter Name="CustID" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Term_Lite_Insurence_Proce" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="DOB" Type="varchar" Mode="In" />
+    <Parameter Name="Mobile_No" Type="varchar" Mode="In" />
+    <Parameter Name="Email_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tow_weelersInsertRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="Model" Type="nvarchar" Mode="In" />
+    <Parameter Name="CITY" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Varient" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="year" Type="nvarchar" Mode="In" />
+    <Parameter Name="previousins" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="varchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Tow_WeelersPorced" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MAKE" Type="nvarchar" Mode="In" />
+    <Parameter Name="MODEL" Type="nvarchar" Mode="In" />
+    <Parameter Name="CUBIC" Type="float" Mode="In" />
+    <Parameter Name="SEATING_CAPACITY" Type="float" Mode="In" />
+    <Parameter Name="GVW" Type="float" Mode="In" />
+    <Parameter Name="CARRYING" Type="float" Mode="In" />
+    <Parameter Name="CAPACITY" Type="float" Mode="In" />
+    <Parameter Name="VARIANT" Type="nvarchar" Mode="In" />
+    <Parameter Name="Action" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="CheckyrpremiumModelStoreContainer">
+    <EntitySet Name="All_Company_Details" EntityType="Self.All_Company_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AssigneeRelation" EntityType="Self.AssigneeRelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bajaj_Occupation" EntityType="Self.Bajaj_Occupation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bajaj_Relation" EntityType="Self.Bajaj_Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bhartiAxaCredentials" EntityType="Self.bhartiAxaCredentials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Car_Insurence_Record_Saved" EntityType="Self.Car_Insurence_Record_Saved" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category_tbl" EntityType="Self.Category_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comparision_Health_tbl" EntityType="Self.Comparision_Health_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Desease" EntityType="Self.Desease" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Encrypt_Password" EntityType="Self.Encrypt_Password" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Godigit_Responce_Data" EntityType="Self.Godigit_Responce_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Health_Insurance_Record_Saved" EntityType="Self.Health_Insurance_Record_Saved" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="healthRelations" EntityType="Self.healthRelations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InsuredRelation" EntityType="Self.InsuredRelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login_Tbl" EntityType="Self.Login_Tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginReg_tbl" EntityType="Self.LoginReg_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Masters" EntityType="Self.Masters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Moter_RTO" EntityType="Self.Moter_RTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motor_FuelType" EntityType="Self.Motor_FuelType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motor_Insurance_Record" EntityType="Self.Motor_Insurance_Record" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motor_Nominee Relation" EntityType="Self.Motor_Nominee Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Motor_State" EntityType="Self.Motor_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParentCategory" EntityType="Self.ParentCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Plan_Benifit" EntityType="Self.Plan_Benifit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PolicyPlans" EntityType="Self.PolicyPlans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProposerDetail" EntityType="Self.ProposerDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reg_tbl" EntityType="Self.Reg_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RiskCover_options" EntityType="Self.RiskCover_options" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sales_store" EntityType="Self.sales_store" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sub_category" EntityType="Self.Sub_category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_GodigitGender" EntityType="Self.tb_GodigitGender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BajajBlockCity" EntityType="Self.tbl_BajajBlockCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BajajResponce_Data" EntityType="Self.tbl_BajajResponce_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BajajZone" EntityType="Self.tbl_BajajZone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BhartiAxa_PlanName" EntityType="Self.tbl_BhartiAxa_PlanName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BhartiAxaBanned_Country" EntityType="Self.tbl_BhartiAxaBanned_Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BhartiAxaPaymentStaus" EntityType="Self.tbl_BhartiAxaPaymentStaus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BlockCity" EntityType="Self.tbl_BlockCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_BodyType_Master" EntityType="Self.tbl_BodyType_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Country" EntityType="Self.tbl_Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CoverFrequency" EntityType="Self.tbl_CoverFrequency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_EdelWise_Suminsured" EntityType="Self.tbl_EdelWise_Suminsured" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_FrequncyType" EntityType="Self.tbl_FrequncyType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Fule_Master" EntityType="Self.tbl_Fule_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GetPremiumData" EntityType="Self.tbl_GetPremiumData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GetPremiumRequestData" EntityType="Self.tbl_GetPremiumRequestData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GetPremiumResponce" EntityType="Self.tbl_GetPremiumResponce" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Godigit_Document" EntityType="Self.tbl_Godigit_Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Godigit_Profession" EntityType="Self.Tbl_Godigit_Profession" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Godigit_Relation" EntityType="Self.tbl_Godigit_Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GodigitCounty" EntityType="Self.tbl_GodigitCounty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GodigitPakege" EntityType="Self.tbl_GodigitPakege" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GodigitPurpose" EntityType="Self.tbl_GodigitPurpose" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GodigitState" EntityType="Self.tbl_GodigitState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_GSTType" EntityType="Self.tbl_GSTType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_HC_Relation" EntityType="Self.tbl_HC_Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_HealthPremiumChartData" EntityType="Self.tbl_HealthPremiumChartData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_HEIV_Qualification" EntityType="Self.tbl_HEIV_Qualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_HEIV_Relation" EntityType="Self.tbl_HEIV_Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_IndiaFirst_ CoverageOptions" EntityType="Self.tbl_IndiaFirst_ CoverageOptions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_IndiaFirstCityData" EntityType="Self.tbl_IndiaFirstCityData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_INSURA_Company" EntityType="Self.tbl_INSURA_Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_IPA_Occupation" EntityType="Self.tbl_IPA_Occupation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_MakeType_Master" EntityType="Self.tbl_MakeType_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_MasterSumInsured" EntityType="Self.tbl_MasterSumInsured" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_MaterialStatus" EntityType="Self.tbl_MaterialStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_ModelType_Master" EntityType="Self.tbl_ModelType_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_OccupationMaster" EntityType="Self.tbl_OccupationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PinCode" EntityType="Self.tbl_PinCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_PremiumType" EntityType="Self.tbl_PremiumType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_ProductPlan_Data" EntityType="Self.tbl_ProductPlan_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Scheme" EntityType="Self.tbl_Scheme" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_StarCountyList" EntityType="Self.tbl_StarCountyList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_State" EntityType="Self.tbl_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_travelCountry" EntityType="Self.tbl_travelCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBannedCountry" EntityType="Self.tblBannedCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCity" EntityType="Self.tblCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCountry" EntityType="Self.tblCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRelationMaster" EntityType="Self.tblRelationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblState" EntityType="Self.tblState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Term_Life_Insurance" EntityType="Self.Term_Life_Insurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tow_Weeler_Record_Insert" EntityType="Self.Tow_Weeler_Record_Insert" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Travel_Insurance" EntityType="Self.Travel_Insurance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravelDestination" EntityType="Self.TravelDestination" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravelInsuranceSearchBy" EntityType="Self.TravelInsuranceSearchBy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravellerDetails" EntityType="Self.TravellerDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravelPlan" EntityType="Self.TravelPlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravelProposalDetail" EntityType="Self.TravelProposalDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TravelPurposeMaster" EntityType="Self.TravelPurposeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Two_Wheeler_Master" EntityType="Self.Two_Wheeler_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VisaType" EntityType="Self.VisaType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Car_Insurance" EntityType="Self.Car_Insurance" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Car_Insurance].[Id] AS [Id], 
+    [Car_Insurance].[Make_Id] AS [Make_Id], 
+    [Car_Insurance].[Make] AS [Make], 
+    [Car_Insurance].[Model_Id] AS [Model_Id], 
+    [Car_Insurance].[Model] AS [Model], 
+    [Car_Insurance].[Variant_Id] AS [Variant_Id], 
+    [Car_Insurance].[Variant] AS [Variant], 
+    [Car_Insurance].[CC] AS [CC], 
+    [Car_Insurance].[Seating_Capacity] AS [Seating_Capacity], 
+    [Car_Insurance].[Fuel_Id] AS [Fuel_Id], 
+    [Car_Insurance].[Fuel_Type] AS [Fuel_Type], 
+    [Car_Insurance].[Segment_ID] AS [Segment_ID], 
+    [Car_Insurance].[Vehicle_Segment] AS [Vehicle_Segment], 
+    [Car_Insurance].[Location_ID] AS [Location_ID], 
+    [Car_Insurance].[LOCATION] AS [LOCATION], 
+    [Car_Insurance].[Price] AS [Price], 
+    [Car_Insurance].[Main_Vehicle_Type_ID] AS [Main_Vehicle_Type_ID], 
+    [Car_Insurance].[No_Of_Wheels] AS [No_Of_Wheels], 
+    [Car_Insurance].[PlanID] AS [PlanID]
+    FROM [dbo].[Car_Insurance] AS [Car_Insurance]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Contact_Us" EntityType="Self.Contact_Us" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Contact_Us].[ID] AS [ID], 
+    [Contact_Us].[Name] AS [Name], 
+    [Contact_Us].[Email] AS [Email], 
+    [Contact_Us].[Subject] AS [Subject], 
+    [Contact_Us].[message] AS [message], 
+    [Contact_Us].[Date] AS [Date]
+    FROM [dbo].[Contact_Us] AS [Contact_Us]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTO_MASTERS" EntityType="Self.RTO_MASTERS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTO_MASTERS].[RTO_ID] AS [RTO_ID], 
+    [RTO_MASTERS].[RTO_CODE] AS [RTO_CODE], 
+    [RTO_MASTERS].[RTO_CITY] AS [RTO_CITY], 
+    [RTO_MASTERS].[RTO_STATE] AS [RTO_STATE], 
+    [RTO_MASTERS].[Zone] AS [Zone]
+    FROM [dbo].[RTO_MASTERS] AS [RTO_MASTERS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_HealthChartData" EntityType="Self.View_HealthChartData" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_HealthChartData].[CompanyName] AS [CompanyName], 
+    [View_HealthChartData].[LogoImage] AS [LogoImage], 
+    [View_HealthChartData].[PremiumChartID] AS [PremiumChartID], 
+    [View_HealthChartData].[PremiumDesc] AS [PremiumDesc], 
+    [View_HealthChartData].[AgeFrom] AS [AgeFrom], 
+    [View_HealthChartData].[AgeFromDuration] AS [AgeFromDuration], 
+    [View_HealthChartData].[AgeTo] AS [AgeTo], 
+    [View_HealthChartData].[AgeToDuration] AS [AgeToDuration], 
+    [View_HealthChartData].[SumInsured] AS [SumInsured], 
+    [View_HealthChartData].[Premium] AS [Premium], 
+    [View_HealthChartData].[Duration] AS [Duration], 
+    [View_HealthChartData].[Type] AS [Type], 
+    [View_HealthChartData].[Individual] AS [Individual], 
+    [View_HealthChartData].[Adults] AS [Adults], 
+    [View_HealthChartData].[Childrens] AS [Childrens], 
+    [View_HealthChartData].[PlanID] AS [PlanID], 
+    [View_HealthChartData].[ProductName] AS [ProductName], 
+    [View_HealthChartData].[Floater] AS [Floater], 
+    [View_HealthChartData].[BeforeServiceTax] AS [BeforeServiceTax], 
+    [View_HealthChartData].[CompanyId] AS [CompanyId], 
+    [View_HealthChartData].[SchemeId] AS [SchemeId], 
+    [View_HealthChartData].[suminsuredCode] AS [suminsuredCode]
+    FROM [dbo].[View_HealthChartData] AS [View_HealthChartData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_TermLifeInsurance" EntityType="Self.View_TermLifeInsurance" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_TermLifeInsurance].[CompanyID] AS [CompanyID], 
+    [View_TermLifeInsurance].[ID] AS [ID], 
+    [View_TermLifeInsurance].[accidentalDeathPremium] AS [accidentalDeathPremium], 
+    [View_TermLifeInsurance].[basePremium] AS [basePremium], 
+    [View_TermLifeInsurance].[betterHalfPremium] AS [betterHalfPremium], 
+    [View_TermLifeInsurance].[criticalIllnessPremium] AS [criticalIllnessPremium], 
+    [View_TermLifeInsurance].[error] AS [error], 
+    [View_TermLifeInsurance].[hcbPremium] AS [hcbPremium], 
+    [View_TermLifeInsurance].[pdfName] AS [pdfName], 
+    [View_TermLifeInsurance].[permanentDisabilityPremium] AS [permanentDisabilityPremium], 
+    [View_TermLifeInsurance].[premium] AS [premium], 
+    [View_TermLifeInsurance].[premiumWaiver] AS [premiumWaiver], 
+    [View_TermLifeInsurance].[sumAssured] AS [sumAssured], 
+    [View_TermLifeInsurance].[totalPremium] AS [totalPremium], 
+    [View_TermLifeInsurance].[Company] AS [Company], 
+    [View_TermLifeInsurance].[PlanName] AS [PlanName], 
+    [View_TermLifeInsurance].[CustID] AS [CustID], 
+    [View_TermLifeInsurance].[CoverAge] AS [CoverAge], 
+    [View_TermLifeInsurance].[CompanyName] AS [CompanyName], 
+    [View_TermLifeInsurance].[LogoImage] AS [LogoImage]
+    FROM [dbo].[View_TermLifeInsurance] AS [View_TermLifeInsurance]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_TravelInsurance" EntityType="Self.View_TravelInsurance" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_TravelInsurance].[CompanyName] AS [CompanyName], 
+    [View_TravelInsurance].[Travel_id] AS [Travel_id], 
+    [View_TravelInsurance].[Age_From] AS [Age_From], 
+    [View_TravelInsurance].[Age_To] AS [Age_To], 
+    [View_TravelInsurance].[Plans] AS [Plans], 
+    [View_TravelInsurance].[Currency] AS [Currency], 
+    [View_TravelInsurance].[SumInsured] AS [SumInsured], 
+    [View_TravelInsurance].[CoverType] AS [CoverType], 
+    [View_TravelInsurance].[TripType] AS [TripType], 
+    [View_TravelInsurance].[No_Of_Memebers] AS [No_Of_Memebers], 
+    [View_TravelInsurance].[TermFrom] AS [TermFrom], 
+    [View_TravelInsurance].[TermTo] AS [TermTo], 
+    [View_TravelInsurance].[Premium] AS [Premium], 
+    [View_TravelInsurance].[Plan_ID] AS [Plan_ID], 
+    [View_TravelInsurance].[PCode] AS [PCode], 
+    [View_TravelInsurance].[CompanyId] AS [CompanyId], 
+    [View_TravelInsurance].[destinationId] AS [destinationId], 
+    [View_TravelInsurance].[Destination] AS [Destination], 
+    [View_TravelInsurance].[LogoImage] AS [LogoImage]
+    FROM [dbo].[View_TravelInsurance] AS [View_TravelInsurance]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_PolicyPlans_Companies" Association="Self.FK_PolicyPlans_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="PolicyPlans" EntitySet="PolicyPlans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

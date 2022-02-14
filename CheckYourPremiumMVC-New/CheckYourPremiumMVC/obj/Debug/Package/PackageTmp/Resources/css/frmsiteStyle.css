@@ -1,0 +1,125 @@
+﻿body{
+       font-family: 'Comfortaa', cursive !important;
+}
+
+.row-health {
+    margin: 0% auto 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.healthlbl{
+    margin-bottom:15px;
+}
+
+label.healthlbl{
+    margin-top:5px;
+        font-family: 'Comfortaa', cursive !important;
+}
+
+input.healthinpt{
+    border-bottom: 1px solid #777 !important;
+    background: #f9f9f9;
+    width: 100%;
+    margin-top: 0px;
+    height: 30px;
+    font-family: 'Comfortaa', cursive !important;
+    border: none;
+        padding-left: 9px;
+}
+
+select.healthinpt {
+    border-bottom: 0px solid #777 !important;
+    background: #f9f9f9;
+    width: 100%;
+    margin-top: 0px;
+    height: 30px;
+    font-family: 'Comfortaa', cursive !important;
+    border: none;
+    padding-left: 9px;
+}
+
+.fancy-button {
+ font-family: 'Comfortaa', cursive !important;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.07em;
+    line-height: 24px;
+    color: #ffffff;
+    position: relative;
+}
+.fancy-button.bg-gradient1 {
+  text-shadow: 0px 0px 1px #BF4C28;
+}
+
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: #fa7e29;
+  background: linear-gradient(180deg, #fa7e29 0%, #F6682F 80%, #F6682F 100%);
+}
+
+
+
+.fancy-button i {
+  margin-top: -2px;
+  font-size: 1.265em;
+  vertical-align: middle;
+}
+.fancy-button span {
+  display: inline-block;
+  padding: 16px 20px;
+  border-radius: 50em;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+.fancy-button:focus {
+  color: #ffffff;
+}
+.fancy-button:hover {
+  color: #ffffff;
+}
+.fancy-button:hover span {
+  -webkit-filter: brightness(0.9) contrast(1.2);
+          filter: brightness(0.9) contrast(1.2);
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.fancy-button:hover:before {
+  bottom: 3px;
+  -webkit-filter: blur(6px) brightness(0.8);
+          filter: blur(6px) brightness(0.8);
+}
+.fancy-button:active span {
+  -webkit-filter: brightness(0.75) contrast(1.7);
+          filter: brightness(0.75) contrast(1.7);
+}
+
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.praposal-newBikeContainers {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  
+  padding: 0px;
+ margin-top:100px;
+ position: absolute;
+    width: 100%;
+}

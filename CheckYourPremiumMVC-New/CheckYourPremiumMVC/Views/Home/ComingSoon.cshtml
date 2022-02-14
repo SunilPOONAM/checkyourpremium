@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "ComingSoon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+    <link href="~/Resources/css/comingSoon.css" rel="stylesheet" />
+    <style>
+        #navbar{
+        display:none;
+        }
+
+        footer{
+        display:none;
+        }
+        .preload{
+        display:none !important;
+        }
+
+        #maximage {
+
+        position:relative !important;
+        }
+        @*body .mc-cycle {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            }*@
+
+        div.mc-image {
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        }
+
+        body {
+        background-image:url('../Resources/images/comingSoon.jpg') !important;
+        margin: 0px;
+        padding: 0;
+        }
+
+        .menuIcon{
+        display:none;
+        }
+        .overlay-menu{
+        display:none;
+        }
+        .contertyf{
+        background:transparent;
+        }
+
+
+        header{
+        display:none;
+        }
+</style>
+        </head>
+        <body>
+        <div class="comingsn">
+        <img src="../Resources/images/Chjkiuyt.png" alt="hammer and pick" style="font-size: 0.30em;" class="hammer" onmousedown="return false" />
+        <h1 class="text1"><a href='/RegistrationLogin/LoginDetails'>Login</a><span style="visibility:hidden;">kjkjkj</span></h1>
+        @*<h3 class="uc">Under Construction!</h3>*@
+
+
+
+        <div class="mb">
+        <div class="time-box">Email :<span>principalofficer@checkyourpremium.com</span></div>
+        <div class="time-box"> Registered Off :<span>Flat No. MIG B-3/501, Fifth Floor,<br />Ruchi Lifespace, Jaatkhedi, Bhopal</span></div>
+        <div class="time-box"> Corporate Off :<span>Shop No. MB-28, B – Block, Mansarovar Complex,<br />Shivaji Nagar, Bhopal</span></div>
+        <div class="time-box"> Phone No :<span>0755-4932378</span></div>
+        <div class="time-box"> IRDAI Registration Code :<span>IRDAI/INT/WBA/54/2019</span></div>
+        </div>
+        </div>
+
+        </body>
+        </html>
+
+    </style>

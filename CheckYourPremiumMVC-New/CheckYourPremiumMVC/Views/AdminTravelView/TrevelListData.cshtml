@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Domain.SearchTravelInsurance>
+
+@{
+    ViewBag.Title = "TrevelListData";
+    Layout = "~/Views/Shared/Layout_AdminPanel.cshtml";
+}
+
+
+
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Travel List Data</strong>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>travellerName</th>
+                                    <th>ageSelf</th>
+                                    <th>City</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>destination</th>
+                                    <th>tripStartDate</th>
+                                    <th>tripEndDate</th>
+                                    <th>ageSpouse</th>
+                                    <th>ageChild1</th>
+                                    <th>ageChild2</th>
+                                    <th>ageBrother</th>
+                                    <th>ageMother</th>
+                                    <th>ageFather</th>
+                                </tr>
+                            </thead>
+
+
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.travellerName)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageSelf)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.City)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Phone)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.destination)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.tripStartDate)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.tripEndDate)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageSpouse)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageChild1)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageChild2)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageBrother)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageMother)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ageFather)
+                                    </td>
+
+
+
+
+                                    @*<td>
+                                @Html.DisplayFor(modelItem => item.Password)
+                            </td>*@
+
+                                    @*<td>
+                                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                            </td>*@
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- .animated -->
+
+

@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "DashBoard";
+    Layout = "~/Views/Shared/Layout_AdminPanel.cshtml";
+}
+
+<div class="animated fadeIn">
+
+
+    <div class="row">
+
+
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-bodyUl">
+                        <ul>
+                            <li><a href="@Url.Action("Home", "Home")"><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</a></li>
+                           @*<li><span class="hutrjk">Check Your Premium</span></li>*@
+                        </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+                    <!-- Widgets  -->
+                    <div class="row">
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+
+
+                                    <a href="@Url.Action("DisplayTerm", "AdminTermLifeView")">
+                                        <div class="stat-widget-five">
+                                            <div class="stat-icon dib flat-color-2">
+                                                <span>
+                                                    <img src="~/Resources/images/admin/term.png" />
+                                                </span>
+                                            </div>
+                                            <div class="stat-content">
+                                                <div class="text-left dib">
+                                                    @*<div class="stat-text"><span class="count">3435</span></div>*@
+                                                    <div class="stat-heading">Term List Data</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="@Url.Action("DisplayHealth", "AdminHealthView")">
+                                        <div class="stat-widget-five">
+                                            <div class="stat-icon dib flat-color-1">
+                                                <span>
+                                                    <img src="~/Resources/images/admin/health.png" />
+                                                </span>
+                                            </div>
+                                            <div class="stat-content">
+                                                <div class="text-left dib">
+                                                    @*<div class="stat-text">$<span class="count">23569</span></div>*@
+                                                    <div class="stat-heading">Health List Data</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <a href="@Url.Action("TrevelListData", "AdminTravelView")">
+                                        <div class="stat-widget-five">
+                                            <div class="stat-icon dib flat-color-3">
+                                                <span>
+                                                    <img src="~/Resources/images/admin/travel.png" />
+                                                </span>
+                                            </div>
+                                            <div class="stat-content">
+                                                <div class="text-left dib">
+                                                    @*<div class="stat-text"><span class="count">349</span></div>*@
+                                                    <div class="stat-heading">Travel List Data</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        @*<div class="col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="stat-widget-five">
+                                            <div class="stat-icon dib flat-color-4">
+                                                <i class="pe-7s-users"></i>
+                                            </div>
+                                            <div class="stat-content">
+                                                <div class="text-left dib">
+                                                    <div class="stat-text"><span class="count">2986</span></div>
+                                                    <div class="stat-heading">Car List Data</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*@
+                    </div>
+
+
+
+                </div>
+                <!-- .animated -->
+

@@ -1,0 +1,275 @@
+﻿@model Domain.ZPModel
+
+@{
+    ViewBag.Title = "DisplayTerm";
+    //  Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/Layout_AdminPanel.cshtml";
+}
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+
+<link href="~/Resources/css/quotesTravelInsurance.css" rel="stylesheet" />
+<link href="~/Resources/compare/css/modelStyle.css" rel="stylesheet" />
+
+<link href="~/Resources/css/HealthPlnQResult.css" rel="stylesheet" />
+
+
+<link href="~/Resources/compare/css/style.css" rel="stylesheet" />
+
+<style>
+    .titleMargin1 {
+        visibility: hidden;
+    }
+</style>
+<style>
+    .dlwefjlerj ul.product li {
+        border-bottom: 1px solid #eaeef1 !important;
+        line-height: 43px;
+    }
+
+
+    .product li {
+        border-bottom: 1px solid #e2e2e2;
+        height: 51px;
+    }
+
+        .product li:last-child {
+        }
+
+    table.dataTable tbody tr.even {
+        display: table;
+        width: 0;
+        /* overflow-x: auto; */
+        display: :none;
+        visibility: hidden;
+</style>
+<div class="col-xs-12 col-sm-12 col-md-12">
+
+</div>
+
+<div class="clearfix"></div>
+<style>
+    #idSearch {
+        margin-top: 45px;
+        padding-left: 606px;
+      
+    }
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /*margin: 4px 2px;*/
+        cursor: pointer;
+    }
+
+    .button {
+        background-color: #008CBA;
+    }
+</style>
+
+<div id="idSearch">
+    @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control", placeholder = "Search By Name" } })
+
+    <input id="btnSubmit" type="button" class="button" value="Search By Name" />
+</div>
+<section>
+    @* @Html.EditorFor(model => model.Full_Name, new { htmlAttributes = new { @class = "form-control" } })*@
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12" style="padding: 0px;">
+
+        <div class="table-container-wrap">
+            <div class="praposal-newBikeContainers">
+
+                <div class="containerg-tabls">
+                    <div id="content">
+
+                        <section class="demo" id="basic">
+
+
+
+                            <div class="table-responsive">
+
+                                <table id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Gender</th>
+                                            <th>MobileNo</th>
+                                            <th>City</th>
+                                            @*<th>City</th>*@
+                                            <th>Total Income</th>
+                                            @*<th>Son</th>*@
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>*@
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Resources/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="~/Resources/js/jquery.stickysort.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        BindPremium();
+        //var table = $('#mytable').DataTable({
+        //    'responsive': true
+        //});
+
+
+        // Handle click on "Expand All" button
+        //$('#btn-show-all-children').on('click', function () {
+        //    // Expand row details
+        //    table.rows(':not(.parent)').nodes().to$().find('td:first-child').trigger('click');
+        //});
+
+        //// Handle click on "Collapse All" button
+        //$('#btn-hide-all-children').on('click', function () {
+        //    // Collapse row details
+        //    table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
+        //});
+    });
+</script>
+<script>
+    function BindPremium() {
+
+        $('#mytable').dataTable().fnDestroy();
+        var _searchData = "";
+        var dataTable = $('#mytable').DataTable({
+            "responsive": true,
+            "xscroll": true,
+            "paging": false,
+
+            "searching": false,
+            "stateSave": false,
+            "ordering": true,
+            "order": [[2, "desc"]],
+            "info": false,
+            "oLanguage": {
+                "sEmptyTable": "No record"
+            },
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "processing": true,
+            "serverSide": true,
+            "searching": false,
+            "lengthChange": false,
+            "ajax": {
+                url: "/AdminTermLifeView/BindPlanList", // json datasource
+                type: "Post",  // method  , by default get AgeAdult, string Self, string Adult, string Child ageSpouse,agechild1,agechild2
+
+                data: { "searchTxt": _searchData },
+
+                error: function () {  // error handling
+                    jQuery("#example1").append('<tbody class="business-user-grid-error"><tr><th colspan="4">No record</th></tr></tbody>');
+
+                }
+            },
+            "columnDefs": [{
+                "targets": 0,
+                "orderable": false,
+                "sClass": "dataTableCenter"
+            }, {
+                "targets": 2,
+                "orderable": false,
+                "sClass": "left"
+            }]
+        });
+        return dataTable;
+    }
+
+</script>
+<script>
+    $(document).ready(function () {
+        $("#FullName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/AdminTermLifeView/Index",
+                    type: "POST",
+                    dataType: "json",
+                    data: { Prefix: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return { label: item.CityName, value: item.CityName };
+                        }))
+
+                    }
+                })
+            },
+            messages: {
+                noResults: "", results: ""
+            }
+        });
+    })
+</script>
+
+<script>
+    $("#btnSubmit").click(function () {
+        var fullname = $("#FullName").val();
+        $('#mytable').dataTable().fnDestroy();
+        var _searchData = "";
+        var dataTable = $('#mytable').DataTable({
+            "responsive": true,
+            "xscroll": true,
+            "paging": false,
+
+            "searching": false,
+            "stateSave": false,
+            "ordering": true,
+            "order": [[2, "desc"]],
+            "info": false,
+            "oLanguage": {
+                "sEmptyTable": "No record"
+            },
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "processing": true,
+            "serverSide": true,
+            "searching": false,
+            "lengthChange": false,
+            "ajax": {
+                url: "/AdminTermLifeView/Searchdata", // json datasource
+                type: "Post",  // method  , by default get AgeAdult, string Self, string Adult, string Child ageSpouse,agechild1,agechild2
+
+                data: { "searchTxt": _searchData, "FullName": fullname },
+
+                error: function () {  // error handling
+                    jQuery("#example1").append('<tbody class="business-user-grid-error"><tr><th colspan="4">No record</th></tr></tbody>');
+
+                }
+            },
+            "columnDefs": [{
+                "targets": 0,
+                "orderable": false,
+                "sClass": "dataTableCenter"
+            }, {
+                "targets": 2,
+                "orderable": false,
+                "sClass": "left"
+            }]
+        });
+        return dataTable;
+    })
+</script>

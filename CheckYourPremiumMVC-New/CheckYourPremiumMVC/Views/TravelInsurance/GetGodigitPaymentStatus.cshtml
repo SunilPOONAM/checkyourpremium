@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "GetGodigitPaymentStatus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #navbar {
+        position: relative !important;
+    }
+
+
+
+    .logod img {
+        width: 100% !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+
+    #downloadDoc {
+        display: block;
+        padding: 10px;
+        margin: 0 auto;
+        width: 215px;
+        background: #2b58a4;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+
+
+    .btn.btn-primary.homes {
+        display: block;
+        padding: 4px;
+        margin: 0 auto;
+        width: 98px;
+        background: #0f7d31;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+</style>
+
+
+<div align="center">
+
+    <div style="visibility:hidden;">
+        <label>Policy Status</label>
+        <input type="text" id="PolicyPdf" value="@ViewBag.Shedulepath" />
+
+    </div>
+
+
+    <h2>Payment Status: @ViewBag.success</h2>
+    <a id="downloadDoc" class="btn btn-primary" target="_blank"> Download Policy Document</a>&nbsp;
+    <a href="/" class="btn btn-primary homes"> Home</a>
+    <script>
+        $(document).ready(function () {
+            $("#downloadDoc").attr("href", $("#PolicyPdf").val());
+        });
+
+    </script>
+
+
+</div>
+
+

@@ -1,0 +1,817 @@
+﻿@model Domain.ZPModel
+@{
+    ViewBag.Title = "GetHdfcDetails";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+
+
+
+<link href="~/Resources/css/buyNowfrm.css" rel="stylesheet" /> @*@Html.HiddenFor(m => m.QuoteNo) @Html.HiddenFor(model => model.OrderNo) @Html.HiddenFor(model => model.IsMobile) @Html.HiddenFor(model => model.Product) @Html.HiddenFor(model => model.Channel) @Html.HiddenFor(model => model.Amount) @Html.HiddenFor(model => model.SearchId) @Html.HiddenFor(model => model.searchId) @Html.HiddenFor(model => model.travelstartdate) @Html.HiddenFor(model => model.travelenddate)*@
+
+<style>
+    #PolicyIndiaFirst {
+        background: #546888;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding-top: 1px;
+        border: 0px solid #484848;
+        box-shadow: 0 0 4px #888;
+        cursor: pointer;
+        width: 100% !important;
+    }
+
+    h6 {
+        position: relative;
+        bottom: 0;
+        top: 1rem;
+    }
+
+    .conterty {
+        display: block;
+    }
+
+    .logo {
+        width: 33.2% !important;
+        bottom: 28px !important;
+    }
+
+    input#totalPremium {
+        border: none;
+        background: #f1f1f1;
+        pointer-events: none;
+        color: #e85600;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+
+    input#PlanName {
+        border: none;
+        background: #f1f1f1;
+        pointer-events: none;
+        color: #e85600;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+
+    #State {
+        border: 1px solid #ccc;
+    }
+
+    h3 {
+        float: left;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    h4 {
+        color: #fff;
+        padding: 18px 8px;
+        background: none !important;
+    }
+
+    span.namwhf.fgh {
+        color: #fff;
+    }
+
+    select.healthinpt {
+        border: 1px solid #ccc !important;
+    }
+
+    #PolicyIndiaFirst {
+        background: #546888;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding-top: 1px;
+        border: 0px solid #484848;
+        box-shadow: 0 0 4px #888;
+        cursor: pointer;
+    }
+
+    #indiaSa {
+        float: left;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background: #5d7294;
+        border-radius: 8px;
+    }
+
+        #indiaSa:hover {
+            box-shadow: 0 0 5px #333;
+            transition: box-shadow 2s;
+            cursor: pointer;
+        }
+
+    .fa.fa-inr {
+        color: #e85600;
+        font-weight: normal;
+    }
+
+    .logz {
+    height: 67px;
+    padding-top: 0;
+}
+
+    span.namwhf {
+        text-align:center;
+    font-size: 23px;
+    left: 0;
+}
+</style>
+@*<script>
+        $(function () {
+            $(".preload").fadeOut(8000, function () {
+                $(".contertg").fadeIn(1000);
+            });
+        });
+    </script>
+    <link href="~/Resources/css/lodergif.css" rel="stylesheet" />
+
+    <div class="preload">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>*@
+
+@*<script src="~/Content/datatable/jquery-ui.js"></script>
+    <link href="~/Content/datatable/jquery-ui.css" rel="stylesheet" />*@
+
+
+
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<script>
+    $(function () {
+        $('#datetimepicker').datepicker({
+            yearRange: '1949:2002',
+            autoclose: true,
+
+            dateFormat: "dd/mm/yy",
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script> 
+<div class="container" style="padding:0 0% !important;">
+    <input id="hdbid" type="hidden" value="@ViewData["id"].ToString()">
+    <input id="hdbTid" type="hidden" value="@ViewData["Tid"].ToString()">
+    <input id="policyterm" type="hidden" value="@ViewData["policyterm"].ToString()">
+    <input id="hdFrequency" type="hidden" value="@ViewData["Frequency"].ToString()">
+    @Html.HiddenFor(model => model.PayoutOption, new { @class = "form-control frmnow", @readonly = "" })
+   
+    <input id="hdnEmail" type="hidden" value="test@gmail.com">
+    @*<input id="hdnState" type="hidden" value="Uttar Pradesh">*@
+    <form action="" method="" id="frmPayout">
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <div class="col-xs-12 col-sm-6 col-md-8 trfgjh">
+            @Html.HiddenFor(model => model.Company)
+            <div class="rowd ds" id="divEdelWise" >
+                <div class="col-md-12">
+                    <div class="logz">
+                        <img src="~/Logo/HDFC.png" class="img-responsive" />
+                    </div>
+
+                    <h6><span class="namwhf" style="line-height: 31px;">  HDFC Life</span></h6>
+                </div>
+
+            </div>
+
+          
+            <div class="rowd">
+                <div class="col-md-6">
+
+                    <div class="form-group nbnow">
+                        <label for="email">Name</label>
+                        @Html.TextBoxFor(model => model.FullName, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Gender</label>
+                        @Html.TextBoxFor(x => x.Gender, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="url">DOB <small>(Eldest Member)</small></label>
+                        @Html.TextBoxFor(model => model.DOB, new { @class = "form-control frmnow" })
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Phone</label>
+
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+
+                <!--  col-md-6   -->
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="company">Term</label>
+
+                        @Html.TextBoxFor(x => x.PolicyTerm, new { @class = "form-control frmnow", @type = "number", @maxlength = "2", @minlenght = "1" })
+                    </div>
+
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Frequency</label>
+                        @Html.TextBoxFor(model => model.Frequency, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">SA</label>
+                        @Html.TextBoxFor(model => model.sumAssured, new { @class = "form-control frmnow", @type = "number" })
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+
+                    <div class="form-group nbnow">
+                        <label for="phone">Tobacco</label>
+                        @Html.TextBoxFor(x => x.Smoke, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Income</label>
+
+                        @Html.TextBoxFor(model => model.Earning, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Material Status</label>
+
+                        @Html.DropDownListFor(model => model.MaritialStatus, (SelectList)ViewData["MaterialStatus"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">State</label>
+                        @Html.DropDownListFor(model => model.State, (SelectList)ViewData["State"], "Select", new { @class = "healthinpt", @required = "true" })
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">City</label>
+                        @*@Html.DropDownListFor(model => model.City, (SelectList)ViewData["Cities"], "Select", new { @class = "form-control frmnow", @style = "margin-bottom: 0;", @required = "true" })*@
+                        <select id="City">
+                            <option value="">Select</option>
+                        </select>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            @*...............................................................................................................................................*@
+            <style>
+                label.prjsName {
+                    background: none !important;
+                    color: #000 !important;
+                    text-transform: uppercase !important;
+                    font-size: 3rem !important;
+                    width: 100% !important;
+                    position: relative !important;
+                }
+
+                 #indiaSa {
+        float: left;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background: #5d7294;
+        border-radius: 8px;
+    }
+
+        #indiaSa:hover {
+            box-shadow: 0 0 5px #333;
+            transition: box-shadow 2s;
+            cursor: pointer;
+        }
+            </style>
+
+
+            <h3>-----------------</h3>
+            <div class="rowd">
+
+                <div id="indiaSa">
+                    <div class="col-md-12">
+                        <div class="form-group nbnow">
+                            <div class="col-md-12">
+                                <label class="prjsName" for="last">
+                                    <div class="col-md-5">
+                                        ADD ON PLAN
+                                    </div>
+                                    <div class="col-md-7">
+                                       @Html.DropDownListFor(model => model.PolicyIndiaFirst, (SelectList)ViewData["ProductPlan"], new { @class = "form-control col-md-12 frmnow", @style = "margin-bottom: 0;float:left;width:auto;" })
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+                <h3>-----------------</h3>
+                <div id="DetailsSpouse" style="display:none">
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow fgrt">
+                                <label for="first">Spouse First Name</label>
+
+                                @Html.TextBoxFor(x => x.SpouseFirstName, new { @class = "form-control frmnow", @autocomplete = "off" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow fgrt">
+                                <label for="phone">Spouse Last Name</label>
+                                @Html.TextBoxFor(x => x.SpouseLastName, new { @class = "form-control frmnow", @autocomplete = "off" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow">
+                                <label for="first">DOB</label>
+
+                                @Html.TextBoxFor(x => x.SpouseDOB, new { @class = "form-control frmnow", @id = "datetimepicker", @autocomplete = "off" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow">
+                                <label for="phone">Age</label>
+                                @Html.TextBoxFor(x => x.SpouseAge, new { @class = "form-control frmnow", @autocomplete = "off" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow">
+                                <label for="first">Gender</label>
+
+                                @*@Html.DropDownListFor(model => model.SpouseGender, (SelectList)ViewData["SpouseGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})*@
+                                @Html.DropDownListFor(model => model.SpouseGender, new List<SelectListItem>
+                                    {
+                                    new SelectListItem{ Text="Select", Value = "" },
+                                    new SelectListItem{ Text="Male", Value = "Male" },
+                                    new SelectListItem{ Text="Female", Value = "Female" },
+
+                                    }, new { @class = "healthinpt" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow">
+                                <label for="phone">Tobacco</label>
+                                @* @Html.TextBoxFor(x => x.SpouseTobbacoUser, new { @class = "form-control frmnow" })*@
+                                @Html.DropDownListFor(model => model.SpouseTobbacoUser, new List<SelectListItem>{new SelectListItem{ Text="Select", Value = "" },new SelectListItem{ Text="Yes", Value = "true" },new SelectListItem{ Text="No", Value = "false" },
+
+                                    }, new { @class = "healthinpt" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*...............................................................................................................................................*@
+
+                <h3>-----------------</h3>
+
+                <div class="rowd">
+                    
+                    <input type="button" class="btn buyNwsdf" id="buynow" name="buynow" value="BUY THIS PLAN" />
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="trfguio">
+
+                <div class="rowd">
+                    <div class="col-md-12">
+                        <h4><span class="namwhf fgh">policy details</span></h4>
+
+                    </div>
+                </div>
+                <style>
+                    #error{
+                        background: #2957a4;
+    border: none;
+    color: #f10a0a;
+    font-size: 13px;
+        width: 100%;
+                    }
+                </style>
+
+                <div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
+                   
+                     
+                        <div class="col-md-12"><span id="totalpremium" style="padding-left:0px;"> @Html.TextBoxFor(model => model.error) </span></div>
+                  
+                    <div>
+                        <label class="col-md-12 bynow"><i class="fa fa-sort-asc" aria-hidden="true"></i> Policy Premium : </label>
+                        <label class="col-md-12 bynow"><span id="totalpremium"><i class="fa fa-inr" aria-hidden="true"></i> @Html.TextBoxFor(model => model.totalPremium) </span></label>
+                    </div>
+                    <div>
+                        <label class="col-md-12 bynow"><i class="fa fa-sort-asc" aria-hidden="true"></i> Plan Name :</label>
+                        <label class="col-md-12 bynow"><span id="planname"> @Html.TextBoxFor(model => model.PlanName) </span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        @*
+            <input type="hidden" value="@Session[" CustID "].ToString()" id="hdnCustId" />*@
+        @Html.TextBoxFor(model => model.SearchId, new { @class = "form-control frmnow", @type = "hidden", @name = "hdnpno" }) @*
+
+            <input type="submit" id="buynow" name="buynow" value="BUY THIS PLAN" />*@ @*"ageSelf": $("#ageself").val(), "Gender": $("#hdnGender").val(), "Smoke": $("#hdnSmoke").val()*@
+            <input type="text" id="hdnDate" style="visibility:hidden" />
+        </form>
+
+        </div>
+
+        <style>
+            #loading {
+                display: grid;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                justify-content: center;
+                background: rgba(255,255,255, 0.5);
+            }
+
+                #loading p {
+                    display: grid;
+                    justify-content: center;
+                    width: 100%;
+                    text-align: right;
+                    position: relative;
+                    align-items: flex-start;
+                }
+
+                    #loading p img {
+                        position: relative;
+                        top: 17rem;
+                        right: 50px;
+                    }
+        </style>
+        <div id="loading">
+            <p><img src="http://www.xiconeditor.com/image/icons/loading.gif" /></p>
+        </div>
+        <style>
+            #PolicyTerm {
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                height: 30px;
+                padding: 0;
+                text-align: left;
+                width: 199px;
+                float: right;
+            }
+
+                #PolicyTerm.loading {
+                    background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
+                }
+        </style>
+         <script>
+            $("#PolicyTerm").change(function () {
+
+                GetPremium();
+
+            });
+
+            $("#sumAssured").change(function () {
+
+                GetPremium();
+            })
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#loading').hide();
+            });
+        </script>
+<script>
+    $(function () {
+        $('#DOB').datepicker({
+            yearRange: '1939:2002',
+            autoclose: true,
+
+            dateFormat: "dd/mm/yy",
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>
+<script>
+    function GetPremium() {
+        $('#loading').show();
+        $.ajax({
+            url: "/TermAndLife/GetPremiumHDFC",
+            method: "Post",
+            data: {
+                "searchTxt": $("#PolicyIndiaFirst").val(),
+                "Smoke": $("#Smoke").val(),
+                "fullName": $("#FullName").val(),
+                "Gender": $("#Gender").val(),
+                "ageSelf": $("#Age").val(),
+                "DOB": $("#DOB").val(),
+                "Email": $("#Email").val(),
+                "sumInsured": $("#sumAssured").val(),
+                "Phone": $("#Phone").val(),
+                "term": $("#PolicyTerm").val(),
+                "Frequency": $("#Frequency").val()
+            },
+            success: function (responseString) {
+
+                console.log(responseString);
+                $("#totalpremium").text(responseString.premium);
+                // $t.removeClass('loading');
+                $('#loading').hide();
+
+            }
+        })
+    }
+</script>
+        <script>
+            $('#MaritialStatus').change(function () {
+                var material = $("#MaritialStatus option:selected").val();
+                if (material == "Single") {
+                    $("#DetailsSpouse").hide();
+                }
+                else if (material == "Married") {
+                    var gender = $("#Gender").val();
+                    $("#DetailsSpouse").show();
+
+                    if (gender == "Male") {
+                        $("#SpouseGender").val("Female");
+                    }
+                    else if (gender == "Female") {
+                        $("#SpouseGender").val("Male");
+                    }
+                }
+            });
+            $("#buynow").click(function () {
+
+                if ($("#MaritialStatus option:selected").val() == "Married") {
+                    if ($("#SpouseFirstName").val() == "" || $("#SpouseLastName").val() == "" || $("#datetimepicker").val() == "" || $("#SpouseAge").val() == "") {
+                        alert("Please Fill All Details")
+                        return false;
+                    }
+                    else if ($("#SpouseTobbacoUser").val() == "") {
+                        alert("Please Fill All Details")
+                        return false;
+                    }
+                }
+            });
+        </script>
+        <script>
+            $("#datetimepicker").change(function () {
+
+                
+                var dob = $("#datetimepicker").val();
+                var dtt = $("#hdnDate").val();
+                var array = dob.split('/');
+                var day = parseInt(array[0]);
+                var month = parseInt(array[1]);
+                var year = parseInt(array[2]);
+                var dateObject = new Date(year, month - 1, day);
+                var dob1 = jQuery(this).val();
+                var today = new Date();
+                var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+                var age = parseInt(dayDiff);
+                var agee = $("#SpouseAge").val(age);
+                //..........................
+                var MainDob = $("#DOB").val();
+                var array = MainDob.split('/');
+                var day = parseInt(array[0]);
+                var month = parseInt(array[1]);
+                var year = parseInt(array[2]);
+                var dateObject = new Date(year, month - 1, day);
+                var dob1 = jQuery(this).val();
+                var today = new Date();
+                var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+                var mainage = parseInt(dayDiff);
+                var difage = age - mainage;
+                var agedata = $("").val(mainage);
+                difage = difage;
+
+                if (difage > 10 || difage < -10) {
+                    alert("We can not take this age");
+                    $("#SpouseAge").val("");
+                    $("#datetimepicker").val();
+                }
+
+                //else if(difage<0)
+                //{
+                //    alert("Please Fill valid age");
+                //    $("#SpouseAge").val() = "";
+                //}
+
+
+
+
+
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                var date = $('hdnDate').val();
+                hdnDate.value = Date.now();
+                //      var s = $('#hdnDate').val($.datepicker.formatDate("mm/dd/yy", new Date()))
+                var d1 = new Date();
+                var d2 = d1.toLocaleDateString("en-IN");
+                hdnDate.value = d2;
+
+                var s = hdnDate.value;
+
+            });
+        </script>
+       
+        <script>
+            $("#buynow").click(function () {
+                //..............validation...................
+                var ddlState = $("#State");
+                var ddlCity = $("#City");
+                var ddlMaritialStatus = $("#MaritialStatus");
+                if (ddlState.val() == "") {
+                    //If the "Please Select" option is selected display error.
+                    alert("Please select State an option !");
+                    return false;
+                }
+                else if (ddlCity.val() == "") {
+                    //If the "Please Select" option is selected display error.
+                    alert("Please select City an option!");
+                    return false;
+                }
+                else if (ddlMaritialStatus.val() == "") {
+                    //If the "Please Select" option is selected display error.
+                    alert("Please select MaritialStatus an option!");
+                    return false;
+                }
+                //...............................
+                var company = $("#Company").val();
+                var pay=$("#PayoutOption").val();
+                if (company == "10010" && pay!="") {
+                    window.location.href = pay;
+                 }
+            })
+        </script>
+        <script>
+            $(document).ready(function () {
+                var company = $("#Company").val();
+                if (company == "10007") {
+                    $("#divIndiaFirst").show();
+                    $("#divEdelWise").hide();
+                }
+                else if (company == "") {
+                    $("#divIndiaFirst").hide();
+                    $("#divEdelWise").show();
+                }
+            })
+        </script>
+        <script>
+            $("#PolicyIndiaFirst").change(function () {
+                $("#buynow").attr("disabled", false);
+                var MainDob = $("#DOB").val();
+                var array = MainDob.split('/');
+                var day = parseInt(array[0]);
+                var month = parseInt(array[1]);
+                var year = parseInt(array[2]);
+                var dateObject = new Date(year, month - 1, day);
+                var dob1 = jQuery(this).val();
+                var today = new Date();
+                var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+                var mainage = parseInt(dayDiff);
+                $.ajax({
+                    url: "/TermAndLife/GetPremiumHDFC",
+                    method: "post",
+                    data: { "searchTxt": $("#PolicyIndiaFirst").val(), "ageSelf": mainage, "Gender": $("#Gender").val(), "Smoke": $("#Smoke").val(), "fullName": $("#FullName").val(), "DOB": $("#DOB").val(), "Email": $("#hdnEmail").val(), "Phone": $("#Phone").val(), "Suminsured": $("#sumAssured").val(), "term": $("#PolicyTerm").val(), "Frequency": $("#Frequency").val(), "State": $("#State").val() },
+                    success: function (response) {
+                        if (response) {
+                          
+                           var tot= $("#totalPremium").val(response.token);
+                           var error = $("#error").val(response.msg);
+                          
+                           if (response.msg != "")
+                            {
+                                $("#buynow").attr("disabled", true);
+                            }
+                           
+                            $("#PlanName").val($("#PolicyIndiaFirst").children("option:selected").text());
+                        }
+                        
+                    }
+                    
+                });
+            })
+        </script>
+
+        <script>
+            $("#State").change(function () {
+                var state = $("#State").val();
+
+
+                $.ajax({
+                    url: "/TermAndLife/GetCity",
+                    method: "get",
+                    data: { "state": state },
+                    success: function (result) {
+
+                        $.each(result, function () {
+                            // $("#City").append("<option value='" + result[row].value + "'>" + result[row].text + "</option>");
+                            $("#City").append($("<option></option>").val(this['Value']).html(this['Text']));
+
+                        });
+
+                    }
+                })
+
+            })
+        </script>
+
+
+
+
+
+
+

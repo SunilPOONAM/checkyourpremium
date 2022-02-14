@@ -1,0 +1,118 @@
+﻿@model IEnumerable<Domain.ZPModel>
+
+@{
+    ViewBag.Title = "QHealthListData";
+    Layout = "~/Views/Shared/Layout_AdminPanel.cshtml";
+}
+
+
+
+
+
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Term List Data</strong>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                            <thead>
+
+
+                                <tr>
+                                    <th>
+                                        FullName
+                                    </th>
+                                    <th>
+                                        Gender
+                                    </th>
+
+                                    <th>
+                                        DOB
+                                    </th>
+                                    <th>
+                                        Phone
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+                                        Suminsurred
+                                    </th>
+                                    <th>
+                                        Term
+                                    </th>
+
+                                    <th>
+                                        Frequency
+                                    </th>
+
+
+                                    <th>
+                                        Smoke
+                                    </th>
+                                    <th>
+                                        Income
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FullName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Gender)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DOB)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Phone)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SumAssured)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.POLICY_TERM)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Frequency)
+                                    </td>
+
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Smoke)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Income)
+                                    </td>
+
+
+                                    @*<td>
+                                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                        </td>*@
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- .animated -->

@@ -1,0 +1,42 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"http://103.118.2.17/SISONLINE/SISPDF//aae38f67-8e3b-409f-984e-4d66793039c1.pdf","premium":"10633","totalPremium":"10633","accidentalDeathPremium":"0","permanentDisabilityPremium":"0","criticalIllnessPremium":"0","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10633","hcbPremium":"0","error":"","sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"http://103.118.2.17/SISONLINE/SISPDF//513574c2-52f0-464d-b716-de9b7251254c.pdf","premium":"10633","totalPremium":"10633","accidentalDeathPremium":"0","permanentDisabilityPremium":"0","criticalIllnessPremium":"0","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10633","hcbPremium":"0","error":"","sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"http://103.118.2.17/SISONLINE/SISPDF//cfca4dd8-b6ca-4e18-87bd-2cc493393723.pdf","premium":"9553","totalPremium":"9553","accidentalDeathPremium":"0","permanentDisabilityPremium":"0","criticalIllnessPremium":"0","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9553","hcbPremium":"0","error":"","sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"http://103.118.2.17/SISONLINE/SISPDF//b692b061-dea6-4e56-b91e-45b239a03fa6.pdf","premium":"26113","totalPremium":"26113","accidentalDeathPremium":"0","permanentDisabilityPremium":"0","criticalIllnessPremium":"0","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"26113","hcbPremium":"0","error":"","sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7455,"serviceTax":1342,"totalPremium":8797}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":5,"sumAssured":"300000.00","Amount":"7455","serviceTax":"1342","totalPremium":"8797","NoOfAdults":"1","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"January 03, 2020","endOn":"January 02, 2021","policyCategory":"fresh","proposerName":"test test","proposerEmail":"abc@gmail.com","proposerPhone":"8528829487","proposerAddressOne":"test","proposerAddressTwo":"abc ","proposerAreaId":"0","proposerAreaPinCode":"266016","proposerAreaCityId":"","proposerResidenceAddressOne":"abc","proposerResidenceAddressTwo":"","proposerResidenceAreaId":"0","proposerResidenceAreaPinCode":"266016","proposerResidenceAreaCityId":"","proposerDob":"January 02, 2001","panNumber":"","gstTypeId":"sdddd","gstIdNumber":"5777777777777777","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"","criticalIllness":"false","insureds[0]":{"dob":"January 02, 1990","sumInsuredId":2,"name":"rer ter","sex":"Female","illness":"None","relationshipId":2,"occupationId":11,"hospitalCash":"","height":5,"weight":20},"nomineeName":"test test","nomineeAge":"test test","nomineeRelationship":"11","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":11751,"postalCode":0,"period":1,"searchId":12183,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":0,"sumAssured":"150000.00","Amount":"6274","serviceTax":"1130","totalPremium":"7404","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"January 03, 2020","endOn":"January 02, 2021","policyCategory":"fresh","proposerName":"test test","proposerEmail":"abc@gmail.com","proposerPhone":"8528829487","proposerAddressOne":"test","proposerAddressTwo":"Lucknow","proposerAreaId":"0","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"Lucknow","proposerResidenceAddressTwo":"Lucknow","proposerResidenceAreaId":"61380","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"January 02, 2001","panNumber":"","gstTypeId":"sdddd","gstIdNumber":"5777777777777777","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000000","criticalIllness":"false","insureds[0]":{"dob":"January 02, 1990","sumInsuredId":1,"name":"divya Mishra","sex":"Female","illness":"None","relationshipId":14,"occupationId":3,"hospitalCash":"1","height":6,"weight":40},"nomineeName":"test test","nomineeAge":"test test","nomineeRelationship":"3","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10209,"postalCode":0,"period":1,"searchId":12185,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":829,"serviceTax":150,"totalPremium":979}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"aae82f03dc4d418a852ea6cbb58350ac","premium":829,"serviceTax":150,"totalPremium":979}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"aae82f03dc4d418a852ea6cbb58350ac","redirectToken":"4665747d73036e56c565ebb624fc6326"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : System.NullReferenceException: Object reference not set to an instance of an object.
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String Self, String Adult, String Child, String SumInsured, String CoverForYear) in e:\AnkitSir\January-2020\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 163
+InnerExceptionMessage : 
+ErrorMessage : System.NullReferenceException: Object reference not set to an instance of an object.
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String Self, String Adult, String Child, String SumInsured, String CoverForYear)
+InnerExceptionMessage : 
+ErrorMessage : System.NullReferenceException: Object reference not set to an instance of an object.
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String Self, String Adult, String Child, String SumInsured, String CoverForYear)
+InnerExceptionMessage : 
+ErrorMessage : System.NullReferenceException: Object reference not set to an instance of an object.
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String Self, String Adult, String Child, String SumInsured, String CoverForYear)
+InnerExceptionMessage : 

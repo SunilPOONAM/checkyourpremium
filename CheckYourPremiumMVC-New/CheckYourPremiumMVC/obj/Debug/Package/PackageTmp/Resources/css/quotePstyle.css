@@ -1,0 +1,147 @@
+﻿    .preload {
+        width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    background: rgba(255,255,255,0.7);
+    display:grid;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+        }
+
+ /*.loader {  
+
+   margin: 0 auto;
+    left: 0;
+    right: 0;
+}*/
+
+    .loader h1 {
+        margin: 0;
+        font-weight: bold;
+        padding: 0;
+        font-size: 3em;
+        color: rgba(255, 255, 255, .1);
+        background-image: url('../images/taller-bejer.png');
+        background-repeat: repeat-x;
+        -webkit-background-clip: text;
+        animation: fill-up 15s linear infinite;
+    }
+
+@keyframes fill-up {
+  0% {background-position: left 0px top 80px;}
+  40% {background-position: left 800px top -50px;}
+  80% {background-position: left 1800px top -50px;}
+  100% {background-position: left 2400px top -50px;}
+}
+
+ #loadingDiv {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:#fff;
+            z-index:9999999999999999999999999999999999;
+            display:flex;
+            align-items:center;
+            align-content:center;
+            justify-content:center;
+        }
+        #loadingDiv img{
+            width:150px;
+            margin:0 auto;
+            position:absolute;
+        }
+
+#cssmenu {
+    background: #2957a4;
+}
+
+        #cssmenu > ul > li > a {
+            padding:8px 17px;
+            font-family: 'Poppins', sans-serif !important;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: normal;
+        }
+
+    .iconsmenu {
+        display: none;
+    }
+
+        #cssmenu ul li span.iconsmenu {
+    display: none;
+}
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #dc4d4d;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .captionOrange, .captionBlack {
+            color: #fff;
+            font-size: 29px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 0px;
+            letter-spacing: 1px;
+            font-family: myFirstFont;
+            text-transform: uppercase;
+        }
+
+        .captionBlack {
+            font-size: 21px;
+            /* background: #ffffff; */
+            display: grid;
+            align-items: center;
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            /* box-shadow: 0 0 5px #525050; */
+            border: 0px solid #333;
+            border-radius: 6px;
+            position: absolute;
+            width: 145px;
+        }
+
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            a.captionOrange:hover {
+                color: #eb5100;
+                text-decoration: underline;
+                background-color: #eeeeee;
+                background-color: rgba(238, 238, 238, 0.7);
+            }
+
+        /*.captionBlack{
+        clip: rect(-15px, 240px, 200px, 0px) !important;
+        }*/
+        .captionBlack p {
+            bottom: 65px;
+            position: relative;
+               font-family: 'Poppins', sans-serif !important;
+        }
+
+
+        .jssorb03 {
+            display: none;
+        }

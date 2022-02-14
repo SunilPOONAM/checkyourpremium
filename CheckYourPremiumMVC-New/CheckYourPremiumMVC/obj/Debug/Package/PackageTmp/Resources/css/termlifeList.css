@@ -1,0 +1,54 @@
+﻿#mytable{
+    width:100% !important;
+}
+
+
+.megcontns{
+    width:100%;
+    float:left;
+}
+
+.praposal-newBikeContainers {
+    margin-top: 3px;
+}
+
+.containerg-tabls {
+    box-shadow:none;
+    -webkit-box-shadow: none;
+}
+
+
+section, footer {
+  background:none;
+}
+tbody img {
+    width: 85px !important;
+    height: auto !important;
+    display: flex;
+    padding: 8px 0;
+}
+
+table.dataTable tbody td {
+    padding: 0px 5px !important;
+    text-align:right ;
+    color:#333;
+        border: 1px solid #b4b4b4;
+}
+
+
+table.dataTable tbody td:nth-child(4) {
+    text-align:center ;
+}
+
+
+.btnlts {
+    cursor: pointer;
+    background: none   !important;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px;
+}
+
+    .btnlts div {
+        display:flex  !important;
+    }

@@ -1,0 +1,30 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"10600","servicetaxamt":"0","educessamt":"0","totalpremium":"12508","finalpremium":"12508","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":10238878,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"954","addtaxval2":"0","addtaxval3":"954","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":10420,"serviceTax":1876,"totalPremium":12296}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":10420,"serviceTax":1876,"totalPremium":12296}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"3881667e556c42c5a200fcf629a64d5a","premium":10420,"serviceTax":1876,"totalPremium":12296}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"3881667e556c42c5a200fcf629a64d5a","redirectToken":"2222924f7f1985d4a39d111738e53809"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"75fb01e70a3e4946b0f6ab04c3d9aa22","premium":3867,"serviceTax":696,"totalPremium":4563,"remarks":"Premium changed due to addition of Hospital Cash."}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"5e44bde4daf64fffb8770ddfd11f8efc","premium":3867,"serviceTax":696,"totalPremium":4563,"remarks":"Premium changed due to addition of Hospital Cash."}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"Id":0,"FirstName":"","LastName":"","EmailId":"","DOB":"","Gender":"","MobileNo":"","Address":"","Country":"","Password":"","ConfirmPassword":"","attempttime":0,"countsec":0,"datecount":"","SecurityCode":"","sumInsuredId":0,"schemeId":2,"sumAssured":"150000","Amount":"3137","serviceTax":"564","totalPremium":"3701","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"October 21, 2020","endOn":"October 20, 2021","policyCategory":"fresh","proposerName":"hgfhjghj mhjk","proposerEmail":"hgy@gmail.com","proposerPhone":"9898797867","proposerAddressOne":"hghj","proposerAddressTwo":"hghjgj","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"","proposerResidenceAddressTwo":"","proposerResidenceAreaId":"61548","proposerResidenceAreaPinCode":"226015","proposerResidenceAreaCityId":"3090","proposerDob":"October 20, 2001","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000","criticalIllness":"false","insureds[0]":{"dob":"October 08, 1969","sumInsuredId":1,"name":"jjhkjhk","sex":"Male","illness":"None","relationshipId":1,"occupationId":5,"hospitalCash":"1","height":160,"weight":60},"nomineeName":"hjgjhkj","nomineeAge":"56","nomineeRelationship":"Father","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":12934,"postalCode":0,"period":1,"searchId":195288189,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"d70da07793774a24961e4176b518ec97","premium":7366,"serviceTax":1326,"totalPremium":8692,"remarks":"Premium changed due to addition of Hospital Cash."}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"15d578c74b2a433d9bf6f0cf0e769533","premium":3867,"serviceTax":696,"totalPremium":4563,"remarks":"Premium changed due to addition of Hospital Cash."}

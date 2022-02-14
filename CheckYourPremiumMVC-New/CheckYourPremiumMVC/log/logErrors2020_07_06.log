@@ -1,0 +1,165 @@
+ErrorMessage : System.Security.Cryptography.CryptographicException: Bad Data.
+
+   at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 161
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : System.Security.Cryptography.CryptographicException: Bad Data.
+
+   at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 161
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : System.Security.Cryptography.CryptographicException: Bad Data.
+
+   at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 161
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : System.Security.Cryptography.CryptographicException: Bad Data.
+
+   at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 161
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7743868,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"401d08d1522142c9a548baaa591920e8","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"401d08d1522142c9a548baaa591920e8","redirectToken":"bf40069abb859bad118c73f78be02278"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7478","totalPremium":"9321","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"274","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6337","hcbPremium":"1463","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13890","totalPremium":"17027","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"645","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11771","hcbPremium":"2386","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7478","totalPremium":"9321","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"274","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6337","hcbPremium":"1463","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7746158,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"05e1394e8163446cbbef3abf3d50267a","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"05e1394e8163446cbbef3abf3d50267a","redirectToken":"6df782b0ed64f954e4ea1ba26fe4ba84"}
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 155
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 155
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 229
+InnerExceptionMessage : 
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city)
+InnerExceptionMessage : 
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city)
+InnerExceptionMessage : 
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7746957,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"c133dd04995f47caa93b0addfa735443","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"c133dd04995f47caa93b0addfa735443","redirectToken":"6ea0a64012ddbba04b4c7666c80dba2b"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7750943,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"229878a4013a4695a3a0b280ef469a9e","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"229878a4013a4695a3a0b280ef469a9e","redirectToken":"22ab5fec83ab4abba65ed55c8c593cc7"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7751157,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"873b9d024f1e4adba691a26033ae3e9e","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"873b9d024f1e4adba691a26033ae3e9e","redirectToken":"b66e1659b186ddf5be948a3818d1daae"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7752793,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"51d185e661cd48868e68d16a6508c790","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"51d185e661cd48868e68d16a6508c790","redirectToken":"8fc9a7f7c139fc8b215b65df2dd15c75"}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals/51d185e661cd48868e68d16a6508c790/token
+InnerExceptionMessage : {"APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","referenceId":"51d185e661cd48868e68d16a6508c790"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.
+ErrorMessage : getdetail-response=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7752835,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"e8ace3259c94400ca3dd5e12f1fd44e4","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals/e8ace3259c94400ca3dd5e12f1fd44e4/token
+InnerExceptionMessage : {"APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","referenceId":"e8ace3259c94400ca3dd5e12f1fd44e4"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.
+ErrorMessage : getdetail-response=
+InnerExceptionMessage : Object reference not set to an instance of an object.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4dfb7c92c1e9405f90f6ccbbdf52a7e1","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4dfb7c92c1e9405f90f6ccbbdf52a7e1","redirectToken":"b9f47f6b41467cef7ddcf80efa52ffcd"}
+ErrorMessage : getdetail-response=
+InnerExceptionMessage : The remote name could not be resolved: 'webservices.bajajallianz.com'
+ErrorMessage : System.NullReferenceException: Object reference not set to an instance of an object.
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 376
+InnerExceptionMessage : 
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7757159,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4aeb34812aa4496ebd822166e2d9ec47","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4f67951345d5472a83ea535643299e38","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"4f67951345d5472a83ea535643299e38","redirectToken":"fca83e976948fffa65c899670c1b95e3"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"2c833ad339164068b4a79a30c257caca","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7757490,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"8aa20d001ca2482d99e3b7eed381b55a","premium":5995,"serviceTax":1080,"totalPremium":7075}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"8aa20d001ca2482d99e3b7eed381b55a","redirectToken":"4a92505dbe5b12be434f444f6b7d7de5"}

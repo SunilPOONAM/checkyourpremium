@@ -1,0 +1,16 @@
+ErrorMessage : getdetail-response=
+InnerExceptionMessage : The underlying connection was closed: The connection was closed unexpectedly.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"11212","totalPremium":"13558","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"314","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9502","hcbPremium":"1926","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"6617","totalPremium":"8407","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"178","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"5608","hcbPremium":"1506","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"8610","totalPremium":"10827","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"399","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"7297","hcbPremium":"1712","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"24516","totalPremium":"27782","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"728","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20776","hcbPremium":"2432","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"28872","totalPremium":"32171","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"964","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"24468","hcbPremium":"2229","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}

@@ -1,0 +1,49 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":7680591,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7478","totalPremium":"9321","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"274","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6337","hcbPremium":"1463","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7478","totalPremium":"9321","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"274","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6337","hcbPremium":"1463","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13890","totalPremium":"16833","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"727","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11771","hcbPremium":"2110","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13890","totalPremium":"16833","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"727","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11771","hcbPremium":"2110","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 154
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 228
+InnerExceptionMessage : 
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 154
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city) in d:\Divyanshi\CheckYourPremiumMVC-New\CheckYourPremiumMVC\Controllers\HealthPlanController.cs:line 228
+InnerExceptionMessage : 
+ErrorMessage : System.FormatException: Invalid length for a Base-64 char array or string.
+   at System.Convert.FromBase64_Decode(Char* startInputPtr, Int32 inputLength, Byte* startDestPtr, Int32 destLength)
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city)
+InnerExceptionMessage : 
+ErrorMessage : System.Security.Cryptography.CryptographicException: Bad Data.
+
+   at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.Decrypt(String input, String key)
+   at CheckYourPremiumMVC.Controllers.HealthPlanController.BindPremiumList(Int32 draw, Int32 start, Int32 length, String searchTxt, String AgeAdult, String AgeSpouse, String AgeChild1, String AgeChild2, String Self, String Adult, String Child, String SumInsured, String CoverForYear, String ID, String city)
+InnerExceptionMessage : 
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14923","totalPremium":"17947","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"780","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12647","hcbPremium":"2138","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14923","totalPremium":"17947","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"780","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12647","hcbPremium":"2138","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"24048","totalPremium":"27663","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"1181","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20380","hcbPremium":"2328","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"24048","totalPremium":"27663","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"1181","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20380","hcbPremium":"2328","error":null,"isValid":true,"sumAssured":null}

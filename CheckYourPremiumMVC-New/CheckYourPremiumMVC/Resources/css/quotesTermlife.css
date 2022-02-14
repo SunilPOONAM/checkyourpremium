@@ -1,0 +1,173 @@
+﻿
+.comparisonContainer{
+background: #fff;
+    box-shadow: 0 0 7px #ccc;
+    position: relative;
+    z-index: 9999;
+}
+
+.comparisonContainer>div>section>div>div> .table-responsive table >tbody>tr>td{
+    padding: 0rem;
+    border: 1px solid #333;
+    padding-left: 4px;
+}
+
+
+.comparisonContainer div section div div table >thead{
+    background: #72a0c5 !important;
+}
+.comparisonContainer>div>section>div>div> table >tbody>tr>th{
+     background-color: #ab7474  !important;
+     color:#fff;
+     font-weight:normal;
+}
+
+
+.comparisonContainer div section div .sticky-wrap .sticky-intersect {
+    z-index: -1;
+}
+.comparisonContainer div section div .sticky-wrap .sticky-thead, .sticky-wrap .sticky-col, .sticky-wrap .sticky-intersect {
+   top:109px !important;
+}
+.slctPolicy select{
+      max-width: 190px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+    min-width: 80px;
+}
+
+#basic .toggle, #basic th {
+   background-color:transparent;
+}
+p.label-txt {
+    color: #333;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+}
+
+.container-tabls-data {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+     .leftdata{
+      position: fixed;
+    top: 0px;
+    background:#2e79a0;
+    z-index: 999999;
+    width: 100%;
+        padding-left: 2%;
+    padding-right:1%;
+        min-height: 76px;
+       }
+
+
+@media (min-width: 1200px) {
+   .container-tabls-data {
+        width: 1170px;
+    }
+    .leftdata {
+  padding-left: 2%;
+    padding-right:2%;
+    }
+}
+@media (min-width: 992px){ 
+.container-tabls-data {
+    width: 970px;
+}
+   .leftdata {
+   padding-left: 2%;
+    padding-right:2%;
+    }
+}
+@media (min-width: 768px){
+.container-tabls-data {
+   width:870px;
+}
+   .leftdata {
+ padding-left: 2%;
+    padding-right:2%;
+    }
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.praposal-newBikeContainers {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+ position: absolute;
+    width: 100%;
+}
+
+
+@keyframes slideInFromTop2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.praposal-cars2 {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromTop2;
+  
+margin-top: 214px;
+ position: absolute;
+      width:873px;
+}
+
+.praposal-cars2 img{
+    width:100%;
+}
+
+
+.praposal-cars2 img {
+    width: 100%;
+}
+
+
+
+.tyre1{
+    color: #000;
+    position: absolute;
+       z-index: -1;
+    left: 117px;
+    top: 225px;
+    text-shadow: 0 0 2px #000;
+        width: 138px;
+}
+
+.tyre2{
+    color: #000;
+    position: absolute;
+       z-index: -1;
+    left: 602px;
+    top: 225px;
+    text-shadow: 0 0 2px #000;
+       width: 138px;
+}
+
+
+.btnlts{
+       cursor: pointer;
+    background: #0c69a7;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px;
+}

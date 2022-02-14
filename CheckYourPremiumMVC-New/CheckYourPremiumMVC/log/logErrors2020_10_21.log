@@ -1,0 +1,80 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"10600","servicetaxamt":"0","educessamt":"0","totalpremium":"12508","finalpremium":"12508","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":10266299,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"954","addtaxval2":"0","addtaxval3":"954","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"10600","servicetaxamt":"0","educessamt":"0","totalpremium":"12508","finalpremium":"12508","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":10266374,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"954","addtaxval2":"0","addtaxval3":"954","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":10420,"serviceTax":1876,"totalPremium":12296}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":10420,"serviceTax":1876,"totalPremium":12296}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : https://ig.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"MCINEW","AgeTo":null,"AgeFrom":null,"PlanId":"0","period":"1","postalCode":"226002","schemeId":1,"sumInsuredId":1,"insureds[0]":{"dob":"October 21, 1985","sumInsuredId":1,"name":null,"sex":null,"illness":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (502) Bad Gateway.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"7560","servicetaxamt":"0","educessamt":"0","totalpremium":"8920","finalpremium":"8920","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":10268877,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"680","addtaxval2":"0","addtaxval3":"680","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"Id":0,"FirstName":"","LastName":"","EmailId":"","DOB":"","Gender":"","MobileNo":"","Address":"","Country":"","Password":"","ConfirmPassword":"","attempttime":0,"countsec":0,"datecount":"","SecurityCode":"","sumInsuredId":0,"schemeId":2,"sumAssured":"500000","Amount":"7015","serviceTax":"1262","totalPremium":"8277","NoOfAdults":"1","NoOfChildren":"0","Plan":"Comprehensive Individual","startOn":"October 22, 2020","endOn":"October 21, 2021","policyCategory":"fresh","proposerName":"gfv  vmm","proposerEmail":"uykj@gmail.com","proposerPhone":"8798789786","proposerAddressOne":"jhuhkj","proposerAddressTwo":"jhkjhkj","proposerAreaId":"0","proposerAreaPinCode":"226016","proposerAreaCityId":"498801","proposerResidenceAddressOne":"","proposerResidenceAddressTwo":"","proposerResidenceAreaId":"","proposerResidenceAreaPinCode":"","proposerResidenceAreaCityId":"","proposerDob":"October 21, 1985","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"100000","criticalIllness":"false","insureds[0]":{"dob":"October 16, 1991","sumInsuredId":1,"name":"jjhkjhk","sex":"","illness":"None","relationshipId":1,"occupationId":6,"hospitalCash":"0","height":150,"weight":50,"isPersonalAccidentApplicable":"true","engageManualLabour":"Nil","engageWinterSports":"Nil","buyBackPED":0},"nomineeName":"hjgjhkj","nomineeAge":"56","nomineeRelationship":"Father","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"COMPREHENSIVEIND","travelStartOn":"","travelEndOn":"","planId":10101,"postalCode":0,"period":1,"searchId":565924348,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"dc0c12f711e54b9f9015d8c772112d1b","premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"Id":0,"FirstName":"","LastName":"","EmailId":"","DOB":"","Gender":"","MobileNo":"","Address":"","Country":"","Password":"","ConfirmPassword":"","attempttime":0,"countsec":0,"datecount":"","SecurityCode":"","sumInsuredId":0,"schemeId":2,"sumAssured":"500000","Amount":"7015","serviceTax":"1262","totalPremium":"8277","NoOfAdults":"1","NoOfChildren":"0","Plan":"Comprehensive Individual","startOn":"October 22, 2020","endOn":"October 21, 2021","policyCategory":"fresh","proposerName":"gfv  vmm","proposerEmail":"hgh@gmail.com","proposerPhone":"8798789786","proposerAddressOne":"jhuhkj","proposerAddressTwo":"jhkjhkj","proposerAreaId":"0","proposerAreaPinCode":"226015","proposerAreaCityId":"498815","proposerResidenceAddressOne":"hghgjh","proposerResidenceAddressTwo":"hgjhghj","proposerResidenceAreaId":"569108","proposerResidenceAreaPinCode":"226015","proposerResidenceAreaCityId":"498815","proposerDob":"October 21, 1985","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"100000","criticalIllness":"false","insureds[0]":{"dob":"October 16, 1991","sumInsuredId":1,"name":"jjhkjhk","sex":"Male","illness":"None","relationshipId":1,"occupationId":6,"hospitalCash":"0","height":150,"weight":50,"isPersonalAccidentApplicable":"true","engageManualLabour":"Nil","engageWinterSports":"Nil","buyBackPED":0},"nomineeName":"hjgjhkj","nomineeAge":"56","nomineeRelationship":"Father","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"COMPREHENSIVEIND","travelStartOn":"","travelEndOn":"","planId":10101,"postalCode":0,"period":1,"searchId":565924348,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"1caa618eaa804ddaaaa5fbc48365b48b","premium":8075,"serviceTax":1454,"totalPremium":9529}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"d4df4e34520a4aaebec4f7603b5fa132","premium":16100,"serviceTax":2898,"totalPremium":18998}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"d4df4e34520a4aaebec4f7603b5fa132","redirectToken":"3f33c85e553f8d108b4a493145f6dd70"}
+ErrorMessage : https://ig.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"COMPREHENSIVEIND","AgeTo":null,"AgeFrom":null,"PlanId":"0","period":"1","postalCode":"226002","schemeId":1,"sumInsuredId":1,"insureds[0]":{"dob":"October 21, 1985","sumInsuredId":1,"name":null,"sex":null,"illness":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (502) Bad Gateway.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : https://ig.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"Id":0,"FirstName":"","LastName":"","EmailId":"","DOB":"","Gender":"","MobileNo":"","Address":"","Country":"","Password":"","ConfirmPassword":"","attempttime":0,"countsec":0,"datecount":"","SecurityCode":"","sumInsuredId":0,"schemeId":2,"sumAssured":"500000","Amount":"7015","serviceTax":"1262","totalPremium":"8277","NoOfAdults":"1","NoOfChildren":"0","Plan":"Comprehensive Individual","startOn":"October 22, 2020","endOn":"October 21, 2021","policyCategory":"fresh","proposerName":"gfv  vmm","proposerEmail":"hgh@gmail.com","proposerPhone":"8798789786","proposerAddressOne":"bnhj","proposerAddressTwo":"hghgjhj","proposerAreaId":"0","proposerAreaPinCode":"226017","proposerAreaCityId":"498814","proposerResidenceAddressOne":"","proposerResidenceAddressTwo":"","proposerResidenceAreaId":"","proposerResidenceAreaPinCode":"","proposerResidenceAreaCityId":"0","proposerDob":"October 21, 1985","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000","criticalIllness":"false","insureds[0]":{"dob":"October 23, 1974","sumInsuredId":1,"name":"jjhkjhk","sex":"Male","illness":"None","relationshipId":1,"occupationId":7,"hospitalCash":"0","height":150,"weight":50,"isPersonalAccidentApplicable":"true","engageManualLabour":"Nil","engageWinterSports":"Nil","buyBackPED":0},"nomineeName":"hjgjhkj","nomineeAge":"56","nomineeRelationship":"Father","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"0b7ac3ec6a6246ef8c1f510c1ea5eaf9","SECRETKEY":"f5e918674da44343bb38212a59cb8bcd","policyTypeName":"COMPREHENSIVEIND","travelStartOn":"","travelEndOn":"","planId":10101,"postalCode":0,"period":1,"searchId":565924348,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"3bde7ec2eb114b8fac30c24c50a94f7d","premium":8075,"serviceTax":1454,"totalPremium":9529}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7015,"serviceTax":1262,"totalPremium":8277}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"1523e9d04ddd40189ce1f7248be25b41","premium":8075,"serviceTax":1454,"totalPremium":9529}

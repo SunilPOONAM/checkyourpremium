@@ -1,0 +1,1312 @@
+﻿
+@{
+    ViewBag.Title = "HealthInsurance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<link rel="stylesheet" href="~/Resources/css/health-style.css">
+
+<link rel="stylesheet" href="~/Resources/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="~/Resources/css/button.css">
+
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+<!--Hindi Font Poppins-->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+<link href="~/Resources/css/Homepage.css" rel="stylesheet" />
+<link href="~/Resources/css/Health.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+
+
+    
+    <style>
+        #cssmenu > ul > li > a {
+            width: 162px;
+        }
+            .inputGroup input:checked ~ label:before{
+            transform: none;
+        }
+        .inputGroup input {
+            width: 32px;
+            height: 24px;
+            order: 1;
+            z-index: 2;
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        .clsadv input {
+            visibility: visible !important;
+            transform: none !important;
+            position: absolute !important;
+            top: 1px !important;
+            border-radius: 0px !important;
+            width: 45px !important;
+            padding: 0px !important;
+        }
+        .inputGroup label.mn1:after{
+            display:none;
+        }
+        .inputGroup label.mn1:before {
+            display: none;
+        }
+    </style>
+
+
+
+    <!-- multistep form -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="hidden-xs hidden-sm col-md-6">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <ul id="progressbar">
+                    <li class="active">About you</li>
+                    <li>Select Members</li>
+                    <li>Select Age</li>
+
+                    <li>select city</li>
+                </ul>
+            </div>
+
+
+
+            <div class="hidden-xs hidden-sm col-md-6">
+                <div class="car-insurance">
+                    <figure class="snip1456">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample50.jpg" alt="sample50" />
+                        <div class="title-car">
+                            <div>
+                                <h2><span>Health<br />Insurance</span></h2>
+                                <h4><span style="color:#000;visibility:hidden;font-size:19px;">5555555555555555555555</span></h4>
+                                <h4>
+                                    <img src="Resources/images/healyhs.png" style="width: 48px; height: auto; opacity: 1; margin: 0 auto;" class="img-responsive">
+                                </h4>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="car-insurance-two">
+
+                    <div id="msform">
+                        <!-- progressbar -->
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:1px;">
+                                <span>Find the right health plan for you in </span>
+                            </h3>
+
+                            <div class="row-health">
+                                <h5><span>Tell us about you</span></h5>
+                                <h6><span>Gender</span></h6>
+                                <div class="middle">
+                                    <label>
+
+                                        @*<asp:RadioButton class="gndre" ID="RadioButton1" runat="server" />*@
+                                        <input class="gndre" type="radio" id="rdbmale" name="radio1" checked />
+                                        <div class="front-end box">
+                                            <span>Male</span>
+                                        </div>
+                                    </label>
+
+                                    <label>
+                                        <input class="gndre" type="radio" id="rdbfemale" name="radio1" />
+                                        <div class="back-end box">
+                                            <span>Female</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="middle-two">
+                                    <div class="col-xs-12 col-sm-12 col-md-6">
+                                        <label class="healthlbl">
+                                            <p class="label-txt"><i class="fa fa-user"></i>Name</p>
+
+                                            <input type="text" class="healthinpt" id="txtName">
+                                            @*<asp:TextBox ID="txtName" runat="server" class="healthinpt numeric1"></asp:TextBox>*@
+                                            <span class="error1" style="color: #d25068; font-size:13px; display: none"> * Only Alphabets digits</span>
+
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6">
+                                        <label class="healthlbl">
+                                            <p class="label-txt"><i class="fa fa-phone-square" aria-hidden="true"></i>Mobile Number</p>
+                                            @*<asp:TextBox ID="TxtMobile" MaxLength="10" runat="server" class="healthinpt numeric "></asp:TextBox>*@
+                                            <span class="error" style="color: #d25068; font-size:13px;  display: none">* Mobile No Input digits (0 - 9)</span>
+
+
+                                     <input type="text" class="healthinpt" id="TxtMobile">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <input type="text" class="next action-button btn-primary-ins btn-primary-insbtnerd" id="savedre" placeholder="Get Quotes" />
+                        </fieldset>
+
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:6%;"><span>Select family members to cover</span></h3>
+                            <div class="middle-two middle-twos" style="margin-top: 0;">
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option1" class="SelfChk" name="option1" type="checkbox" />
+                                        <label for="option1">Self</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option2" name="option2" type="checkbox" />
+                                        <label for="option2">Spouse</label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                  
+                                        <label class="mn1"  for="option3">Children</label>
+                                        <select id="ddlChild">
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                               
+
+
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option5" name="option1" type="checkbox" />
+                                        <label for="option5">Father</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option6" name="option2" type="checkbox" />
+                                        <label for="option6">Mother</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option7" name="option1" type="checkbox" />
+                                        <label for="option7">Grand Father</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option8" name="option2" type="checkbox" />
+                                        <label for="option8">Grand Mother</label>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="colunls-one padings">
+                                    <div class="inputGroup">
+                                        <input id="option9" name="option1" type="checkbox" />
+                                        <label for="option9">Father-in-law</label>
+                                    </div>
+
+                                </div>
+                                
+
+                                <div class="colunls-one padings" style="float: left; margin-left: 1rem;">
+                                    <div class="inputGroup">
+                                        <input id="option10" name="option2" type="checkbox" />
+                                        <label for="option10">Mother-in-law</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="text" name="previous" class="previous action-button btn-primary-insbtn btn-insidebtn" placeholder="Previous" />
+                            <input type="text" class="next action-button btn-primary-insbtn btn-insidebtn" placeholder="Next" />
+                        </fieldset>
+
+
+
+
+
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:3%;"><span>Please Select age of each members</span></h3>
+                            <div class="middle-two" style="margin-top: 0;">
+                                <div class="containerhlths-ts">
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Self</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+
+                                            <select class="Self Self1" id="Self" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+                                    </div>
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Premium In</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+
+                                            <select class="Premiumin Premiumin1" id="Premiumin">
+                                                <option value="" title="- Select -"> - Select - </option>
+                                                <option value="8900" title="8900" selected="selected">8900</option>
+                                                <option value="13350" title="13350">13350</option>
+                                                <option value="17800" title="17800">17800</option>
+                                            </select>
+                                        </span>
+                                    </div>
+
+                                    @*<div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Spouse</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="Self Self2" id="Spouse" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Son</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="Son Self3" id="Son" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Daughter</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="Son Self4" id="Daughter" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Father</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="motherfather Self5" id="Father" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Mother</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="motherfather Self6" id="Mother" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Grand Father</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="GrandFather Self7" id="GrandFather" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Grand Mother</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="GrandFather Self8" id="GrandMother" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Father in Law</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="motherfather Self9" id="FatherinLaw" disabled="disabled"></select>
+                                        </span>
+                                    </div>
+
+                                    <div class="inputGroupbtn-gs">
+                                        <span class="col-xs-12 col-md-6 pad-leflt">Mother in Law</span>
+                                        <span class="col-xs-12 col-md-6 pad-leflt">
+                                            <select class="motherfather Self10" id="MotherinLaw" disabled="disabled"></select>
+                                        </span>
+                                    </div>*@
+                                
+
+
+
+                            </div>
+                            <input type="text" name="previous" class="previous action-button btn-primary-insbtn btn-insidebtn" placeholder="Previous" />
+                            <input type="text" class="next action-button btn-primary-insbtn btn-insidebtn" placeholder="Next" />
+                        </fieldset>
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:3%;"><span>Please Select City</span></h3>
+                            <div class="cityFrhlth col-md-12">
+                                <label class="col-xs-12 col-sm-12 col-md-2" style="line-height: 35px; text-align: left; text-transform: uppercase;">City</label>
+                                
+                                <select class="col-xs-12 col-sm-12 col-md-10" id="ddlCity">
+                                    
+                                </select>
+
+                                @*<asp:UpdatePanel runat="server" ID="abc">
+                                    <contenttemplate>
+
+                                        <asp:DropDownList ID="citybind" class="col-xs-12 col-sm-12 col-md-10" runat="server" AppendDataBoundItems="true">
+                                        </asp:DropDownList>
+
+                                    </contenttemplate>
+                                </asp:UpdatePanel>*@
+                            </div>
+
+
+                            <div class="containerhlths">
+                                <h3 class="fs-subtitle" style="margin-bottom:6%;"><span>Select annual income</span></h3>
+                                <div class="inputGroupbtn">
+                                    <input id="radio1" onclick="check()" name="radio" type="radio" />
+                                    <label for="radio1">0 - 3 Lacs</label>
+                                </div>
+                                <div class="inputGroupbtn">
+                                    <input id="radio2" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio2">3 - 5 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn">
+                                    <input id="radio3" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio3">5 - 7 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn">
+                                    <input id="radio4" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio4">7 - 10 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn">
+                                    <input id="radio5" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio5">10 - 15 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn">
+                                    <input id="radio6" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio6">15 Lacs +</label>
+                                </div>
+                            </div>
+
+                            <input type="text" name="previous" class="previous action-button btn-primary-insbtn btn-insidebtn" placeholder="Previous" />
+                            <input type="text" class="next action-button btn-primary-insbtn btn-insidebtn" id="Bntsavedrecord" onclick="check2()" placeholder="Next" />
+                        </fieldset>
+
+
+
+                        <fieldset style="box-shadow:none;">
+                            <p style="margin-top: 8em;font-weight:bold;font-size:15px;">Process.......</p>
+                        </fieldset>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="~/Resources/js/jquery.min.js"></script>
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+
+
+<!-----------------------------MALE FEMALE CHECKED-------------------------------------->
+
+<script>
+    var Sona = "";
+    var Fathers = "";
+    var Spouses = "";
+    var Mothers = "";
+
+    function check2() {
+        //    var a = document.getElementById("option3").checked = true;
+        //    if (a == true)
+        //    { Sona = "Son" } else { Sona = "Null" }
+
+        // var a2 = document.getElementById("option5").checked = true;
+        //if (a2 == true)
+        //{ Fathers = "Father" } else { Fathers = "Null" }
+
+        //var a3 = document.getElementById("option2").checked = true;
+        //if (a3 == true)
+        //{ Spouses = "Spouse" } else { Spouses = "Null" }
+
+        //var a4 = document.getElementById("option6").checked = true;
+        //if (a4 == true)
+        //{ Mothers = "Mother" } else { Mothers = "Null" }
+    }
+
+
+
+</script>
+
+<script>
+    //---------------Add City-------------
+  $(document).ready(function () {
+       
+        $.ajax({
+            type: "GET",
+            url: '/HealthInsurance/City',
+            datatype: "Json",
+            success: function (data) {
+                $.each(data, function (index, value) {
+                    $('#ddlCity').append('<option value="' + value.State_ID + '">' + value.City_Name + '</option>');
+                });
+            }
+        });
+  });
+    //............................End City................................
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#Bntsavedrecord').click(function () {
+
+            var Gender = "";
+            var income = " ";
+            var City = "";
+
+
+            if (rdbmale.checked) {
+                Gender = "Male";
+            }
+            else if (rdbfemale.checked) {
+                Gender = "Female";
+            }
+
+            //----------------INCOME-------------------------
+
+            if (radio1.checked) {
+                income = "0 - 3 Lacs";
+            }
+            else if (radio2.checked) {
+                income = "3 - 5 Lacs";
+            }
+            else if (radio3.checked) {
+                income = "5 - 7 Lacs";
+            }
+            else if (radio4.checked) {
+                income = "7 - 10 Lacs";
+            }
+            else if (radio5.checked) {
+                income = "10 - 15 Lacs";
+            }
+            else if (radio6.checked) {
+                income = "15 Lacs +";
+            }
+
+
+           
+        
+
+            //------------SELECT FAMILY MEMBERS------------------
+
+            var Self = "";
+            var Sona = "";
+            var Fathers = "";
+            var Grand_father = "";
+            var Father_In_low = "";
+            var Spouses = "";
+            var Doughter = "";
+            var Mothers = "";
+            var Grand_Mother = "";
+            var FMotherInlow = "";
+            
+            //........................Self...................................
+
+            if ($('#option1').prop('checked')) {
+                Self = "Self";
+                alert(Self)
+            }
+            else {
+                Self = "null";
+            }
+
+            //------------------------Son-------------------------------------//
+            var conceptName = $('#ddlChild :selected').val();
+            //if ($('#option3').prop('Select').Val()) {
+            //    Sona = "Son";
+            //}
+            //else {
+            //    Sona = "null";
+            //}
+            //--------------------------Spouse-----------------------------------//
+
+            if ($('#option2').prop('checked')) {
+                Spouses = "Spouse";
+                alert(Spouses);
+            }
+            else {
+                Spouses = "null";
+            }
+
+            //....................................................Condition...............
+            if (Self == "Self" && conceptName == "0" && Spouses == "null")
+            {
+                Self = 1;
+                Sona = 0;
+                Spouses = 0;
+            }
+            else if (Self == "Self" && conceptName == "1" && Spouses == "null") {
+                Self = 0;
+                Sona = 0;
+                Spouses = 1;
+            }
+            else if (Self == "Self" && conceptName == "0" && Spouses == "Spouse") {
+                Self = 0;
+                Sona = 0;
+                Spouses = 2;
+            }
+            else if (Self == "Self" && conceptName == "2" && Spouses == "null") {
+                Self = 0;
+                Sona = 2;
+                Spouses = 1;
+            }
+            else if (Self == "Self" && conceptName == "1" && Spouses == "Spouse") {
+                Self =0;
+                Sona =1;
+                Spouses = 2;
+            }
+            else if (Self == "Self" && conceptName == "2" && Spouses == "Spouse") {
+                Self =0;
+                Sona = 2;
+                Spouses = 2;
+            }
+            //--------------------------FATHER-----------------------------------//
+            if ($('#option5').prop('checked')) {
+                Fathers = "Father";
+            }
+            else {
+                Fathers = "null";
+            }
+
+            
+
+            //--------------------------Mothers-----------------------------------//
+
+            if ($('#option6').prop('checked')) {
+                Mothers = "Mother";
+            }
+            else {
+                Mothers = "null";
+            }
+
+
+
+
+
+
+
+            //-------------------------------------------------
+            if ($('#option4').prop('checked')) {
+                Doughter = "Daughter";
+            }
+            else {
+                Doughter = "null";
+            }
+
+            //------------------------------------------
+            if ($('#option7').prop('checked')) {
+                Grand_father = "Grand_father";
+            }
+            else {
+                Grand_father = "null";
+            }
+
+            //------------------------------------------------
+            if ($('#option8').prop('checked')) {
+                Grand_Mother = "Grand_Mother";
+            }
+            else {
+                Grand_Mother = "null";
+            }
+
+
+            //--------------------------------------------
+            if ($('#option9').prop('checked')) {
+                Father_In_low = "Father_In_low";
+            }
+            else {
+                Father_In_low = "null";
+            }
+
+
+            //--------------------------------------------
+            if ($('#option10').prop('checked')) {
+                FMotherInlow = "Mother_In_Low";
+            }
+            else {
+                FMotherInlow = "null";
+            }
+
+
+            //------------------------------SELECT AGE--------------------------------//
+
+            var SAge = "";
+            var SoAge = "";
+            var FaAge = "";
+            var GraFaAge = "";
+            var FatInloAge = "";
+            var SpoAge = "";
+            var AgeOFDot = "";
+            var MoGeAbc = "";
+            var GraMotAge = "";
+            var MothInLAge = "";
+
+            var Self_Age = $("#Self");
+            var selectedText1 = Self_Age.find("option:selected").text();
+            var value1 = Self_Age.find("option:selected").val();
+            if (value1 > 0) { SAge = selectedText1; } else { SAge = "null" }
+
+
+
+
+            //---------------Spouse-------------
+
+            var Spouse = $("#Spouse");
+            var selectedText2 = Spouse.find("option:selected").text();
+            var value2 = Spouse.find("option:selected").val();
+            if (value2 > 0) { SpoAge = selectedText2; } else { SpoAge = "null" }
+
+
+            //---------------Son-------------
+
+            var Son = $("#Son");
+            var selectedText3 = Son.find("option:selected").text();
+            var value3 = Son.find("option:selected").val();
+            if (value3 > 0) { SoAge = selectedText3; } else { SoAge = "null" }
+
+            //---------------Daughter-------------
+
+            var Daughter = $("#Daughter");
+            var selectedText4 = Daughter.find("option:selected").text();
+            var value4 = Daughter.find("option:selected").val();
+            if (value4 > 0) { AgeOFDot = selectedText4; } else { AgeOFDot = "null" }
+
+            //---------------Father-------------
+            var Father = $("#Father");
+            var selectedText5 = Father.find("option:selected").text();
+            var value5 = Father.find("option:selected").val();
+            if (value5 > 0) { FaAge = selectedText5; } else { FaAge = "null" }
+
+
+            //---------------Mother-------------
+            var Mother = $("#Mother");
+            var selectedText6 = Mother.find("option:selected").text();
+            var value6 = Mother.find("option:selected").val();
+            if (value6 > 0) { MoGeAbc = selectedText6; } else { MoGeAbc = "null" }
+
+
+            //---------------GrandFather-------------
+            var GrandFather = $("[id*=GrandFather]");
+            var selectedText7 = GrandFather.find("option:selected").text();
+            var value7 = GrandFather.find("option:selected").val();
+            if (value7 > 0) { GraFaAge = selectedText7; } else { GraFaAge = "null" }
+
+
+            //---------------GrandMother-------------
+            var GrandMother = $("[id*=GrandMother]");
+            var selectedText8 = GrandMother.find("option:selected").text();
+            var selectedValue8 = GrandMother.find("option:selected").val();
+            if (selectedValue8 > 0) { GraMotAge = selectedText8; } else { GraMotAge = "null" }
+
+            //---------------FatherinLaw-------------
+            var FatherinLaw = $("[id*=FatherinLaw]");
+            var selectedText9 = FatherinLaw.find("option:selected").text();
+            var selectedValue9 = FatherinLaw.find("option:selected").val();
+            if (selectedValue9 > 0) { FatInloAge = selectedText9; } else { FatInloAge = "null" }
+
+
+            //---------------MotherinLaw-------------
+            var MotherinLaw = $("[id*=MotherinLaw]");
+            var selectedText10 = MotherinLaw.find("option:selected").text();
+            var selectedValue10 = MotherinLaw.find("option:selected").val();
+            if (selectedValue10 > 0) { MothInLAge = selectedText10; } else { MothInLAge = "null" }
+
+
+            var Full_Name = $("#txtName").val();
+            var MobileNo = $("#TxtMobile").val();
+
+
+            //-----------------------------------INSERT RECORD-------------------------------------//
+            var City = $('#ddlCity :selected').text();
+            var Data = {};
+            Data.Action = "Insert"
+            Data.Gender = Gender;
+            Data.Full_Name = Full_Name;
+            Data.MobileNo = MobileNo;
+            Data.income = income;
+            Data.City = City;
+            Data.Self = Self;
+            Data.Sona = Sona;
+            Data.Spouses = Spouses;
+            Data.SAge = SAge;
+          
+            $.ajax({
+                type: "POST",
+                url: "/HealthInsurance/InsertDataIp",
+                //data: "{'Gender':'" + Gender + "', 'Full_Name':'" + Full_Name + "', 'MobileNo':'" + MobileNo + "', 'income':'" + income + "', 'City':'" + City + "', 'Self':'" + Self + "', 'Sona':'" + Sona + "', 'Fathers':'" + Fathers + "', 'Grand_father':'" + Grand_father + "', 'Father_In_low':'" + Father_In_low + "', 'Spouses':'" + Spouses + "', 'Doughter':'" + Doughter + "', 'Mothers':'" + Mothers + "', 'Grand_Mother':'" + Grand_Mother + "', 'FMotherInlow':'" + FMotherInlow + "', 'SAge':'" + SAge + "', 'SoAge':'" + SoAge + "', 'FaAge':'" + FaAge + "', 'GraFaAge':'" + GraFaAge + "', 'FatInloAge':'" + FatInloAge + "', 'SpoAge':'" + SpoAge + "', 'AgeOFDot':'" + AgeOFDot + "', 'MoGeAbc':'" + MoGeAbc + "','GraMotAge':'" + GraMotAge + "', 'MothInLAge':'" + MothInLAge + "'}",
+                //data: "{'Gender':'" + Gender + "', 'Full_Name':'" + Full_Name + "', 'MobileNo':'" + MobileNo + "', 'income':'" + income + "', 'City':'" + City + "', 'Self':'" + Self + "', 'Child':'" + Sona + "', 'Adult':'" + Spouses + "', 'SAge':'" + SAge + "',}",
+                data: '{Data: ' + JSON.stringify(Data) + '}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+              
+                success: function (response) {
+                    //alert("Record Inserted..!!");
+                
+                    document.location.href = "/QuoteHealth_Controller/quotes_Health";
+                },
+                error: function () {
+
+                    alert("Error");
+                }
+            });
+            //window.location.href = "quotes_Health.aspx"
+        });
+    });
+
+</script>
+
+
+
+
+<!-----------------------Validation------------------------------>
+<!--------------------Mobile No-------------------------------------->
+
+<script>
+    var specialKeys = new Array();
+    specialKeys.push(8); //Backspace
+    $(function () {
+        $(".numeric").bind("keypress", function (e) {
+            var keyCode = e.which ? e.which : e.keyCode
+            var ret = ((keyCode >= 48 && keyCode <= 57) || specialKeys.indexOf(keyCode) != -1);
+            $(".error").css("display", ret ? "none" : "inline");
+            return ret;
+        });
+        $(".numeric").bind("paste", function (e) {
+            return false;
+        });
+        $(".numeric").bind("drop", function (e) {
+            return false;
+        });
+    });
+
+</script>
+
+
+<!------------Name------------------------------------------->
+
+<script>
+    var specialKeys = new Array();
+    specialKeys.push(8); //Backspace
+    $(function () {
+        $(".numeric1").bind("keypress", function (e) {
+            var keyCode = e.which ? e.which : e.keyCode
+            var ret = ((keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (keyCode == 32) || specialKeys.indexOf(keyCode) != -1);
+            $(".error1").css("display", ret ? "none" : "inline");
+            return ret;
+        });
+        $(".numeric1").bind("paste", function (e) {
+            return false;
+        });
+        $(".numeric1").bind("drop", function (e) {
+            return false;
+        });
+    });
+
+</script>
+
+<!-------------------------------END-------------------------------->
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#option1").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self1").removeAttr("disabled");
+                $(".Self1").focus();
+            }
+            else { $(".Self1").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option2").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self2").removeAttr("disabled");
+                $(".Self2").focus();
+            }
+            else { $(".Self2").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option3").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self3").removeAttr("disabled");
+                $(".Self3").focus();
+            }
+            else { $(".Self3").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option4").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self4").removeAttr("disabled");
+                $(".Self4").focus();
+            }
+            else { $(".Self4").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option5").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self5").removeAttr("disabled");
+                $(".Self5").focus();
+            }
+            else { $(".Self5").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option6").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self6").removeAttr("disabled");
+                $(".Self6").focus();
+            }
+            else { $(".Self6").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option7").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self7").removeAttr("disabled");
+                $(".Self7").focus();
+            }
+            else { $(".Self7").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option8").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self8").removeAttr("disabled");
+                $(".Self8").focus();
+            }
+            else { $(".Self8").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option9").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self9").removeAttr("disabled");
+                $(".Self9").focus();
+            }
+            else { $(".Self9").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<script type="text/javascript">
+    $(function () {
+        $("#option10").click(function () {
+            if ($(this).is(":checked")) {
+                $(".Self10").removeAttr("disabled");
+                $(".Self10").focus();
+            }
+            else { $(".Self10").attr("disabled", "disabled"); }
+        });
+    });
+</script>
+
+<!----------------------------------------------->
+<!-------SELF------------->
+<script>
+
+    $(function () {
+        var $select = $(".Self");
+        $select.empty().append('<option selected="selected" value="0">Select Age</option>');
+        for (i = 18; i <= 100; i++) {
+            //$select.append($('<option> </option>').val(i).html('' + i + '   ' + 'Year'))
+            $select.append($('<option> </option>').val(i).html('' + i ))
+        }
+    });
+
+</script>
+
+<!-------Son------------->
+<script>
+
+    $(function () {
+        var $select = $(".Son");
+        $select.empty().append('<option selected="selected" value="0">Select Age</option>');
+        for (i = 1; i <= 17; i++) {
+            $select.append($('<option> </option>').val(i).html('' + i + '   ' + 'Year'))
+        }
+    });
+
+</script>
+
+
+<!-------mother father------------->
+<script>
+
+    $(function () {
+        var $select = $(".motherfather");
+        $select.empty().append('<option selected="selected" value="0">Select Age</option>');
+        for (i = 40; i <= 100; i++) {
+            $select.append($('<option> </option>').val(i).html('' + i + '   ' + 'Year'))
+        }
+    });
+
+</script>
+
+<!-------Grand Father/Grand Mother------------->
+<script>
+
+    $(function () {
+        var $select = $(".GrandFather");
+        $select.empty().append('<option selected="selected" value="0">Select Age</option>');
+        for (i = 54; i <= 100; i++) {
+            $select.append($('<option> </option>').val(i).html('' + i + '   ' + 'Year'))
+        }
+    });
+
+</script>
+<!-------------------------------------CITY RECORD BIND-------------------------------------------------------->
+     @*<%--
+<script type="text/javascript">
+    $(function () {
+
+        $.ajax({
+            type: "POST",
+            url: "health-insurance.aspx/City",
+            data: '{}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+
+                $('#<%=citybind.ClientID%>')
+
+                var citybind = $("[id*=citybind]");
+                alert(citybind);
+                citybind.empty().append('<option selected="selected" value="0">MARUTI</option>');
+                $.each(r.d, function () {
+                    citybind.append($("<option></option>").val(this['Value']).html(this['Text']));
+                });
+            }
+        });
+    });
+</script>--%>*@
+
+
+
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $('.healthinpt').focus(function () {
+            $(this).parent().find(".label-txt").addClass('label-active');
+        });
+
+        $(".healthinpt").focusout(function () {
+            if ($(this).val() == '') {
+                $(this).parent().find(".label-txt").removeClass('label-active');
+            };
+        });
+
+    });
+
+</script>
+
+<script>
+
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    $(".next").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+
+        //activate next step on progressbar using the index of next_fs
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50) + "%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({
+                    'transform': 'scale(' + scale + ')',
+                    'position': 'absolute'
+                });
+                next_fs.css({ 'left': left, 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".previous").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+
+        //de-activate current step on progressbar
+        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //show the previous fieldset
+        previous_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1 - now) * 50) + "%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({ 'left': left });
+                previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".submit").click(function () {
+        return false;
+    })
+
+</script>
+
+<script>
+    (function ($) {
+        $.fn.menumaker = function (options) {
+            var cssmenu = $(this), settings = $.extend({
+                format: "dropdown",
+                sticky: false
+            }, options);
+            return this.each(function () {
+                $(this).find(".button").on('click', function () {
+                    $(this).toggleClass('menu-opened');
+                    var mainmenu = $(this).next('ul');
+                    if (mainmenu.hasClass('open')) {
+                        mainmenu.slideToggle().removeClass('open');
+                    }
+                    else {
+                        mainmenu.slideToggle().addClass('open');
+                        if (settings.format === "dropdown") {
+                            mainmenu.find('ul').show();
+                        }
+                    }
+                });
+                cssmenu.find('li ul').parent().addClass('has-sub');
+                multiTg = function () {
+                    cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+                    cssmenu.find('.submenu-button').on('click', function () {
+                        $(this).toggleClass('submenu-opened');
+                        if ($(this).siblings('ul').hasClass('open')) {
+                            $(this).siblings('ul').removeClass('open').slideToggle();
+                        }
+                        else {
+                            $(this).siblings('ul').addClass('open').slideToggle();
+                        }
+                    });
+                };
+                if (settings.format === 'multitoggle') multiTg();
+                else cssmenu.addClass('dropdown');
+                if (settings.sticky === true) cssmenu.css('position', 'fixed');
+                resizeFix = function () {
+                    var mediasize = 1000;
+                    if ($(window).width() > mediasize) {
+                        cssmenu.find('ul').show();
+                    }
+                    if ($(window).width() <= mediasize) {
+                        cssmenu.find('ul').hide().removeClass('open');
+                    }
+                };
+                resizeFix();
+                return $(window).on('resize', resizeFix);
+            });
+        };
+    })(jQuery);
+
+    (function ($) {
+        $(document).ready(function () {
+            $("#cssmenu").menumaker({
+                format: "multitoggle"
+            });
+        });
+    })(jQuery);
+
+
+</script>
+
+
+
+<script src="~/Resources/js/element.js"></script>
+
+<script>
+
+    $(function () {
+
+        var $translateBar = $('#translate-a'),
+            $translateToggle = $('.translate-toggle'),
+            $picker = $translateBar.find('select'),
+            visibleClass = "visible",
+            hideOnChange = true; // hide bar after choice
+
+        $translateToggle.on('click', function (e) {
+            e.preventDefault();
+            $translateBar.toggleClass(visibleClass);
+        });
+
+        if (hideOnChange) {
+            $translateBar.on('change', 'select', function () {
+                if ($translateBar.hasClass(visibleClass)) {
+                    $translateBar.removeClass(visibleClass);
+                }
+            });
+        }
+
+    });
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: false,
+            includedLanguages: 'en,hi',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+    }
+</script>
+
+
+
+
+
+
+<script src="~/Resources/js/bootstrap.min.js"></script>

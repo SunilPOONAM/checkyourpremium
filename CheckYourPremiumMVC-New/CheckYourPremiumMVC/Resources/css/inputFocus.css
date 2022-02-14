@@ -1,0 +1,653 @@
+﻿
+
+h6.bcvgd{
+       text-align: center;
+    line-height: 19px;
+    font-weight: 800;
+}
+
+
+.ageSelf {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageSelf .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageSelf .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+   -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -ms-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.ageSelf input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  -ms-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.ageSelf input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageSelf input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+
+.ageSelf input:not(:-ms-input-placeholder) + .label  {
+    color: #ffffff;
+   -ms-transform: translateY(-26px) scale(0.75);
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+
+
+.ageSelf input:focus {
+  background: none;
+  outline: none;
+}
+.ageSelf input:focus + span {
+  color: #07f;
+  -ms-transform: translateY(-26px) scale(0.75);
+  transform: translateY(-26px) scale(0.75);
+}
+.ageSelf input:focus + span + .border {
+  -ms-transform: translateY(-26px) scale(0.75);
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ageSpouse {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageSpouse .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageSpouse .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageSpouse input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageSpouse input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageSpouse input:not(:placeholder-shown) + span {
+      color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+
+.ageSpouse input:not(:-ms-input-placeholder) + .label {
+      color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+
+.ageSpouse input:focus {
+  background: none;
+  outline: none;
+}
+.ageSpouse input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageSpouse input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+.ageChild1 {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageChild1 .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageChild1 .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageChild1 input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageChild1 input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageChild1 input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageChild1 input:not(:-ms-input-placeholder) + .label {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageChild1 input:focus {
+  background: none;
+  outline: none;
+}
+.ageChild1 input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageChild1 input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ageChild2 {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageChild2 .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageChild2 .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageChild2 input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageChild2 input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageChild2 input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageChild2 input:not(:-ms-input-placeholder) + .label {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+
+.ageChild2 input:focus {
+  background: none;
+  outline: none;
+}
+.ageChild2 input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageChild2 input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+
+.ageBrother    {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageBrother .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageBrother .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageBrother input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageBrother input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageBrother input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageBrother input:not(:-ms-input-placeholder) + .label{
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageBrother input:focus {
+  background: none;
+  outline: none;
+}
+.ageBrother input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageBrother input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+
+.ageMother {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageMother .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageMother .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageMother input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageMother input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageMother input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageMother input:not(:-ms-input-placeholder) + .label{
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageMother input:focus {
+  background: none;
+  outline: none;
+}
+.ageMother input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageMother input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+.ageFather    {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.ageFather .label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 11px !important;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.ageFather .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.ageFather input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 25px;
+  font-size: 11px !important;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.ageFather input:hover {
+  background: rgba(34,50,84,0.03);
+}
+.ageFather input:not(:placeholder-shown) + span {
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageFather input:not(:-ms-input-placeholder) + .label{
+    color: #ffffff;
+    transform: translateY(-26px) scale(0.75);
+    background: #39abe6;
+    display: block;
+    height: 25px;
+    padding-top: 11px;
+    border-radius: 24px;
+    border: 1px solid #000;
+    font-size: 14px !important;
+}
+
+.ageFather input:focus {
+  background: none;
+  outline: none;
+}
+.ageFather input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.ageFather input:focus + span + .border {
+  transform: scaleX(1);
+}
+
+
+
+

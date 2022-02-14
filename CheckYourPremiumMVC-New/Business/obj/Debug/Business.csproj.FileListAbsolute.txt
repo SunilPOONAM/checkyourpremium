@@ -1,0 +1,304 @@
+E:\AnkitSir\CheckYourPremiumMVC\Business\bin\Debug\Business.dll
+E:\AnkitSir\CheckYourPremiumMVC\Business\bin\Debug\Business.pdb
+E:\AnkitSir\CheckYourPremiumMVC\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\AnkitSir\CheckYourPremiumMVC\Business\obj\Debug\Business.dll
+E:\AnkitSir\CheckYourPremiumMVC\Business\obj\Debug\Business.pdb
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+E:\AnkitSir\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+G:\DivyanshiNewProjects\Ankitsirchkpre02012020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+E:\AnkitSir\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+G:\DivyanshiNewProjects\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\Poonam\11-02New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+E:\Divyanshi16012020\new11feb\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+E:\Divyanshi16012020\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+C:\Users\hp\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+C:\Users\Tcs_Pc-2\Desktop\16march\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+C:\Users\Tcs_Pc-2\Desktop\New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\Divyanshi\Final\CheckYourPremium Uploaded Project\New\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\Divyanshi\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\VSProjects\CheckYrPrem190620\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\VSProjects\CheckYrPrem190620\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\VSProjects\CheckYrPrem190620\Final\January-2020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+H:\DOTNET\200620CheckYrPrem\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+H:\DOTNET\200620CheckYrPrem\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+H:\DOTNET\200620CheckYrPrem\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\VSProjects\CheckYrPrFinal220620\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\TCS Project\Final Checkyourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\Checkypr1707\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\Divyanshi\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\Divyanshi\todaybackup30072020\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\VSProjects\140820checkYrPre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\VSProjects\140820checkYrPre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\VSProjects\140820checkYrPre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Divyanshi\today14augchkpre\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll.config
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Business.pdb
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Domain.pdb
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Repository.pdb
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.xml
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\bin\Debug\Newtonsoft.Json.xml
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.dll
+D:\TCS Project\Live CheckYourpremium\CheckYourPremiumMVC-New\Business\obj\Debug\Business.pdb

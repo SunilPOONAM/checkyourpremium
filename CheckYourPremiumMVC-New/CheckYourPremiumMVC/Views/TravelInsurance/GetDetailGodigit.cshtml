@@ -1,0 +1,2637 @@
+﻿@model Domain.GetQuotationDetail
+@{
+    ViewBag.Title = "GetDetailGodigit";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<link href="~/Resources/css/TermLf-PraposerForm.css" rel="stylesheet" />
+
+<style>
+    .fa {
+        padding-right: 5px;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    .pj {
+        padding: 0px 6px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .headsFrm {
+        display: none;
+    }
+
+    .healthlbl.adsr {
+        height: 27px;
+    }
+
+    .healthinptd.ghjy {
+        text-align: left !important;
+    }
+
+
+    .healthlbl.adsr + textarea {
+        height: 27px;
+    }
+
+    textarea {
+        border-top: 0px solid #333;
+        border-left: 0px solid #333;
+        border-right: 0px solid #333;
+        border-bottom: 1px solid #333;
+        height: 29px;
+        z-index: 1;
+    }
+
+    input {
+        border: none;
+        height: 29px;
+    }
+
+    .label-txt.boghLnheight {
+        padding-top: 5px;
+    }
+
+    .radio-inline input {
+        top: -10px;
+    }
+
+    #txtNetpre {
+        background: #044882;
+        text-align: left;
+        width: 100%;
+        font-size: 12px !important;
+        font-family: 'Poppins', sans-serif !important;
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: 1px;
+        padding-left: 15px;
+        top: -4px;
+        position: relative;
+    }
+
+    #frm {
+        background: #044882;
+        float: left;
+        width: 100%;
+        padding: 13px 10px;
+    }
+
+        #frm .btn.btn-primary {
+            float: right;
+        }
+
+    section {
+        position: relative;
+    }
+
+    .paynow {
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 24rem;
+        width: 32%;
+        z-index: 999999;
+            top: 35rem;
+    }
+
+    .btn-primary {
+        color: #262727;
+        background-color: #ffffff;
+        border-color: #2e6da4;
+    }
+
+    .gftyu {
+        background: #044882;
+    }
+
+    .policyDlkls .divdf {
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+
+    .fa.fa-inr.ghtu {
+        position: initial !important;
+        color: #fff;
+        font-weight: normal;
+    }
+
+.boxifieds{
+    display:none;
+}
+    input.healthinptd {
+        height: 29px;
+    }
+</style>
+@*<form method="post" action="https://uat.bhartiaxaonline.co.in/cordys/bagi/eSuite/B2C/payMe.aspx">*@
+<link href="~/Resources/css/jquery.multiselect.css" rel="stylesheet" />
+<script src="~/Resources/js/jquery.multiselect.js"></script>
+<script src="~/Content/datatable/jquery-ui.js"></script>
+
+
+
+
+
+
+<section class="boxifieds">
+    <div class="container" style="padding: 0 0 !important;">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="logsImgs hidden-xs">
+                <a href="@Url.Action("Home", "Home")">
+                    <img src="~/Resources/images/logo2.png" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<div class="container" style="padding: 0 0 !important;">
+    <section class="termLife-Proposerfrm">
+        <form method="post" action="/TravelInsurance/GetDetailGodigit">
+            @if (ViewData["Error"] != null)
+            {
+                <script>
+                    alert('@ViewData["Error"]');
+                </script>
+
+            }
+            @Html.HiddenFor(model => model.staydays)
+            @Html.HiddenFor(model => model.PlanId)
+            @Html.HiddenFor(model => model.searchId)
+            @Html.HiddenFor(model => model.travelstartdate)
+            @Html.HiddenFor(model => model.travelenddate)
+            @Html.HiddenFor(model => model.bookingId)
+            @Html.HiddenFor(model => model.CompanyID)
+            @Html.HiddenFor(model => model.Amount)
+            @Html.HiddenFor(model => model.Product)
+            @Html.HiddenFor(model => model.paymentLink)
+            @Html.HiddenFor(model => model.paymentid)
+            @Html.HiddenFor(model => model.pakegecode)
+        
+
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" style="box-shadow: 0 0 15px #ccc;background: #fff;margin-bottom: 0em;padding-bottom: 2em;">
+
+
+
+                <div class="praposerInfo bxcDf">
+
+
+                    <div style="display:none;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">VISA TYPE</p>
+                                    <input type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />
+
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerName)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">PURPOSE OF TRAVEL</p>
+                                    <input type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerdOB)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <h5><span>Proposer (Who is paying for the policy)</span></h5>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Proposer Name </p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.proposerName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required"})
+
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerName)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.proposerdOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerdOB)
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                    @Html.DropDownListFor(model => model.Godigitgender, (SelectList)ViewData["TravelGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })
+                                    @*<label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.pgender, "Male", new { @id = "PI1", @name = "PI1" })
+                                            Male
+
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.pgender, "Female", new { @id = "PI2" })
+                                            Female
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.pgender, "Transgender", new { @id = "PI3" })
+                                            Transgender
+                                        </label>*@
+                                </label>
+                                @*@Html.ValidationMessageFor(model => model.pgender)*@
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Mobile</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.mobile, new { @min = 10, @maxlength = "10", @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.mobile, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Email</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.email, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.email)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">PinCode</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.pinCode, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @onchange = "BindCity(this.value,'other');", @maxlength = "6", @minlength = "6", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">City</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.TextBoxFor(model => model.city, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                    @Html.HiddenFor(m => m.proposerResidenceAreaCityId)
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Address</p>
+                                    @Html.TextAreaFor(model => model.address, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">State</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @Html.DropDownListFor(model => model.State, (SelectList)ViewData["GoDigitstate"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Place Of Visit</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                    @*   @Html.DropDownListFor(model => model.Country, (SelectList)ViewData["GoDigitCountry"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })*@
+                                    @Html.DropDownListFor(model => model.Country, (SelectList)ViewData["GoDigitCountry"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @multiple = "true", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Address</p>
+                                    @Html.TextBoxFor(model => model.address, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Landmark</p>
+                                    @Html.TextBoxFor(model => model.landmark, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Alternate No</p>
+                                    @Html.TextBoxFor(model => model.alternateNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off", required = "required", @maxlength = "10", @minlength = "10" })
+                                </label>@Html.ValidationMessageFor(model => model.alternateNo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Physician Name</p>
+                                    @Html.TextBoxFor(model => model.physicianName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.physicianName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div>
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Place of Visit</p>
+                                        @Html.DropDownListFor(model => model.placeOfVisit, (SelectList)ViewData["PlaceOfVisit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @multiple = "true", required = "required" })
+                                    </label>
+                                    @Html.ValidationMessageFor(model => model.placeOfVisit, "", new { @class = "text-danger" })
+                                </div>
+                            </div>*@
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div>
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Purpose</p>
+                                        @Html.DropDownListFor(model => model.travelPurposeId, (SelectList)ViewData["TravelPurpose"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })
+                                    </label>
+                                    @Html.ValidationMessageFor(model => model.travelPurposeId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>*@
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4" style="line-height: 16px; padding-top: 3px;">Physician Contact Number</p>
+                                    @Html.TextBoxFor(model => model.physicianContactNumber, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @maxlength = "10", @minlength = "10", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.physicianContactNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj"></div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="insuredInfo bxcDf">
+                    <h5><span>Insured Member Details (Choose Tab & Fill Details)</span></h5>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">GST Type</p>
+                                    @Html.TextBoxFor(model => model.gstTypeId, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">GST Number</p>
+                                    @Html.TextBoxFor(model => model.gstIdNumber, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="insuredInfo bxcDf">
+                    <h5><span>Insured Member 1 Details (Choose Tab & Fill Details)</span></h5>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                    @Html.TextBoxFor(model => model.insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.insuredPersonName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                    @Html.TextBoxFor(model => model.dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.dOB, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Marital Status</p>
+                                    @Html.DropDownListFor(model => model.maritalStatus, (SelectList)ViewData["GoDigitMaterial"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                    @Html.DropDownListFor(model => model.GodigitPgender, (SelectList)ViewData["TravelGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                    @*@ <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.gender, "Male", new { @id = "IP1" })
+                                            Male
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.gender, "Female", new { @id = "IP2" })
+                                            Female
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.gender, "Transgender", new { @id = "IP3" })
+                                            Transgender
+                                        </label>*@
+                                </label>
+                                @Html.ValidationMessageFor(model => model.gender, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Indian Passport</p>
+                                    @Html.DropDownListFor(model => model.IsIndianPassport, (SelectList)ViewData["lstPassport"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                    @*@<select class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                            <option value="">-- </option>
+                                            <option value="Y">Yes</option>
+                                            <option value="N">No</option>
+
+                                        </select>*@
+                                </label>
+                                @Html.ValidationMessageFor(model => model.IsIndianPassport, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport No</p>
+                                    @Html.TextBoxFor(model => model.passportNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @maxlength = "7", @minlength = "7", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport Expiry</p>
+                                    @Html.TextBoxFor(model => model.PassportExpiry, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Purpose</p>
+                                    @Html.DropDownListFor(model => model.travelPurposeId, (SelectList)ViewData["TravelPurpose"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.travelPurposeId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">visa Type<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.visaType, (SelectList)ViewData["visaType"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+
+
+                                </label>
+                                @Html.ValidationMessageFor(model => model.visaType, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Name</p>
+
+                                    @Html.TextBoxFor(model => model.NomineeName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(model => model.NomineeName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.Relation, (SelectList)ViewData["relationsGodit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+
+
+                                </label>
+                                @Html.ValidationMessageFor(model => model.Relation, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.assigneeRelationshipId, (SelectList)ViewData["relationsGodigit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required", @autocomplete = "off" })
+
+
+                                </label>
+                                @Html.ValidationMessageFor(model => model.Relation, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Occupation </p>*@
+                                 @*   @Html.DropDownListFor(model => model.Illness, (SelectList)ViewData["desease"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })*@
+
+
+                                    @*@ @Html.DropDownListFor(model => model.Illness, (SelectList)ViewData["desease"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @multiple = "true", required = "required" })*@
+                             @*   </label>*@
+                           @*     @Html.ValidationMessageFor(model => model.Illness, "", new { @class = "text-danger" })*@
+                            @*</div>
+                        </di*@v>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+
+                        </div>
+
+                    </div>
+                    @*For Two Adult-----------------------------------*@
+
+                    @if (Model.NoOfAdults == "2")
+{
+                         <h5><span>Insured Member 2 Details (Choose Tab & Fill Details)</span></h5>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                    @Html.TextBoxFor(model => model.insured0insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                               </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                    @Html.TextBoxFor(model => model.insured0dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Marital Status</p>
+                                    @Html.DropDownListFor(model => model.insured0maritalStatus, (SelectList)ViewData["GoDigitMaterial"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                    @Html.DropDownListFor(model => model.insured0gender, (SelectList)ViewData["TravelGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})
+                                  
+                                </label>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Indian Passport</p>
+                                    @Html.DropDownListFor(model => model.insured0IsIndianPassport, (SelectList)ViewData["lstPassport"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                  
+                                </label>
+                                </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport No</p>
+                                    @Html.TextBoxFor(model => model.insured0passportNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @maxlength = "7", @minlength = "7", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport Expiry</p>
+                                    @Html.TextBoxFor(model => model.insured0PassportExpiry, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Purpose</p>
+                                    @Html.DropDownListFor(model => model.insured0travelPurposeId, (SelectList)ViewData["TravelPurpose"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                               </div>
+                        </div>
+
+
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">visa Type<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured0visaType, (SelectList)ViewData["visaType"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+
+                                </label>
+                             </div>
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Name</p>
+
+                                    @Html.TextBoxFor(model => model.insured0NomineeName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured0Relation, (SelectList)ViewData["relationsGodit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+
+                                </label>
+                             </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured0assigneeRelationshipId, (SelectList)ViewData["relationsGodigit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Occupation </p>
+                                    @Html.DropDownListFor(model => model.insured0Illness, (SelectList)ViewData["desease"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                    </label>
+                            </div>
+                        </div>*@
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+
+                        </div>
+
+                    </div>
+}
+@*For One Child*@
+                         @if (Model.NoOfChildren == "1" || Model.NoOfChildren == "2")
+{
+                         <h5><span>Insured Child 1 Details (Choose Tab & Fill Details)</span></h5>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                    @Html.TextBoxFor(model => model.insured1insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                    @Html.TextBoxFor(model => model.insured1dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Marital Status</p>
+                                    @Html.DropDownListFor(model => model.insured1maritalStatus, (SelectList)ViewData["GoDigitMaterial"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                    @Html.DropDownListFor(model => model.insured1gender, (SelectList)ViewData["TravelGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                      </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Indian Passport</p>
+                                    @Html.DropDownListFor(model => model.insured1IsIndianPassport, (SelectList)ViewData["lstPassport"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                   
+                                </label>
+                             </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport No</p>
+                                    @Html.TextBoxFor(model => model.insured1passportNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @maxlength = "7", @minlength = "7", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport Expiry</p>
+                                    @Html.TextBoxFor(model => model.insured1PassportExpiry, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Purpose</p>
+                                    @Html.DropDownListFor(model => model.insured1travelPurposeId, (SelectList)ViewData["TravelPurpose"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                </label>
+                                @*@Html.ValidationMessageFor(model => model.insured0travelPurposeId, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">visa Type<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured1visaType, (SelectList)ViewData["visaType"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                </label>
+                              </div>
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Name</p>
+
+                                    @Html.TextBoxFor(model => model.insured1NomineeName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured1Relation, (SelectList)ViewData["relationsGodit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                </label>
+                             </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured1assigneeRelationshipId, (SelectList)ViewData["relationsGodigit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                </label>
+                                </div>
+                        </div>
+
+
+
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Occupation </p>
+                                    @Html.DropDownListFor(model => model.insured1Illness, (SelectList)ViewData["desease"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                   </label>
+                            </div>
+                        </div>*@
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+
+                        </div>
+
+                    </div>
+}
+@*End*@
+   @*k For Two Child*@
+                  @if ( Model.NoOfChildren == "2")
+{
+                         <h5><span>Insured Child 2 Details (Choose Tab & Fill Details)</span></h5>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                    @Html.TextBoxFor(model => model.insured2insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                    @Html.TextBoxFor(model => model.insured2dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Marital Status</p>
+                                    @Html.DropDownListFor(model => model.insured2maritalStatus, (SelectList)ViewData["GoDigitMaterial"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                    @Html.DropDownListFor(model => model.insured2gender, (SelectList)ViewData["TravelGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                  
+                                </label>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Indian Passport</p>
+                                    @Html.DropDownListFor(model => model.insured2IsIndianPassport, (SelectList)ViewData["lstPassport"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                                  
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport No</p>
+                                    @Html.TextBoxFor(model => model.insured2passportNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @maxlength = "7", @minlength = "7", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport Expiry</p>
+                                    @Html.TextBoxFor(model => model.insured2PassportExpiry, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Purpose</p>
+                                    @Html.DropDownListFor(model => model.insured2travelPurposeId, (SelectList)ViewData["TravelPurpose"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})
+                                </label>
+                               </div>
+                        </div>
+
+
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">visa Type<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured2visaType, (SelectList)ViewData["visaType"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})
+
+
+                                </label>
+                               </div>
+                        </div>
+
+
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Name</p>
+
+                                    @Html.TextBoxFor(model => model.insured2NomineeName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", @autocomplete = "off" })
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured2Relation, (SelectList)ViewData["relationsGodit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                </label>
+                             </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Relation<span>?</span></p>
+                                    @Html.DropDownListFor(model => model.insured2assigneeRelationshipId, (SelectList)ViewData["relationsGodigit"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+
+                                </label>
+                             
+                            </div>
+                        </div>
+
+
+
+                        @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Occupation </p>
+                                    @Html.DropDownListFor(model => model.insured2Illness, (SelectList)ViewData["desease"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+ </label>
+                            </div>
+                        </div>*@
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+
+                        </div>
+
+                    </div>
+}             
+    @*EEnd*@
+                    <style>
+                        #travelDeclaration {
+                            height: 15px !important;
+                            position: relative !important;
+                            top: 8px !important;
+                            padding: 0 !important;
+                            right: -1px !important;
+                        }
+
+
+
+                        .dfghui {
+                            display: block;
+                            border: 0px solid #e0dfdf;
+                            padding: 8px;
+                            border-radius: 10px;
+                            box-shadow: 0 0 4px #e0dfdf inset;
+                        }
+
+
+                            .dfghui ul {
+                                margin: 0px;
+                                padding: 0px 1.5rem !important;
+                            }
+
+                                .dfghui ul li {
+                                    font-size: 1.22rem;
+                                    list-style: disc;
+                                    clear: both;
+                                    text-align: justify;
+                                    font-family: 'Poppins', sans-serif !important;
+                                    line-height: normal !important;
+                                }
+
+
+                        .djkoP {
+                            font-size: 15px;
+                        }
+
+                            .djkoP ul {
+                                margin: 0px;
+                                padding: 0px;
+                            }
+
+
+                                .djkoP ul li {
+                                    font-size: 1.22rem;
+                                    clear: both;
+                                    text-align: justify;
+                                    font-family: 'Poppins', sans-serif !important;
+                                    line-height: 35px;
+                                }
+                    </style>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           
+                            <style>
+                                #myDIV {
+                                    display: none;
+                                }
+
+                                .tryuuf {
+                                    background: none;
+                                    color: #1366b5;
+                                    font-size: 15px;
+                                    cursor: pointer;
+                                    border: none;
+                                }
+
+
+                                    .tryuuf span {
+                                        font-size: 11px;
+                                        color: #be0e0e;
+                                    }
+                            </style>
+
+                            <script>
+                                    function myFunction() {
+                                        var x = document.getElementById("myDIV");
+                                        if (x.style.display === "block") {
+                                            x.style.display = "none";
+                                        } else {
+                                            x.style.display = "block";
+                                        }
+                                    }
+                            </script>
+
+
+                            <div class="djkoP">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />
+                                        <span>
+                                            I agree to the <button class="tryuuf" onclick="myFunction();return false;">Terms and Conditions <span>(please click here to check)</span></button>
+
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+
+
+
+                                <div class="dfghui" id="myDIV">
+                                    <ul>
+                                        <li>
+                                            I hereby declare, on my behalf and on behalf of all persons proposed to be insured, that the above statements, answers and/or particulars given by me are complete, true and accurate in all respects to the best of my knowledge and that I am authorized to propose on behalf of these other persons.
+                                        </li>
+
+                                        <li>
+                                            I understand that the information provided by me will form the basis of the insurance policy, is subject to the Board approved underwriting policy of the Company and that the policy will come into force only after full payment of the premium chargeable.
+                                        </li>
+                                        <li>
+                                            I further declare that l will notify in writing any change occurring in the occupation or general health of the life to be insured/proposer after the proposal has been submitted but before communication of the risk acceptance by the Company.
+                                        </li>
+                                        <li>
+                                            I declare that I consent to the company seeking medical information from any doctor or hospital who/which at any time has attended on the person to be insured/proposer or from any past or present employer concerning anything which affects the physical or mental health of the person to be insured/proposer and seeking information from any insurer to whom an application for insurance on the person to be insured /proposer has been made for the purpose of underwriting the proposal and/or claim settlement. I/We authorize the company to share information pertaining to my proposal including the medical records for the sole purpose of proposal underwriting and/or claims settlement and with any Governmental and/or Regulatory authority.
+                                        </li>
+                                        <li>
+                                            I authorize the company to share information pertaining to my proposal including the medical records of the insured/proposer for the sole purpose of underwriting the proposal and/or claims settlement and with any Governmental and/or Regulatory authority.
+                                        </li>
+                                        <li>
+                                            I agree that the Insurance company will not be liable under the insurance contract if it is found that any of my/our statements or particulars or declarations in this proposal form or other documents are incorrect /misleading /Fraudulent in any respect on any matter to the grant of a cover.
+                                        </li>
+
+                                        <li>
+                                            I accept that this policy does not cover treatment or pre-existing medical conditions/diseases/ailments that are declared or undeclared unless specifically opted and premium paid.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+
+
+                                @Html.ValidationMessageFor(model => model.travelDeclaration, "", new { @class = "text-danger" })
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <style>
+                                .fa.fa-usd.ghtu {
+                    position: initial !important;
+                    color: #fff;
+                    font-weight: normal;
+                }
+
+                span.bxfdg{
+                    position: absolute;
+                    background: #2688cf;
+                    right: -32px;
+                    bottom: 22px;
+                    padding: 3px 8px;
+                    color: #fff;
+                    font-weight: normal;
+                }
+            </style>
+
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="padding-right: 0;">
+                <div class="policyDlkls">
+                    <h5 style="margin-bottom: 0;">
+                        <span style="color:#fff;font-weight:normal;">Policy Details</span>
+                        <span class="bxfdg">individuals</span>
+                    </h5>
+                    <h6 style="text-align: left; float: left; width: 100%; margin-top: 0;">
+                        <span style="color:#fff;font-weight:normal;" class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i> Plan :</span>
+                        <span style="color:#fff;font-weight:normal;">International Plan</span>
+                    </h6>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Geographical Coverage :</span>
+                                    <label style="color: #080808; background: #fff; padding: 2px 4px; border-radius: 19px;">@Model.Plans</label>
+                                    @Html.HiddenFor(model => model.Plans)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i> Sum Assured :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-usd ghtu" aria-hidden="true"></i> @Model.sumAssured</label>
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Premium :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-inr ghtu" aria-hidden="true"></i> @Model.totalPremium</label>
+
+                                    @Html.HiddenFor(model => model.totalPremium)
+                                </label>
+                            </div>
+                        </div>
+                    </div><div class="clearfix"></div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Age :</span>
+                                    @*<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.age</label>*@
+                                    @Html.TextBoxFor(model => model.age, new { @class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds gftyu", @disabled = "disabled" })
+                                    @Html.HiddenFor(model => model.age)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>No Of Adult :</span>
+                                    @*<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.age</label>*@
+                                    @Html.TextBoxFor(model => model.NoOfAdults, new { @class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds gftyu", @disabled = "disabled" })
+                                    @Html.HiddenFor(model => model.NoOfAdults)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>No Of Child :</span>
+                                    @*<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.age</label>*@
+                                    @Html.TextBoxFor(model => model.NoOfChildren, new { @class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds gftyu", @disabled = "disabled" })
+                                    @Html.HiddenFor(model => model.NoOfChildren)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Stay Days :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"> @Model.staydays</label>
+
+                                    @Html.HiddenFor(model => model.staydays)
+                                </label>
+                            </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div>
+                                    <label class="healthlbl hj">
+                                        <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i> Cgst:</span>
+                                        <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-inr ghtu" aria-hidden="true"></i> @Model.cgst</label>
+                                        @Html.HiddenFor(model => model.cgst)
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    <div class="clearfix"></div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Sgst:</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-inr ghtu" aria-hidden="true"></i> @Model.sgst</label>
+                                    @Html.HiddenFor(model => model.sgst)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Igst:</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-inr ghtu" aria-hidden="true"></i> @Model.igst</label>
+                                    @Html.HiddenFor(model => model.sgst)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-file-pdf-o" style="color:#fff;" aria-hidden="true"></i> <a href="~/PDF/Godigit Policy Wording (Final).pdf" target="_blank" style="color:red">Policy Wording</a></span>
+                                    <label>
+
+                                    </label>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-pencil" style="color:#fff;" aria-hidden="true"></i> <a href="~/PDF/GodigtTravel Claims process.pdf" target="_blank" style="color:red">Policy Claim</a></span>
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <style>
+                        .Bnmku {
+                            padding-top: 15px;
+                            float: left;
+                            width: 100%;
+                            height: 50px;
+                            border-top: 1px solid #fff;
+                            margin-top: 15px;
+                        }
+
+                            .Bnmku div {
+                                text-align: right;
+                            }
+
+                        .label-txt.rt.ghyud {
+                            font-size: 12px !important;
+                            font-family: 'Poppins', sans-serif !important;
+                            color: #fff;
+                            font-weight: normal;
+                            letter-spacing: 1px;
+                        }
+
+                        .fa.fa-inr {
+                            z-index: 999;
+                            position: absolute;
+                            top: 3px;
+                            color: #fff;
+                            font-weight: normal;
+                        }
+                    </style>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+
+                            <div class="Bnmku">
+                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pj">
+                                    <span class="label-txt rt ghyud">
+                                        <i class="fa fa-sort" aria-hidden="true"></i> Total Premium :
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pj">
+                                    <label>
+
+                                        <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds"><i class="fa fa-inr ghtu" aria-hidden="true"></i> @Model.policyNetPremium</label>
+                                        @Html.HiddenFor(model => model.policyNetPremium)
+                                        @*<input id="txtNetpre" disabled="disabled" />*@
+
+                                    </label>
+                                    <input type="text" id="hdnDate" style="visibility:hidden" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="divdf">
+                        <hr style="margin:0px;" />
+                    </div>
+                    <div class="divdf">
+                        <span style="text-align: right; color: #fff; font-size: 8px; padding-top: 8px;display: block; width: 100%;">*Above mentioned quotes are exclusive of 18% GST</span>
+                    </div>
+                </div>
+
+
+                <!--R11 UCI ASA Row Starts-->
+                <style>
+                    table.rlevenTlr > tbody th {
+                     background-color: #465a69 !important;
+                    color: #fff;
+                    }
+
+
+                    table.rlevenTlr > tbody tr > td {
+                        text-align: right;
+                            border: 1px solid #ccc;
+                    }
+
+                        table.rlevenTlr > tbody tr > td:nth-child(1) {
+                            text-align: left;
+                        }
+
+
+                    #fgsighjt {
+                        transition: all .2s ease-out;
+                        display: none;
+                    }
+
+                    .cvrsPln {
+    border: none;
+    width: 100%;
+    line-height: 35px;
+    border-radius: 9px;
+    box-shadow: 0 0 7px #373f48 inset;
+    margin-top: 5px;
+    background: #2985d4;
+    color: #fff;
+                    }
+
+
+                    
+.page-wrapper{
+  width:100%;
+  height:100%;
+ background:rgba(0,0,0,0.5);
+  background-size:cover;
+}
+
+.blur{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+a.btn{
+  width:150px;
+  display:block;
+  margin:-25px 0 0 -75px;
+  padding:1em 0;
+  position:absolute;
+  top:50%; left:50%;
+  font:1.125em 'Arial', sans-serif;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  border-radius:5px;
+  background:rgba(217,67,86,1);
+}
+
+.modal-wrapper{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0; left:0;
+  background:rgba(28, 48, 53, 0.5);
+  visibility:hidden;
+  z-index:999;
+  opacity:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.open{
+  opacity:1;
+  visibility:visible;
+}
+
+.modal{
+  width:800px;
+  height:580px;
+  overflow-y:auto;
+  display:block;
+  margin:40% 0 0 -362px;
+  position:relative;
+  top:40%; left:50%;
+  background:#fff;
+  opacity:0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal{
+  margin-top:-200px;
+  opacity:1;
+}
+
+.head{
+  height:32px;
+  padding:1.5em 5%;
+  overflow:hidden;
+  background:#08519c;
+}
+
+.btn-close{
+width: 32px;
+    height: 32px;
+    display: block;
+    float: right;
+    position: absolute;
+    top: 6px;
+    right: 11px;
+}
+
+.btn-close::before, .btn-close::after{
+  content:'';
+  width:32px;
+  height:6px;
+  display:block;
+  background:#fff;
+}
+
+.btn-close::before{
+  margin-top:12px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.btn-close::after{
+  margin-top:-6px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.content{
+  padding:2%;
+}
+                </style>
+                <button class="cvrsPln trigger" onclick="myFunction()">Covers Plan</button>
+
+
+
+                <div class="modal-wrapper">
+                    <div class="modal">
+                        <div class="head">
+                            <a class="btn-close" href="javascript:;"></a>
+                           
+                            <a class="trigger" href="javascript:;"></a>
+                        </div>
+                        <div class="content">
+
+
+
+                            @if (Model.pakegecode == "R11")
+                            {
+                                <div id="fgsighjt">
+                                  
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="2">Digit</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">5 LK Plan</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>Emergency Medical Treatment and Evacuation</td>
+                                            <td>
+                                                $500,000
+                                            </td>
+                                            <td>$100 </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Emergency Accidental Treatment and Evacuation</td>
+                                            <td>
+                                                $550,000
+                                            </td>
+                                            <td>Nil </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td> Daily Cash Allowance (Per day/Max 5 days)</td>
+                                            <td>$50</td>
+                                            <td>2 day</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emergency Dental Treatment</td>
+                                            <td>$500</td>
+                                            <td>$100 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Personal Accident</td>
+                                            <td>
+                                                $25,000
+                                            </td>
+                                            <td>NA</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Accidental Death and Disability (Common Carrier)</td>
+                                            <td>
+                                                $5,000
+                                            </td>
+                                            <td>NA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Personal Liability & Bail Bond</td>
+                                            <td>
+                                                $25,000
+                                            </td>
+                                            <td>250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Home Buildings and Contents</td>
+                                            <td>
+                                                INR 300,000
+                                            </td>
+                                            <td>NILL</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Financial Emergency Cash</td>
+                                            <td>
+                                                $250
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Loss of Passport</td>
+                                            <td>
+                                                $250
+                                            </td>
+                                            <td>$25</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Bounced Bookings</td>
+                                            <td>
+                                                $1,000
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trip Cancellation</td>
+                                            <td>
+                                                $1,000
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Common Carrier Delay</td>
+                                            <td>
+                                                INR 2500
+                                            </td>
+                                            <td>4 HRs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delay of Checked-in Baggage</td>
+                                            <td>
+                                                $100
+                                            </td>
+                                            <td>6 Hrs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total loss of Checked-in Baggage</td>
+                                            <td>
+                                                $1,000
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Missed Connection</td>
+                                            <td>
+                                                $1,000
+                                            </td>
+                                            <td>5 Hrs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trip Abandonment</td>
+                                            <td>
+                                                $1,000
+                                            </td>
+                                            <td>NILL</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Emergency Trip Extension</td>
+                                            <td>
+                                                $500
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adventure Activities</td>
+                                            <td>
+                                                Covered
+                                            </td>
+                                            <td>NILL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hijack Cover</td>
+                                            <td>NA</td>
+                                            <td>NILL</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                            }
+
+                            @if (Model.pakegecode == "R12")
+                            {
+                                <div id="fgsighjt">
+                               
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="2">Digit</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">2.5 LK Plan</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>	Emergency Medical Treatment and Evacuation	</td>
+                                            <td>	 $250,000 	</td>
+                                            <td>	 $100 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Emergency Accidental Treatment and Evacuation	</td>
+                                            <td>	 $275,000 	</td>
+                                            <td>	 Nil 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td> wance (Per day/Max 5 days)	</td>
+                                            <td>	 $50 	</td>
+                                            <td>	2 day	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Emergency Dental Treatment	</td>
+                                            <td>	 $500 	</td>
+                                            <td>	 $100 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Personal Accident	</td>
+                                            <td>	 $25,000 	</td>
+                                            <td>	NA	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Accidental Death and Disability (Common Carrier)	</td>
+                                            <td>	 $5,000 	</td>
+                                            <td>	NA	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Personal Liability & Bail Bond	</td>
+                                            <td>	 $20,000 	</td>
+                                            <td>	 $200.0 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Home Buildings and Contents	</td>
+                                            <td>	 INR 200,000 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Financial Emergency Cash	</td>
+                                            <td>	 $200 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Loss of Passport	</td>
+                                            <td>	 $250 	</td>
+                                            <td>	 $25 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Bounced Bookings	</td>
+                                            <td>	 $500 	</td>
+                                            <td>	 Nil 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Trip Cancellation	</td>
+                                            <td>	 $1,000 	</td>
+                                            <td>	 Nil 	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Common Carrier Delay	</td>
+                                            <td>	 INR 1,500 	</td>
+                                            <td>	4 Hours	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Delay of Checked-in Baggage	</td>
+                                            <td>	 $100 	</td>
+                                            <td>	6 hours	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Total loss of Checked-in Baggage	</td>
+                                            <td>	 $1,000 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Missed Connection	</td>
+                                            <td>	 $750 	</td>
+                                            <td>	5 Hours	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Trip Abandonment	</td>
+                                            <td>	 $750 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Emergency Trip Extension	</td>
+                                            <td>	 $500 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Adventure Activities	</td>
+                                            <td>	 Covered 	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Fraudulent Charges	</td>
+                                            <td>	NA	</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+                                        <tr>
+                                            <td>	Hijack Cover	</td>
+                                            <td>		</td>
+                                            <td>	Nil	</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            }
+
+
+                            @if (Model.pakegecode == "R13")
+                            {
+                                <div id="fgsighjt">  
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="2">Digit</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">1 LK Plan</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+
+                                        <tr>	<td>	Emergency Medical Treatment and Evacuation	</td>	<td>	 $100,000 	</td>	<td>	 $100 	</td>	</tr>
+                                        <tr>	<td>	Emergency Accidental Treatment and Evacuation	</td>	<td>	 $110,000 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Daily Cash Allowance (Per day/Max 5 days)	</td>	<td>	 $50 	</td>	<td>	2 day	</td>	</tr>
+                                        <tr>	<td>	Emergency Dental Treatment	</td>	<td>	 $500 	</td>	<td>	 $100 	</td>	</tr>
+                                        <tr>	<td>	Personal Accident	</td>	<td>	 $15,000 	</td>	<td>	NA	</td>	</tr>
+                                        <tr>	<td>	Accidental Death and Disability (Common Carrier)	</td>	<td>	 $5,000 	</td>	<td>	NA	</td>	</tr>
+                                        <tr>	<td>	Personal Liability & Bail Bond	</td>	<td>	 $10,000 	</td>	<td>	 $100 	</td>	</tr>
+                                        <tr>	<td>	Home Buildings and Contents	</td>	<td>	 INR 100,000 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Financial Emergency Cash	</td>	<td>	 $150 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Loss of Passport	</td>	<td>	 $250 	</td>	<td>	 $25 	</td>	</tr>
+                                        <tr>	<td>	Bounced Bookings	</td>	<td>	 $500 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Trip Cancellation	</td>	<td>	 $500 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Common Carrier Delay	</td>	<td>	 INR 1000 	</td>	<td>	4 Hours	</td>	</tr>
+                                        <tr>	<td>	Delay of Checked-in Baggage	</td>	<td>	 $100 	</td>	<td>	6 hours	</td>	</tr>
+                                        <tr>	<td>	Total loss of Checked-in Baggage	</td>	<td>	 $750 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Missed Connection	</td>	<td>	 $500 	</td>	<td>	5 Hours	</td>	</tr>
+                                        <tr>	<td>	Trip Abandonment	</td>	<td>	 $500 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Adventure Activities	</td>	<td>	 Covered 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Fraudulent Charges	</td>	<td>	NA	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Hijack Cover	</td>	<td>	NA	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>		</td>	<td>		</td>	<td>		</td>	</tr>
+
+
+                                    </table>
+                                </div>
+                            }
+
+                            @if (Model.pakegecode == "R14")
+                            {
+                                <div id="fgsighjt">
+                                 
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="2">Digit</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">50 K Plan</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+
+                                        <tr>	<td>	Emergency Medical Treatment and Evacuation	</td>	<td>	 $50,000 	</td>	<td>	 $50 	</td>	</tr>
+                                        <tr>	<td>	Emergency Accidental Treatment and Evacuation	</td>	<td>	 $55,000 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Daily Cash Allowance (Per day/Max 5 days)	</td>	<td>	 $50 	</td>	<td>	2 day	</td>	</tr>
+                                        <tr>	<td>	Emergency Dental Treatment	</td>	<td>	 $500 	</td>	<td>	 $100 	</td>	</tr>
+                                        <tr>	<td>	Personal Accident	</td>	<td>	 $15,000 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Accidental Death and Disability (Common Carrier)	</td>	<td>	 $5,000 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Personal Liability & Bail Bond	</td>	<td>	 $10,000 	</td>	<td>	 $100.0 	</td>	</tr>
+                                        <tr>	<td>	Home Buildings and Contents	</td>	<td>	 INR 100,000 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Financial Emergency Cash	</td>	<td>	 $100 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Loss of Passport	</td>	<td>	 $250 	</td>	<td>	 $25 	</td>	</tr>
+                                        <tr>	<td>	Trip Cancellation	</td>	<td>	 $500 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Common Carrier Delay	</td>	<td>	 INR 1,000 	</td>	<td>	4 Hours	</td>	</tr>
+                                        <tr>	<td>	Delay of Checked-in Baggage	</td>	<td>	 $100 	</td>	<td>	6 hours	</td>	</tr>
+                                        <tr>	<td>	Total loss of Checked-in Baggage	</td>	<td>	 $500 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Trip Abandonment	</td>	<td>	 $300 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Adventure Activities	</td>	<td>	 Covered 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Hijack Cover	</td>	<td>	NA	</td>	<td>	Nil	</td>	</tr>
+
+
+
+                                    </table>
+                                </div>
+                            }
+
+                            @if (Model.pakegecode == "R15")
+                            {
+                                <div id="fgsighjt">
+                                  
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="2">Digit</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">50 K Asia</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+                                        <tr>	<td>	Emergency Medical Treatment and Evacuation	</td>	<td>	 $50,000 	</td>	<td>	 $50 	</td>	</tr>
+                                        <tr>	<td>	Emergency Accidental Treatment and Evacuation	</td>	<td>	 $50,000 	</td>	<td>	 Nil 	</td>	</tr>
+                                        <tr>	<td>	Personal Accident	</td>	<td>	 $10,000 	</td>	<td>	NA	</td>	</tr>
+                                        <tr>	<td>	Personal Liability & Bail Bond	</td>	<td>	 $15,000 	</td>	<td>	NA	</td>	</tr>
+                                        <tr>	<td>	Loss of Passport	</td>	<td>	 $250 	</td>	<td>	 $25 	</td>	</tr>
+                                        <tr>	<td>	Common Carrier Delay	</td>	<td>	 INR 1000 	</td>	<td>	6 Hours	</td>	</tr>
+                                        <tr>	<td>	Delay of Checked-in Baggage	</td>	<td>	 $100 	</td>	<td>	6 hours	</td>	</tr>
+                                        <tr>	<td>	Total loss of Checked-in Baggage	</td>	<td>	 $300 	</td>	<td>	Nil	</td>	</tr>
+                                        <tr>	<td>	Adventure Activities	</td>	<td>	 Covered 	</td>	<td>	NA	</td>	</tr>
+                                        <tr>	<td>	AD&D (Common carrier)	</td>	<td>	 $5,000 	</td>	<td>	NA	</td>	</tr>
+
+                                    </table>
+
+                                </div>
+                            }
+
+                            @if (Model.pakegecode == "RV" || Model.pakegecode == "RW")
+                            {
+                                <div id="fgsighjt">
+                                 
+                                    <table class="rlevenTlr" style="width:100%">
+                                        <tr>
+                                            <th rowspan="3">Coverages</th>
+                                            <th colspan="4">50K plan Senior Citizen</th>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <th rowspan="2">Age - 61 to 75 years</th>
+                                            <th rowspan="2">Age - 76 to 80 years</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Sum Insured (In USD)</th>
+                                            <th>Deductible/Time Excess</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Emergency Medical Treatment and Evacuation</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 50,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 50,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Emergency Accidental Treatment and Evacuation</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 50,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 50,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emergency Dental Treatment</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 250</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 250</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Personal Accident</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 10,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 10,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Accidental Death and Disability (Common Carrier)</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 5000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 5000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Personal Liability & Bail Bond</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 100,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 100,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Home Buildings and Contents</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>INR 100,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>INR 100,000</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Financial Emergency Cash</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 200</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 250</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Loss of Passport</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 250</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  25</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 300</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bounced Bookings</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 300</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  30</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 500</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trip Cancellation</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 300</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  30</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 500</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Common Carrier Delay</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 50</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  6 Hrs</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 100</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  6 Hrs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delay of Checked-in Baggage</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 100</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 6 Hrs</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 200</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 6 Hrs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total loss of Checked-in Baggage</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 300</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> 500</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adventure Activities</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> Yes</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i> Yes</td>
+                                            <td><i class="fa fa-usd" aria-hidden="true"></i>  Nill</td>
+                                        </tr>
+
+
+
+                                    </table>
+
+                                </div>
+                            }
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+                        @if (ViewBag.referenceId == null)
+                        {
+
+                            <div class="divdf ContButn col-xs-12 col-sm-8 col-md-8 col-lg-8 pj">
+                                <div>
+                                    <button id="continue" type="submit" value="Continue" class="btn btn-primary btn-success">Continue</button>
+                                </div>
+
+                            </div>
+
+                        }
+</form>
+
+        <script>
+    function myFunction() {
+        var x = document.getElementById("fgsighjt");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            $('#fgsighjt').css('display', 'block');
+        } else {
+            x.style.display = "block";
+        }
+    }
+        </script>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('.trigger').click(function () {
+                    $('.modal-wrapper').toggleClass('open');
+                    $('.page-wrapper').toggleClass('blur');
+                    return false;
+                });
+                $('.btn-close').click(function () {
+                    $('.modal-wrapper').removeClass('open');
+                   // $('#fgsighjt').css('display', 'block');
+                    //  $('.page-wrapper').toggleClass('blur');
+                    return false;
+                });
+            });
+
+
+        </script>
+
+
+        <div class="paynow" style="display:none">
+
+            <form method="post" id="frm">
+
+                <input type="hidden" value="@ViewBag.SecretKey" id="hdnSecreyKey" name="APIKEY" />
+                <input type="hidden" value="@ViewBag.apikey" id="hdnApiKey" name="SECRETKEY" />
+                <input type="hidden" value="@ViewBag.referenceid" id="hdnRefId" name="referenceId" />
+                <input type="hidden" value="@ViewBag.RedirectToken" id="hdnRedirectToken" name="redirectToken" />
+                @Html.HiddenFor(m => m.QuoteNo)
+                @Html.HiddenFor(model => model.OrderNo)
+                <input type="hidden" value="N" name="IsMobile" />
+                @Html.HiddenFor(model => model.Product)
+                @Html.HiddenFor(model => model.Channel)
+                @Html.HiddenFor(model => model.Amount)
+              
+                <input type="button" value="Pay Now" class="btn btn-primary" name="paynow" id="paynow" onclick="pay();" />
+            </form>
+        </div>
+       
+
+    </section>
+
+</div>
+
+<input id="staydaysvalu" name="staydaysvalu" type="hidden" value="" readonly="readonly" />
+@*<button type="submit" name="submit">Constniue</button>*@
+<script>
+    $(document).ready(function () {
+
+        var first = $("#travelstartdate").val();
+        var second = $("#travelenddate").val();
+
+        //  var startDay = new Date(first);
+        var startDay=new Date();
+        var endDay = new Date(second);
+        var millisecondsPerDay = 1000 * 60 * 60 * 24;
+
+        var millisBetween = endDay.getTime() - startDay.getTime();
+        var days = millisBetween / millisecondsPerDay;
+        $("#staydaysvalu").val(Math.floor(days));
+        // Round down.
+       // alert(Math.floor(days));
+    })
+</script>
+<script>
+    $(function () {
+        var days = $("#staydaysvalu").val();
+        
+        $("#continue").hide();
+        $("#travelDeclaration").change(function () {
+            if ($("#travelDeclaration").prop("checked") == true) {
+                $("#continue").show();
+            } else {
+                $("#continue").hide();
+            }
+        })
+        $('select[multiple]').multiselect({
+            columns: 1,
+            placeholder: 'Select',
+            search: true,
+            maxSelect: true
+        });
+        if ($("#paymentid").val() != '') {
+            $(".paynow").show();
+            var paymentlink = $("#paymentLink").val();
+
+            if ($("#OrderNo").val() != "") {
+
+                $("#frm").removeAttr("action");
+                $("#frm").attr("action", paymentlink);
+                $("#paynow").removeAttr("onclick");
+                $("#paynow").removeAttr("type");
+                $("#paynow").attr("type", "submit");
+
+            }
+        }
+        $("#proposerdOB").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "1960:2002",
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#dOB").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "1960:2002",
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#PassportExpiry").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "2020:2035",
+            minDate: days,
+            changeMonth: true,
+            changeYear: true  
+        });
+        $("#insured0dOB").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "2020:2035",
+            minDate: days,
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#insured1dOB").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "2020:2035",
+        minDate: days,
+        changeMonth: true,
+        changeYear: true  
+    });
+        $("#insured2dOB").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "2020:2035",
+            minDate: days,
+            changeMonth: true,
+            changeYear: true 
+        });
+        $("#insured0PassportExpiry").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "2020:2035",
+            minDate: days,
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#insured1PassportExpiry").datepicker({
+            autoclose: true,
+            dateFormat: "dd-mm-yy",
+            yearRange: "2020:2035",
+            minDate: days,
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#insured2PassportExpiry").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "2020:2035",
+        minDate: days,
+        changeMonth: true,
+        changeYear: true 
+    });
+    })
+</script>
+<script>
+    $("#proposerResidenceAreaCityId").change(function () {
+        var cityId = $("#proposerResidenceAreaCityId").val();
+        var pinCode = $("#proposerResidenceAreaPinCode").val();
+        if (cityId != "0" && pinCode != "") {
+            BindArea(pinCode, cityId, "residence");
+        }
+    })
+    function BindCity(pinCode, addressType) {
+        if (pinCode == "") {
+            Cleared(addressType);
+            return;
+        }
+        $.ajax({
+            url: "/HealthPlan/GetCity",
+            method: "get",
+            dataType: "json",
+            data: { "pinCode": pinCode },
+            success: function (result) {
+                if (result != null && result.status == "success") {
+                    $(".btn").removeClass("disabled");
+
+                    if (addressType != "residence") {
+                        $("#proposerAreaCityId").val(result.data[0]);
+                        $("#city").val(result.data[1]);
+
+                    }
+                    else {
+                        $("#proposerResidenceAreaCityId").val(result.data[0]);
+                        $("#CityName").val(result.data[1]);
+
+                    }
+                    BindArea(pinCode, result.data[0], addressType);
+                }
+                else {
+                    alert(result.data[0]);
+                    $(".btn").addClass("disabled");
+                    Cleared(addressType);
+                    return;
+                }
+            }
+        })
+
+    }
+    function Cleared(addressType) {
+
+        $("#proposerAreaPinCode").focus();
+        if (addressType != "residence") {
+            $("#proposerAreaId").empty();
+            $("#proposerAreaCityId").val("");
+            $("#CityAddress").val("");
+        }
+        else {
+            $("#proposerResidenceAreaCityId").val("");
+            $("#CityName").val("");
+            $("#proposerResidenceAreaId").empty();
+        }
+    }
+    function BindArea(pinCode, cityId, addressType) {
+        $.ajax({
+            url: "/HealthPlan/GetArea",
+            method: "get",
+            data: { "pinCode": pinCode, "cityId": cityId },
+            success: function (result) {
+
+                if (result != null) {
+                    if (addressType != "residence") {
+                        $("#proposerAreaId").empty();
+
+                    }
+                    else {
+                        $("#proposerResidenceAreaId").empty();
+                    }
+                    $.each(result, function (row) {
+
+                        if (addressType != "residence") {
+                            $("#proposerAreaId").append("<option value='" + result[row].areaID + "'>" + result[row].areaName + "</option>");
+
+                        }
+                        else {
+                            $("#proposerResidenceAreaId").append("<option value='" + result[row].areaID + "'>" + result[row].areaName + "</option>");
+
+                        }
+                    });
+                }
+            }
+        })
+    }
+</script>
+<script>
+    function pay() {
+        var paymentlink = $("#paymentLink").val();
+        $.ajax({
+            url: "GenerateToken",
+            method: "post",
+            data: { "refid": $("#hdnRefId").val() },
+            success: function (response) {
+                if (response) {
+                    // $("#hdnRedirectToken").val(response.token);
+                    if (paymentlink == "Failed") {
+                        ("#paynow").hide();
+                    }
+                    else {
+                        $("#frm").attr("action", paymentlink);
+                        $("#frm").submit();
+                    }
+                }
+            }
+
+        });
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var date = $('hdnDate').val();
+        hdnDate.value = Date.now();
+        //      var s = $('#hdnDate').val($.datepicker.formatDate("mm/dd/yy", new Date()))
+        var d1 = new Date();
+        var d2 = d1.toLocaleDateString("en-IN");
+        hdnDate.value = d2;
+
+        var s = hdnDate.value;
+
+    });
+</script>
+
+<script>
+    $("#placeOfVisit").on('change', function (e) {
+        if (Object.keys($(this).val()).length > 5) {
+            alert("You can not select more then 5 place");
+            $('option[value="' + $(this).val().toString().split(',')[5] + '"]').prop('selected', false);
+        }
+    });
+    $("#proposerdOB").change(function () {
+        var dob = $("#proposerdOB").val();
+        var d = dob.split("-");
+        var d = d.pop();
+        var dtt = $("#hdnDate").val();
+        var dt = dtt.split("/");
+        var dt = dt.pop();
+        var age = Math.floor((dt - d));
+        var agee = $("#age").val(age);
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        var n1 = parseInt($('#cgst').val());
+        var n2 = parseInt($('#sgst').val());
+        var n3 = parseInt($('#totalPremium').val());
+        var r = n1 + n2 + n3;
+        var total = $("#policyNetPremium").val(r);
+
+    })
+</script>
+@*ppppppppppppppppppppppp.....................................................................................*@
+<script>
+    $(document).ready(function () {
+
+        $("#mobile").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#pinCode").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#alternateNo").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("#physicianContactNumber").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+<script>
+        $("#IsIndianPassport").change(function () {
+            var pass = $("#IsIndianPassport").val();
+            if (pass == "No") {
+                if ($("#travelDeclaration").prop("checked") == false) {
+                    $("#passportNo").prop("disabled", true);
+                    $("#continue").hide();
+                }
+            }
+            else if (pass == "Yes") {
+                if ($("#travelDeclaration").prop("checked") == true) {
+
+
+                    $("#passportNo").prop("disabled", false);
+                    $("#continue").show();
+                }
+            }
+        });
+    </script>
+<script>
+    $(document).ready(function () {
+        var start = parseInt($('#travelstartdate').val());
+        var end = parseInt($('#travelenddate').val());
+        var days = end - start;
+        var total = $("#staydays").val(days+1);
+
+    })
+</script>
+
+@* end .......pp
+    ppppppppp...........................................................................*@
+
+
+
+
+
+
+
+

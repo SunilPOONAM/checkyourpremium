@@ -1,0 +1,117 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <script type="text/javascript">
+        function RedirectAfterDelayFn() {
+            var seconds = 5;
+            var dvCountDown = document.getElementById("CountDown");
+            var lblCount = document.getElementById("CountDownLabel");
+            dvCountDown.style.display = "block";
+            lblCount.innerHTML = seconds;
+            setInterval(function () {
+                seconds--;
+                lblCount.innerHTML = seconds;
+                if (seconds == 0) {
+                    dvCountDown.style.display = "none";
+                    window.location = "Redirected.aspx";
+                }
+            }, 1000);
+        }
+    </script>
+
+
+    <style>
+
+        body {
+            background: #056996;
+             background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Muli', sans-serif;
+            color: #fff;
+        }
+
+        #CountDown h4 {
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 2rem;
+        }
+
+        #CountDown {
+            text-align: center;
+        }
+
+
+        #CountDownLabel {
+            display: inline-block;
+            font-size: 5rem;
+            font-family: 'Roboto', sans-serif !important;
+            font-weight:bold;
+            background: rgb(95,36,123);
+            background: linear-gradient(180deg, rgb(9, 114, 165) 0%, rgb(159, 194, 236) 100%);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 12px;
+            width: 100px;
+            height: 100px;
+            color: white;
+            -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+            -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.37);
+        }
+
+        .seconds {
+            display: inline-block;
+            font-size: 3rem;
+            padding: 1rem;
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+
+
+<body style="height: 180px" onload="RedirectAfterDelayFn()">
+    <form id="form1">
+        <div>
+            <br/>
+            <br />
+            <br />
+            <div id="CountDown" style="display: none">
+               <h4>You will be redirected after</h4> 
+             
+                <span id="CountDownLabel"></span> <span class="seconds">seconds</span>
+            </div>
+        </div>
+    </form>
+</body>
+<script type="text/javascript">
+    function RedirectAfterDelayFn() {
+        var seconds = 30;
+        var dvCountDown = document.getElementById("CountDown");
+        var lblCount = document.getElementById("CountDownLabel");
+        dvCountDown.style.display = "block";
+        lblCount.innerHTML = seconds;
+        setInterval(function () {
+            seconds--;
+            lblCount.innerHTML = seconds;
+            if (seconds == 0) {
+                dvCountDown.style.display = "none";
+             window.location = "LoginDetails";
+            }
+        }, 1000);
+    }
+</script>
+  
+</html>
+  

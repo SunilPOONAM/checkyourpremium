@@ -1,0 +1,463 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-90206346",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "1130.0",
+      "sgst" : "86.0",
+      "cgst" : "86.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116338",
+      "policyNetPremium" : "958.0"
+    },
+    "policyID" : "D400267303",
+    "transactionDate" : "26-02-2020T10:33:40",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2C3896319EC19EE7B11C3B0C60B25E84375ABFA4A08224200733FC27D2BFEBD7CFC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=7417046BC221093A0734AA739ED0F343"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'vdf fgfsg', 'cliGender': 'Male', 'age':'60', 'cliDOB': '04/02/1960', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '10000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'vdf fgfsg', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '60', 'LADOB': '04/02/1960', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'vdf fgfsg', 'cliGender': 'Male', 'age':'60', 'cliDOB': '04/02/1960', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '10000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'vdf fgfsg', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '60', 'LADOB': '04/02/1960', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'vdf fgfsg', 'cliGender': 'Male', 'age':'60', 'cliDOB': '04/02/1960', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '5', 'premiumPayingTerm': '5', 'sumAssured': '10000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'vdf fgfsg', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '60', 'LADOB': '04/02/1960', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'vdf fgfsg', 'cliGender': 'Male', 'age':'60', 'cliDOB': '04/02/1960', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '10000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'vdf fgfsg', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '60', 'LADOB': '04/02/1960', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'vdf fgfsg', 'cliGender': 'Male', 'age':'60', 'cliDOB': '04/02/1960', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '10000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'vdf fgfsg', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '60', 'LADOB': '04/02/1960', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14696","totalPremium":"17149.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12454","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '20000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '20000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '30', 'premiumPayingTerm': '30', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14696","totalPremium":"17149.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12454","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"15614","totalPremium":"18216.76","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"509","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"13232","hcbPremium":"1988","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14243","totalPremium":"16624.6","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"473","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12070","hcbPremium":"1803","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '4022', 'premiumPayingTerm': '4022', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '39', 'premiumPayingTerm': '39', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '5444', 'premiumPayingTerm': '5444', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '44', 'premiumPayingTerm': '44', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40455', 'premiumPayingTerm': '40455', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"26968","totalPremium":"29349.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"473","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"22854","hcbPremium":"1803","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '39', 'premiumPayingTerm': '39', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14243","totalPremium":"16624.6","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"473","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12070","hcbPremium":"1803","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14696","totalPremium":"17149.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12454","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"27843","totalPremium":"30297.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"23596","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '39', 'premiumPayingTerm': '39', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14243","totalPremium":"16624.6","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"473","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12070","hcbPremium":"1803","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"16538","totalPremium":"19140.7","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"509","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"14015","hcbPremium":"1988","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '45', 'premiumPayingTerm': '45', 'sumAssured': '1000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '45', 'premiumPayingTerm': '45', 'sumAssured': '1000044400', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '45', 'premiumPayingTerm': '45', 'sumAssured': '100000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '100000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '40', 'premiumPayingTerm': '40', 'sumAssured': '1000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : http://103.118.2.17/whitelabelapi/v2/getpremium
+InnerExceptionMessage : { 'product': 'Zindagiplus', 'fullName':  'fdgfd fghdd', 'cliGender': 'Male', 'age':'28', 'cliDOB': '06/02/1992', 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': 'Yes', 'policyTerm': '39', 'premiumPayingTerm': '39', 'sumAssured': '10000000.0', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '100000', 'ATPD': '100000', 'CI': '100000', 'HCB': '100000', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false',   'LAFullName': 'fdgfd fghdd', 'LAEmail': 'd@gmail.com','LAMarriedStatus':'single', 'LANumber': '9878765645', 'LATobacco': 'Yes', 'LAAge': '28', 'LADOB': '06/02/1992', 'investmentStrategy': '', 'LAGender': 'Male', 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': '', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14243","totalPremium":"16624.6","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"473","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12070","hcbPremium":"1803","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10542","totalPremium":"13130.12","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8934","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"19621","totalPremium":"22209.04","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"16628","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10221","totalPremium":"12732.16","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"522","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8662","hcbPremium":"1883","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-91903475",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116613",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400267600",
+    "transactionDate" : "26-02-2020T15:54:31",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2826D5E238DBFF78F5BD66BD3DB5796BAD9BF8A9328C552731AB767C9602531D66315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F45A86E9F11641F719F5A3812977B12B"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-74392343",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "1130.0",
+      "sgst" : "86.0",
+      "cgst" : "86.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116642",
+      "policyNetPremium" : "958.0"
+    },
+    "policyID" : "D400267633",
+    "transactionDate" : "26-02-2020T16:46:02",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2C8AB568AA0D64E05ED4122E5246A332BD9BF8A9328C552731AB767C9602531D66315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=FD16E47AC0FCDB121A7F2300927CFEDD"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-58150952",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "1130.0",
+      "sgst" : "86.0",
+      "cgst" : "86.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116643",
+      "policyNetPremium" : "958.0"
+    },
+    "policyID" : "D400267634",
+    "transactionDate" : "26-02-2020T16:46:57",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V200F52278DB4F5AF054D801FBDDD49ACCFFF6EC97ACD9DAFE40E9C332822338CFFC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F1683F23E0B3E756EA3A173774303E7F"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-3066915", "type": "I", "purpose": "L", "customer": { "firstName": "uhyruytu", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Babhana", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" },{ "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "8797898797", "email": "f@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-02-26", "packageName": "R14", "geography": "UCI", "travelEndDate": "2020-03-10", "travelStartDate": "2020-02-27", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (401) Unauthorized.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-28467217", "type": "I", "purpose": "L", "customer": { "firstName": "uhyruytu", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Babhana", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "8797898797", "email": "f@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-02-26", "packageName": "R14", "geography": "UCI", "travelEndDate": "2020-03-10", "travelStartDate": "2020-02-27", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-19147523", "type": "I", "purpose": "L", "customer": { "firstName": "uhyruytu", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Babhana", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "8797898797", "email": "f@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-02-26", "packageName": "R14", "geography": "UCI", "travelEndDate": "2020-03-10", "travelStartDate": "2020-02-27", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-40585456",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "1130.0",
+      "sgst" : "86.0",
+      "cgst" : "86.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116649",
+      "policyNetPremium" : "958.0"
+    },
+    "policyID" : "D400267640",
+    "transactionDate" : "26-02-2020T16:51:11",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V200B3A8C728C7B8CFE9CD1E4127B16337D9BF8A9328C552731AB767C9602531D66315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLinkSent" : false,
+    "paymentLink" : "Failed"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-41339745",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116839",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400267818",
+    "transactionDate" : "26-02-2020T17:57:42",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V20AE6768C02CA58C4BAB02FAAFBFD7299D221E224E8ED0D3260FF7D661BE68D996315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLinkSent" : false,
+    "paymentLink" : "Failed"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-50316293",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116842",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400267821",
+    "transactionDate" : "26-02-2020T17:58:22",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2E8C82639CE7F78CD25948F86D8940F8698265A966AFE491363D8B847123EFBBCFC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=C6F7F48E6477C5774828A8140D2FAA7B"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-231375",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116921",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400267907",
+    "transactionDate" : "26-02-2020T18:12:58",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2362653CEA4A14C90D9894EACD7ECAE1798265A966AFE491363D8B847123EFBBCFC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=086B93C29BAF14FBA97675FE394D6255"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-20299241",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "839.0",
+      "sgst" : "64.0",
+      "cgst" : "64.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001116925",
+      "policyNetPremium" : "711.0"
+    },
+    "policyID" : "D400267911",
+    "transactionDate" : "26-02-2020T18:13:24",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2F00ECD5995BBA4B6DABCDE417AA09FF198265A966AFE491363D8B847123EFBBCFC067322FE3ED8A99B03178BA5DF02B6",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F8B1B637E0388AA087981C65CA6E4BFC"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-77237698",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "538.0",
+      "sgst" : "0.0",
+      "cgst" : "0.0",
+      "ugst" : "0.0",
+      "igst" : "82.0",
+      "invoiceNumber" : "IA001116933",
+      "policyNetPremium" : "456.0"
+    },
+    "policyID" : "D400267921",
+    "transactionDate" : "26-02-2020T18:15:29",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2D36085242AA7366CB59F20B17A72F6830B6BD18C8EF7687C74DD4B0C777B78D46315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=63D6864D169E219C054FD7C77686EC0B"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals//token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":""}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-54056037",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "538.0",
+      "sgst" : "0.0",
+      "cgst" : "0.0",
+      "ugst" : "0.0",
+      "igst" : "82.0",
+      "invoiceNumber" : "IA001116946",
+      "policyNetPremium" : "456.0"
+    },
+    "policyID" : "D400267932",
+    "transactionDate" : "26-02-2020T18:21:20",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2D34B904F0B3F59B4F9492AA5E0A5BC170B6BD18C8EF7687C74DD4B0C777B78D46315C363096B4FA7B25B4D0635A4A89F",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F4AACF9B1C44E957C9D1916E443DCDA3"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals//token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":""}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.

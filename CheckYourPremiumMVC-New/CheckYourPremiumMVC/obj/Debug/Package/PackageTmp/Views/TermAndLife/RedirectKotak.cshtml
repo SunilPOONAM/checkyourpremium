@@ -1,0 +1,536 @@
+﻿@model Domain.ZPModel
+@{
+    ViewBag.Title = "RedirectKotak";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<body>
+    <form name="Aggregator" method="post" action="https://insurance.kotak.com/EinsuranceWebApi/api/Aggregator/PostPartnerData" id="frmPayout">
+        <div class=" title">
+            <h1>Aggregator | <span>Data</span></h1>
+        </div>
+        <div align="center" class="font-family:Arial, Helvetica, sans-serif; font-size:11px; ">
+            <div class="panel-form">
+                <div class="form-txt">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Gender
+                                        </div>
+                                        <input type="text" name="gender" id="GENDER" value="@ViewData["Gender"].ToString()" class="autosuggest input-style-newone" style="width:150px">
+
+
+                                    </div>
+                                    <div>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Tobacco User
+                                        </div>
+                                        <input type="text" name="tobacco_user" id="TOBACCO_USER" value="@ViewData["Smoke"].ToString()" class="autosuggest input-style-newone" style="width:150px">
+                                    </div>
+                                    <div>
+                                        <img src="../images/error-icon.jpg" style="display: none;" /><label for="lbltobaccouser" id="lbltobaccouser"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            DOB
+                                        </div>
+                                        <input name="dob" id="DOB" type="text" value="@ViewData["Dob"].ToString()" class="autosuggest input-style-newone" />
+                                        <!--<img id="datepicker" src="../images/calender_icon.gif" onclick="return false" />-->
+                                    </div>
+                                    <div>
+                                        <img id="imgdob" src="../images/error-icon.jpg" style="display: none;" /><label for="lbldob" id="lbldob"></label>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Sum Assured
+                                        </div>
+                                        <input name="sumassured" id="SUMASSURED" type="text" value="2500000" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgsumassured" src="../images/error-icon.jpg" style="display: none;" /><label for="lblsumassured" id="lblsumassured"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Policy Term
+                                        </div>
+                                        <input name="policy_term" id="POLICY_TERM" type="text" value="15" maxlength="2" size="2" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgpolicyTerm" src="../images/error-icon.jpg" style="display: none;" /><label for="lblpolicyTerm" id="lblpolicyTerm"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Premium Payment Term
+                                        </div>
+                                        <input name="premium_payment_term" id="PREMIUM_PAYMENT_TERM" type="text" value="15" maxlength="2" size="2" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgpremiumpaymentterm" src="../images/error-icon.jpg" style="display: none;" /><label for="lblpremiumpaymentterm" id="lblpremiumpaymentterm"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Payment Type
+                                        </div>
+                                        <select name="payment_type" id="PAYMENT_TYPE" style="width:150px" class="autosuggest input-style-newone">
+                                            <option value="Regular Pay">Regular Pay</option>
+                                            <option value="Limited Pay">Limited Pay</option>
+                                            <option value="Single Premium">Single Premium</option>
+
+                                        </select>
+
+                                    </div>
+                                    <div>
+                                        <img id="imgpaymenttype" src="../images/error-icon.jpg" style="display: none;" /><label for="lblpaymenttype" id="lblpaymenttype"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Residency Status
+                                        </div>
+                                        <select name="residency_status" id="RESIDENCY_STATUS" style="width: 150px" onchange="validatestate();" class="autosuggest input-style-newone">
+                                            <option value="IND">IND</option>
+                                            <option value="NRI">NRI</option>
+                                            <option value="OCI">OCI</option>
+                                            <option value="PIO">PIO</option>
+                                        </select>
+                                        <!--<input name="residency_status" id="residencytype" type="text" value="" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />-->
+                                    </div>
+                                    <div>
+                                        <!--<img id="imgresidencytype" src="../images/error-icon.jpg" style="display: none;" /><label for="lblresidencytype" id="lblresidencytype"></label>-->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="currentState" runat="server">
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Current State of Correspondence
+                                        </div>
+                                        <select name="current_state" id="CURRENT_STATE" style="width: 150px;" class="autosuggest input-style-newone">
+                                            <option>Select</option>
+                                            <option>Andaman and Nicobar</option>
+                                            <option>Andhra Pradesh</option>
+                                            <option>Arunachal Pradesh</option>
+                                            <option>Assam</option>
+                                            <option>Bihar</option>
+                                            <option>Chandigarh</option>
+                                            <option>Chattisgarh</option>
+                                            <option>Dadra and Nagar Haveli</option>
+                                            <option>Daman and Diu</option>
+                                            <option>Delhi</option>
+                                            <option>Goa</option>
+                                            <option>Gujarat</option>
+                                            <option>Haryana</option>
+                                            <option>Himachal Pradesh</option>
+                                            <option>Jammu and Kashmir</option>
+                                            <option>Jharkhand</option>
+                                            <option>Karnataka</option>
+                                            <option>Kerala</option>
+                                            <option>Lakshadweep</option>
+                                            <option>Madhya Pradesh</option>
+                                            <option>Maharashtra</option>
+                                            <option>Manipur</option>
+                                            <option>Meghalaya</option>
+                                            <option>Mizoram</option>
+                                            <option>Nagaland</option>
+                                            <option>Odisha</option>
+                                            <option>Pondicherry</option>
+                                            <option>Punjab</option>
+                                            <option>Rajasthan</option>
+                                            <option>Sikkim</option>
+                                            <option>Tamil Nadu</option>
+                                            <option>Telangana</option>
+                                            <option>Tripura</option>
+                                            <option>Uttar Pradesh</option>
+                                            <option>Uttarakhand</option>
+                                            <option>West Bengal</option>
+                                        </select>
+                                        <select name="Current_StateNRI" id="CurrentStateNRI" style="width: 150px; display:none" class="autosuggest input-style-newone">
+                                            <option>Outside India</option>
+                                        </select>
+                                        <!--<input name="residency_status" id="residencytype" type="text" value="" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />-->
+                                    </div>
+                                    <div>
+                                        <img id="imgcustomerstate" src="../images/error-icon.jpg" style="display: none;" /><label for="lblcustomerstate" id="lblcustomerstate"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Premium Payment Frequency
+                                        </div>
+                                        <select name="premium_payment_frequency" id="PREMIUM_PAYMENT_FREQUENCY" style="width:150px" class="autosuggest input-style-newone">
+                                            <option value="Monthly">Monthly</option>
+                                            <option value="Annually">Annually</option>
+                                            <!--<option value="Half Yearly">Half Yearly</option>
+                                            <option value="Quarterly">Quarterly</option>-->
+                                            <option value="Single Premium">Single Premium</option>
+                                        </select>
+                                        <!--<input name="premium_payment_frequency" id="premiumpaymentfrequency" type="text" value="" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />-->
+                                    </div>
+                                    <div>
+                                        <!--<img id="imgpremiumpaymentfrequency" src="../images/error-icon.jpg" style="display: none;" /><label for="lblpremiumpaymentfrequency" id="lblpremiumpaymentfrequency"></label>-->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Plan Option
+                                        </div>
+                                        <select name="plan_option" id="PLAN_OPTION" style="width: 150px" class="autosuggest input-style-newone">
+                                            <option value="Life">Life</option>
+                                            <option value="Life Plus">Life Plus</option>
+                                            <option value="Life Secure">Life Secure</option>
+                                        </select>
+
+                                    </div>
+                                    <div>
+                                        <img id="imgplanoption" src="../images/error-icon.jpg" style="display: none;" /><label for="lblplanoption" id="lblplanoption"></label>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Payout Option
+                                        </div>
+                                        <select name="payout_option" id="PAYOUT_OPTION" style="width: 150px" class="autosuggest input-style-newone">
+                                            <option value="Immediate Payout">Immediate Payout</option>
+                                            <option value="Level Recurring Payout">Level Recurring Payout</option>
+                                            <option value="Increasing Recurring Payout">Increasing Recurring Payout</option>
+                                        </select>
+
+                                    </div>
+                                    <div>
+                                        <!--<img id="imgpayoutoption" src="../images/error-icon.jpg" style="display: none;" /><label for="lblpayoutoption" id="lblpayoutoption"></label>-->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Rider SumAssured
+                                        </div>
+                                        <input name="rider_sa" id="RIDER_SA" type="text" value="250000" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgridersa" src="../images/error-icon.jpg" style="display: none;" /><label for="lblridersa" id="lblridersa"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Rider PT
+                                        </div>
+                                        <input name="rider_pt" id="RIDER_PT" type="text" value="40" onkeypress="return onlyNos(event,this);" maxlength="2" size="2" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgriderpt" src="../images/error-icon.jpg" style="display: none;" /><label for="lblriderpt" id="lblriderpt"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Rider PPT
+                                        </div>
+                                        <input name="rider_ppt" id="RIDER_PPT" type="text" value="40" onkeypress="return onlyNos(event,this);" maxlength="2" size="2" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgriderppt" src="../images/error-icon.jpg" style="display: none;" /><label for="lblriderppt" id="lblriderppt"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            First Name
+                                        </div>
+                                        <input name="fname" id="FIRSTNAME" type="text" value="@ViewData["Name"].ToString()" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgfirstname" src="../images/error-icon.jpg" style="display: none;" /><label for="lblfirstname" id="lblfirstname"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Last Name
+                                        </div>
+                                        <input name="lname" id="LASTNAME" type="text" value="" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imglastname" src="../images/error-icon.jpg" style="display: none;" /><label for="lbllastname" id="lbllastname"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Email Id
+                                        </div>
+                                        <input name="emailId" id="EMAILID" type="email" value="@ViewData["Email"].ToString()" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgemailid" src="../images/error-icon.jpg" style="display: none;" /><label for="lblemailid" id="lblemailid"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Mobile No
+                                        </div>
+                                        <input name="mobile_no" id="MOBILE_NO" type="text" onkeypress="return onlyNos(event,this);" value="@ViewData["Phone"].ToString()" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgmobileno" src="../images/error-icon.jpg" style="display: none;" /><label for="lblmobileno" id="lblmobileno"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Source Name
+                                        </div>
+                                        <select name="source" id="SOURCE" style="width:150px" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone">
+                                            <option value="CHECKYOURPREMIUM">CHECKYOURPREMIUM</option>
+                                        </select>
+                                        <!--<input name="source" id="sourcename" type="text" value="PolicyBazar" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />-->
+                                    </div>
+                                    <div>
+                                        <img src="../images/error-icon.jpg" style="display: none;" /><label for="lblsourcename" id="lblsourcename"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            FIRC
+                                        </div>
+                                        <select name="firc" id="FIRC" style="width: 150px" class="autosuggest input-style-newone">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                        <!--  <input type="radio" name="fircyes" value="Yes" checked="checked" />
+                                               Yes
+                                        <input type="radio" name="fircno" value="No" />
+                                               No<br />-->
+
+                                    </div>
+                                    <img src="../images/error-icon.jpg" style="display: none;" /><label for="lblfirc" id="lblfirc"></label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Rider Name
+                                        </div>
+                                        <input name="rider_name" id="RIDER_NAME" type="text" value="CriticalIllnessBenefit" onkeypress="return onlyAlphabets(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgridername" src="../images/error-icon.jpg" style="display: none;" /><label for="lblridername" id="lblridername"></label>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr style="display: none;">
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Basic Premium
+                                        </div>
+                                        <input name="base_premium" id="BASE_PREMIUM" type="text" value="25000" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgbasepremium" src="../images/error-icon.jpg" style="display: none;" /><label for="lblbasepremium" id="lblbasepremium"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Rider Premium
+                                        </div>
+                                        <input name="rider_premium" id="RIDER_PREMIUM" type="text" value="2500" onkeypress="return onlyNos(event,this);" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgriderpremium" src="../images/error-icon.jpg" style="display: none;" /><label for="lblriderpremium" id="lblriderpremium"></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            ISBackdated
+                                        </div>
+                                        <select name="isbackdated" id="ISBACKDATED" style="width:150px" class="autosuggest input-style-newone">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                        <!--<input type="radio" name="ISBackdatedyes" value="Yes" checked="checked" />
+                                               Yes
+                                        <input type="radio" name="ISBackdatedno" value="No" />
+                                               No<br />-->
+                                    </div>
+                                    <img id="imgisbackdated" src="../images/error-icon.jpg" style="display: none;" /><label for="lblisbackdated" id="lblisbackdated"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="idbackdated_date" style="display:none;">
+                            <td>
+                                <div class="panel-form">
+                                    <div class="form-fields">
+                                        <div class="form-txt" style="float: left; width: 200px;">
+                                            Backdated Date
+                                        </div>
+                                        <input name="backdatedDate" id="BACKDATEDDATE" type="text" value="23-Jan-2017" class="autosuggest input-style-newone" />
+                                    </div>
+                                    <div>
+                                        <img id="imgbackdateddate" src="../images/error-icon.jpg" style="display: none;" /><label for="lblbackdateddate" id="lblbackdateddate"></label>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="next-back-button">
+                <div style="width: 150px; margin: 0 auto;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="bottom-back-next-style">
+                        <tr>
+                            <td align="center">
+
+                                <input name="Submit" type="button" value="Submit" class="Calculate-btn" onclick="document.Aggregator.submit(); pagevalidations()" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+
+    </form>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $("#frmPayout").submit();
+
+    });
+
+
+</script>
+

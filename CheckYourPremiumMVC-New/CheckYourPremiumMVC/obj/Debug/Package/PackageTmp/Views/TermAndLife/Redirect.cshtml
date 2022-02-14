@@ -1,0 +1,100 @@
+﻿@model Domain.ZPModel
+@{
+    ViewBag.Title = "Redirect";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+@Html.HiddenFor(model=>model.Company) 
+@*<form action="http://gogo.edelweisstokio.in/zindagi-plus/buy?src=A5A067e#no-back" method="Post"  id="frmPayout">*@
+<form action="https://www.edelweisstokio.in/zindagi-plus/buy?src=A5A067e#no-back" method="Post" id="frmPayout">
+    @Html.ValidationSummary(true)
+    @Html.AntiForgeryToken()
+    <label>Redirecting To Zindagi Plus</label>
+    @*@Html.HiddenFor(x => x.FullName)
+        @Html.HiddenFor(x => x.Gender)
+        @Html.HiddenFor(x => x.Age)
+        @Html.HiddenFor(x => x.DOB)
+        @Html.HiddenFor(x => x.Smoke)
+        @Html.HiddenFor(x => x.Earning)
+        @Html.HiddenFor(x => x.MaritialStatus)
+        @Html.HiddenFor(x => x.Phone)
+        @Html.HiddenFor(x => x.Email)
+        @Html.HiddenFor(x => x.SumAssured)
+        @Html.HiddenFor(x => x.PolicyTerm)
+        @Html.HiddenFor(x => x.PPT)
+        @Html.HiddenFor(x => x.Frequency)
+        @Html.HiddenFor(x => x.BHB_Ind)
+        @Html.HiddenFor(x => x.TUB_Ind)
+        @Html.HiddenFor(x => x.PWB_Ind)
+        @Html.HiddenFor(x => x.ADB_Ind)
+        @Html.HiddenFor(x => x.PD_Ind)
+        @Html.HiddenFor(x => x.HCB_ind)
+        @Html.HiddenFor(x => x.DSA_ind)
+        @Html.HiddenFor(x => x.ADB)
+        @Html.HiddenFor(x => x.ATPD)
+        @Html.HiddenFor(x => x.CI)
+        @Html.HiddenFor(x => x.HCB)
+        @Html.HiddenFor(x => x.CIC_Ind)
+        @Html.HiddenFor(x => x.CIC_SumAssured)
+        @Html.HiddenFor(x => x.CIC_ClaimOption)
+        @Html.HiddenFor(x => x.CIC_PolicyTerm)
+        @Html.HiddenFor(x => x.TopupRate)
+        @Html.HiddenFor(x => x.TotalBenefit)
+        @Html.HiddenFor(x => x.PolicyOption)
+        @Html.HiddenFor(x => x.SpouseFirstName)
+        @Html.HiddenFor(x => x.SpouseLastName)
+        @Html.HiddenFor(x => x.SpouseDOB)
+        @Html.HiddenFor(x => x.SpouseGender)
+        @Html.HiddenFor(x => x.SpouseAge)
+        @Html.HiddenFor(x => x.SpouseTobbacoUser)
+        @Html.HiddenFor(x => x.AdditionalBenefit)
+        @Html.HiddenFor(x => x.TopUpBenefitPercentage)
+        @Html.HiddenFor(x => x.PayoutOption)
+        @Html.HiddenFor(x => x.PayoutMonths)
+        @Html.HiddenFor(x => x.PayoutPercentageLumpsum)
+        @Html.HiddenFor(x => x.PayoutPercentageLevelIncome)
+        @Html.HiddenFor(x => x.PayoutPercentageIncreasingIncome)
+        @Html.HiddenFor(x => x.TransID),*@
+    <div style="display:none;">
+        <p>
+            @Html.TextAreaFor(x => x.hdnZindagiPlusdata)
+
+
+            <input type="email" name="hdneId" id="hdneId" value="@Model.Email" class="form-control frmnow" />
+
+            @*@Html.TextBoxFor(model => model.Email, new { @class = "form-control frmnow", @type = "email", @name = "hdneId" })*@
+            @*<input name="hdneId" type="email" value="@Session["Email"]">*@
+            <font color="red"> * Required</font>
+        </p>
+        <p>
+            <label>Phone:</label>
+            <input type="number" name="hdnpno" id="hdnpno" value="@Model.Phone" class="form-control frmnow" />
+            @*@Html.TextBoxFor(model => model.Phone, new { @class = "form-control frmnow", @type = "number", @name = "hdnpno" })*@
+            @*<input name="hdnpno" type="number" value="@Session["Phone"]">*@
+            <font color="red"> * Required</font>
+        </p>
+        <p>
+            <label>Source:</label>
+            <input name="src" type="text" value="A5A067">
+            (Optional for direct and Required for Partners. Get your code from ETLI SPOC)
+        </p>
+        <p>
+            <label>Tab Index:</label>
+            <input name="hdntabindex" type="text" value="1">
+            <font color="red"> * Required</font> (Tab Index: 1 = investment details and 2 = Summary Page)
+        </p>
+        @*<p><textarea name="hdnZindagiPlusdata" id="hdnresponseString"></textarea></p>*@
+        <input type="submit" id="buynow" name="buynow" value="BUY THIS PLAN1" />
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+        //var com = $("#Company").val();
+        //if (com == "10007") {
+        //      window.location.href = "https://uat.indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+        //}
+        //else {
+          $("#frmPayout").submit();
+      //  }
+    });
+</script>

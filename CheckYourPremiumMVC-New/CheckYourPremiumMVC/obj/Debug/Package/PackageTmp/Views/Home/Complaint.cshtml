@@ -1,0 +1,335 @@
+﻿
+@{
+    ViewBag.Title = "Complaint";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<!--===============================================================================================-->
+@*<link rel="stylesheet" type="text/css" href="~/contactUss/vendor/bootstrap/css/bootstrap.min.css">*@
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/css/util.css">
+<link rel="stylesheet" type="text/css" href="~/Resources/contactUss/css/main.css">
+<!--===============================================================================================-->
+
+
+<style>
+    .footer {
+        margin-top: 0 !important;
+    }
+
+    .contact1-form p {
+        font-size: 13px;
+        color: #545050;
+        text-align: justify;
+        line-height: 16px;
+        margin-bottom: 2rem;
+        font-family: Montserrat-Regular, sans-serif !important;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    textarea.input1 {
+        background: #fff;
+    }
+
+    .contact1-pic p {
+        font-size: 13px;
+        color: #545050;
+        text-align: justify;
+        line-height: 16px;
+        font-family: 'Poppins', sans-serif !important;
+        margin-bottom: 2rem;
+    }
+
+    .fa.fa-paper-plane-o {
+        color: #ffffff !important;
+        text-shadow: 0 0 0px #000;
+        font-size: 24px !important;
+    }
+
+
+    .nottxt {
+        font-size: 13px;
+        color: #545050;
+        text-align: justify;
+        line-height: 16px;
+      
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin-left: 2.4rem;
+        padding-top: 1rem;
+    }
+
+    .contact1-pic .divuxd {
+        float: left;
+        width: 100%;
+        clear: both;
+        position: relative;
+        margin-bottom: 1rem;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+        .contact1-pic .divuxd div .fa.fa-envelope-open {
+            color: #dc4d4d !important;
+            text-shadow: 0 0 0px #000 !important;
+            font-size: 18px;
+        }
+
+        .contact1-pic .divuxd div .fa.fa-phone {
+            color: #022f9a !important;
+            text-shadow: 0 0 0px #000 !important;
+            font-size: 18px;
+        }
+
+        .contact1-pic .divuxd div .fa.fa-bolt {
+            color: #333 !important;
+            text-shadow: 0 0 0px #000 !important;
+            font-size: 18px;
+        }
+
+
+    .nottxt.nomgf {
+        margin-left: 3rem;
+        margin-top: 0rem;
+    }
+
+
+    .social-icon2 .social2 {
+        display: inline-block;
+        margin: 1rem;
+        background: #d6d4d4;
+        padding: 1px 16px;
+        border-radius: 5px;
+        font-size: 20px;
+        text-shadow: none !important;
+    }
+
+        .social-icon2 .social2 .fa.fa-facebook {
+            text-shadow: none !important;
+            color: #2247ff;
+        }
+
+        .social-icon2 .social2 .fa.fa-twitter {
+            background: none !important;
+            color: #0b8ed1;
+            text-shadow: none !important;
+        }
+
+        .social-icon2 .social2 .fa.fa-linkedin {
+            text-shadow: none !important;
+            color: #2247ff;
+        }
+</style>
+
+
+
+<style>
+    .contact1.dfghtsd {
+        background: #464646;
+    }
+
+    .container-contact1.regtser {
+        background: transparent;
+        padding: 0;
+    }
+
+        .container-contact1.regtser span {
+            position: absolute;
+            top: 14rem;
+            color: #fc0;
+            font-weight: bold;
+        }
+
+        .container-contact1.regtser h3 {
+            font-size: 3rem;
+            color: #fff;
+            text-align: left;
+            font-family: Montserrat-Regular, sans-serif;
+            font-weight: bold;
+            line-height: 7rem;
+        }
+
+        .container-contact1.regtser p {
+            font-size: 13px;
+            color: #fff;
+            text-align: justify;
+            line-height: 19px;
+            font-family: Montserrat-Regular, sans-serif !important;
+            margin-bottom: 2rem;
+        }
+
+    input.input1 {
+        background: #ffffff;
+    }
+
+    .pulseff {
+        color: #fff;
+        position: relative;
+        left: 11rem;
+        top: -8px;
+    }
+</style>
+
+
+
+<div class="contact1 dfghtsd">
+    <div class="container-contact1 regtser">
+        <h3>Submit Your Complaint</h3>
+        <span>___________</span>
+        <div style="float: left; width: 100%; clear: both;">
+
+            <p class="col-md-7">
+                You can log your queries and complaints via this online<br />
+                form or on Our email id. We will look into them
+                on priority.
+            </p>
+
+            @*<div class='pin'></div>*@
+            @*<div class='pulseff'>ETInsure</div>*@
+
+        </div>
+    </div>
+
+    <div class="container-contact1" style="background:#fff;">
+
+        <form class="contact1-form validate-form col-md-7" style="padding:0px;">
+            <span class="contact1-form-title">
+                Register Online
+            </span>
+            <p>
+                To- support@checkyourpremium.com
+            </p>
+
+            <div class="wrap-input1 validate-input" data-validate="Name is required">
+                <input class="input1" type="text" name="From" placeholder="From">
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input1" type="text" name="Subject" placeholder="Subject">
+                <span class="shadow-input1"></span>
+            </div>
+
+
+
+            <div class="wrap-input1 validate-input" data-validate="Message is required" style="margin-bottom: 0px;">
+                <textarea class="input1" name="message" placeholder="Complaint" rows="7"></textarea>
+                <span class="shadow-input1"></span>
+            </div>
+
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn">
+                    <span>
+                      Submit
+                    </span>
+                </button>
+            </div>
+            <div class="clearfix"></div>
+            <p>
+                You can also approach the insurer's Grievance Redressal officer.<br />
+                A list is available on the IRDAI website.
+            </p>
+        </form>
+
+
+        <div class="contact1-pic col-md-5" style="padding-right:0px;">
+            <span class="contact1-form-title">
+                Contact with us-
+            </span>
+            <p style="visibility:hidden;">
+                Our call & chat support is available f7 p.m. on
+
+            </p>
+            <div class="divuxd">
+                <div class="col-md-12">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>&nbsp;&nbsp;Drop a mail
+                </div>
+                <div class="col-md-12">
+                    <div class="nottxt">
+                       support@checkyourpremium.com
+                    </div>
+                </div>
+            </div>
+            <div class="divuxd">
+                <div class="col-md-12">
+                    <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call us
+                </div>
+                <div class="col-md-12">
+                    <div class="nottxt">
+                        0755-4932378
+                    </div>
+                </div>
+            </div>
+            <div class="divuxd">
+                <div class="col-md-12">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;">Registered Off:-</span>
+                </div>
+                <div class="col-md-12">
+                    <div class="nottxt nomgf">
+                        Flat No. MIG B-3/501, Fifth Floor,<br />
+                        Ruchi Lifespace,Jaatkhedi,<br />Bhopal
+                    </div>
+
+                </div>
+            </div>
+            <div class="divuxd">
+                <div class="col-md-12">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;">Corporate Off:-</span>
+                </div>
+                <div class="col-md-12">
+                    <div class="nottxt nomgf">
+                        Shop No. MB-28, B – Block, <br />
+                        Mansarovar Complex,<br />
+                        Shivaji Nagar,<br />Bhopal
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<!--===============================================================================================-->
+@*<script src="contactUss/vendor/jquery/jquery-3.2.1.min.js"></script>*@
+<!--===============================================================================================-->
+<script src="~/Resources/contactUss/vendor/bootstrap/js/popper.js"></script>
+@*<script src="contactUss/vendor/bootstrap/js/bootstrap.min.js"></script>*@
+<!--===============================================================================================-->
+<script src="~/Resources/contactUss/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/Resources/contactUss/vendor/tilt/tilt.jquery.min.js"></script>
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->

@@ -1,0 +1,238 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"15808","totalPremium":"18396.46","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"13397","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"24516","totalPremium":"27627.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"838","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20776","hcbPremium":"2168","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"37043","totalPremium":"40657.56","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"1181","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"31392","hcbPremium":"2328","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":16205,"serviceTax":2916,"totalPremium":19121}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"16205","serviceTax":"2916","totalPremium":"19121","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"gdfg ","proposerEmail":"dibvya@gmail.com","proposerPhone":"9789789789","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1964","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 04, 1993","sumInsuredId":2,"name":"etreter ","sex":"Female","illness":"None","description":"","relationshipId":3,"occupationId":10,"hospitalCash":"0","height":156,"weight":35,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"05-02-1992","sumInsuredId":2,"name":"srfes dfgds","sex":"Male","illness":"None","description":"","relationshipId":0,"occupationId":11,"hospitalCash":"0","height":156,"weight":40,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Daughter in Law","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12210,"postalCode":0,"period":1,"searchId":20291,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"16205","serviceTax":"2916","totalPremium":"19121","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"gdfg ","proposerEmail":"divya@gmai.com","proposerPhone":"9789789789","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1964","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000000","criticalIllness":"false","insureds[0]":{"dob":"February 04, 1993","sumInsuredId":2,"name":"etreter ","sex":"Female","illness":"None","description":"","relationshipId":3,"occupationId":10,"hospitalCash":"0","height":156,"weight":35,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"05-02-1992","sumInsuredId":2,"name":"srfes dfgds","sex":"Male","illness":"None","description":"","relationshipId":0,"occupationId":11,"hospitalCash":"0","height":156,"weight":40,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Daughter in Law","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12210,"postalCode":0,"period":1,"searchId":20291,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"16205","serviceTax":"2916","totalPremium":"19121","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"gdfg ","proposerEmail":"fdsf@gmail.com","proposerPhone":"9789789789","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1964","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000000","criticalIllness":"false","insureds[0]":{"dob":"February 04, 1993","sumInsuredId":2,"name":"etreter ","sex":"Female","illness":"None","description":"","relationshipId":3,"occupationId":10,"hospitalCash":"0","height":156,"weight":35,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"05-02-1992","sumInsuredId":2,"name":"srfes dfgds","sex":"Male","illness":"None","description":"","relationshipId":0,"occupationId":11,"hospitalCash":"0","height":156,"weight":40,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Daughter in Law","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12210,"postalCode":0,"period":1,"searchId":20291,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-61945808",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001101392",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400252151",
+    "transactionDate" : "04-02-2020T12:40:48",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2970C23457B40CD9B08843E0E9BBB8C5EFF309A67554F853CEE1A47E1189E8B6564C0BF762E47FD16958D794DED111C03",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=EBDD92DBC5AEB0574F70A677F26FA442"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { "bookingId": "retail-2020-51311142", "type": "I", "purpose": "L", "customer": { "firstName": "divya ", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "lucknow", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D89U0112" } ], "dob": "1990-02-02", "mobile": "9353568667", "email": "Bindu.S@godigit.com", "type": "N" }, "insuredPersons": [ { "firstName": "Neha", "lastName": "Justforretail", "address": { "line1": "N.W. College", "line2": "", "line3": "", "state": "27", "city": "Pune", "country": "IND", "pinCode": "411001" }, "documents": [ { "type": "PPT", "id": "D890112" } ], "dob": "1990-02-02", "mobile": "9797897897", "email": "divyaZ@gmail.com", "profession": "", "paxId": "1", "nominee": { "relationship": "S", "name": "Uduwei Uhdewui" }, "type": "N", "gender": "ML" } ], "insuredPersonsCount": "1", "bookingDate": "2020-02-04", "packageName": "R14", "geography": "UCI", "travelEndDate": "2020-02-07", "travelStartDate": "2020-02-05", "discountFlag": "" }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (504) Gateway Timeout.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"ec89aede459f48a38de87d4bafb645dd","premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"ec89aede459f48a38de87d4bafb645dd","redirectToken":"98000025d84b875e171b6a6cb9c00397"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-3565113",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001101402",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400252164",
+    "transactionDate" : "04-02-2020T12:50:22",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V28C8891BBB6FA57796B54106860E93CE6FF309A67554F853CEE1A47E1189E8B6564C0BF762E47FD16958D794DED111C03",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=378C04D2CD1ECE0F4564F780A37525E9"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-3043617",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001101404",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400252166",
+    "transactionDate" : "04-02-2020T12:56:43",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V226D38589A6823DE1566E934220417A14FF309A67554F853CEE1A47E1189E8B6564C0BF762E47FD16958D794DED111C03",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=F50E80316444D675AB4DC738E620DE2D"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-17899182",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001101406",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400252169",
+    "transactionDate" : "04-02-2020T12:59:39",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V287B39AD261312E23FD6B9561434DE941FF309A67554F853CEE1A47E1189E8B6564C0BF762E47FD16958D794DED111C03",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=D1C16CA5B3370D737F900931A2825A40"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"6994","totalPremium":"8423.86","accidentalDeathPremium":"31","permanentDisabilityPremium":"24","criticalIllnessPremium":"224","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"5927","hcbPremium":"1151","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"ddsafs ","proposerEmail":"divya@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61382","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61489","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1982","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000000","criticalIllness":"false","insureds[0]":{"dob":"February 04, 1993","sumInsuredId":2,"name":"etreter ","sex":"","illness":"None","description":"","relationshipId":2,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 02, 1995","sumInsuredId":2,"name":"asdsad ","sex":"Female","illness":"None","description":"","relationshipId":0,"occupationId":11,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20298,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"ddsafs ","proposerEmail":"dsfs@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"568837","proposerAreaPinCode":"226013","proposerAreaCityId":"498557","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61804","proposerResidenceAreaPinCode":"226018","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1982","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1984","sumInsuredId":2,"name":"etreter ","sex":"","illness":"None","description":"","relationshipId":2,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 02, 1995","sumInsuredId":2,"name":"asdsad ","sex":"Female","illness":"None","description":"","relationshipId":0,"occupationId":11,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20298,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"ddsafs ","proposerEmail":"d@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61454","proposerAreaPinCode":"226012","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61567","proposerResidenceAreaPinCode":"226017","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1982","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1982","sumInsuredId":2,"name":"etreter ","sex":"Male","illness":"None","description":"","relationshipId":1,"occupationId":1,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 01, 1984","sumInsuredId":2,"name":"asdsad ","sex":"Female","illness":"None","description":"","relationshipId":0,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20298,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"ddsafs ","proposerEmail":"d@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"568837","proposerAreaPinCode":"226013","proposerAreaCityId":"498557","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1982","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1982","sumInsuredId":2,"name":"etreter ","sex":"Male","illness":"None","description":"","relationshipId":1,"occupationId":1,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 01, 1984","sumInsuredId":2,"name":"asdsad ","sex":"Female","illness":"None","description":"","relationshipId":2,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20298,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"ddsafs ","proposerEmail":"d@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"lkjlkjl","proposerAddressTwo":"hlkhlkjl","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"tyruyrt","proposerResidenceAddressTwo":"tyrtu","proposerResidenceAreaId":"61547","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1982","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1982","sumInsuredId":2,"name":"etreter ","sex":"Male","illness":"None","description":"","relationshipId":1,"occupationId":1,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 03, 1983","sumInsuredId":2,"name":"srfes dfgds","sex":"Female","illness":"None","description":"","relationshipId":2,"occupationId":10,"hospitalCash":"0","height":155,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20298,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":1,"sumAssured":"300000","Amount":"7235","serviceTax":"1302","totalPremium":"8537","NoOfAdults":"2","NoOfChildren":"0","Plan":"Family Health Optima","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"dsfgsdg","proposerEmail":"d@gmail.com","proposerPhone":"9789789789","proposerAddressOne":"fdhggfhgf","proposerAddressTwo":"dhfghfgj","proposerAreaId":"61548","proposerAreaPinCode":"226015","proposerAreaCityId":"3090","proposerResidenceAddressOne":"eytr","proposerResidenceAddressTwo":"juhytuty","proposerResidenceAreaId":"61506","proposerResidenceAreaPinCode":"226017","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1983","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 03, 1983","sumInsuredId":2,"name":"sggrfger","sex":"Female","illness":"None","description":"","relationshipId":1,"occupationId":1,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"February 01, 1985","sumInsuredId":2,"name":"srfes dfgds","sex":"Female","illness":"None","description":"","relationshipId":2,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"tyrtu","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"FHONEW","travelStartOn":"","travelEndOn":"","planId":12207,"postalCode":0,"period":1,"searchId":20299,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"e72fa1b7a4c7468789ec87e2d157c356","premium":7235,"serviceTax":1302,"totalPremium":8537}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"e72fa1b7a4c7468789ec87e2d157c356","redirectToken":"86ad46c7cd0c19d464b4f4dba1a7770f"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":1,"schemeId":0,"sumAssured":"500000","Amount":"14030","serviceTax":"2526","totalPremium":"16556","NoOfAdults":"1","NoOfChildren":"0","Plan":"Comprehensive Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"dgdfgd","proposerEmail":"divya@gmail.com","proposerPhone":"9797897897","proposerAddressOne":"gdfhdg","proposerAddressTwo":"hvjhgj","proposerAreaId":"61380","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"dhtdgh","proposerResidenceAddressTwo":"tjhryj","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 2001","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 02, 1984","sumInsuredId":1,"name":"etreter ","sex":"Female","illness":"None","description":"","relationshipId":16,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"true","engageManualLabour":"Nil","engageWinterSports":"Nil","buyBackPED":0},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0,"isPersonalAccidentApplicable":"","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"nomineeName":"fhfthfgh","nomineeAge":"23","nomineeRelationship":"SoninLaw","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"COMPREHENSIVEIND","travelStartOn":"","travelEndOn":"","planId":10101,"postalCode":0,"period":1,"searchId":20300,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/Sorry! Looks like something went wrong at our end. If you would like to reach out to us please write to us at support@@starhealth.in./token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":"Sorry! Looks like something went wrong at our end. If you would like to reach out to us please write to us at support@@starhealth.in."}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":1,"schemeId":0,"sumAssured":"150000","Amount":"6274","serviceTax":"1130","totalPremium":"7404","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"fsdgdfhggd","proposerEmail":"d@gmail.com","proposerPhone":"9689689879","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61380","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"ljljk","proposerResidenceAddressTwo":"ljklkjl","proposerResidenceAreaId":"61547","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1997","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"1000000","criticalIllness":"false","insureds[0]":{"dob":"February 03, 1997","sumInsuredId":1,"name":"truyu","sex":"Male","illness":"None","description":"","relationshipId":16,"occupationId":2,"hospitalCash":"1","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0},"nomineeName":"fhruyj","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10251,"postalCode":0,"period":1,"searchId":20301,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":1,"schemeId":0,"sumAssured":"150000","Amount":"6274","serviceTax":"1130","totalPremium":"7404","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"fsdgdfhggd","proposerEmail":"d@gmail.com","proposerPhone":"9689689879","proposerAddressOne":"hjhfgj","proposerAddressTwo":"ghkjgk","proposerAreaId":"61380","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"fgjhfgj","proposerResidenceAddressTwo":"fjhgjhg","proposerResidenceAreaId":"61490","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1997","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"10000000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1992","sumInsuredId":1,"name":"grgrege","sex":"Female","illness":"None","description":"","relationshipId":8,"occupationId":10,"hospitalCash":"0","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0},"nomineeName":"dghdfhg","nomineeAge":"23","nomineeRelationship":"Others","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10251,"postalCode":0,"period":1,"searchId":20301,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":1,"schemeId":0,"sumAssured":"150000","Amount":"6274","serviceTax":"1130","totalPremium":"7404","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"dsafaf","proposerEmail":"d@gmail.com","proposerPhone":"9753457348","proposerAddressOne":"khjk","proposerAddressTwo":"hlhkll","proposerAreaId":"61380","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"hgfhfg","proposerResidenceAddressTwo":"jhgjhg","proposerResidenceAreaId":"61547","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1997","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"100000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1991","sumInsuredId":1,"name":"sggrfger","sex":"Male","illness":"None","description":"","relationshipId":8,"occupationId":3,"hospitalCash":"1","height":156,"weight":56,"isPersonalAccidentApplicable":"false","engageManualLabour":"","engageWinterSports":"","buyBackPED":0},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0},"nomineeName":"dghdfhg","nomineeAge":"23","nomineeRelationship":"Cousin Son","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10251,"postalCode":0,"period":1,"searchId":20305,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":1,"schemeId":0,"sumAssured":"150000","Amount":"6274","serviceTax":"1130","totalPremium":"7404","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"dsafaf","proposerEmail":"ds@gmail.com","proposerPhone":"9753457348","proposerAddressOne":"lko","proposerAddressTwo":"lko","proposerAreaId":"61441","proposerAreaPinCode":"226017","proposerAreaCityId":"3090","proposerResidenceAddressOne":"gdfhdg","proposerResidenceAddressTwo":"hgfjhfj","proposerResidenceAreaId":"61555","proposerResidenceAreaPinCode":"226015","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1997","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"1","socialStatusBpl":"1","socialStatusDisabled":"1","socialStatusInformal":"1","socialStatusUnorganized":"1","previousMedicalInsurance":"","annualIncome":"100000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1990","sumInsuredId":1,"name":"sggrfger","sex":"Male","illness":"None","description":"","relationshipId":1,"occupationId":2,"hospitalCash":"0","height":156,"weight":56},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0},"nomineeName":"sfdgdsg","nomineeAge":"23","nomineeRelationship":"SoninLaw","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10251,"postalCode":0,"period":1,"searchId":20305,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"sumInsuredId":0,"schemeId":0,"sumAssured":"150000","Amount":"3137","serviceTax":"564","totalPremium":"3701","NoOfAdults":"1","NoOfChildren":"0","Plan":"Medi Classic Individual","startOn":"February 05, 2020","endOn":"February 04, 2021","policyCategory":"fresh","proposerName":"sdfsd ","proposerEmail":"d@gmail.com","proposerPhone":"9756546457","proposerAddressOne":"gdfgh","proposerAddressTwo":"hgfhgf","proposerAreaId":"61381","proposerAreaPinCode":"226016","proposerAreaCityId":"3090","proposerResidenceAddressOne":"lko","proposerResidenceAddressTwo":"lko","proposerResidenceAreaId":"61547","proposerResidenceAreaPinCode":"226016","proposerResidenceAreaCityId":"3090","proposerDob":"February 04, 1997","panNumber":"","gstTypeId":"","gstIdNumber":"","aadharNumber":"","eiaNumber":"","socialStatus":"0","socialStatusBpl":"0","socialStatusDisabled":"0","socialStatusInformal":"0","socialStatusUnorganized":"0","previousMedicalInsurance":"","annualIncome":"100000","criticalIllness":"false","insureds[0]":{"dob":"February 01, 1990","sumInsuredId":1,"name":"etreter ","sex":"Male","illness":"None","description":"","relationshipId":1,"occupationId":3,"hospitalCash":"0","height":156,"weight":56},"insureds[1]":{"dob":"","sumInsuredId":1,"name":"","sex":"","illness":"","description":"","relationshipId":0,"occupationId":0,"hospitalCash":"0","height":0,"weight":0},"nomineeName":"ghfgh","nomineeAge":"23","nomineeRelationship":"Others","nomineePercentClaim":"100","appointeeName":"","appointeeAge":"","appointeeRelationship":"","nomineeNameTwo":"","nomineeAgeTwo":"","nomineeRelationshipTwo":"","nomineePercentClaimTwo":"","appointeeNameTwo":"","appointeeAgeTwo":"","appointeeRelationshipTwo":"","APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"MCINEW","travelStartOn":"","travelEndOn":"","planId":10251,"postalCode":0,"period":1,"searchId":20306,"companyId":"10006"}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.

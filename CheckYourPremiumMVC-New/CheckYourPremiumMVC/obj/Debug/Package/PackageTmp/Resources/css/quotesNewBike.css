@@ -1,0 +1,162 @@
+﻿ 
+span.image-policy label img{
+    width:8rem;
+}
+
+
+
+
+select.healthinpt {
+    height: 20px;
+    font-size: 11px;
+    float: right;
+}
+select.healthinpt {
+    border-bottom: 0px solid #777 !important;
+    height: 27px;
+}
+select.healthinpt {
+    border-bottom: 0px solid #777 !important;
+    background: #f9f9f9;
+    width: 100%;
+    margin-top: 0px;
+    height: 27px;
+    font-family: 'Comfortaa', cursive !important;
+    border: none;
+    padding-left: 9px;
+    max-width: 192px;
+}
+
+
+
+  a.AddD {
+        display: block;
+        background: #587e0f;
+        color: #fff !important;
+        text-align: center;
+        border-radius: 42px;
+        max-width: 118px;
+        margin: 0 auto;
+        line-height: 26px;
+        cursor:pointer;
+        margin-top:8px;
+    }
+    p.label-txgt {
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 1vw;
+}
+    p.label-txt {
+    color: #fff;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    float: left;
+    line-height: 27px;
+    background: #0c69a7;
+    width: 114px;
+    padding-left: 5px;
+}
+
+    input.healthinpt {
+    border-bottom: 0px solid #777 !important;
+    height: 27px;
+}
+input.healthinpt {
+    height: 20px;
+    font-size: 11px;
+    float: right;
+    width: 190px;
+}
+
+    .btnlts {
+    cursor: pointer;
+    background: #0c69a7;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px;
+}
+
+
+    label.healthlbl {
+    margin-top: 5px;
+    font-family: 'Comfortaa', cursive !important;
+    border: 1px solid #333;
+    box-sizing: content-box;
+    width:100%;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.praposal-newBikeContainers {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  
+ margin-top:0px;
+ position: absolute;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slideInFromTop2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.praposal-cars2 img {
+    width: 100%;
+}
+
+.tyre1 {
+    color: #000;
+    position: absolute;
+    z-index: -1;
+    left: 117px;
+    top: 225px;
+    text-shadow: 0 0 2px #000;
+    width: 138px;
+}
+
+.tyre2 {
+    color: #000;
+    position: absolute;
+    z-index: -1;
+    left: 602px;
+    top: 225px;
+    text-shadow: 0 0 2px #000;
+    width: 138px;
+}
+.praposal-cars2 {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromTop2;
+  
+margin-top: 214px;
+ position: absolute;
+      width:873px;
+}
+
+.praposal-cars2 img{
+    width:100%;
+}
+

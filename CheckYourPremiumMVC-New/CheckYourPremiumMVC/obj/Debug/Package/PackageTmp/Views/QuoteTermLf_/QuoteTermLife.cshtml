@@ -1,0 +1,316 @@
+﻿@model IEnumerable<CheckYourPremiumMVC.Models.QuatoTermLifeModel>
+@{
+    ViewBag.Title = "QuoteTermLife";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+    //string emailid = Session["Email"].ToString();
+    //string Phone = Session["Phone"].ToString();
+   
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+
+<link href="~/Resources/css/quotesTermlife.css" rel="stylesheet" />
+<link href="~/Resources/css/quoteTrmLife2.css" rel="stylesheet" />
+
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+
+<div class="table-container-wrap">
+
+    <div class="praposal-newBikeContainers">
+
+
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+
+            <div class="btnlts">
+                <div><span class="col-xs-12 col-sm-4 col-md-4">Name</span> <span class="col-xs-12 col-sm-4 col-md-8">Hello  @Session["Name"]</span></div>
+                <div><span class="col-xs-12 col-sm-4 col-md-4">Age</span> <span class="col-xs-12 col-sm-4 col-md-8"> @Session["Age"]</span></div>
+                <div><span class="col-xs-12 col-sm-4 col-md-4">Gender</span> <span class="col-xs-12 col-sm-4 col-md-8"> @Session["Gender"] </span></div>
+                <div><span class="col-xs-12 col-sm-4 col-md-4">Smoke</span> <span class="col-xs-12 col-sm-4 col-md-8"> @Session["Tabocco"]</span></div>
+
+            </div>
+        </div>
+        <form action="http://gogo.edelweisstokio.in/zindagi-plus/buy?src=Pass_partner_code_here#no-back" target="_blank" method="Post" id="frmPayout">
+            @*A5A067*@
+
+            <div style="display:none;">
+            <p>
+                
+                <label>Email:</label>
+                <input name="hdneId" type="email" value="@Session["Email"]">
+                <font color="red"> * Required</font>
+            </p>
+            <p>
+                <label>Phone:</label>
+                <input name="hdnpno" type="number" value="@Session["Phone"]">
+                <font color="red"> * Required</font>
+            </p>
+            <p>
+                <label>Source:</label>
+                <input name="src" type="text" value="A5A067">
+                (Optional for direct and Required for Partners. Get your code from ETLI SPOC)
+            </p>
+            <p>
+                <label>Tab Index:</label>
+                <input name="hdntabindex" type="text" value="1">
+                <font color="red"> * Required</font> (Tab Index: 1 = investment details and 2 = Summary Page)
+            </p>
+<p><textarea name="hdnZindagiPlusdata" id="hdnresponseString"></textarea></p>
+          </div>
+       
+
+
+                <input type="hidden" value="@Session["CustID"].ToString()" id="hdnCustId" />
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+
+                    <div id="content">
+                        <section class="demo" id="basic">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Plan Info</th>
+
+                                            <th>Plan Benefits</th>
+                                            <th>Premium</th>
+
+                                        </tr>
+                                    </thead>
+                                    @if (ViewBag.Base64String != null)
+                                    {
+                                        <tbody>
+                                            <tr>
+
+                                                <td class="userCmpr">
+
+                                                    <span class="image-policy">
+                                                        <label style="background-color:black"><img src="~/Logo/@ViewBag.Base64String" class="img-responsive" /></label>
+                                                    </span>
+                                                </td>
+                                                <td class="user-email">
+                                                    @*<p>my:health Suraksha Silver Smart</p>*@
+                                      
+                           <p class="text-center font-12 mb-0 ngbfrgm" alt="pname">
+                               @if (ViewBag.Plan != null)
+                               {
+
+                                   <div>
+
+                                       Plan Name : @ViewBag.Plan
+                                   </div>
+                               }
+
+                                                    @if (ViewBag.PlanPDf != null)
+                                                    {
+                                                        <a href="~/PDF/@ViewBag.PlanPDf" target="_blank">
+                                                            Download Brochure
+                                                        </a> <br>
+                                                    }
+                                                    @*<span class="font-orange">Policy Term: </span>
+                                                        <span class="fontorng">1 Year(s)</span>*@
+                                                </p>
+                                            </td>
+                                            <td class="user-phone">
+                                             
+                                                @if (ViewBag.PlanBenifit != null)
+                                                {
+                                                    <div>
+                                                        <i class="fa fa-check" aria-hidden="true"></i> @ViewBag.PlanBenifit
+                                                    </div>
+                                                   
+                                                }
+                                            </td>
+
+                                            @if (ViewBag.Premium != null)
+                                            {
+                                                <td class="user-location">
+                                                    <p><span class="lstbx"><i class="fa fa-inr" aria-hidden="true"></i></span>@ViewBag.Premium</p>
+                                                    @if (ViewBag.PremiumTest != null)
+                                                    {
+                                                        <p><span class="lstbx"><i class="fa fa-inr" aria-hidden="true"></i></span>@ViewBag.PremiumTest</p>
+                                                    }
+                                                    @*<p>(<i class="fa fa-inr" aria-hidden="true"></i> 5L Cover- <i class="fa fa-inr" aria-hidden="true"></i> 670/month)</p>*@
+                                                    <div class="trmBtn">
+                                                        <span style="display:contents !important;">
+                                                            <input type="button" id="buynow" name="buynow" value="BUY THIS PLAN" />
+                                                            @*<input type="submit" id="buynow" name="submit" value="Submit">*@
+                                                        </span>
+                                                    </div>
+
+                                                </td>
+                                            }
+
+                                        </tr>
+
+                                    </tbody>
+                                  
+                                }
+                            </table>
+
+                            @*<table>
+                                @foreach (var item in ViewBag.Plan)
+                                    {
+                                        <tr>
+                                            <td>@item.PlanBenifit</td>
+                                            <td>@item.PlanPDF</td>
+
+                                        </tr>
+                                    }
+                            </table>*@
+
+                        </div>
+                        <div style="width:35px;">
+                            <input type="submit" id="actions" value="Do thing" hidden>
+                        </div>
+                    </section>
+
+                </div>
+
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+    $("#buynow").click(function () {
+        $.ajax({
+            url: "PayOut",
+            method: "post",
+            data: { "CustID": $("#hdnCustId").val() },
+            success: function (responseString) {
+                debugger;
+                console.log(responseString);
+                $("#hdnresponseString").val(("[" + responseString + "]").replace(/'/g, '"'));
+                $("#frmPayout").submit()
+
+            }
+        })
+    })
+    //
+</script>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="~/Resources/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="~/Resources/js/jquery.stickysort.js"></script>
+
+
+<script>
+    $(window).scroll(function () {
+        if ($('#basic').scrollTop() > 109) {
+            $('tbody tr').eq(1).hide();
+        } else {
+            $('tbody tr').eq(1).show();
+        }
+    });
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        var checkboxes = $("input[type='checkbox']"),
+        actions = $("#actions");
+        checkboxes.click(function () {
+            actions.attr("hidden", !checkboxes.is(":checked"));
+        });
+    });
+</script>
+
+
+
+
+<script>
+    $(function () {
+        // We select for tables universally - you can change the selector to target the tables you want
+        // Basic table
+        $('#basic table').stickySort();
+
+        // Basic table with sort
+        $('#basic-sort table').stickySort({ sortable: true });
+
+        // Biaxial
+        $('#biaxial .bx1').stickySort();
+        $('#biaxial .bx2').stickySort({ sortable: true });
+
+        // Final
+        $('#final table').stickySort({ sortable: true });
+
+        // The codes below has no impact on the functionality of StickySort functionality
+        //-----------------------------------------------------------------------------------------------------------------
+        // Smooth scrolling plugin by Chris Coiyer
+        // Source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        // Section toggle
+        $('section.demo h2')
+        .append('<a href="#" title="Collapse section" class="toggle">Collapse</a>')
+        .on('click', 'a', function (e) {
+            e.preventDefault();
+            if (!$(this).data('state') || $(this).data('state') == 0) {
+                $(this)
+                .data('state', 1)
+                .attr('title', 'Expand section')
+                .text('Expand')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideUp();
+            } else {
+                $(this)
+                .data('state', 0)
+                .attr('title', 'Collapse section')
+                .text('Collapse')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideDown();
+            }
+        });
+
+        // Unrelated to sticky header function
+        $('table').each(function () {
+            if ($(this).attr('data-color') != undefined) {
+                $(this).find('tbody td').each(function () {
+                    if ($(this).text().match(/^\d+$/)) {
+                        $(this).css({
+                            'background-color': 'hsl(' + parseInt($(this).text()) + ',75%,85%)'
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+    $(".btnlts").click(function () {
+        $("#slidesa").addClass("some_class").slideToggle("slow");
+
+    });
+</script>
+

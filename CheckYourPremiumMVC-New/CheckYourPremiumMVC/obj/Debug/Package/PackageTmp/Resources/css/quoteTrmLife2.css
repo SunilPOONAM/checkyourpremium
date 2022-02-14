@@ -1,0 +1,286 @@
+﻿
+
+
+
+
+.sticky-enabled tbody > tr > td.userCmpr >p{
+    float: left;
+    background: #333;
+    margin: 1px;
+    padding: 0px 4px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+    top: 17px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+
+
+
+.btnlts div span{
+    font-family: 'Poppins', sans-serif !important;
+        font-size: 14px;
+}
+
+.btnlts div span:nth-child(1){
+ border-right: 1px solid #ccc;
+    font-weight: 600;
+}
+    .user-location p{
+         font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    }
+
+    #buynow {
+       background: transparent;
+    border: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    }
+    
+  
+
+    .praposal-newBikeContainers {
+        margin-top: 0px;
+    }
+
+    .praposal-newBikeContainers {
+        padding: 18px 3px;
+    }
+
+    #slidesa {
+        display: none;
+    }
+
+    td.userCmpr div span {
+        display: initial;
+        width: 100%;
+    }
+
+    .sticky-enabled tbody > tr > td {
+        background: #fff;
+        border: 1px solid #333;
+            height: 110px;
+                text-align: center;
+    }
+
+    td span {
+        background: #fff;
+        box-shadow: 0 0 0px #ccc;
+    }
+
+    .userCmpr div.dtlsa {
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        background: #8ca05a;
+        border-radius: 15px;
+        padding: 2px 0;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    td {
+        padding: 0rem;
+    }
+
+        td span {
+            display: block !important;
+           
+        }
+
+    p {
+        text-align: center;
+    }
+
+    ul.list-none {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        ul.list-none li {
+            list-style: none;
+        }
+
+    .font-12 {
+        font-size: 12px;
+    }
+
+    .fa {
+        display: inline-block;
+        position: relative;
+        top: 3px;
+    }
+
+    .font-orange {
+        color: RGB(231,115,27);
+    }
+
+    .ngbfrm {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+        .ngbfrm div strong {
+            font-size: 12px;
+        }
+
+    span.lstbx {
+        display: inline-block !important;
+        position: relative;
+        bottom: -1px;
+    }
+
+    p i.fa.fa-inr {
+        position: relative;
+        top: 0px;
+    }
+
+    p {
+        margin-bottom: 1px;
+    }
+
+    .trmBtn {
+        width: 105px;
+        background: #d31a1a;
+        margin: 0 auto;
+        padding: 3px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    span.font-orange {
+        display: initial !important;
+    }
+
+    span.fontorng {
+        display: initial !important;
+    }
+
+    p.label-txt i {
+        display: block;
+        float: left;
+        width: 24px;
+        font-size: 16px;
+        position: relative;
+        padding-left: 9px;
+        margin-right: 5px;
+        color: #333;
+        line-height: 10px;
+    }
+
+    input.healthinpt {
+        height: 20px;
+        font-size: 11px;
+        float: right;
+        width: 192px;
+    }
+
+    .healthlbl {
+        margin-bottom: 2px;
+    }
+
+    p.label-txt {
+        color: #fff;
+        margin: 0;
+        text-align: left;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 500;
+        float: left;
+        line-height: 27px;
+        background: #0c69a7;
+        width: 114px;
+        padding-left: 5px;
+    }
+
+    label.healthlbl {
+        margin-top: 5px;
+        font-family: 'Comfortaa', cursive !important;
+        border: 1px solid #333;
+        box-sizing: content-box;
+    }
+
+    p.label-txgt {
+        text-align: left;
+        font-weight: normal;
+        font-size: 13px;
+        padding-left: 1vw;
+        float:left;
+    }
+
+    input.healthinpt {
+        border-bottom: 0px solid #777 !important;
+        height: 27px;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        top: 2px;
+    }
+
+
+    .sticky-wrap {
+        margin-top: 0px;
+    }
+
+    .trmBtn span a {
+        color: #fff;
+    }
+
+    .trmBtn {
+        width: 12rem;
+            margin: 0 auto;
+    }
+
+    tbody img {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .sticky-enabled tbody > tr > td.user-phone {
+        padding: 4px 10px;
+    }
+
+
+    .sticky-enabled tbody > tr > td.user-email p {
+        padding: 4px 10px;
+    }
+
+    #basic .toggle, #basic th {
+        background-color: #73a9cc;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .btnlts {
+           cursor: pointer;
+    color: #191919;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #c4c4c4;
+    background: #fff;
+    float: left;
+    position: relative;
+    width: 100%;
+    }
+
+    .sticky-enabled tbody > tr > td.user-phone div {
+      font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+    text-align: left;
+    color: #333;
+} 
+    
+ .user-email div{
+ color:#333;
+    text-align: center;
+    font-weight: bold;
+ }      

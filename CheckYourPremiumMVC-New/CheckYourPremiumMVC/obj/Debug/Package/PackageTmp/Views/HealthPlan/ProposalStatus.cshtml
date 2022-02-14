@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "ProposalStatus";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+
+<h2>Proposel Submitted</h2>
+<form method="post" id="frm">
+    <input type="hidden" value="@ViewBag.SecretKey" id="hdnSecreyKey" name="APIKEY" />
+    <input type="hidden" value="@ViewBag.apikey" id="hdnApiKey" name="SECRETKEY" />
+    <input type="hidden" value="@ViewBag.referenceid" id="hdnRefId" name="referenceId" />
+    <input type="hidden" value="@ViewBag.RedirectToken" id="hdnRedirectToken" name="redirectToken" />
+    <input type="button" value="Pay Now" class="btn btn-primary" name="paynow" id="paynow" />
+</form>
+
+<script>
+    $("#paynow").click(function () {
+        $.ajax({
+            url: "GenerateToken",
+            method: "post",
+            data: { "refid": $("#hdnRefId").val() },
+            success: function (response) {
+                if (response) {
+                    $("#hdnRedirectToken").val(response.token);
+                    //   $("#frm").attr("action", "https://devapi.sbigeneral.in/v1/tokens" + $("#hdnRedirectToken").val());
+                    $("#frm").attr("action", "http://igsan.starhealth.in/policy/proposals/purchase/" + $("#hdnRedirectToken").val());
+                    $("#frm").submit();
+                }
+            }
+
+        });
+    })
+</script>

@@ -1,0 +1,16 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"6997","totalPremium":"8691","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"229","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"5930","hcbPremium":"1359","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"6997","totalPremium":"8691","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"229","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"5930","hcbPremium":"1359","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10542","totalPremium":"13130","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8934","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10542","totalPremium":"13130","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8934","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10542","totalPremium":"13130","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8934","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"8610","totalPremium":"10827","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"399","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"7297","hcbPremium":"1712","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"genpremdtlsres":{"contractid":"null","quoterefno":"null","refno":"null","scrutinyno":"null","policyref":"null","netpremium":"5105","servicetaxamt":"0","educessamt":"0","totalpremium":"6023","finalpremium":"6023","servicetaxrate":"null","educessrate":"null","stampduty":"null","uwloadingper":"null","uwloadingamt":"null","loadingper":"null","loadingamt":"null","discountper":"null","discountamt":"null","spdiscountper":"null","spdiscountamt":"null","param1":"0","param2":"0","param3":"0","param4":"null"},"errorcoderes":"0","errorlistres":[],"transactionid":8795112,"servicetaxmstobj":{"taxcode":"27_SGST17","taxtype":"SGST","baseamount":"null","sertax":"0","educess":"0","sbtax":"0","kkc":"0","cess1":"0","cess2":"0","cess3":"0","sertaxdesc":"NA","educessdesc":"NA","sbcessdesc":"NA","kkccessdesc":"NA","cess1desc":"NA","cess2desc":"NA","cess3desc":"NA","adjsertax":"null","adjeducess":"null","adjsbtax":"null","adjkkc":"null","adjcess1":"null","adjcess2":"null","adjcess3":"null","addtaxval1":"459","addtaxval2":"0","addtaxval3":"459","addtaxval4":"0","addtaxval5":"0","addtaxval1desc":"State GST","addtaxval2desc":"NA","addtaxval3desc":"Central GST","addtaxval4desc":"NA","addtaxval5desc":"NA"}}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":3137,"serviceTax":564,"totalPremium":3701}

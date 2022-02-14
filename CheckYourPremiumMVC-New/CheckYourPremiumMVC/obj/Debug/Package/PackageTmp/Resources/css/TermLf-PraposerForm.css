@@ -1,0 +1,307 @@
+﻿
+
+.paymentBharti{
+        background: #044882;
+    float: left;
+    width: 100%;
+    padding: 7px;
+}
+
+.payBharti{
+float: right !important;
+}
+
+
+.megcontns{
+     float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+
+.contertyf{
+   float:left;
+    width:100%;
+}
+
+.kilimanjaro_area.conterty{
+    display:none;
+}
+
+
+  h5{
+      position:relative;
+      float:left;
+      width:100%;
+  }
+.boxifieds{
+    background: #044882;
+    height: 35px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+ .logsImgs{
+    width: 95px;
+    position: absolute;
+    bottom: -50px;
+  }
+.headsFrm {
+        display: none;
+    }
+
+#ms-list-2 {
+          pointer-events: none;
+ }
+
+ button.bvrtyu{
+position: relative;
+    width: 110px;
+    top: 21px;
+    height: 30px;
+    background: #d02121;
+    border: none;
+    color: #fff;
+ }
+.policyDlkls{
+   float: left;
+    background: #044882;
+    width: 100%;
+    position: relative;
+        padding: 0 1em 1em;
+}
+
+.healthinptd.boght{
+    height:28px;
+}
+
+.label-txt.boghLnheight{
+    line-height: 15px;
+}
+
+.healthinptd.adredd{
+    height:27px;
+    border:none;
+}
+
+#ms-list-1{
+        width: 242px;
+    float: right;
+    border: none;
+}
+#ms-list-1 button{
+    border:none;
+        height: 27px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#ms-list-2 button{
+    border:none;
+        height: 27px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.praposerInfo.bxcDf .bvdgt{
+    float:left;
+    clear:both;
+    width:100%;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus{
+  	outline: none;
+      background:#d8dbde !important;
+}
+.btn-success {
+    color: #fff;
+    background-color: #0c69a7;
+    border-color: #0f73c8;
+    float: right;
+}
+
+
+h5 {
+    cursor: pointer;
+    padding: 5px;
+    line-height: 25px;
+}
+h5 span.bnOpks{
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.ContButn{
+        padding: 1px 1em 23px 0px !important;
+}
+
+label.pssoHgt{
+        font-weight: normal;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+    text-align: justify;
+}
+
+input#travelDeclaration{
+        font-weight: normal;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px;
+}
+
+.juKds{
+position: relative;
+    left: 0rem;
+    color: #b7aeae;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+h5 span{
+    color: #044882;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+label.healthlbl span{
+    padding:0px;
+    font-size:12px !important;
+}
+
+label.healthlbl.hj{
+        border:0px solid #333 !important;
+}
+
+label.healthlbl.hj span{
+     font-size: 12px !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+label.healthlbl.hj label{
+    font-size:12px !important;
+}
+.label-txt.rt span{
+    display: block;
+    border-radius: 50px;
+    background: #fff;
+    width: 20px;
+    color: #333;
+    text-align: center;
+    float: right;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    line-height: 20px;
+    right: 5px;
+}
+
+.bxcDf{
+    float:left;
+    position:relative;
+    clear:both;
+    width:100%;
+}
+
+.insuredInfo.bxcDf .divdf{
+      float:left;
+    position:relative;
+    clear:both;
+    width:100%;
+}
+
+.policyDlkls.bxcDf .divdf{
+      float:left;
+    position:relative;
+    clear:both;
+    width:100%;
+}
+
+label.healthlbl {
+margin-top: 5px;
+    font-family: 'Comfortaa', cursive !important;
+    border-bottom: 1px solid #333 !important;
+    box-sizing: content-box;
+    width: 100% !important;
+    margin-bottom: 0;
+}
+
+p.label-txt {
+color: #ffffff;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    line-height: 29px;
+    background: #0c69a7;
+    padding-left: 5px;
+        padding-right: 5px;
+}
+
+
+.healthinptd{
+      font-size:13px  !important;
+         padding-left: 5px;
+         font-weight:normal !important;
+}
+
+input.healthinptd {
+    height: 15px;
+    font-size:12px;
+    border: none;
+    padding: 3px 4px !important;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: normal;
+    height:100%;
+}
+
+
+label.healthlbl.gndr{
+    border:none;
+}
+
+
+label.healthlbl.gndr p{
+ background:none;
+ color:#333;
+}
+
+
+label.healthlbl.gndr label.radio-inline{
+    background: none;
+    color: #333;
+    position: relative;
+    top: 5px;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 12px;
+}
+
+.healthlbl select{
+    height: 27px;
+    font-weight: normal;
+    border: 0px;
+    font-size: 12px;
+    padding-left: 1px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+select.healthinptd.kjhg{
+       height: 27px;
+    border: 0px;
+    font-size: 12px;
+    padding-left: 1px;
+}

@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "GetPaymentStatusBhartiAxa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+
+    #downloadDoc{
+            display: block;
+    background: #e63b3b;
+    margin: 0 auto;
+    width: 207px;
+    padding: 9px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    }
+
+    .btn.btn-primary{
+       display: block;
+    background: #2d5aa5;
+    margin: 0 auto;
+    width: 77px;
+    padding: 9px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    }
+
+
+footer{
+    display:none;
+}
+
+
+    .logod {
+    float: left;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 80px !important;
+}
+
+#frm{
+    margin-top:1rem;
+}
+
+        .logod img{
+        width:100%;
+}
+
+    #navbar {
+        position: relative;
+    }
+</style>
+
+<form id="frm" method="post">
+    <div align="center">
+        
+        <h2>Payment Status: @ViewData["Status"].ToString()</h2>
+        @if (@ViewBag.Note != "")
+        {
+            <h3>@ViewData["Note"]</h3> }
+        else
+        {
+
+            <h3>Policy Number: @ViewData["policyNo"].ToString()</h3>
+            <h3>Reference Number: @ViewData["transactionRef"].ToString()</h3>
+        }
+        <a id="downloadDoc" class="btn btn-primary" target="_blank"> Download Policy Document</a>&nbsp;
+        <a href="/" class="btn btn-primary"> Home</a>
+        <input type="hidden" name="referenceId" id="refid" value="@ViewData["link"].ToString()" />
+        @* <input type="hidden" name="refid" id="refid" value="d9c1465c4b0c4270ace2744886f988e7" />*@
+        @*<input type="button" id="downloadDoc" value="Download Policy Document" />*@
+       
+        <script>
+            $(document).ready(function () {
+
+                $("#downloadDoc").attr("href", 'https://uat.bhartiaxaonline.co.in/home/B2C/birt/reports/reportFiles/' + $("#refid").val());
+            });
+
+        </script>
+
+    </div>
+
+</form>
+

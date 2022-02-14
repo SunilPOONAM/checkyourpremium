@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "OtpVerification";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+<style>
+    .cntainersd {
+        display: block;
+        margin: 2rem auto 2rem;
+        max-width: 245px;
+    }
+</style>
+
+
+<link href="~/Resources/Admin/assets/css/stylenew.css" rel="stylesheet" />
+
+
+
+<div class="well">
+
+   
+
+</div>
+<section class="adbnh-latcont">
+
+        <h6 class="vmnos">
+            Please Verify your Mobile Number While We Fetch Quotes From Leading Insurers
+        </h6>
+
+        <h4 class="vmnos">Enter The 6 Digit Verification Code</h4>
+
+    <div class="cntainersd">
+        <input type="text" placeholder="Enter otp" id="otp" />
+        <a href="#" class="btn btn-success" onclick="SendOTP()">Verify</a>
+        </div>
+
+
+        <div align="center" id="change_phone">
+
+            <p><a href="/CustomerLogin/MobileVerification"><input type="button" name="submit" value="Change your mobile number &amp; resend code" style="background-image: none;color: #0a4567 !important; cursor: pointer;border: none !important;text-shadow: none;border-bottom: 1px solid !important;"></a></p>
+        </div>
+
+</section>
+<p id="demo"></p>
+<script>
+    var deadline = new Date().getTime();
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML = days + "d "
+        + hours + "h " + minutes + "m " + seconds + "s ";
+        if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script> 
+<script>
+
+
+    var SendOTP = function () {
+        var otp = $("#otp").val();
+        $.ajax({
+            url: "/CustomerLogin/OtpVerification",
+            type: "post",
+            data: { "otp": otp },
+            success: function (data) {
+                //if (data == "success") {
+
+                alert("Verified");
+                window.location = "/CustomerLogin/Home";
+                //    }
+                //    else {
+                //        alert("failed");
+                //    }
+            }
+
+
+        })
+
+    }
+
+</script>
+

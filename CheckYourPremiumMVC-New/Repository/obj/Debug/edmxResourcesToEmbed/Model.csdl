@@ -1,0 +1,1604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CheckyrpremiumModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AssigneeRelation">
+    <Key>
+      <PropertyRef Name="AssigneeRelationshipId" />
+    </Key>
+    <Property Name="AssigneeRelationshipId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssigneeRelationshipName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="InsuranceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Bajaj_Occupation">
+    <Key>
+      <PropertyRef Name="OccupationId" />
+    </Key>
+    <Property Name="OccupationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OccupationValue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Bajaj_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Relation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RelationId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="bhartiAxaCredential">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CredentialType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CredentialValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Car_Insurence_Record_Saved">
+    <Key>
+      <PropertyRef Name="Email_ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City_RTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Fuel_Type" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mobile_No" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Category_tbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LogoImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PolicyPlans" Relationship="Self.FK_PolicyPlans_Companies" FromRole="Companies" ToRole="PolicyPlans" />
+  </EntityType>
+  <EntityType Name="Company1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="200" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContactNo" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="150" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Logo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="TIN" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="STNo" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="CIN" Type="String" MaxLength="150" FixedLength="true" Unicode="true" />
+    <Property Name="CompanyID" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Desease">
+    <Key>
+      <PropertyRef Name="DeseaseId" />
+    </Key>
+    <Property Name="DeseaseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DiseaseDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Encrypt_Password">
+    <Key>
+      <PropertyRef Name="Usert_ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usert_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Password" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="User_Password_Decrypt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Godigit_Responce_Data">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookingID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="paxId" Type="Int32" />
+    <Property Name="policyPremium" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Sgst" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Cgst" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Ugst" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="igst" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="invoiceNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="policyNetPremium" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="policyID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="transactionDate" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="code" Type="Int32" />
+    <Property Name="message" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="policyStatus" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="applicationId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="paymentLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyID" Type="Int32" />
+    <Property Name="PlanName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adult" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Child" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Health_Insurance_Record_Saved">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Income" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Self" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adult" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Child" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Self_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="ServiceTax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spouce_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="child1_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="child2_Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="healthRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssigneeRelationshipName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AssigneeRelationshipId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="InsuranceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="InsuredRelation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RelationshipId" Type="Int32" />
+    <Property Name="InsuredRelationshipName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Login_Tbl">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Password" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="islocked" Type="Int32" />
+    <Property Name="attemptcount" Type="Int32" />
+    <Property Name="Times" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LoginReg_tbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailId" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Master">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="VariableText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VariableValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Moter_RTO">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="RegisteredCityName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegisteredStateName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RTOCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="New" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Motor_FuelType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FuelType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Motor_Insurance_Record">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CarBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CarModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FualType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegistrationYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimLastYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CarVariant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CarNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Motor_Nominee_Relation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomineeRelation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Motor_State">
+    <Key>
+      <PropertyRef Name="StateCode" />
+    </Key>
+    <Property Name="StateCode" Type="Int32" Nullable="false" />
+    <Property Name="StateName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ParentCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentCategory1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Plan_Benifit">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlanType" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PlanBenifit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PDF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PolicyPlan">
+    <Key>
+      <PropertyRef Name="PlanID" />
+    </Key>
+    <Property Name="PlanID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PlanType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PlanName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PlanDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PlanImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ST_Included" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_PolicyPlans_Companies" FromRole="PolicyPlans" ToRole="Companies" />
+  </EntityType>
+  <EntityType Name="ProposerDetail">
+    <Key>
+      <PropertyRef Name="ProposerId" />
+    </Key>
+    <Property Name="ProposerId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProposerName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="proposerEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="proposerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="proposerAddressOne" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="proposerAddressTwo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="proposerAreaId" Type="Int64" />
+    <Property Name="gstTypeId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gstIdNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eiaNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="proposerDob" Type="DateTime" Precision="3" />
+    <Property Name="placeOfVisit" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="travelPurposeId" Type="Int32" />
+    <Property Name="physicianName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="physicianContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FkSearchId" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="PlanId" Type="Int64" />
+    <Property Name="travelStartOn" Type="DateTime" Precision="3" />
+    <Property Name="travelEndOn" Type="DateTime" Precision="3" />
+    <Property Name="SearchType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Reg_tbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dob" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RiskCover_options">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Options" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RiskCoverOptions" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sales_store">
+    <Key>
+      <PropertyRef Name="SalesStore_M_ID" />
+    </Key>
+    <Property Name="SalesStore_M_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Store_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Store_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PinCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Company_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Bank" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IFSC_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sub_category">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ItemType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tb_GodigitGender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenderValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_BajajBlockCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PolicyCity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_BajajResponce_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contractid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Quotrefno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RefNO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ScurityNo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PolicyRef" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="NetPremium" Type="Int32" />
+    <Property Name="Servicetaxamt" Type="Int32" />
+    <Property Name="edueAmt" Type="Int32" />
+    <Property Name="TotalPremium" Type="Int32" />
+    <Property Name="FinalPremium" Type="Int32" />
+    <Property Name="TransactionId" Type="Int32" />
+    <Property Name="taxCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TaxType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AddTaxValue" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="PalnID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDData" Type="Int32" />
+    <Property Name="SumInsured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adult" Type="Int32" />
+    <Property Name="Spouse" Type="Int32" />
+    <Property Name="Child" Type="Int32" />
+    <Property Name="ProductCode" Type="Int32" />
+    <Property Name="MemberCombo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_BajajZone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zone" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxa_PlanName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PlanName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PlanId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxaBanned_Country">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_BhartiAxaPaymentStaus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="orderNo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="amount" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="transactionRef" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="policyNo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="emailId" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_BlockCity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlockCity" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PinCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_BodyType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleBody" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="VehicleID" Type="Int32" />
+    <Property Name="ISActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Country">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="County" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_CoverFrequency">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CoverFrequency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_EdelWise_Suminsured">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Suminsured" Type="Int32" />
+    <Property Name="Sumisurredvalue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_FrequncyType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FrequncyValue" Type="Int32" />
+    <Property Name="FrequncyType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Fule_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FuleType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="FulelID" Type="Int32" />
+    <Property Name="ISActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Smoke" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Income" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SumInsurred" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Term" Type="Int32" />
+    <Property Name="frequency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumRequestData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ATPD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HCB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAAge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LADOB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAEmail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAFullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAGender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LANumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LAProposerSame" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LATobacco" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PEBased" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Term" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WOP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="additionalBenefit" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="age" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="betterHalfBenefit" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="bond" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="childAge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="childGender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="claimsOption" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="cliDOB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cliGender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="distributionChannel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="flexibleBenefitYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="frequency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="index" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="investmentStrategy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="largeCap" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="managed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="maturityAge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="maturityOption" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="moneyMarket" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="payoutMonths" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="payoutOption" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="payoutPercentageIncreasingIncome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="payoutPercentageLevelIncome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="payoutPercentageLumpsum" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="pdf" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="policyOption" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="policyTerm" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="postponement" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="premiumPayingTerm" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="product" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="risingStar" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="smoke" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseAge" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseDOB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseGender" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="spouseTobaccoUser" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="staff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sumAssured" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="top250" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="topUpBenefitPercentage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tranId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="workSiteFlag" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GetPremiumResponce">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="accidentalDeathPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="basePremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="betterHalfPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="criticalIllnessPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="error" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="hcbPremium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pdfName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="permanentDisabilityPremium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="premium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="premiumWaiver" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="sumAssured" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="totalPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Company" Type="Int32" />
+    <Property Name="PlanName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CustID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoverAge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Godigit_Document">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocumentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Godigit_Profession">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="profession" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="professionId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_Godigit_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Relation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RelationID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitCounty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CountryCover" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitPakege">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PakageCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ageto" Type="Int32" />
+    <Property Name="AgeFrom" Type="Int32" />
+    <Property Name="PakageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Suminsured" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitPurpose">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Purpose" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Purposevalue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GodigitState">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="State" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="StateID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_GSTType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GSTType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_HC_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RelationType" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TAC_CODE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_HealthPremiumChartData">
+    <Key>
+      <PropertyRef Name="PremiumChartID" />
+    </Key>
+    <Property Name="PremiumChartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PremiumDesc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgeFrom" Type="Double" />
+    <Property Name="AgeFromDuration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgeTo" Type="Double" />
+    <Property Name="AgeToDuration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SumInsured" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Premium" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Duration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Individual" Type="Int32" />
+    <Property Name="Adults" Type="Int32" />
+    <Property Name="Childrens" Type="Int32" />
+    <Property Name="PlanID" Type="Int32" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Floater" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BeforeServiceTax" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="SchemeId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_HEIV_Qualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Qualification" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_HEIV_Relation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Relation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_IndiaFirst__CoverageOptions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Coverage_Options" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Max_M_Age" Type="Int32" />
+    <Property Name="Minimum_Sum_Assured" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Maximum_Sum_Assured" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Tag" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_IndiaFirstCityData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Pincode" Type="Int32" />
+    <Property Name="City" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_INSURA_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UPDATED_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UPDATED_DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TAC_CODE" Type="Int32" />
+    <Property Name="TYPE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_IPA_Occupation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Occupation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RISK_GRADE" Type="Int32" />
+    <Property Name="TTD_BENEFIT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DECLINE_STATUS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TAC_CODE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_MakeType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="MakeID" Type="Int32" />
+    <Property Name="ISActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_MasterSumInsured">
+    <Key>
+      <PropertyRef Name="SumInsuredId" />
+    </Key>
+    <Property Name="SumInsuredId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="Int32" />
+    <Property Name="SumInsured" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PlanName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_MaterialStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Material" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_ModelType_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ModelID" Type="Int32" Nullable="false" />
+    <Property Name="ISActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_OccupationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OccupationCode" Type="Int32" />
+    <Property Name="Occupation" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="OType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_PinCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PinCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CityId" Type="Int64" Nullable="false" />
+    <Property Name="IsInactive" Type="Boolean" />
+    <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_PremiumType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Premium_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tag" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_ProductPlan_Data">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlanName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="companyId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Scheme">
+    <Key>
+      <PropertyRef Name="SchemeId" />
+    </Key>
+    <Property Name="SchemeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="schemeCode" Type="Int64" />
+    <Property Name="Scheme" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_StarCountyList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_State">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_travelCountry">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="County" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="InsuranceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblBannedCountry">
+    <Key>
+      <PropertyRef Name="CODE" />
+    </Key>
+    <Property Name="CODE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblCity">
+    <Key>
+      <PropertyRef Name="City_ID" />
+    </Key>
+    <Property Name="City_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="State_ID" Type="Int64" />
+    <Property Name="CityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="Country_ID" />
+    </Key>
+    <Property Name="Country_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblRelationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RelationCode" Type="Int32" />
+    <Property Name="Relation" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="RelationType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="companyid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="State_ID" />
+    </Key>
+    <Property Name="State_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="State_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Country_ID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Term_Life_Insurance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile_No" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tow_Weeler_Record_Insert">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Model" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Varient" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="previousins" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Travel_Insurance">
+    <Key>
+      <PropertyRef Name="Travel_id" />
+    </Key>
+    <Property Name="Travel_id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Age_From" Type="Int32" />
+    <Property Name="Age_To" Type="Int32" />
+    <Property Name="Plans" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Currency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SumInsured" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="CoverType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TripType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_Of_Memebers" Type="Int32" />
+    <Property Name="TermFrom" Type="Int32" />
+    <Property Name="TermTo" Type="Int32" />
+    <Property Name="Premium" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Plan_ID" Type="Int64" />
+    <Property Name="PCode" Type="Int64" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="destinationId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="TravelDestination">
+    <Key>
+      <PropertyRef Name="DestinationId" />
+    </Key>
+    <Property Name="DestinationId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Destination" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TravellerDetail">
+    <Key>
+      <PropertyRef Name="TravellerId" />
+    </Key>
+    <Property Name="TravellerId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TravellerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaritalStatus" Type="Boolean" />
+    <Property Name="IsPassport" Type="Boolean" />
+    <Property Name="PassportNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NomineeName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Relation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PassportExpiry" Type="DateTime" Precision="3" />
+    <Property Name="Illness" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="visaType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="FkSearchId" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="searchType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TravelPlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlanCode" Type="Int64" Nullable="false" />
+    <Property Name="PlanName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SumInsured" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SumInsuredCode" Type="Int32" Nullable="false" />
+    <Property Name="Currency" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PlanID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="TravelProposalDetail">
+    <Key>
+      <PropertyRef Name="ProposalId" />
+    </Key>
+    <Property Name="ProposalId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferenceId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FkSearchId" Type="Int64" />
+    <Property Name="IsBillPayed" Type="Boolean" />
+    <Property Name="BilledDate" Type="DateTime" Precision="3" />
+    <Property Name="RefType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TravelPurposeMaster">
+    <Key>
+      <PropertyRef Name="PurposeId" />
+    </Key>
+    <Property Name="PurposeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Purpose" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Two_Wheeler_Master">
+    <Key>
+      <PropertyRef Name="TwoWheeler_Insu_ID" />
+    </Key>
+    <Property Name="TwoWheeler_Insu_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variance" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Reg_Date" Type="DateTime" Precision="0" />
+    <Property Name="Rto_Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VisaType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Car_Insurance">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Make_Id" />
+      <PropertyRef Name="Make" />
+      <PropertyRef Name="Model_Id" />
+      <PropertyRef Name="Model" />
+      <PropertyRef Name="Variant_Id" />
+      <PropertyRef Name="Variant" />
+      <PropertyRef Name="CC" />
+      <PropertyRef Name="Seating_Capacity" />
+      <PropertyRef Name="Fuel_Id" />
+      <PropertyRef Name="Fuel_Type" />
+      <PropertyRef Name="Segment_ID" />
+      <PropertyRef Name="Vehicle_Segment" />
+      <PropertyRef Name="Location_ID" />
+      <PropertyRef Name="LOCATION" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="Main_Vehicle_Type_ID" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" />
+    <Property Name="Make_Id" Type="Int64" Nullable="false" />
+    <Property Name="Make" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Model_Id" Type="Int64" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Variant_Id" Type="Int32" Nullable="false" />
+    <Property Name="Variant" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CC" Type="Int32" Nullable="false" />
+    <Property Name="Seating_Capacity" Type="Int32" Nullable="false" />
+    <Property Name="Fuel_Id" Type="Int64" Nullable="false" />
+    <Property Name="Fuel_Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segment_ID" Type="Int64" Nullable="false" />
+    <Property Name="Vehicle_Segment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Location_ID" Type="Int64" Nullable="false" />
+    <Property Name="LOCATION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Main_Vehicle_Type_ID" Type="Int64" Nullable="false" />
+    <Property Name="No_Of_Wheels" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PlanID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Contact_Us">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="RTO_MASTERS">
+    <Key>
+      <PropertyRef Name="RTO_ID" />
+    </Key>
+    <Property Name="RTO_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RTO_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RTO_CITY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RTO_STATE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Zone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="View_HealthChartData">
+    <Key>
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="PremiumChartID" />
+    </Key>
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LogoImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PremiumChartID" Type="Int32" Nullable="false" />
+    <Property Name="PremiumDesc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgeFrom" Type="Double" />
+    <Property Name="AgeFromDuration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgeTo" Type="Double" />
+    <Property Name="AgeToDuration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SumInsured" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Premium" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Duration" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Individual" Type="Int32" />
+    <Property Name="Adults" Type="Int32" />
+    <Property Name="Childrens" Type="Int32" />
+    <Property Name="PlanID" Type="Int32" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Floater" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BeforeServiceTax" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="SchemeId" Type="Int32" />
+    <Property Name="suminsuredCode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="View_TermLifeInsurance">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CompanyName" />
+    </Key>
+    <Property Name="CompanyID" Type="Int64" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="accidentalDeathPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="basePremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="betterHalfPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="criticalIllnessPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="error" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="hcbPremium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pdfName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="permanentDisabilityPremium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="premium" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="premiumWaiver" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="sumAssured" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="totalPremium" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Company" Type="Int32" />
+    <Property Name="PlanName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CustID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CoverAge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LogoImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="View_TravelInsurance">
+    <Key>
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Travel_id" />
+    </Key>
+    <Property Name="CompanyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Travel_id" Type="Int64" Nullable="false" />
+    <Property Name="Age_From" Type="Int32" />
+    <Property Name="Age_To" Type="Int32" />
+    <Property Name="Plans" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Currency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SumInsured" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="CoverType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TripType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="No_Of_Memebers" Type="Int32" />
+    <Property Name="TermFrom" Type="Int32" />
+    <Property Name="TermTo" Type="Int32" />
+    <Property Name="Premium" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Plan_ID" Type="Int64" />
+    <Property Name="PCode" Type="Int64" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="destinationId" Type="Int64" />
+    <Property Name="Destination" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LogoImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_PolicyPlans_Companies">
+    <End Role="Companies" Type="Self.Company" Multiplicity="1" />
+    <End Role="PolicyPlans" Type="Self.PolicyPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Companies">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="PolicyPlans">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CheckyrpremiumEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AssigneeRelations" EntityType="Self.AssigneeRelation" />
+    <EntitySet Name="Bajaj_Occupation" EntityType="Self.Bajaj_Occupation" />
+    <EntitySet Name="Bajaj_Relation" EntityType="Self.Bajaj_Relation" />
+    <EntitySet Name="bhartiAxaCredentials" EntityType="Self.bhartiAxaCredential" />
+    <EntitySet Name="Car_Insurence_Record_Saved" EntityType="Self.Car_Insurence_Record_Saved" />
+    <EntitySet Name="Category_tbl" EntityType="Self.Category_tbl" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="Companies1" EntityType="Self.Company1" />
+    <EntitySet Name="Deseases" EntityType="Self.Desease" />
+    <EntitySet Name="Encrypt_Password" EntityType="Self.Encrypt_Password" />
+    <EntitySet Name="Godigit_Responce_Data" EntityType="Self.Godigit_Responce_Data" />
+    <EntitySet Name="Health_Insurance_Record_Saved" EntityType="Self.Health_Insurance_Record_Saved" />
+    <EntitySet Name="healthRelations" EntityType="Self.healthRelation" />
+    <EntitySet Name="InsuredRelations" EntityType="Self.InsuredRelation" />
+    <EntitySet Name="Login_Tbl" EntityType="Self.Login_Tbl" />
+    <EntitySet Name="LoginReg_tbl" EntityType="Self.LoginReg_tbl" />
+    <EntitySet Name="Masters" EntityType="Self.Master" />
+    <EntitySet Name="Moter_RTO" EntityType="Self.Moter_RTO" />
+    <EntitySet Name="Motor_FuelType" EntityType="Self.Motor_FuelType" />
+    <EntitySet Name="Motor_Insurance_Record" EntityType="Self.Motor_Insurance_Record" />
+    <EntitySet Name="Motor_Nominee_Relation" EntityType="Self.Motor_Nominee_Relation" />
+    <EntitySet Name="Motor_State" EntityType="Self.Motor_State" />
+    <EntitySet Name="ParentCategories" EntityType="Self.ParentCategory" />
+    <EntitySet Name="Plan_Benifit" EntityType="Self.Plan_Benifit" />
+    <EntitySet Name="PolicyPlans" EntityType="Self.PolicyPlan" />
+    <EntitySet Name="ProposerDetails" EntityType="Self.ProposerDetail" />
+    <EntitySet Name="Reg_tbl" EntityType="Self.Reg_tbl" />
+    <EntitySet Name="RiskCover_options" EntityType="Self.RiskCover_options" />
+    <EntitySet Name="sales_store" EntityType="Self.sales_store" />
+    <EntitySet Name="Sub_category" EntityType="Self.Sub_category" />
+    <EntitySet Name="tb_GodigitGender" EntityType="Self.tb_GodigitGender" />
+    <EntitySet Name="tbl_BajajBlockCity" EntityType="Self.tbl_BajajBlockCity" />
+    <EntitySet Name="tbl_BajajResponce_Data" EntityType="Self.tbl_BajajResponce_Data" />
+    <EntitySet Name="tbl_BajajZone" EntityType="Self.tbl_BajajZone" />
+    <EntitySet Name="tbl_BhartiAxa_PlanName" EntityType="Self.tbl_BhartiAxa_PlanName" />
+    <EntitySet Name="tbl_BhartiAxaBanned_Country" EntityType="Self.tbl_BhartiAxaBanned_Country" />
+    <EntitySet Name="tbl_BhartiAxaPaymentStaus" EntityType="Self.tbl_BhartiAxaPaymentStaus" />
+    <EntitySet Name="tbl_BlockCity" EntityType="Self.tbl_BlockCity" />
+    <EntitySet Name="tbl_BodyType_Master" EntityType="Self.tbl_BodyType_Master" />
+    <EntitySet Name="tbl_Country" EntityType="Self.tbl_Country" />
+    <EntitySet Name="tbl_CoverFrequency" EntityType="Self.tbl_CoverFrequency" />
+    <EntitySet Name="tbl_EdelWise_Suminsured" EntityType="Self.tbl_EdelWise_Suminsured" />
+    <EntitySet Name="tbl_FrequncyType" EntityType="Self.tbl_FrequncyType" />
+    <EntitySet Name="tbl_Fule_Master" EntityType="Self.tbl_Fule_Master" />
+    <EntitySet Name="tbl_GetPremiumData" EntityType="Self.tbl_GetPremiumData" />
+    <EntitySet Name="tbl_GetPremiumRequestData" EntityType="Self.tbl_GetPremiumRequestData" />
+    <EntitySet Name="tbl_GetPremiumResponce" EntityType="Self.tbl_GetPremiumResponce" />
+    <EntitySet Name="tbl_Godigit_Document" EntityType="Self.tbl_Godigit_Document" />
+    <EntitySet Name="Tbl_Godigit_Profession" EntityType="Self.Tbl_Godigit_Profession" />
+    <EntitySet Name="tbl_Godigit_Relation" EntityType="Self.tbl_Godigit_Relation" />
+    <EntitySet Name="tbl_GodigitCounty" EntityType="Self.tbl_GodigitCounty" />
+    <EntitySet Name="tbl_GodigitPakege" EntityType="Self.tbl_GodigitPakege" />
+    <EntitySet Name="tbl_GodigitPurpose" EntityType="Self.tbl_GodigitPurpose" />
+    <EntitySet Name="tbl_GodigitState" EntityType="Self.tbl_GodigitState" />
+    <EntitySet Name="tbl_GSTType" EntityType="Self.tbl_GSTType" />
+    <EntitySet Name="tbl_HC_Relation" EntityType="Self.tbl_HC_Relation" />
+    <EntitySet Name="tbl_HealthPremiumChartData" EntityType="Self.tbl_HealthPremiumChartData" />
+    <EntitySet Name="tbl_HEIV_Qualification" EntityType="Self.tbl_HEIV_Qualification" />
+    <EntitySet Name="tbl_HEIV_Relation" EntityType="Self.tbl_HEIV_Relation" />
+    <EntitySet Name="tbl_IndiaFirst__CoverageOptions" EntityType="Self.tbl_IndiaFirst__CoverageOptions" />
+    <EntitySet Name="tbl_IndiaFirstCityData" EntityType="Self.tbl_IndiaFirstCityData" />
+    <EntitySet Name="tbl_INSURA_Company" EntityType="Self.tbl_INSURA_Company" />
+    <EntitySet Name="tbl_IPA_Occupation" EntityType="Self.tbl_IPA_Occupation" />
+    <EntitySet Name="tbl_MakeType_Master" EntityType="Self.tbl_MakeType_Master" />
+    <EntitySet Name="tbl_MasterSumInsured" EntityType="Self.tbl_MasterSumInsured" />
+    <EntitySet Name="tbl_MaterialStatus" EntityType="Self.tbl_MaterialStatus" />
+    <EntitySet Name="tbl_ModelType_Master" EntityType="Self.tbl_ModelType_Master" />
+    <EntitySet Name="tbl_OccupationMaster" EntityType="Self.tbl_OccupationMaster" />
+    <EntitySet Name="tbl_PinCode" EntityType="Self.tbl_PinCode" />
+    <EntitySet Name="tbl_PremiumType" EntityType="Self.tbl_PremiumType" />
+    <EntitySet Name="tbl_ProductPlan_Data" EntityType="Self.tbl_ProductPlan_Data" />
+    <EntitySet Name="tbl_Scheme" EntityType="Self.tbl_Scheme" />
+    <EntitySet Name="tbl_StarCountyList" EntityType="Self.tbl_StarCountyList" />
+    <EntitySet Name="tbl_State" EntityType="Self.tbl_State" />
+    <EntitySet Name="tbl_travelCountry" EntityType="Self.tbl_travelCountry" />
+    <EntitySet Name="tblBannedCountries" EntityType="Self.tblBannedCountry" />
+    <EntitySet Name="tblCities" EntityType="Self.tblCity" />
+    <EntitySet Name="tblCountries" EntityType="Self.tblCountry" />
+    <EntitySet Name="tblRelationMasters" EntityType="Self.tblRelationMaster" />
+    <EntitySet Name="tblStates" EntityType="Self.tblState" />
+    <EntitySet Name="Term_Life_Insurance" EntityType="Self.Term_Life_Insurance" />
+    <EntitySet Name="Tow_Weeler_Record_Insert" EntityType="Self.Tow_Weeler_Record_Insert" />
+    <EntitySet Name="Travel_Insurance" EntityType="Self.Travel_Insurance" />
+    <EntitySet Name="TravelDestinations" EntityType="Self.TravelDestination" />
+    <EntitySet Name="TravellerDetails" EntityType="Self.TravellerDetail" />
+    <EntitySet Name="TravelPlans" EntityType="Self.TravelPlan" />
+    <EntitySet Name="TravelProposalDetails" EntityType="Self.TravelProposalDetail" />
+    <EntitySet Name="TravelPurposeMasters" EntityType="Self.TravelPurposeMaster" />
+    <EntitySet Name="Two_Wheeler_Master" EntityType="Self.Two_Wheeler_Master" />
+    <EntitySet Name="VisaTypes" EntityType="Self.VisaType" />
+    <EntitySet Name="Car_Insurance" EntityType="Self.Car_Insurance" />
+    <EntitySet Name="Contact_Us" EntityType="Self.Contact_Us" />
+    <EntitySet Name="RTO_MASTERS" EntityType="Self.RTO_MASTERS" />
+    <EntitySet Name="View_HealthChartData" EntityType="Self.View_HealthChartData" />
+    <EntitySet Name="View_TermLifeInsurance" EntityType="Self.View_TermLifeInsurance" />
+    <EntitySet Name="View_TravelInsurance" EntityType="Self.View_TravelInsurance" />
+    <AssociationSet Name="FK_PolicyPlans_Companies" Association="Self.FK_PolicyPlans_Companies">
+      <End Role="Companies" EntitySet="Companies" />
+      <End Role="PolicyPlans" EntitySet="PolicyPlans" />
+    </AssociationSet>
+    <FunctionImport Name="Car_Insurance_Store" ReturnType="Collection(String)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+      <Parameter Name="Make_Id" Mode="In" Type="Int64" />
+      <Parameter Name="Make" Mode="In" Type="String" />
+      <Parameter Name="Model_Id" Mode="In" Type="Int64" />
+      <Parameter Name="Model" Mode="In" Type="String" />
+      <Parameter Name="Variant_Id" Mode="In" Type="Int32" />
+      <Parameter Name="Variant" Mode="In" Type="String" />
+      <Parameter Name="CC" Mode="In" Type="Int32" />
+      <Parameter Name="Seating_Capacity" Mode="In" Type="Int32" />
+      <Parameter Name="Fuel_Id" Mode="In" Type="Int64" />
+      <Parameter Name="Fuel_Type" Mode="In" Type="String" />
+      <Parameter Name="Segment_ID" Mode="In" Type="Int64" />
+      <Parameter Name="Vehicle_Segment" Mode="In" Type="String" />
+      <Parameter Name="Location_ID" Mode="In" Type="Int64" />
+      <Parameter Name="LOCATION" Mode="In" Type="String" />
+      <Parameter Name="Price" Mode="In" Type="Decimal" />
+      <Parameter Name="Main_Vehicle_Type_ID" Mode="In" Type="Int64" />
+      <Parameter Name="No_Of_Wheels" Mode="In" Type="String" />
+      <Parameter Name="PlanID" Mode="In" Type="Int64" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CarInsertRcord" ReturnType="Collection(CheckyrpremiumModel.CarInsertRcord_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="City_RTO" Mode="In" Type="String" />
+      <Parameter Name="Model" Mode="In" Type="String" />
+      <Parameter Name="Fuel_Type" Mode="In" Type="String" />
+      <Parameter Name="Year" Mode="In" Type="String" />
+      <Parameter Name="Full_Name" Mode="In" Type="String" />
+      <Parameter Name="Email_ID" Mode="In" Type="String" />
+      <Parameter Name="Mobile_No" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CityStore" ReturnType="Collection(CheckyrpremiumModel.CityStore_Result)">
+      <Parameter Name="City_ID" Mode="In" Type="Int64" />
+      <Parameter Name="City_Name" Mode="In" Type="String" />
+      <Parameter Name="State_ID" Mode="In" Type="Int64" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ContactUs" ReturnType="Collection(CheckyrpremiumModel.ContactUs_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Subject" Mode="In" Type="String" />
+      <Parameter Name="message" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="encrypt" ReturnType="Collection(CheckyrpremiumModel.encrypt_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="Usert_ID" Mode="In" Type="String" />
+      <Parameter Name="User_Password" Mode="In" Type="String" />
+      <Parameter Name="User_Password_Decrypt" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Health_Insurence_Store">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="MobileNo" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Income" Mode="In" Type="String" />
+      <Parameter Name="Self" Mode="In" Type="String" />
+      <Parameter Name="Child" Mode="In" Type="String" />
+      <Parameter Name="Grand_father" Mode="In" Type="String" />
+      <Parameter Name="Father_In_low" Mode="In" Type="String" />
+      <Parameter Name="Adult" Mode="In" Type="String" />
+      <Parameter Name="Self_Age" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="String" />
+      <Parameter Name="ServiceTax" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="RTOMASTER_Store" ReturnType="Collection(CheckyrpremiumModel.RTOMASTER_Store_Result)">
+      <Parameter Name="RTO_ID" Mode="In" Type="Int32" />
+      <Parameter Name="RTO_CODE" Mode="In" Type="String" />
+      <Parameter Name="RTO_CITY" Mode="In" Type="String" />
+      <Parameter Name="RTO_STATE" Mode="In" Type="String" />
+      <Parameter Name="Zone" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_HealthInsuranceList" ReturnType="Collection(CheckyrpremiumModel.sp_HealthInsuranceList_Result)">
+      <Parameter Name="ageSelf" Mode="In" Type="Int32" />
+      <Parameter Name="adult" Mode="In" Type="Int32" />
+      <Parameter Name="children" Mode="In" Type="Int32" />
+      <Parameter Name="term" Mode="In" Type="Int32" />
+      <Parameter Name="suminsured" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tbl_GetPremiumRequestData_Store">
+      <Parameter Name="ADB" Mode="In" Type="String" />
+      <Parameter Name="ATPD" Mode="In" Type="String" />
+      <Parameter Name="CI" Mode="In" Type="String" />
+      <Parameter Name="HCB" Mode="In" Type="String" />
+      <Parameter Name="LAAge" Mode="In" Type="String" />
+      <Parameter Name="LADOB" Mode="In" Type="String" />
+      <Parameter Name="LAEmail" Mode="In" Type="String" />
+      <Parameter Name="LAFullName" Mode="In" Type="String" />
+      <Parameter Name="LAGender" Mode="In" Type="String" />
+      <Parameter Name="LANumber" Mode="In" Type="String" />
+      <Parameter Name="LAProposerSame" Mode="In" Type="String" />
+      <Parameter Name="LATobacco" Mode="In" Type="String" />
+      <Parameter Name="PEBased" Mode="In" Type="String" />
+      <Parameter Name="Term" Mode="In" Type="String" />
+      <Parameter Name="WOP" Mode="In" Type="String" />
+      <Parameter Name="additionalBenefit" Mode="In" Type="String" />
+      <Parameter Name="age" Mode="In" Type="String" />
+      <Parameter Name="betterHalfBenefit" Mode="In" Type="String" />
+      <Parameter Name="bond" Mode="In" Type="String" />
+      <Parameter Name="childAge" Mode="In" Type="String" />
+      <Parameter Name="childGender" Mode="In" Type="String" />
+      <Parameter Name="claimsOption" Mode="In" Type="String" />
+      <Parameter Name="cliDOB" Mode="In" Type="String" />
+      <Parameter Name="cliGender" Mode="In" Type="String" />
+      <Parameter Name="distributionChannel" Mode="In" Type="String" />
+      <Parameter Name="flexibleBenefitYear" Mode="In" Type="String" />
+      <Parameter Name="frequency" Mode="In" Type="String" />
+      <Parameter Name="fullName" Mode="In" Type="String" />
+      <Parameter Name="index" Mode="In" Type="String" />
+      <Parameter Name="investmentStrategy" Mode="In" Type="String" />
+      <Parameter Name="largeCap" Mode="In" Type="String" />
+      <Parameter Name="managed" Mode="In" Type="String" />
+      <Parameter Name="maturityAge" Mode="In" Type="String" />
+      <Parameter Name="maturityOption" Mode="In" Type="String" />
+      <Parameter Name="moneyMarket" Mode="In" Type="String" />
+      <Parameter Name="payoutMonths" Mode="In" Type="String" />
+      <Parameter Name="payoutOption" Mode="In" Type="String" />
+      <Parameter Name="payoutPercentageIncreasingIncome" Mode="In" Type="String" />
+      <Parameter Name="payoutPercentageLevelIncome" Mode="In" Type="String" />
+      <Parameter Name="payoutPercentageLumpsum" Mode="In" Type="String" />
+      <Parameter Name="pdf" Mode="In" Type="String" />
+      <Parameter Name="policyOption" Mode="In" Type="String" />
+      <Parameter Name="policyTerm" Mode="In" Type="String" />
+      <Parameter Name="postponement" Mode="In" Type="String" />
+      <Parameter Name="premiumPayingTerm" Mode="In" Type="String" />
+      <Parameter Name="product" Mode="In" Type="String" />
+      <Parameter Name="risingStar" Mode="In" Type="String" />
+      <Parameter Name="smoke" Mode="In" Type="String" />
+      <Parameter Name="spouseAge" Mode="In" Type="String" />
+      <Parameter Name="spouseDOB" Mode="In" Type="String" />
+      <Parameter Name="spouseFirstName" Mode="In" Type="String" />
+      <Parameter Name="spouseGender" Mode="In" Type="String" />
+      <Parameter Name="spouseLastName" Mode="In" Type="String" />
+      <Parameter Name="spouseTobaccoUser" Mode="In" Type="String" />
+      <Parameter Name="staff" Mode="In" Type="String" />
+      <Parameter Name="sumAssured" Mode="In" Type="String" />
+      <Parameter Name="top250" Mode="In" Type="String" />
+      <Parameter Name="topUpBenefitPercentage" Mode="In" Type="String" />
+      <Parameter Name="tranId" Mode="In" Type="String" />
+      <Parameter Name="workSiteFlag" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tbl_GetPremiumResponce_Store">
+      <Parameter Name="accidentalDeathPremium" Mode="In" Type="String" />
+      <Parameter Name="basePremium" Mode="In" Type="String" />
+      <Parameter Name="betterHalfPremium" Mode="In" Type="String" />
+      <Parameter Name="criticalIllnessPremium" Mode="In" Type="String" />
+      <Parameter Name="error" Mode="In" Type="String" />
+      <Parameter Name="hcbPremium" Mode="In" Type="String" />
+      <Parameter Name="pdfName" Mode="In" Type="String" />
+      <Parameter Name="permanentDisabilityPremium" Mode="In" Type="String" />
+      <Parameter Name="premium" Mode="In" Type="String" />
+      <Parameter Name="premiumWaiver" Mode="In" Type="String" />
+      <Parameter Name="sumAssured" Mode="In" Type="String" />
+      <Parameter Name="totalPremium" Mode="In" Type="String" />
+      <Parameter Name="company" Mode="In" Type="String" />
+      <Parameter Name="PlanName" Mode="In" Type="String" />
+      <Parameter Name="CustID" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Term_Lite_Insurence_Proce" ReturnType="Collection(CheckyrpremiumModel.Term_Lite_Insurence_Proce_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="String" />
+      <Parameter Name="Mobile_No" Mode="In" Type="String" />
+      <Parameter Name="Email_ID" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tow_weelersInsertRecord" ReturnType="Collection(CheckyrpremiumModel.tow_weelersInsertRecord_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="Model" Mode="In" Type="String" />
+      <Parameter Name="CITY" Mode="In" Type="String" />
+      <Parameter Name="Varient" Mode="In" Type="String" />
+      <Parameter Name="year" Mode="In" Type="String" />
+      <Parameter Name="previousins" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Tow_WeelersPorced" ReturnType="Collection(String)">
+      <Parameter Name="MAKE" Mode="In" Type="String" />
+      <Parameter Name="MODEL" Mode="In" Type="String" />
+      <Parameter Name="CUBIC" Mode="In" Type="Double" />
+      <Parameter Name="SEATING_CAPACITY" Mode="In" Type="Double" />
+      <Parameter Name="GVW" Mode="In" Type="Double" />
+      <Parameter Name="CARRYING" Mode="In" Type="Double" />
+      <Parameter Name="CAPACITY" Mode="In" Type="Double" />
+      <Parameter Name="VARIANT" Mode="In" Type="String" />
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="TravelInsuranceSearchBies" EntityType="CheckyrpremiumModel.TravelInsuranceSearchBy" />
+    <EntitySet Name="All_Company_Details" EntityType="CheckyrpremiumModel.All_Company_Details" />
+    <EntitySet Name="Comparision_Health_tbl" EntityType="CheckyrpremiumModel.Comparision_Health_tbl" />
+  </EntityContainer>
+  <ComplexType Name="CarInsertRcord_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="City_RTO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Model" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Fuel_Type" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Year" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Full_Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email_ID" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Mobile_No" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="CityStore_Result">
+    <Property Type="String" Name="City_Name" Nullable="true" />
+    <Property Type="Int64" Name="State_ID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="ContactUs_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Subject" Nullable="true" />
+    <Property Type="String" Name="message" Nullable="true" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="encrypt_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Usert_ID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="User_Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="User_Password_Decrypt" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="RTOMASTER_Store_Result">
+    <Property Type="Int32" Name="RTO_ID" Nullable="false" />
+    <Property Type="String" Name="RTO_CODE" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_HealthInsuranceList_Result">
+    <Property Type="String" Name="CompanyName" Nullable="false" />
+    <Property Type="String" Name="LogoImage" Nullable="true" />
+    <Property Type="Int64" Name="CompanyId" Nullable="true" />
+    <Property Type="String" Name="Duration" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="PlanID" Nullable="true" />
+    <Property Type="String" Name="premiumdesc" Nullable="true" MaxLength="255" />
+    <Property Type="Double" Name="Premium" Nullable="true" />
+    <Property Type="Decimal" Name="SumInsured" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="BeforeServiceTax" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="PremiumChartID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Term_Lite_Insurence_Proce_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DOB" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Mobile_No" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email_ID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="tow_weelersInsertRecord_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Model" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="CITY" Nullable="true" />
+    <Property Type="String" Name="Varient" Nullable="true" />
+    <Property Type="String" Name="year" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="previousins" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="TravelInsuranceSearchBy">
+    <Key>
+      <PropertyRef Name="SearchId" />
+    </Key>
+    <Property Name="SearchId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TravellerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="city" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="contactno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="emailid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="destination" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="startDate" Type="DateTime" Precision="3" />
+    <Property Name="endDate" Type="DateTime" Precision="3" />
+    <Property Name="createdDate" Type="DateTime" Precision="3" />
+    <Property Name="ageSpouse" Type="Int32" />
+    <Property Name="ageChild1" Type="Int32" />
+    <Property Name="ageChild2" Type="Int32" />
+    <Property Name="ageBrother" Type="Int32" />
+    <Property Name="ageMother" Type="Int32" />
+    <Property Name="ageFather" Type="Int32" />
+  </EntityType>
+  <EntityType Name="All_Company_Details">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Benefit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Co_Pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Room_Rent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Day_Care_Treatment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Restoration_Benefit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Pre_Hospitalization" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Post_Hospitalization" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ambulance_Charges" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Company_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Company_Plan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Comparision_Health_tbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Benefit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Co_Pay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Room_Rent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OPD" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Day_Care_Treatment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Medical_Checkup" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Pre_Existing_Disease_Covered_After" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Domicilliary_Expenses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Organ_Donar_Expenses" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Hospital_Cash_Daily_Limit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Maternity_Benefit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="New_Born_Baby" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Pre_Hospitalization" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Post_Hospitalization" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ambulance_Charges" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Health_Check_Up" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Restoration_Benefit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Free_Look_Period" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Company_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Company_Plan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,497 @@
+﻿
+@{
+    ViewBag.Title = "quotes_Health";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+    var EmployeeModel = (List<CheckYourPremiumMVC.Models.ShowHealthInsurenceQuate>)Model;
+}
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+@*<link href="~/Resources/css/quotesHealth.css" rel="stylesheet" />*@
+<script src="~/Resources/js/jquery.min.js"></script>
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+<link href="~/Resources/css/quotesNewBike.css" rel="stylesheet" />
+
+<script>
+    $(document).ready(function () {
+        //function GetEmployeeUsingAjax() {
+        var EmpId = 2;
+        var abc = {
+            "EmpId": EmpId
+        };
+        $.ajax({
+            type: "GET",
+            url: "/QuoteHealth_Controller/GetAllUser",
+            data: { "EmpId": EmpId },
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                //$('#id').text(emp.employee.Id);
+
+                $.each(data, function (index, value) {
+                   
+                 
+                  //  var img1 = '<img src="~/Logo/"' + value.Logo + '">'
+                    var img1=  '<td><img src="../Logo/logoEdelWise.gif"></td>'
+                   
+                    $("<tr>").append(
+                        //  
+                       $("<td>").append($('<img>').attr('src', '../Logo/' + value.Logo).text('Buy This Plan')),
+                        
+                        $("<td>").text(value.PremiumDesc),
+                         $("<td>").text(value.SumAssured),
+                         $("<td>").text(value.Premium).append($('<br><a class="AddD">').attr('src', '#').text('Buy This Plan'))
+                        ).appendTo("#mytable tbody");
+
+                  
+                });
+             
+            },
+            error: function (emp) {
+                alert('error');
+            }
+        });
+        //}
+    });
+</script>
+<script>
+    //$(document).ready(function () {
+    //    $('#CoverFor').on('change', 'select', function (e) {
+    //        var val = $(e.target).val();
+    //        var text = $(e.target).find("option:selected").text(); //only time the find is required
+    //        var name = $(e.target).attr('name');
+    //        alert(val);
+    //    });
+    //});
+    
+    //$('#CoverFor').on('change', function () {
+    //    var selectVal = $("#CoverFor option:selected").val();
+    //    alert(selectVal);
+    //});
+    $(document).ready(function () {
+        $('body').on('change', '#CoverFor', function () {
+            var a = $("#CoverFor option:selected").val();
+            var Data = {};
+            Data.SelectValue = a;
+            $.ajax({
+                type: "POST",
+                url: "/QuoteHealth_Controller/Checkdb",
+                 data: '{Data: ' + JSON.stringify(Data) + '}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    location.reload(true);
+                },
+                error: function () {
+
+                    alert("Error");
+                }
+            });
+        });
+        $('body').on('change', '#CheckRupee', function () {
+            var a = $("#CheckRupee option:selected").val();
+            var Data2 = {};
+            Data2.SelectBlance = a;
+            $.ajax({
+                type: "POST",
+                url: "/QuoteHealth_Controller/CheckCover",
+                data: '{Data2: ' + JSON.stringify(Data2) + '}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    location.reload(true);
+                },
+                error: function () {
+
+                    alert("Error");
+                }
+            });
+        });
+    });
+</script>
+
+
+<style>
+    .leftdata div {
+        padding: 2px;
+    }
+
+        .leftdata div input {
+            float: right;
+            font-size: 11px;
+        }
+
+
+    .details-data-box span {
+        display: inline-block;
+        margin: 1px;
+        font-family: 'Comfortaa', cursive !important;
+        font-size: 11px;
+        background: #ffffff;
+        border-radius: 30px;
+        color: #000;
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+
+    .fa-spin {
+        -webkit-animation: fa-spin 8s infinite linear reverse;
+        animation: fa-spin 8s infinite linear reverse;
+    }
+
+    .details-data-box label {
+        font-weight: normal;
+    }
+
+    .details-data-box2 {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    label.premium-btn {
+        background: #206184;
+        text-shadow: 0px 0px 1px #336883;
+        border-radius: 50em;
+        line-height: 40px;
+        color: #fff;
+        font-weight: normal;
+        font-size: 15px;
+        box-shadow: 0 0 6px #aba8a8;
+        cursor: pointer;
+    }
+
+        label.premium-btn a {
+            color: #fff;
+        }
+
+    .details-data-box2 a {
+        font-family: 'Comfortaa', cursive !important;
+        font-size: 14px;
+        color: #000;
+        display: block;
+        padding: 5px;
+    }
+
+    .sticky-enabled tbody {
+        background: #fff;
+    }
+
+    .praposal-cars2 {
+        position: fixed !important;
+    }
+
+    .bsfga {
+        width: 104px;
+        float: right;
+        padding-right: 3%;
+    }
+
+    .lftgDtn{
+        margin-top:10rem;
+    }
+
+    .table-container-wrap {
+        margin-top: 5rem;
+    }
+
+    #mytable > tbody > tr > td {
+        text-align: right;
+        border-bottom: 10px solid #fff;
+        padding: 5px 8px;
+        background: #e2e9ee;
+        border-top: 10px solid #fff;
+    }
+
+    #mytable > tbody > tr > td:nth-child(1) {
+        text-align: left;
+    }
+        #mytable > tbody > tr > td:nth-child(2) {
+            text-align: left;
+        }
+
+        #mytable > tbody > tr > td:nth-child(4) {
+            text-align: center;
+        }
+
+    .sticky-wrap {
+        margin: 1px 0 0px;
+    }
+
+    .btnlts div {
+        display: inline-block;
+        font-size: 12px;
+        padding-right: 5px;
+        background: #fff;
+        color: #333;
+        border-radius: 20px;
+        margin: 3px 1px;
+        padding: 1px 2px;
+    }
+
+    .healthlbl {
+        margin-bottom: 0;
+    }
+    .praposal-newBikeContainers {
+        padding: 30px 10px;
+    }
+</style>
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+<div>
+
+    <div class="leftdata">
+        <div class="col-md-2">
+            <a href="car-insurance.aspx"><img src="Resources/images/logo2.png" class="bsfga" style="cursor:pointer" /></a>
+        </div>
+        <div class="col-md-7">
+            <div class="contents-pro">
+
+
+                <div class="details-data-box">
+                    <span>CITY & RTO :<asp:Label runat="server" ID="lblcity" Text=""> </asp:Label></span>
+                    <span>MODEL :<asp:Label runat="server" ID="lblModel" Text=""> </asp:Label></span>
+                    <span>FUEL TYPE :<asp:Label runat="server" ID="lblfueltype" Text=""> </asp:Label></span>
+                    <span>YEAR:<asp:Label runat="server" ID="lblyear" Text=""> </asp:Label></span>
+
+                </div>                
+
+
+                <div class="details-data-box2">
+                    <a href="#" style="color:#fff;font-size:12px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="details-data-box">
+                <span style="display:block;float:right;">Third party cover only</span><input type="checkbox" name="vehicle1" value="Bike" />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="btnlts" style="margin-top: 10rem;">
+            <div><span>Name:</span> <span>Hello  @Session["HealthName"]</span></div>
+            <div><span>Age :</span> <span> @Session["HealthAge"]</span></div>
+            <div><span>Gender :</span> <span> @Session["HealthGender"] </span></div>
+        </div>
+
+        <div id="slidesa" class="some_class" style="display:block;">
+            <div class="row-health">
+                <div class="middle-two">
+                    <label class="healthlbl">
+                        <p class="label-txt">Cover for</p>
+                        @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinpt">*@
+                        <select class="healthinpt" id="CoverFor">
+                            <option value="" >Select Coverage Required For</option>
+                            <option value="1000">1 Adult Only</option>
+                            <option value="1100">2 Adults</option>
+                            <option value="1110">2 Adults &amp; 1 Child</option>
+                            <option value="1120">2 Adults &amp; 2 Children</option>
+                            <option value="1010">1 Adult &amp; 1 Child</option>
+                            <option value="1020">1 Adult &amp; 2 Children</option>
+                           
+                        </select>
+                    </label>
+
+                    <label class="healthlbl">
+                        <p class="label-txt">Coverage</p>
+                        @*<input name="ctl00$main$txtmobile" type="text" maxlength="10" id="main_txtmobile" class="healthinpt">*@
+                        <select class="healthinpt" id="CheckRupee">
+                            <option value="100000">1 Lac</option>
+                            <option value="200000">2 Lac</option>
+                            <option value="300000">3 Lac</option>
+                            <option value="400000">4 Lac</option>
+                            <option value="500000">5 Lac</option>
+                            <option value="600000">6 Lac</option>
+                            <option value="700000">7 Lac</option>
+                            <option value="800000">8 Lac</option>
+                            <option value="900000">9 Lac</option>
+                            <option value="1000000">10 Lac</option>
+                            <!--<option value="1200000" >12 Lac</option>-->
+                            <option value="1500000">15 Lac</option>
+                            <option value="2000000">20 Lac</option>
+                            <option value="2500000">25 Lacs</option>
+                            <option value="3000000">30 Lacs</option>
+                            <option value="4000000">40 Lacs</option>
+                            <option value="5000000">50 Lacs</option>
+                            <option value="6000000">60 Lacs</option>
+                            <option value="7500000">75 Lacs</option>
+                            <option value="10000000">100 Lacs</option>
+                        </select>
+                    </label>
+
+                    <label class="healthlgbl" style="width: 100%;">
+                        <p class="label-txgt">Policy Term :</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" checked="">1 yr
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">2 yr
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">3 yr
+                        </label>
+                    </label>
+
+                    <label class="healthlgbl" style="width: 100%;">
+                        <p class="label-txgt">Gender :</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">Female
+                        </label>
+
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="lftgDtn" style="visibility:hidden">
+        
+        </div>
+    </div>
+
+    <div class="col-md-9" style="padding:0px;">
+        <div class="table-container-wrap">
+            
+
+            <div class="praposal-newBikeContainers">
+                <div class="containerg-tabls">
+
+                    <div id="content">
+
+                        <section class="demo" id="basic">
+                            <div class="table-responsive">
+
+                                <table id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Plan Info</th>
+                                            <th>Plan Benefits</th>
+                                            <th>Premium</th>
+                                           
+                                            </tr>
+                                        </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+
+                                
+
+
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script src="~/Resources/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="~/Resources/js/jquery.stickysort.js"></script>
+<script>
+    $(function () {
+        // We select for tables universally - you can change the selector to target the tables you want
+        // Basic table
+        $('#basic table').stickySort();
+
+        // Basic table with sort
+        $('#basic-sort table').stickySort({ sortable: true });
+
+        // Biaxial
+        $('#biaxial .bx1').stickySort();
+        $('#biaxial .bx2').stickySort({ sortable: true });
+
+        // Final
+        $('#final table').stickySort({ sortable: true });
+
+        // The codes below has no impact on the functionality of StickySort functionality
+        //-----------------------------------------------------------------------------------------------------------------
+        // Smooth scrolling plugin by Chris Coiyer
+        // Source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        // Section toggle
+        $('section.demo h2')
+        .append('<a href="#" title="Collapse section" class="toggle">Collapse</a>')
+        .on('click', 'a', function (e) {
+            e.preventDefault();
+            if (!$(this).data('state') || $(this).data('state') == 0) {
+                $(this)
+                .data('state', 1)
+                .attr('title', 'Expand section')
+                .text('Expand')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideUp();
+            } else {
+                $(this)
+                .data('state', 0)
+                .attr('title', 'Collapse section')
+                .text('Collapse')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideDown();
+            }
+        });
+
+        // Unrelated to sticky header function
+        $('table').each(function () {
+            if ($(this).attr('data-color') != undefined) {
+                $(this).find('tbody td').each(function () {
+                    if ($(this).text().match(/^\d+$/)) {
+                        $(this).css({
+                            'background-color': 'hsl(' + parseInt($(this).text()) + ',75%,85%)'
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+<script>
+         $(".btnlts").click(function () {
+             $("#slidesa").addClass("some_class").slideToggle("slow");
+
+         });
+</script>

@@ -1,0 +1,416 @@
+﻿@model Domain.HealthQuatationDetail
+@{
+    ViewBag.Title = "GetQuoteDetails";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+
+
+<link href="~/Resources/css/TermLf-PraposerForm.css" rel="stylesheet" />
+<style>
+    .pj {
+        padding: 0px 6px;
+    }
+
+    body {
+        background: #f1f1f1;
+    }
+
+    .headsFrm {
+        display: none;
+    }
+</style>
+<form method="post" action="/HealthPlan/GetQuoteDetails">
+    @Html.ValidationSummary(true)
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.QuoteNo)
+    @Html.HiddenFor(model => model.OrderNo)
+    @Html.HiddenFor(model => model.IsMobile)
+    @Html.HiddenFor(model => model.Product)
+    @Html.HiddenFor(model => model.Channel)
+    @Html.HiddenFor(model => model.Amount)
+    <section class="termLife-Proposerfrm">
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="praposerInfo bxcDf">
+                <h5><span>Proposer (Who is paying for the policy)</span></h5>
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Proposer Name </p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.proposerName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl gndr">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(x => x.proposerInfo.gender, "Male")
+                                    Male
+                                    @*<input type="radio" name="gender" checked />Male*@
+                                </label>
+                                <label class="radio-inline">
+                                    @*<input type="radio" name="gender" />Female*@
+                                    @Html.RadioButtonFor(x => x.proposerInfo.gender, "Female")
+                                    Female
+                                </label>
+                                <label class="radio-inline">
+                                    @*<input type="radio" name="gender" />Transgender*@
+                                    @Html.RadioButtonFor(x => x.proposerInfo.gender, "Transgender")
+                                    Transgender
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Mobile</p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.mobile, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Email</p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.email, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">PinCode</p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.pinCode, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">City</p>
+                                @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" />*@
+                                @Html.TextBoxFor(model => model.proposerInfo.city, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Address</p>
+                                @Html.TextAreaFor(model => model.proposerInfo.address, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Landmark</p>
+                                @Html.TextBoxFor(model => model.proposerInfo.landmark, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Alternate No</p>
+                                @Html.TextBoxFor(model => model.proposerInfo.alternateNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="insuredInfo bxcDf">
+                <h5><span> Nominee Details (Who will receive the claim.)</span></h5>
+
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="insuredInfo bxcDf">
+                <h5><span>Insured Member Details (Choose Tab & Fill Details)</span></h5>
+
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Person Name </p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.insuredPersonName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Date Of Birth </p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.dOB, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Marital Status</p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.maritalStatus, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl gndr">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(x => x.InsuredPersonInfo.gender, "Male")
+                                    Male
+                                </label>
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(x => x.InsuredPersonInfo.gender, "Female")
+                                    Female
+                                </label>
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(x => x.InsuredPersonInfo.gender, "Transgender")
+                                    Transgender
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Indian Passport</p>
+                                @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.IsIndianPassport, (SelectList)ViewData["lstPassport"],"Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })*@
+                                <select class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    <option value="">--</option>
+                                    <option value="Y">Yes</option>
+                                    <option value="N">No</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Passport No</p>
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.passportNo, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Nominee Name</p>
+
+                                @Html.TextBoxFor(model => model.InsuredPersonInfo.NomineeName, new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt rt col-xs-12 col-sm-4 col-md-4 col-lg-4">Relation<span>?</span></p>
+                                @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.Relation, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8" })*@
+                                <select class="healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    <option value="">-- </option>
+                                    <option value="B">Sibling</option>
+                                    <option value="C">Child</option>
+                                    <option value="E">Niece</option>
+                                    <option value="G">GrandParent</option>
+                                    <option value="H">GrandChild</option>
+                                    <option value="K">Brother-in-Law</option>
+                                    <option value="L">Sister-in-Law</option>
+                                    <option value="N">Nephew</option>
+                                    <option value="P">Parent</option>
+                                    <option value="S">Spouse</option>
+                                </select>
+
+
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <input type="submit" value="Continue" class="btn btn-primary btn-success" />
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="padding:0px;">
+            <div class="policyDlkls">
+                <h5><span>Policy Details</span></h5>
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl hj">
+                                <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i> Sum Assured :</span>
+                                @*<label>@Model.sumAssured</label>
+                                        @Html.HiddenFor(model => model.sumAssured)
+                                    </label>*@
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl hj">
+                                <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i> Premium :</span>
+                                @*<label>@Model.Amount</label>*@
+
+                            </label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="divdf">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl hj">
+                                <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Number of Adults :</span>
+                                @*<label>@Model.NoOfAdults</label>
+                                        @Html.HiddenFor(model => model.NoOfAdults)
+                                    </label>*@
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                        <div>
+                            <label class="healthlbl hj">
+                                <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Number of Children :</span>
+                                @*<label>@Model.NoOfChildren</label>
+                                        @Html.HiddenFor(model => model.NoOfChildren)
+                                    </label>*@
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="divdf">
+                    <div class="col-lg-12">
+                        <div>
+                            <label class="healthlbl hj" style="text-align:center;">
+                                <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Plan :</span>
+                                @*<label>@Model.Plan</label>
+                                        @Html.HiddenFor(model => model.Plan)
+                                    </label>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</form>
+

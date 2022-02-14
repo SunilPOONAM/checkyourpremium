@@ -1,0 +1,1359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CheckyrpremiumModelStoreContainer" CdmEntityContainer="CheckyrpremiumEntities">
+    <EntitySetMapping Name="AssigneeRelations">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.AssigneeRelation">
+        <MappingFragment StoreEntitySet="AssigneeRelation">
+          <ScalarProperty Name="AssigneeRelationshipId" ColumnName="AssigneeRelationshipId" />
+          <ScalarProperty Name="AssigneeRelationshipName" ColumnName="AssigneeRelationshipName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="InsuranceType" ColumnName="InsuranceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bajaj_Occupation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Bajaj_Occupation">
+        <MappingFragment StoreEntitySet="Bajaj_Occupation">
+          <ScalarProperty Name="OccupationId" ColumnName="OccupationId" />
+          <ScalarProperty Name="OccupationValue" ColumnName="OccupationValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bajaj_Relation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Bajaj_Relation">
+        <MappingFragment StoreEntitySet="Bajaj_Relation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="RelationId" ColumnName="RelationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bhartiAxaCredentials">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.bhartiAxaCredential">
+        <MappingFragment StoreEntitySet="bhartiAxaCredentials">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CredentialType" ColumnName="CredentialType" />
+          <ScalarProperty Name="CredentialValue" ColumnName="CredentialValue" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Car_Insurence_Record_Saved">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Car_Insurence_Record_Saved">
+        <MappingFragment StoreEntitySet="Car_Insurence_Record_Saved">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="City_RTO" ColumnName="City_RTO" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Fuel_Type" ColumnName="Fuel_Type" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_tbl">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Category_tbl">
+        <MappingFragment StoreEntitySet="Category_tbl">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Company">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies1">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Company1">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="STNo" ColumnName="STNo" />
+          <ScalarProperty Name="CIN" ColumnName="CIN" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deseases">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Desease">
+        <MappingFragment StoreEntitySet="Desease">
+          <ScalarProperty Name="DeseaseId" ColumnName="DeseaseId" />
+          <ScalarProperty Name="DiseaseDescription" ColumnName="DiseaseDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Encrypt_Password">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Encrypt_Password">
+        <MappingFragment StoreEntitySet="Encrypt_Password">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Usert_ID" ColumnName="Usert_ID" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Password_Decrypt" ColumnName="User_Password_Decrypt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Godigit_Responce_Data">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Godigit_Responce_Data">
+        <MappingFragment StoreEntitySet="Godigit_Responce_Data">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="paxId" ColumnName="paxId" />
+          <ScalarProperty Name="policyPremium" ColumnName="policyPremium" />
+          <ScalarProperty Name="Sgst" ColumnName="Sgst" />
+          <ScalarProperty Name="Cgst" ColumnName="Cgst" />
+          <ScalarProperty Name="Ugst" ColumnName="Ugst" />
+          <ScalarProperty Name="igst" ColumnName="igst" />
+          <ScalarProperty Name="invoiceNumber" ColumnName="invoiceNumber" />
+          <ScalarProperty Name="policyNetPremium" ColumnName="policyNetPremium" />
+          <ScalarProperty Name="policyID" ColumnName="policyID" />
+          <ScalarProperty Name="transactionDate" ColumnName="transactionDate" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="policyStatus" ColumnName="policyStatus" />
+          <ScalarProperty Name="applicationId" ColumnName="applicationId" />
+          <ScalarProperty Name="paymentLink" ColumnName="paymentLink" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="Adult" ColumnName="Adult" />
+          <ScalarProperty Name="Child" ColumnName="Child" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Health_Insurance_Record_Saved">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Health_Insurance_Record_Saved">
+        <MappingFragment StoreEntitySet="Health_Insurance_Record_Saved">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Self" ColumnName="Self" />
+          <ScalarProperty Name="Adult" ColumnName="Adult" />
+          <ScalarProperty Name="Child" ColumnName="Child" />
+          <ScalarProperty Name="Self_Age" ColumnName="Self_Age" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ServiceTax" ColumnName="ServiceTax" />
+          <ScalarProperty Name="spouce_Age" ColumnName="spouce_Age" />
+          <ScalarProperty Name="child1_Age" ColumnName="child1_Age" />
+          <ScalarProperty Name="child2_Age" ColumnName="child2_Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="healthRelations">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.healthRelation">
+        <MappingFragment StoreEntitySet="healthRelations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AssigneeRelationshipName" ColumnName="AssigneeRelationshipName" />
+          <ScalarProperty Name="AssigneeRelationshipId" ColumnName="AssigneeRelationshipId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="InsuranceType" ColumnName="InsuranceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuredRelations">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.InsuredRelation">
+        <MappingFragment StoreEntitySet="InsuredRelation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RelationshipId" ColumnName="RelationshipId" />
+          <ScalarProperty Name="InsuredRelationshipName" ColumnName="InsuredRelationshipName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login_Tbl">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Login_Tbl">
+        <MappingFragment StoreEntitySet="Login_Tbl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="islocked" ColumnName="islocked" />
+          <ScalarProperty Name="attemptcount" ColumnName="attemptcount" />
+          <ScalarProperty Name="Times" ColumnName="Times" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginReg_tbl">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.LoginReg_tbl">
+        <MappingFragment StoreEntitySet="LoginReg_tbl">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Masters">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Master">
+        <MappingFragment StoreEntitySet="Masters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="VariableText" ColumnName="VariableText" />
+          <ScalarProperty Name="VariableValue" ColumnName="VariableValue" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Moter_RTO">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Moter_RTO">
+        <MappingFragment StoreEntitySet="Moter_RTO">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RegisteredCityName" ColumnName="RegisteredCityName" />
+          <ScalarProperty Name="RegisteredStateName" ColumnName="RegisteredStateName" />
+          <ScalarProperty Name="RTOCode" ColumnName="RTOCode" />
+          <ScalarProperty Name="New" ColumnName="New" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motor_FuelType">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Motor_FuelType">
+        <MappingFragment StoreEntitySet="Motor_FuelType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motor_Insurance_Record">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Motor_Insurance_Record">
+        <MappingFragment StoreEntitySet="Motor_Insurance_Record">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Rto" ColumnName="Rto" />
+          <ScalarProperty Name="CarBrand" ColumnName="CarBrand" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="FualType" ColumnName="FualType" />
+          <ScalarProperty Name="RegistrationYear" ColumnName="RegistrationYear" />
+          <ScalarProperty Name="ClaimLastYear" ColumnName="ClaimLastYear" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="CarVariant" ColumnName="CarVariant" />
+          <ScalarProperty Name="CarNumber" ColumnName="CarNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motor_Nominee_Relation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Motor_Nominee_Relation">
+        <MappingFragment StoreEntitySet="Motor_Nominee Relation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NomineeRelation" ColumnName="NomineeRelation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motor_State">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Motor_State">
+        <MappingFragment StoreEntitySet="Motor_State">
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentCategories">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.ParentCategory">
+        <MappingFragment StoreEntitySet="ParentCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentCategory1" ColumnName="ParentCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plan_Benifit">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Plan_Benifit">
+        <MappingFragment StoreEntitySet="Plan_Benifit">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PlanType" ColumnName="PlanType" />
+          <ScalarProperty Name="PlanBenifit" ColumnName="PlanBenifit" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PolicyPlans">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.PolicyPlan">
+        <MappingFragment StoreEntitySet="PolicyPlans">
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="PlanType" ColumnName="PlanType" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="PlanDesc" ColumnName="PlanDesc" />
+          <ScalarProperty Name="PlanImage" ColumnName="PlanImage" />
+          <ScalarProperty Name="ST_Included" ColumnName="ST_Included" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProposerDetails">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.ProposerDetail">
+        <MappingFragment StoreEntitySet="ProposerDetail">
+          <ScalarProperty Name="ProposerId" ColumnName="ProposerId" />
+          <ScalarProperty Name="ProposerName" ColumnName="ProposerName" />
+          <ScalarProperty Name="proposerEmail" ColumnName="proposerEmail" />
+          <ScalarProperty Name="proposerPhone" ColumnName="proposerPhone" />
+          <ScalarProperty Name="proposerAddressOne" ColumnName="proposerAddressOne" />
+          <ScalarProperty Name="proposerAddressTwo" ColumnName="proposerAddressTwo" />
+          <ScalarProperty Name="proposerAreaId" ColumnName="proposerAreaId" />
+          <ScalarProperty Name="gstTypeId" ColumnName="gstTypeId" />
+          <ScalarProperty Name="gstIdNumber" ColumnName="gstIdNumber" />
+          <ScalarProperty Name="eiaNumber" ColumnName="eiaNumber" />
+          <ScalarProperty Name="proposerDob" ColumnName="proposerDob" />
+          <ScalarProperty Name="placeOfVisit" ColumnName="placeOfVisit" />
+          <ScalarProperty Name="travelPurposeId" ColumnName="travelPurposeId" />
+          <ScalarProperty Name="physicianName" ColumnName="physicianName" />
+          <ScalarProperty Name="physicianContactNumber" ColumnName="physicianContactNumber" />
+          <ScalarProperty Name="FkSearchId" ColumnName="FkSearchId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+          <ScalarProperty Name="travelStartOn" ColumnName="travelStartOn" />
+          <ScalarProperty Name="travelEndOn" ColumnName="travelEndOn" />
+          <ScalarProperty Name="SearchType" ColumnName="SearchType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reg_tbl">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Reg_tbl">
+        <MappingFragment StoreEntitySet="Reg_tbl">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Dob" ColumnName="Dob" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RiskCover_options">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.RiskCover_options">
+        <MappingFragment StoreEntitySet="RiskCover_options">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="RiskCoverOptions" ColumnName="RiskCoverOptions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales_store">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.sales_store">
+        <MappingFragment StoreEntitySet="sales_store">
+          <ScalarProperty Name="SalesStore_M_ID" ColumnName="SalesStore_M_ID" />
+          <ScalarProperty Name="Store_Code" ColumnName="Store_Code" />
+          <ScalarProperty Name="Store_Name" ColumnName="Store_Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Company_id" ColumnName="Company_id" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="IFSC_Code" ColumnName="IFSC_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sub_category">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Sub_category">
+        <MappingFragment StoreEntitySet="Sub_category">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ItemType" ColumnName="ItemType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_GodigitGender">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tb_GodigitGender">
+        <MappingFragment StoreEntitySet="tb_GodigitGender">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GenderValue" ColumnName="GenderValue" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BajajBlockCity">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BajajBlockCity">
+        <MappingFragment StoreEntitySet="tbl_BajajBlockCity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PolicyCity" ColumnName="PolicyCity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BajajResponce_Data">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BajajResponce_Data">
+        <MappingFragment StoreEntitySet="tbl_BajajResponce_Data">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Contractid" ColumnName="Contractid" />
+          <ScalarProperty Name="Quotrefno" ColumnName="Quotrefno" />
+          <ScalarProperty Name="RefNO" ColumnName="RefNO" />
+          <ScalarProperty Name="ScurityNo" ColumnName="ScurityNo" />
+          <ScalarProperty Name="PolicyRef" ColumnName="PolicyRef" />
+          <ScalarProperty Name="NetPremium" ColumnName="NetPremium" />
+          <ScalarProperty Name="Servicetaxamt" ColumnName="Servicetaxamt" />
+          <ScalarProperty Name="edueAmt" ColumnName="edueAmt" />
+          <ScalarProperty Name="TotalPremium" ColumnName="TotalPremium" />
+          <ScalarProperty Name="FinalPremium" ColumnName="FinalPremium" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="taxCode" ColumnName="taxCode" />
+          <ScalarProperty Name="TaxType" ColumnName="TaxType" />
+          <ScalarProperty Name="AddTaxValue" ColumnName="AddTaxValue" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PalnID" ColumnName="PalnID" />
+          <ScalarProperty Name="IDData" ColumnName="IDData" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="Adult" ColumnName="Adult" />
+          <ScalarProperty Name="Spouse" ColumnName="Spouse" />
+          <ScalarProperty Name="Child" ColumnName="Child" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="MemberCombo" ColumnName="MemberCombo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BajajZone">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BajajZone">
+        <MappingFragment StoreEntitySet="tbl_BajajZone">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BhartiAxa_PlanName">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BhartiAxa_PlanName">
+        <MappingFragment StoreEntitySet="tbl_BhartiAxa_PlanName">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BhartiAxaBanned_Country">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BhartiAxaBanned_Country">
+        <MappingFragment StoreEntitySet="tbl_BhartiAxaBanned_Country">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BhartiAxaPaymentStaus">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BhartiAxaPaymentStaus">
+        <MappingFragment StoreEntitySet="tbl_BhartiAxaPaymentStaus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="transactionRef" ColumnName="transactionRef" />
+          <ScalarProperty Name="policyNo" ColumnName="policyNo" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="emailId" ColumnName="emailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BlockCity">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BlockCity">
+        <MappingFragment StoreEntitySet="tbl_BlockCity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BlockCity" ColumnName="BlockCity" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_BodyType_Master">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_BodyType_Master">
+        <MappingFragment StoreEntitySet="tbl_BodyType_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VehicleBody" ColumnName="VehicleBody" />
+          <ScalarProperty Name="VehicleID" ColumnName="VehicleID" />
+          <ScalarProperty Name="ISActive" ColumnName="ISActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Country">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_Country">
+        <MappingFragment StoreEntitySet="tbl_Country">
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CoverFrequency">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_CoverFrequency">
+        <MappingFragment StoreEntitySet="tbl_CoverFrequency">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CoverFrequency" ColumnName="CoverFrequency" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EdelWise_Suminsured">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_EdelWise_Suminsured">
+        <MappingFragment StoreEntitySet="tbl_EdelWise_Suminsured">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Suminsured" ColumnName="Suminsured" />
+          <ScalarProperty Name="Sumisurredvalue" ColumnName="Sumisurredvalue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_FrequncyType">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_FrequncyType">
+        <MappingFragment StoreEntitySet="tbl_FrequncyType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrequncyValue" ColumnName="FrequncyValue" />
+          <ScalarProperty Name="FrequncyType" ColumnName="FrequncyType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Fule_Master">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_Fule_Master">
+        <MappingFragment StoreEntitySet="tbl_Fule_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FuleType" ColumnName="FuleType" />
+          <ScalarProperty Name="FulelID" ColumnName="FulelID" />
+          <ScalarProperty Name="ISActive" ColumnName="ISActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GetPremiumData">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GetPremiumData">
+        <MappingFragment StoreEntitySet="tbl_GetPremiumData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Smoke" ColumnName="Smoke" />
+          <ScalarProperty Name="Income" ColumnName="Income" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="SumInsurred" ColumnName="SumInsurred" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="frequency" ColumnName="frequency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GetPremiumRequestData">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GetPremiumRequestData">
+        <MappingFragment StoreEntitySet="tbl_GetPremiumRequestData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ADB" ColumnName="ADB" />
+          <ScalarProperty Name="ATPD" ColumnName="ATPD" />
+          <ScalarProperty Name="CI" ColumnName="CI" />
+          <ScalarProperty Name="HCB" ColumnName="HCB" />
+          <ScalarProperty Name="LAAge" ColumnName="LAAge" />
+          <ScalarProperty Name="LADOB" ColumnName="LADOB" />
+          <ScalarProperty Name="LAEmail" ColumnName="LAEmail" />
+          <ScalarProperty Name="LAFullName" ColumnName="LAFullName" />
+          <ScalarProperty Name="LAGender" ColumnName="LAGender" />
+          <ScalarProperty Name="LANumber" ColumnName="LANumber" />
+          <ScalarProperty Name="LAProposerSame" ColumnName="LAProposerSame" />
+          <ScalarProperty Name="LATobacco" ColumnName="LATobacco" />
+          <ScalarProperty Name="PEBased" ColumnName="PEBased" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="WOP" ColumnName="WOP" />
+          <ScalarProperty Name="additionalBenefit" ColumnName="additionalBenefit" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="betterHalfBenefit" ColumnName="betterHalfBenefit" />
+          <ScalarProperty Name="bond" ColumnName="bond" />
+          <ScalarProperty Name="childAge" ColumnName="childAge" />
+          <ScalarProperty Name="childGender" ColumnName="childGender" />
+          <ScalarProperty Name="claimsOption" ColumnName="claimsOption" />
+          <ScalarProperty Name="cliDOB" ColumnName="cliDOB" />
+          <ScalarProperty Name="cliGender" ColumnName="cliGender" />
+          <ScalarProperty Name="distributionChannel" ColumnName="distributionChannel" />
+          <ScalarProperty Name="flexibleBenefitYear" ColumnName="flexibleBenefitYear" />
+          <ScalarProperty Name="frequency" ColumnName="frequency" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="index" ColumnName="index" />
+          <ScalarProperty Name="investmentStrategy" ColumnName="investmentStrategy" />
+          <ScalarProperty Name="largeCap" ColumnName="largeCap" />
+          <ScalarProperty Name="managed" ColumnName="managed" />
+          <ScalarProperty Name="maturityAge" ColumnName="maturityAge" />
+          <ScalarProperty Name="maturityOption" ColumnName="maturityOption" />
+          <ScalarProperty Name="moneyMarket" ColumnName="moneyMarket" />
+          <ScalarProperty Name="payoutMonths" ColumnName="payoutMonths" />
+          <ScalarProperty Name="payoutOption" ColumnName="payoutOption" />
+          <ScalarProperty Name="payoutPercentageIncreasingIncome" ColumnName="payoutPercentageIncreasingIncome" />
+          <ScalarProperty Name="payoutPercentageLevelIncome" ColumnName="payoutPercentageLevelIncome" />
+          <ScalarProperty Name="payoutPercentageLumpsum" ColumnName="payoutPercentageLumpsum" />
+          <ScalarProperty Name="pdf" ColumnName="pdf" />
+          <ScalarProperty Name="policyOption" ColumnName="policyOption" />
+          <ScalarProperty Name="policyTerm" ColumnName="policyTerm" />
+          <ScalarProperty Name="postponement" ColumnName="postponement" />
+          <ScalarProperty Name="premiumPayingTerm" ColumnName="premiumPayingTerm" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="risingStar" ColumnName="risingStar" />
+          <ScalarProperty Name="smoke" ColumnName="smoke" />
+          <ScalarProperty Name="spouseAge" ColumnName="spouseAge" />
+          <ScalarProperty Name="spouseDOB" ColumnName="spouseDOB" />
+          <ScalarProperty Name="spouseFirstName" ColumnName="spouseFirstName" />
+          <ScalarProperty Name="spouseGender" ColumnName="spouseGender" />
+          <ScalarProperty Name="spouseLastName" ColumnName="spouseLastName" />
+          <ScalarProperty Name="spouseTobaccoUser" ColumnName="spouseTobaccoUser" />
+          <ScalarProperty Name="staff" ColumnName="staff" />
+          <ScalarProperty Name="sumAssured" ColumnName="sumAssured" />
+          <ScalarProperty Name="top250" ColumnName="top250" />
+          <ScalarProperty Name="topUpBenefitPercentage" ColumnName="topUpBenefitPercentage" />
+          <ScalarProperty Name="tranId" ColumnName="tranId" />
+          <ScalarProperty Name="workSiteFlag" ColumnName="workSiteFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GetPremiumResponce">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GetPremiumResponce">
+        <MappingFragment StoreEntitySet="tbl_GetPremiumResponce">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="accidentalDeathPremium" ColumnName="accidentalDeathPremium" />
+          <ScalarProperty Name="basePremium" ColumnName="basePremium" />
+          <ScalarProperty Name="betterHalfPremium" ColumnName="betterHalfPremium" />
+          <ScalarProperty Name="criticalIllnessPremium" ColumnName="criticalIllnessPremium" />
+          <ScalarProperty Name="error" ColumnName="error" />
+          <ScalarProperty Name="hcbPremium" ColumnName="hcbPremium" />
+          <ScalarProperty Name="pdfName" ColumnName="pdfName" />
+          <ScalarProperty Name="permanentDisabilityPremium" ColumnName="permanentDisabilityPremium" />
+          <ScalarProperty Name="premium" ColumnName="premium" />
+          <ScalarProperty Name="premiumWaiver" ColumnName="premiumWaiver" />
+          <ScalarProperty Name="sumAssured" ColumnName="sumAssured" />
+          <ScalarProperty Name="totalPremium" ColumnName="totalPremium" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CoverAge" ColumnName="CoverAge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Godigit_Document">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_Godigit_Document">
+        <MappingFragment StoreEntitySet="tbl_Godigit_Document">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Godigit_Profession">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Tbl_Godigit_Profession">
+        <MappingFragment StoreEntitySet="Tbl_Godigit_Profession">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="profession" ColumnName="profession" />
+          <ScalarProperty Name="professionId" ColumnName="professionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Godigit_Relation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_Godigit_Relation">
+        <MappingFragment StoreEntitySet="tbl_Godigit_Relation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GodigitCounty">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GodigitCounty">
+        <MappingFragment StoreEntitySet="tbl_GodigitCounty">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CountryCover" ColumnName="CountryCover" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GodigitPakege">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GodigitPakege">
+        <MappingFragment StoreEntitySet="tbl_GodigitPakege">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PakageCode" ColumnName="PakageCode" />
+          <ScalarProperty Name="Ageto" ColumnName="Ageto" />
+          <ScalarProperty Name="AgeFrom" ColumnName="AgeFrom" />
+          <ScalarProperty Name="PakageName" ColumnName="PakageName" />
+          <ScalarProperty Name="Suminsured" ColumnName="Suminsured" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GodigitPurpose">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GodigitPurpose">
+        <MappingFragment StoreEntitySet="tbl_GodigitPurpose">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Purposevalue" ColumnName="Purposevalue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GodigitState">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GodigitState">
+        <MappingFragment StoreEntitySet="tbl_GodigitState">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GSTType">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_GSTType">
+        <MappingFragment StoreEntitySet="tbl_GSTType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GSTType" ColumnName="GSTType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HC_Relation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_HC_Relation">
+        <MappingFragment StoreEntitySet="tbl_HC_Relation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+          <ScalarProperty Name="TAC_CODE" ColumnName="TAC_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HealthPremiumChartData">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_HealthPremiumChartData">
+        <MappingFragment StoreEntitySet="tbl_HealthPremiumChartData">
+          <ScalarProperty Name="PremiumChartID" ColumnName="PremiumChartID" />
+          <ScalarProperty Name="PremiumDesc" ColumnName="PremiumDesc" />
+          <ScalarProperty Name="AgeFrom" ColumnName="AgeFrom" />
+          <ScalarProperty Name="AgeFromDuration" ColumnName="AgeFromDuration" />
+          <ScalarProperty Name="AgeTo" ColumnName="AgeTo" />
+          <ScalarProperty Name="AgeToDuration" ColumnName="AgeToDuration" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Individual" ColumnName="Individual" />
+          <ScalarProperty Name="Adults" ColumnName="Adults" />
+          <ScalarProperty Name="Childrens" ColumnName="Childrens" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Floater" ColumnName="Floater" />
+          <ScalarProperty Name="BeforeServiceTax" ColumnName="BeforeServiceTax" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="SchemeId" ColumnName="SchemeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HEIV_Qualification">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_HEIV_Qualification">
+        <MappingFragment StoreEntitySet="tbl_HEIV_Qualification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_HEIV_Relation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_HEIV_Relation">
+        <MappingFragment StoreEntitySet="tbl_HEIV_Relation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IndiaFirst__CoverageOptions">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_IndiaFirst__CoverageOptions">
+        <MappingFragment StoreEntitySet="tbl_IndiaFirst_ CoverageOptions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Coverage_Options" ColumnName="Coverage_Options" />
+          <ScalarProperty Name="Max_M_Age" ColumnName="Max_M_Age" />
+          <ScalarProperty Name="Minimum_Sum_Assured" ColumnName="Minimum_Sum_Assured" />
+          <ScalarProperty Name="Maximum_Sum_Assured" ColumnName="Maximum_Sum_Assured" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IndiaFirstCityData">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_IndiaFirstCityData">
+        <MappingFragment StoreEntitySet="tbl_IndiaFirstCityData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_INSURA_Company">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_INSURA_Company">
+        <MappingFragment StoreEntitySet="tbl_INSURA_Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CREATED" ColumnName="CREATED" />
+          <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="UPDATED_DATE" ColumnName="UPDATED_DATE" />
+          <ScalarProperty Name="TAC_CODE" ColumnName="TAC_CODE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IPA_Occupation">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_IPA_Occupation">
+        <MappingFragment StoreEntitySet="tbl_IPA_Occupation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="RISK_GRADE" ColumnName="RISK_GRADE" />
+          <ScalarProperty Name="TTD_BENEFIT" ColumnName="TTD_BENEFIT" />
+          <ScalarProperty Name="DECLINE_STATUS" ColumnName="DECLINE_STATUS" />
+          <ScalarProperty Name="TAC_CODE" ColumnName="TAC_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MakeType_Master">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_MakeType_Master">
+        <MappingFragment StoreEntitySet="tbl_MakeType_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="MakeID" ColumnName="MakeID" />
+          <ScalarProperty Name="ISActive" ColumnName="ISActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MasterSumInsured">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_MasterSumInsured">
+        <MappingFragment StoreEntitySet="tbl_MasterSumInsured">
+          <ScalarProperty Name="SumInsuredId" ColumnName="SumInsuredId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MaterialStatus">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_MaterialStatus">
+        <MappingFragment StoreEntitySet="tbl_MaterialStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ModelType_Master">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_ModelType_Master">
+        <MappingFragment StoreEntitySet="tbl_ModelType_Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ModelType" ColumnName="ModelType" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ISActive" ColumnName="ISActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_OccupationMaster">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_OccupationMaster">
+        <MappingFragment StoreEntitySet="tbl_OccupationMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OccupationCode" ColumnName="OccupationCode" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="OType" ColumnName="OType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PinCode">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_PinCode">
+        <MappingFragment StoreEntitySet="tbl_PinCode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="IsInactive" ColumnName="IsInactive" />
+          <ScalarProperty Name="District" ColumnName="District" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PremiumType">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_PremiumType">
+        <MappingFragment StoreEntitySet="tbl_PremiumType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Premium_Type" ColumnName="Premium_Type" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProductPlan_Data">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_ProductPlan_Data">
+        <MappingFragment StoreEntitySet="tbl_ProductPlan_Data">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Scheme">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_Scheme">
+        <MappingFragment StoreEntitySet="tbl_Scheme">
+          <ScalarProperty Name="SchemeId" ColumnName="SchemeId" />
+          <ScalarProperty Name="schemeCode" ColumnName="schemeCode" />
+          <ScalarProperty Name="Scheme" ColumnName="Scheme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_StarCountyList">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_StarCountyList">
+        <MappingFragment StoreEntitySet="tbl_StarCountyList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_State">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_State">
+        <MappingFragment StoreEntitySet="tbl_State">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_travelCountry">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tbl_travelCountry">
+        <MappingFragment StoreEntitySet="tbl_travelCountry">
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="InsuranceType" ColumnName="InsuranceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBannedCountries">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tblBannedCountry">
+        <MappingFragment StoreEntitySet="tblBannedCountry">
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCities">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tblCity">
+        <MappingFragment StoreEntitySet="tblCity">
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCountries">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tblCountry">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="Country_ID" ColumnName="Country_ID" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRelationMasters">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tblRelationMaster">
+        <MappingFragment StoreEntitySet="tblRelationMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RelationCode" ColumnName="RelationCode" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+          <ScalarProperty Name="companyid" ColumnName="companyid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStates">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.tblState">
+        <MappingFragment StoreEntitySet="tblState">
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+          <ScalarProperty Name="State_Name" ColumnName="State_Name" />
+          <ScalarProperty Name="Country_ID" ColumnName="Country_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Term_Life_Insurance">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Term_Life_Insurance">
+        <MappingFragment StoreEntitySet="Term_Life_Insurance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tow_Weeler_Record_Insert">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Tow_Weeler_Record_Insert">
+        <MappingFragment StoreEntitySet="Tow_Weeler_Record_Insert">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="Varient" ColumnName="Varient" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="previousins" ColumnName="previousins" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Travel_Insurance">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Travel_Insurance">
+        <MappingFragment StoreEntitySet="Travel_Insurance">
+          <ScalarProperty Name="Travel_id" ColumnName="Travel_id" />
+          <ScalarProperty Name="Age_From" ColumnName="Age_From" />
+          <ScalarProperty Name="Age_To" ColumnName="Age_To" />
+          <ScalarProperty Name="Plans" ColumnName="Plans" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="CoverType" ColumnName="CoverType" />
+          <ScalarProperty Name="TripType" ColumnName="TripType" />
+          <ScalarProperty Name="No_Of_Memebers" ColumnName="No_Of_Memebers" />
+          <ScalarProperty Name="TermFrom" ColumnName="TermFrom" />
+          <ScalarProperty Name="TermTo" ColumnName="TermTo" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="Plan_ID" ColumnName="Plan_ID" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="destinationId" ColumnName="destinationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDestinations">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravelDestination">
+        <MappingFragment StoreEntitySet="TravelDestination">
+          <ScalarProperty Name="DestinationId" ColumnName="DestinationId" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelInsuranceSearchBies">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravelInsuranceSearchBy">
+        <MappingFragment StoreEntitySet="TravelInsuranceSearchBy">
+          <ScalarProperty Name="SearchId" ColumnName="SearchId" />
+          <ScalarProperty Name="TravellerName" ColumnName="TravellerName" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="contactno" ColumnName="contactno" />
+          <ScalarProperty Name="emailid" ColumnName="emailid" />
+          <ScalarProperty Name="destination" ColumnName="destination" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="ageSpouse" ColumnName="ageSpouse" />
+          <ScalarProperty Name="ageChild1" ColumnName="ageChild1" />
+          <ScalarProperty Name="ageChild2" ColumnName="ageChild2" />
+          <ScalarProperty Name="ageBrother" ColumnName="ageBrother" />
+          <ScalarProperty Name="ageMother" ColumnName="ageMother" />
+          <ScalarProperty Name="ageFather" ColumnName="ageFather" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravellerDetails">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravellerDetail">
+        <MappingFragment StoreEntitySet="TravellerDetails">
+          <ScalarProperty Name="TravellerId" ColumnName="TravellerId" />
+          <ScalarProperty Name="TravellerName" ColumnName="TravellerName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="IsPassport" ColumnName="IsPassport" />
+          <ScalarProperty Name="PassportNo" ColumnName="PassportNo" />
+          <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="PassportExpiry" ColumnName="PassportExpiry" />
+          <ScalarProperty Name="Illness" ColumnName="Illness" />
+          <ScalarProperty Name="visaType" ColumnName="visaType" />
+          <ScalarProperty Name="FkSearchId" ColumnName="FkSearchId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="searchType" ColumnName="searchType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPlans">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravelPlan">
+        <MappingFragment StoreEntitySet="TravelPlan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PlanCode" ColumnName="PlanCode" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="SumInsuredCode" ColumnName="SumInsuredCode" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelProposalDetails">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravelProposalDetail">
+        <MappingFragment StoreEntitySet="TravelProposalDetail">
+          <ScalarProperty Name="ProposalId" ColumnName="ProposalId" />
+          <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+          <ScalarProperty Name="FkSearchId" ColumnName="FkSearchId" />
+          <ScalarProperty Name="IsBillPayed" ColumnName="IsBillPayed" />
+          <ScalarProperty Name="BilledDate" ColumnName="BilledDate" />
+          <ScalarProperty Name="RefType" ColumnName="RefType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPurposeMasters">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.TravelPurposeMaster">
+        <MappingFragment StoreEntitySet="TravelPurposeMaster">
+          <ScalarProperty Name="PurposeId" ColumnName="PurposeId" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Two_Wheeler_Master">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Two_Wheeler_Master">
+        <MappingFragment StoreEntitySet="Two_Wheeler_Master">
+          <ScalarProperty Name="TwoWheeler_Insu_ID" ColumnName="TwoWheeler_Insu_ID" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Variance" ColumnName="Variance" />
+          <ScalarProperty Name="Reg_Date" ColumnName="Reg_Date" />
+          <ScalarProperty Name="Rto_Location" ColumnName="Rto_Location" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VisaTypes">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.VisaType">
+        <MappingFragment StoreEntitySet="VisaType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VType" ColumnName="VType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Car_Insurance">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Car_Insurance">
+        <MappingFragment StoreEntitySet="Car_Insurance">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Make_Id" ColumnName="Make_Id" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model_Id" ColumnName="Model_Id" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Variant_Id" ColumnName="Variant_Id" />
+          <ScalarProperty Name="Variant" ColumnName="Variant" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="Seating_Capacity" ColumnName="Seating_Capacity" />
+          <ScalarProperty Name="Fuel_Id" ColumnName="Fuel_Id" />
+          <ScalarProperty Name="Fuel_Type" ColumnName="Fuel_Type" />
+          <ScalarProperty Name="Segment_ID" ColumnName="Segment_ID" />
+          <ScalarProperty Name="Vehicle_Segment" ColumnName="Vehicle_Segment" />
+          <ScalarProperty Name="Location_ID" ColumnName="Location_ID" />
+          <ScalarProperty Name="LOCATION" ColumnName="LOCATION" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Main_Vehicle_Type_ID" ColumnName="Main_Vehicle_Type_ID" />
+          <ScalarProperty Name="No_Of_Wheels" ColumnName="No_Of_Wheels" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contact_Us">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.Contact_Us">
+        <MappingFragment StoreEntitySet="Contact_Us">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTO_MASTERS">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.RTO_MASTERS">
+        <MappingFragment StoreEntitySet="RTO_MASTERS">
+          <ScalarProperty Name="RTO_ID" ColumnName="RTO_ID" />
+          <ScalarProperty Name="RTO_CODE" ColumnName="RTO_CODE" />
+          <ScalarProperty Name="RTO_CITY" ColumnName="RTO_CITY" />
+          <ScalarProperty Name="RTO_STATE" ColumnName="RTO_STATE" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_HealthChartData">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.View_HealthChartData">
+        <MappingFragment StoreEntitySet="View_HealthChartData">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="PremiumChartID" ColumnName="PremiumChartID" />
+          <ScalarProperty Name="PremiumDesc" ColumnName="PremiumDesc" />
+          <ScalarProperty Name="AgeFrom" ColumnName="AgeFrom" />
+          <ScalarProperty Name="AgeFromDuration" ColumnName="AgeFromDuration" />
+          <ScalarProperty Name="AgeTo" ColumnName="AgeTo" />
+          <ScalarProperty Name="AgeToDuration" ColumnName="AgeToDuration" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Individual" ColumnName="Individual" />
+          <ScalarProperty Name="Adults" ColumnName="Adults" />
+          <ScalarProperty Name="Childrens" ColumnName="Childrens" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Floater" ColumnName="Floater" />
+          <ScalarProperty Name="BeforeServiceTax" ColumnName="BeforeServiceTax" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="SchemeId" ColumnName="SchemeId" />
+          <ScalarProperty Name="suminsuredCode" ColumnName="suminsuredCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_TermLifeInsurance">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.View_TermLifeInsurance">
+        <MappingFragment StoreEntitySet="View_TermLifeInsurance">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="accidentalDeathPremium" ColumnName="accidentalDeathPremium" />
+          <ScalarProperty Name="basePremium" ColumnName="basePremium" />
+          <ScalarProperty Name="betterHalfPremium" ColumnName="betterHalfPremium" />
+          <ScalarProperty Name="criticalIllnessPremium" ColumnName="criticalIllnessPremium" />
+          <ScalarProperty Name="error" ColumnName="error" />
+          <ScalarProperty Name="hcbPremium" ColumnName="hcbPremium" />
+          <ScalarProperty Name="pdfName" ColumnName="pdfName" />
+          <ScalarProperty Name="permanentDisabilityPremium" ColumnName="permanentDisabilityPremium" />
+          <ScalarProperty Name="premium" ColumnName="premium" />
+          <ScalarProperty Name="premiumWaiver" ColumnName="premiumWaiver" />
+          <ScalarProperty Name="sumAssured" ColumnName="sumAssured" />
+          <ScalarProperty Name="totalPremium" ColumnName="totalPremium" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CoverAge" ColumnName="CoverAge" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_TravelInsurance">
+      <EntityTypeMapping TypeName="CheckyrpremiumModel.View_TravelInsurance">
+        <MappingFragment StoreEntitySet="View_TravelInsurance">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Travel_id" ColumnName="Travel_id" />
+          <ScalarProperty Name="Age_From" ColumnName="Age_From" />
+          <ScalarProperty Name="Age_To" ColumnName="Age_To" />
+          <ScalarProperty Name="Plans" ColumnName="Plans" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="CoverType" ColumnName="CoverType" />
+          <ScalarProperty Name="TripType" ColumnName="TripType" />
+          <ScalarProperty Name="No_Of_Memebers" ColumnName="No_Of_Memebers" />
+          <ScalarProperty Name="TermFrom" ColumnName="TermFrom" />
+          <ScalarProperty Name="TermTo" ColumnName="TermTo" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="Plan_ID" ColumnName="Plan_ID" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="destinationId" ColumnName="destinationId" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Car_Insurance_Store" FunctionName="CheckyrpremiumModel.Store.Car_Insurance_Store" />
+    <FunctionImportMapping FunctionImportName="CarInsertRcord" FunctionName="CheckyrpremiumModel.Store.CarInsertRcord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.CarInsertRcord_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="City_RTO" ColumnName="City_RTO" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Fuel_Type" ColumnName="Fuel_Type" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CityStore" FunctionName="CheckyrpremiumModel.Store.CityStore">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.CityStore_Result">
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="State_ID" ColumnName="State_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ContactUs" FunctionName="CheckyrpremiumModel.Store.ContactUs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.ContactUs_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="encrypt" FunctionName="CheckyrpremiumModel.Store.encrypt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.encrypt_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Usert_ID" ColumnName="Usert_ID" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Password_Decrypt" ColumnName="User_Password_Decrypt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Health_Insurence_Store" FunctionName="CheckyrpremiumModel.Store.Health_Insurence_Store" />
+    <FunctionImportMapping FunctionImportName="RTOMASTER_Store" FunctionName="CheckyrpremiumModel.Store.RTOMASTER_Store">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.RTOMASTER_Store_Result">
+          <ScalarProperty Name="RTO_ID" ColumnName="RTO_ID" />
+          <ScalarProperty Name="RTO_CODE" ColumnName="RTO_CODE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_HealthInsuranceList" FunctionName="CheckyrpremiumModel.Store.sp_HealthInsuranceList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.sp_HealthInsuranceList_Result">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+          <ScalarProperty Name="premiumdesc" ColumnName="premiumdesc" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="SumInsured" ColumnName="SumInsured" />
+          <ScalarProperty Name="BeforeServiceTax" ColumnName="BeforeServiceTax" />
+          <ScalarProperty Name="PremiumChartID" ColumnName="PremiumChartID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tbl_GetPremiumRequestData_Store" FunctionName="CheckyrpremiumModel.Store.tbl_GetPremiumRequestData_Store" />
+    <FunctionImportMapping FunctionImportName="tbl_GetPremiumResponce_Store" FunctionName="CheckyrpremiumModel.Store.tbl_GetPremiumResponce_Store" />
+    <FunctionImportMapping FunctionImportName="Term_Lite_Insurence_Proce" FunctionName="CheckyrpremiumModel.Store.Term_Lite_Insurence_Proce">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.Term_Lite_Insurence_Proce_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tow_weelersInsertRecord" FunctionName="CheckyrpremiumModel.Store.tow_weelersInsertRecord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CheckyrpremiumModel.tow_weelersInsertRecord_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="Varient" ColumnName="Varient" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="previousins" ColumnName="previousins" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Tow_WeelersPorced" FunctionName="CheckyrpremiumModel.Store.Tow_WeelersPorced" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,102 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/24/2020","travelEndOn":"01/24/2020","planId":6,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/10/1994","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":307,"serviceTax":56,"totalPremium":363}
+ErrorMessage : Input string was not in a correct format.
+InnerExceptionMessage : 
+ErrorMessage : Input string was not in a correct format.
+InnerExceptionMessage : 
+ErrorMessage : Input string was not in a correct format.
+InnerExceptionMessage : 
+ErrorMessage : An error occurred while executing the command definition. See the inner exception for details.
+InnerExceptionMessage : 

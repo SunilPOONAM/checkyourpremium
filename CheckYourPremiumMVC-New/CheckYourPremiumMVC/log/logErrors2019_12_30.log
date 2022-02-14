@@ -1,0 +1,14 @@
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/message-The request was aborted: Could not create SSL/TLS secure channel./token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":"message-The request was aborted: Could not create SSL/TLS secure channel."}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/message-The request was aborted: Could not create SSL/TLS secure channel./token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":"message-The request was aborted: Could not create SSL/TLS secure channel."}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/message-The request was aborted: Could not create SSL/TLS secure channel./token
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","referenceId":"message-The request was aborted: Could not create SSL/TLS secure channel."}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : getdetail-response=
+InnerExceptionMessage : The underlying connection was closed: An unexpected error occurred on a send.

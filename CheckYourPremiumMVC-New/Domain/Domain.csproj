@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FFD975F-111F-4A9D-9279-8C3A7D1E9D2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllCompanyDetails.cs" />
+    <Compile Include="Area.cs" />
+    <Compile Include="BajajHealthDetailsData.cs" />
+    <Compile Include="BajajInsured.cs" />
+    <Compile Include="BajajPremiumDetails.cs" />
+    <Compile Include="Bajaj_Proposal_Creation.cs" />
+    <Compile Include="BhartiAxaDetails.cs" />
+    <Compile Include="BuyInfoDetails.cs" />
+    <Compile Include="Car_InsuranceModel.cs" />
+    <Compile Include="Car_Insurance_record_SavedModel.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="CityList.cs" />
+    <Compile Include="CompanyPlanDetails.cs" />
+    <Compile Include="CompareDetails.cs" />
+    <Compile Include="Compare_Term.cs" />
+    <Compile Include="ContactUs_resultModel.cs" />
+    <Compile Include="destinationList.cs" />
+    <Compile Include="EdelWisesRequest.cs" />
+    <Compile Include="EdleWise.cs" />
+    <Compile Include="ErrorResponse.cs" />
+    <Compile Include="FamilyHealthOptimaRequest.cs" />
+    <Compile Include="GetICICIResponseDetails.cs" />
+    <Compile Include="GetIndiaFirstResponceDetail.cs" />
+    <Compile Include="GetKotakDetails.cs" />
+    <Compile Include="GetKotakResponse.cs" />
+    <Compile Include="GetPaymentStatusBhartiAxa.cs" />
+    <Compile Include="GetQuotationDetail.cs" />
+    <Compile Include="GodigitDetails.cs" />
+    <Compile Include="GodigitResponceDetails.cs" />
+    <Compile Include="HDFCDetails.cs" />
+    <Compile Include="HealthDetails.cs" />
+    <Compile Include="HealthPlanDetails.cs" />
+    <Compile Include="HealthProposalResponse.cs" />
+    <Compile Include="HealthProposerDetail.cs" />
+    <Compile Include="HealthQuatationDetail.cs" />
+    <Compile Include="Health_ProposalCreation.cs" />
+    <Compile Include="ICICIResponceDetails.cs" />
+    <Compile Include="Insured.cs" />
+    <Compile Include="InsuredPerson.cs" />
+    <Compile Include="InvalidLogin.cs" />
+    <Compile Include="KotakResponse.cs" />
+    <Compile Include="LoginDetails.cs" />
+    <Compile Include="PolicyStatusDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProposerDetail.cs" />
+    <Compile Include="QuotationDetail.cs" />
+    <Compile Include="RegistrationDetails.cs" />
+    <Compile Include="ResponsePolicyStatus.cs" />
+    <Compile Include="ResponsePurchaseToken.cs" />
+    <Compile Include="ResponseTokenService.cs" />
+    <Compile Include="SBIHealthRequest.cs" />
+    <Compile Include="SBIToken.cs" />
+    <Compile Include="SBI\Benefit.cs" />
+    <Compile Include="SBI\Claus.cs" />
+    <Compile Include="SBI\CommercialConsideration.cs" />
+    <Compile Include="SBI\CoverAttributesDetails.cs" />
+    <Compile Include="SBI\CoverDetail.cs" />
+    <Compile Include="SBI\Createquoterequest.cs" />
+    <Compile Include="SBI\InsuredDetail.cs" />
+    <Compile Include="SBI\LocationDetails.cs" />
+    <Compile Include="SBI\NomineeDetails.cs" />
+    <Compile Include="SBI\PolicyInfo.cs" />
+    <Compile Include="SBI\ProposerDetails.cs" />
+    <Compile Include="SBI\QuoteCreationRequestHeader.cs" />
+    <Compile Include="SBI\QuoteDetails.cs" />
+    <Compile Include="SBI\User.cs" />
+    <Compile Include="SearchTravelInsurance.cs" />
+    <Compile Include="StarProposalCreateRequest.cs" />
+    <Compile Include="StartTravelPremiumAPIResponse.cs" />
+    <Compile Include="Star_ProposalCreation.cs" />
+    <Compile Include="TravellerDetails.cs" />
+    <Compile Include="View_HealthinsuranceModel.cs" />
+    <Compile Include="View_TravelInsuranceModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Domain.dll" />
+    <Content Include="bin\Debug\Domain.pdb" />
+    <Content Include="obj\Debug\Domain.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Domain.dll" />
+    <Content Include="obj\Debug\Domain.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Domain.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

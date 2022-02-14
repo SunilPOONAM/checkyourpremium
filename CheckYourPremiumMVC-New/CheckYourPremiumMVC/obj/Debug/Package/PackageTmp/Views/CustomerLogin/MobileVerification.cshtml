@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "MobileVerification";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<link href="~/Resources/Admin/assets/css/stylenew.css" rel="stylesheet" />
+
+<div class="bodycontect">
+    <section class="adbnh-latconts">
+
+        <div class="loginbox">
+
+            <h6>
+                Complete Your Pending Proposals . Check Your Application Status.<br> Review Your Recent Searches . Provide Feedback . Raise a Complaint
+            </h6>
+            <form>
+              <div class="well">
+
+                <input type="text" placeholder="Enter your Mobile number" id="Mobileno" required/>
+                <a href="#" class="btn btn-success" onclick="SendOTP()">Send OTP</a>
+
+        </div>
+        </form>
+
+</div>
+
+        </section>
+
+</div>
+<script>
+
+
+    var SendOTP = function () {
+        var mobile = $("#Mobileno").val();
+        $.ajax({
+            url: "/CustomerLogin/SendOTP",
+            type: "post",
+            data: { "mobile": mobile },
+            success: function (data) {
+                //if (data == "success") {
+
+                alert("OTP sent successfully");
+                window.location = "/CustomerLogin/OtpVerification";
+                //    }
+                //    else {
+                //        alert("failed");
+                //    }
+            }
+
+
+        })
+
+    }
+
+</script>

@@ -1,0 +1,111 @@
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/19/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/19/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/18/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/18/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/19/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"01/17/2020","travelEndOn":"01/20/2020","planId":5,"postalCode":0,"period":2,"searchId":0,"companyId":null,"insureds":[{"dob":"01/16/2001","sumInsuredId":0,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}]}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (502) Bad Gateway.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"COMPREHENSIVEIND","AgeTo":null,"AgeFrom":null,"PlanId":"0","period":"1","postalCode":"226002","schemeId":0,"sumInsuredId":1,"insureds[0]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0},"insureds[1]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"COMPREHENSIVEIND","AgeTo":null,"AgeFrom":null,"PlanId":"0","period":"1","postalCode":"226002","schemeId":0,"sumInsuredId":1,"insureds[0]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0},"insureds[1]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api/proposal/premium/calculate
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"COMPREHENSIVEIND","AgeTo":null,"AgeFrom":null,"PlanId":"0","period":"1","postalCode":"226002","schemeId":0,"sumInsuredId":1,"insureds[0]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0},"insureds[1]":{"dob":"January 16, 2001","sumInsuredId":1,"name":null,"sex":null,"illness":null,"description":null,"relationshipId":0,"occupationId":0,"hospitalCash":null,"height":0,"weight":0,"isPersonalAccidentApplicable":null,"engageManualLabour":null,"engageWinterSports":null,"buyBackPED":0}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://igsan.starhealth.in/api
+InnerExceptionMessage : { 'bookingId': 'retail-2020-12365829', 'type': 'I', 'purpose': 'L', 'customer': { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D89U0112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'type': 'N' }, 'insuredPersons': [ { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D890112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'profession': '', 'paxId': '1', 'nominee': { 'relationship': 'S', 'name': 'Uduwei Uhdewui' }, 'type': 'N', 'gender': 'ML' } ], 'insuredPersonsCount': '1', 'bookingDate': '2020-01-13', 'packageName': 'R13', 'geography': 'UCI', 'travelEndDate': '2020-01-13', 'travelStartDate': '2020-01-13', 'discountFlag': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"15808","totalPremium":"18396.46","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"13397","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"15808","totalPremium":"18396.46","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"535","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"13397","hcbPremium":"1947","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals/https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote/token
+InnerExceptionMessage : { 'bookingId': 'retail-2020-12365829', 'type': 'I', 'purpose': 'L', 'customer': { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D89U0112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'type': 'N' }, 'insuredPersons': [ { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D890112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'profession': '', 'paxId': '1', 'nominee': { 'relationship': 'S', 'name': 'Uduwei Uhdewui' }, 'type': 'N', 'gender': 'ML' } ], 'insuredPersonsCount': '1', 'bookingDate': '2020-01-13', 'packageName': 'R13', 'geography': 'UCI', 'travelEndDate': '2020-01-13', 'travelStartDate': '2020-01-13', 'discountFlag': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (404) Not Found.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10633","totalPremium":"12398.98","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9011","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"25431","totalPremium":"27197.36","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"21552","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"25696","totalPremium":"27609.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"269","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"21776","hcbPremium":"1539","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10633","totalPremium":"12398.98","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9011","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"25431","totalPremium":"27197.36","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"21552","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"25696","totalPremium":"27609.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"269","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"21776","hcbPremium":"1539","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7349","totalPremium":"9263.04","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"269","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6228","hcbPremium":"1539","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"7289","totalPremium":"9054.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"6177","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"25431","totalPremium":"27197.36","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"21552","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10633","totalPremium":"12398.98","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"9011","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13188","totalPremium":"14953.68","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"250","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11176","hcbPremium":"1410","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-12365828",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "973.0",
+      "sgst" : "74.0",
+      "cgst" : "74.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001084423",
+      "policyNetPremium" : "825.0"
+    },
+    "policyID" : "D400235103",
+    "transactionDate" : "16-01-2020T16:35:39",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2A939CBD87F4838C25B1DF125895B0AB8EFB9301D3C738FE14E7D904281D1D149C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=996B84A86290C77A97D671A68D0DBF44"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { 'bookingId': 'retail-2020-12365828', 'type': 'I', 'purpose': 'L', 'customer': { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D89U0112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'type': 'N' }, 'insuredPersons': [ { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D890112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'profession': '', 'paxId': '1', 'nominee': { 'relationship': 'S', 'name': 'Uduwei Uhdewui' }, 'type': 'N', 'gender': 'ML' } ], 'insuredPersonsCount': '1', 'bookingDate': '2020-01-13', 'packageName': 'R13', 'geography': 'UCI', 'travelEndDate': '2020-01-13', 'travelStartDate': '2020-01-13', 'discountFlag': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (401) Unauthorized.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { 'bookingId': 'retail-2020-12365828', 'type': 'I', 'purpose': 'L', 'customer': { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D89U0112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'type': 'N' }, 'insuredPersons': [ { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D890112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'profession': '', 'paxId': '1', 'nominee': { 'relationship': 'S', 'name': 'Uduwei Uhdewui' }, 'type': 'N', 'gender': 'ML' } ], 'insuredPersonsCount': '1', 'bookingDate': '2020-01-13', 'packageName': 'R13', 'geography': 'UCI', 'travelEndDate': '2020-01-13', 'travelStartDate': '2020-01-13', 'discountFlag': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : https://preprod-digitpolicyissuance.godigit.com/policyservice/v1/createQuote
+InnerExceptionMessage : { 'bookingId': 'retail-2020-12365828', 'type': 'I', 'purpose': 'L', 'customer': { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D89U0112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'type': 'N' }, 'insuredPersons': [ { 'firstName': 'Neha', 'lastName': 'Justforretail', 'address': { 'line1': 'N.W. College', 'line2': '', 'line3': '', 'state': '27', 'city': 'Pune', 'country': 'IND', 'pinCode': '411001' }, 'documents': [ { 'type': 'PPT', 'id': 'D890112' } ], 'dob': '1990-02-02', 'mobile': '9353568667', 'email': 'Bindu.S@godigit.com', 'profession': '', 'paxId': '1', 'nominee': { 'relationship': 'S', 'name': 'Uduwei Uhdewui' }, 'type': 'N', 'gender': 'ML' } ], 'insuredPersonsCount': '1', 'bookingDate': '2020-01-13', 'packageName': 'R13', 'geography': 'UCI', 'travelEndDate': '2020-01-13', 'travelStartDate': '2020-01-13', 'discountFlag': '' }
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (401) Unauthorized.

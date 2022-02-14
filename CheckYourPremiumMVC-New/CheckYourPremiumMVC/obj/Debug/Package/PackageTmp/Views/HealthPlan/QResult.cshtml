@@ -1,0 +1,668 @@
+﻿@model Domain.HealthQuatationDetail
+@{
+    ViewBag.Title = "QResult";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+@*<link href="~/Resources/css/quotesHealth.css" rel="stylesheet" />*@
+@*<script src="~/Resources/js/jquery.min.js"></script>*@
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<link href="~/Resources/css/normalize.css" rel="stylesheet" />
+
+<link href="~/Resources/css/quotesTravelInsurance.css" rel="stylesheet" />
+<link href="~/Resources/compare/css/modelStyle.css" rel="stylesheet" />
+
+<link href="~/Resources/css/HealthPlnQResult.css" rel="stylesheet" />
+
+
+<link href="~/Resources/compare/css/style.css" rel="stylesheet" />
+<link href="~/Resources/tableres/tables.css" rel="stylesheet" />
+<script src="~/Resources/compare/js/Compare2.js"></script>
+<style>
+    .titleMargin1 {
+        visibility: hidden;
+    }
+</style>
+
+
+<style>
+    /*header {
+        margin-bottom: 1%;
+    }*/
+
+    .btnlts div {
+        display: block !important;
+    }
+
+
+
+
+    .healthlbl {
+        margin-bottom: 0px !important;
+    }
+
+    .btnlts div {
+        display: block !important;
+        float: left;
+        width: 100%;
+        background: none !important;
+        font-family: 'Poppins', sans-serif !important;
+        color: #333 !important;
+        letter-spacing: 1px;
+    }
+
+        .btnlts div span:nth-child(1) {
+            font-weight: bold;
+            color: #000;
+            letter-spacing: 1px;
+        }
+
+    .btnlts {
+        padding-right: 7px;
+    }
+
+    .conterty {
+        display: block;
+    }
+
+    table.dataTable tbody td p {
+        color: #d0610b;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    table.dataTable tbody td.left.sorting_1 p {
+        color: #0d5b8e;
+        font-weight: bold;
+        letter-spacing: 0px;
+    }
+
+    table#mytable > tbody > tr.even > td.dataTableCenter > table > tbody > tr > td:nth-child(1) {
+        text-align: left !important;
+    }
+
+    table#mytable > tbody > tr.even > td.dataTableCenter > table > tbody > tr > td:nth-child(2) {
+        text-align: left !important;
+    }
+</style>
+
+
+<style>
+    .dlwefjlerj ul.product li {
+        border-bottom: 1px solid #eaeef1 !important;
+        line-height: 43px;
+    }
+
+
+    .product li {
+        border-bottom: 1px solid #e2e2e2;
+        height: 51px;
+    }
+
+        .product li:last-child {
+        }
+
+
+    #loading {
+        position: absolute;
+        z-index: 999999999999;
+        left: 0;
+        right: 0;
+    }
+
+    
+    .fa.fa-inr {
+        position: relative;
+        font-size: 15px;
+        right: 3px;
+    }
+
+    #basic th {
+        font-size: 14px !important;
+    }
+
+    table.dataTable tbody td:nth-child(2) p {
+        font-size: 13px;
+    }
+
+    table.dataTable tbody td.left.sorting_1 p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+    .product {
+        border: 1px solid #B5B4B7 !important;
+    }
+
+    .dlwefjlerj {
+        border: 1px solid #ccc;
+    }
+    section {
+        padding: 0 0% 0 0;
+    }
+
+    span.adCmps {
+        display: block !important;
+        width: 100%;
+        margin-bottom: 10px !important;
+    }
+    tbody img {
+        width: 118px !important;
+        margin-top: 5px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    input.addToCompare[type=checkbox] {
+        position: relative !important;
+        z-index:3 !important;
+    }
+
+    .w3-round-small {
+        position: relative !important;
+        z-index: 99999999999999999 !important;
+    }
+
+    .w3-container {
+        padding: 0.01em 0px !important;
+    }
+</style>
+
+
+
+<div class="custom-model-main">
+    <div class="custom-model-inner">
+        <div class="close-btn">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <span style="font-size: 20px; color: #171261; display: block; text-align: justify;">
+                    I would like to personally settle @Html.DropDownListFor(model => model.QuoteNo, new List<SelectListItem>
+                                    {
+                                    new SelectListItem{ Text="0%", Value = "" },
+                                    new SelectListItem{ Text="10%", Value = "10" },
+                                    new SelectListItem{ Text="20", Value = "20" },
+
+                                    }, new { @class = "healthinpt" })
+                    of the approved amount at the time of a claim.
+                </span>
+                <span><b>Note:</b> This will reduce your premium amount.</span>
+                <button id="PlanId" class="dhkopd">ok</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-overlay"></div>
+</div>
+<div class="clearfix"></div>
+
+
+<section class="trenmw">
+    <h6>***</h6>
+
+    <div id="loading">
+        <p><img src="https://i.pinimg.com/originals/3f/2c/97/3f2c979b214d06e9caab8ba8326864f3.gif" /></p>
+    </div>
+
+    <input type="hidden" id="son" value="@ViewData["son"].ToString()" />
+    <input type="hidden" id="ageSelf" value="@ViewData["ageSelf"].ToString()" />
+    <input type="hidden" id="ageSpouse" value="@ViewData["Agespouse"].ToString()" />
+    <input type="hidden" id="agechild1" value="@ViewData["AgeChild1"].ToString()" />
+    <input type="hidden" id="agechild2" value="@ViewData["AgeChild2"].ToString()" />
+
+    <input type="hidden" id="Self" value="@ViewData["Self"].ToString()" />
+    <input type="hidden" id="Spouses" value="@ViewData["Spouses"].ToString()" />
+    <input type="hidden" id="hdnHealthId" value="@ViewData["HID"].ToString()" />
+    <input type="hidden" id="Channel" value="@ViewData["city"].ToString()" />
+    <input type="hidden" id="hdGender" value="@ViewData["Gender"].ToString()" />
+    <input type="hidden" id="name" value="@ViewData["name"].ToString()" />
+    <input type="hidden" id="MobileNo" value="@ViewData["phone"].ToString()" />
+    @Html.HiddenFor(model => model.PlanID)
+
+    @*<input type="hidden" id="hdnPlanId" value="@ViewData["planid"].ToString()" />*@
+    @*@Html.HiddenFor(model => model.PlanId)>*@
+
+
+    <div class="col-xs-12 col-sm-3 col-md-3">
+        <div class="btnlts" style="margin-top: 5px;">
+            <div><span class="col-xs-12 col-sm-4 col-md-4">Name :</span> <span class="col-xs-12 col-sm-4 col-md-8">Hello @ViewData["name"].ToString()</span></div>
+            <div><span class="col-xs-12 col-sm-4 col-md-4">Age :</span> <span class="col-xs-12 col-sm-4 col-md-8">@ViewData["ageSelf"].ToString()</span></div>
+            @*<div><span>Gender :</span> <span> @Session["HealthGender"] </span></div>*@
+
+
+            <div id="slidesa" class="some_class" style="display:block;">
+                <div class="row-health">
+                    <div class="middle-two">
+                        <label class="healthlbl">
+                            <p class="label-txt">Cover For</p>
+                            @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinpt">*@
+                            <select class="healthinpt" id="CoverFor">
+                                <option value="">Select Coverage Required For</option>
+                                <option value="1000">1 Adult Only</option>
+                                <option value="1100">2 Adults</option>
+                                <option value="1110">2 Adults &amp; 1 Child</option>
+                                <option value="1120">2 Adults &amp; 2 Children</option>
+                                <option value="1010">1 Adult &amp; 1 Child</option>
+                                <option value="1020">1 Adult &amp; 2 Children</option>
+
+                            </select>
+                        </label>
+                        <label class="healthlbl">
+                            <p class="label-txt">Policy Term</p>
+
+
+                            @Html.DropDownListFor(model => model.Dureation, (SelectList)ViewData["CoverageYear"], new { @class = "healthinpt" })
+
+                        </label>
+                        <label class="healthlbl">
+                            <p class="label-txt">Coverage</p>
+
+                            @Html.DropDownListFor(model => model.sumAssured, (SelectList)ViewData["Coverage"], new { @class = "healthinpt" })
+
+
+                        </label>
+                        <label class="healthlgbl" style="width: 100%;">
+                            <p class="label-txgt">Gender :</p>
+                            <label class="radio-inline">
+                                <input type="radio" id="male" name="optradio">Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="female" name="optradio">Female
+                            </label>
+
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lftgDtn" style="visibility:hidden">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-9 col-md-9" style="padding:0px;">
+
+
+
+        <div class="table-container-wrap">
+
+
+            <div class="praposal-newBikeContainers">
+                <div class="containerg-tabls">
+
+                    <div id="content">
+
+                        <section class="demo" id="basic">
+                            <div class="table-responsive">
+
+                                <table id="mytable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Company</th>
+                                            <th scope="col">Plan Info</th>
+                                            <th scope="col">Sum Insured</th>
+                                            <th scope="col">Premium</th>
+
+                                            @*<th>0.25 Lac<br /><span class="font-12">(In USD)</span></th>
+                                                <th>0.50 Lac<br /><span class="font-12">(In USD)</span></th>
+                                                <th>1.00 Lac<br /><span class="font-12">(In USD)</span></th>*@
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @*<tr>
+                                                <td><img src="~/Logo/logoEdelWise.gif"></td>
+                                                <td>AROGYA PLUS POLICY</td>
+                                                <td>100000.00</td>
+                                                <td><span><i class="fa fa-inr" aria-hidden="true"></i></span> 7000<br src="#"><a class="AddD" src="#">Buy This Plan</a></td>
+                                                <td><span><i class="fa fa-inr" aria-hidden="true"></i></span> 7000<br src="#"><a class="AddD" src="#">Buy This Plan</a></td>
+                                                <td><span><i class="fa fa-inr" aria-hidden="true"></i></span> 7000<br src="#"><a class="AddD" src="#">Buy This Plan</a></td>
+                                            </tr>*@
+
+                                    </tbody>
+                                </table>
+
+
+
+
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--preview panel-->
+<div class="w3-container  w3-center">
+    <div class="w3-row w3-card-4 w3-grey w3-round-large w3-border comparePanle w3-margin-top">
+        <div class="w3-row">
+            @*<div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>Added for comparison</h4>
+                </div>*@
+            <div class="w3-margin-top">
+
+                <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+            </div>
+        </div>
+        <div class=" titleMargin w3-container comparePan">
+        </div>
+    </div>
+</div>
+<!--end of preview panel-->
+<!-- comparision popup-->
+<div id="id01" class="w3-animate-zoom w3-white w3-modal modPos" style="background:rgba(255, 255, 255,0.9); padding-top: 4rem;">
+    <div class="w3-container" style="position:absolute;z-index:99999999999;">
+        <a onclick="document.getElementById('id01').style.display='none'" class="whiteFont w3-padding w3-closebtn closeBtn clsdfg">&times;</a>
+    </div>
+    <div class="w3-row contentPop w3-margin-top">
+    </div>
+
+</div>
+<!--end of comparision popup-->
+<!--  warning model  -->
+<div id="WarningModal" class="w3-modal">
+    <div class="w3-modal-content warningModal">
+        <header class="w3-container w3-teal">
+            <h3><span>&#x26a0;</span>Error</h3>
+        </header>
+        <div class="w3-container">
+            <h4>Maximum of Three products are allowed for comparision</h4>
+
+        </div>
+        <footer class="w3-container w3-right-align">
+            <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'" class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+        </footer>
+    </div>
+</div>
+<!--  end of warning model  -->
+
+
+
+<script>
+    function NavigateDetail(PlanId) {
+
+
+        if (PlanId == "0") {
+            $(".custom-model-main").addClass('model-open');
+
+        } else {
+
+            document.location.href = "/HealthPlan/GetHealthQDetais/" + PlanId + "?tid=" + $("#hdnHealthId").val();
+        }
+
+
+        $("#PlanId").click(function () {
+
+
+            if (PlanId == "0") {
+                var a = $("#hdnHealthId").val();
+                //alert(a);
+                document.location.href = "/HealthPlan/GetHealthBajajDetais/" + PlanId + "?tid=" + $("#hdnHealthId").val() + "&QuoteNo=" + $("#QuoteNo").val();
+            }
+            else {
+                document.location.href = "/HealthPlan/GetHealthQDetais/" + PlanId + "?tid=" + $("#hdnHealthId").val();
+            }
+
+        }
+
+
+        )
+        $(".close-btn").click(function () {
+            $(".custom-model-main").removeClass("model-open");
+
+        })
+
+
+    }
+
+</script>
+
+@*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>*@
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Resources/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="~/Resources/js/jquery.stickysort.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        var table = $('#mytable').DataTable({
+            'responsive': true
+        });
+
+        // Handle click on "Expand All" button
+        $('#btn-show-all-children').on('click', function () {
+            // Expand row details
+            table.rows(':not(.parent)').nodes().to$().find('td:first-child').trigger('click');
+        });
+
+        // Handle click on "Collapse All" button
+        $('#btn-hide-all-children').on('click', function () {
+            // Collapse row details
+            table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
+        });
+    });
+</script>
+
+
+
+<script>
+    function BindPremium(Suminsured, CoverForYear) {
+        $('#loading').show();
+        $('#mytable').dataTable().fnDestroy();
+        var _searchData = "";
+        var dataTable = $('#mytable').DataTable({
+            "responsive": true,
+            "xscroll": true,
+            "paging": false,
+            "stateSave": false,
+            "ordering": true,
+            "order": [[2, "desc"]],
+            "info": false,
+            "oLanguage": {
+                "sEmptyTable": "No record"
+            },
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "processing": true,
+            "serverSide": true,
+            "searching": false,
+            "lengthChange": false,
+            "ajax": {
+                url: "/HealthPlan/BindPremiumList", // json datasource
+                type: "Post",  // method  , by default get AgeAdult, string Self, string Adult, string Child ageSpouse,agechild1,agechild2
+
+                data: { "searchTxt": _searchData, "AgeAdult": $("#ageSelf").val(), "AgeSpouse": $("#ageSpouse").val(), "AgeChild1": $("#agechild1").val(), "AgeChild2": $("#agechild2").val(), "Self": $("#Self").val(), "Adult": $("#Spouses").val(), "Child": $("#son").val(), "SumInsured": Suminsured, "CoverForYear": CoverForYear, "ID": $("#hdnHealthId").val(), "city": $("#Channel").val(), "Gender": $("#hdGender").val(), "name": $("#name").val(), "MobileNo": $("#MobileNo").val() },
+               
+                error: function () {  // error handling
+                    jQuery("#example1").append('<tbody class="business-user-grid-error"><tr><th colspan="4">No record</th></tr></tbody>');
+
+                }
+            },
+
+            "createdRow": function (row, data, rowIndex) {
+                $(row).find('td:eq(0)').attr('data-label', 'Company');
+                $(row).find('td:eq(1)').attr('data-label', 'Plan Info');
+                $(row).find('td:eq(2)').attr('data-label', 'Sum Insured');
+                $(row).find('td:eq(3)').attr('data-label', 'Premium');
+            },
+
+            "columnDefs": [{
+                "targets": 0,
+                "orderable": false,
+                "sClass": "dataTableCenter"
+            }, {
+                "targets": 2,
+                "orderable": false,
+                "sClass": "left"
+            }]
+        });
+        $('#loading').hide();
+        return dataTable;
+    }
+    $(function () {
+        var sum = $('#sumAssured').val('150000')
+        BindPremium('150000', '1');
+        $('#CoverFor').change(function () {
+            if ($('#CoverFor').val() == "1000") {
+                $("#Spouses").val('0');
+                $("#son").val('0');
+                $("#Self").val('1');
+            }
+            else if ($('#CoverFor').val() == "1100") {
+                $("#Spouses").val('1');
+                $("#son").val('0');
+                $("#Self").val('1');
+            }
+            else if ($('#CoverFor').val() == "1110") {
+                $("#Spouses").val('1');
+                $("#son").val('1');
+                $("#Self").val('1');
+            }
+
+            else if ($('#CoverFor').val() == "1120") {
+                $("#Spouses").val('1');
+                $("#son").val('2');
+                $("#Self").val('1');
+            }
+            else if ($('#CoverFor').val() == "1010") {
+                $("#Spouses").val('0');
+                $("#son").val('1');
+                $("#Self").val('1');
+            }
+            else if ($('#CoverFor').val() == "1020") {
+                $("#Spouses").val('0');
+                $("#son").val('2');
+                $("#Self").val('1');
+            }
+            BindPremium($('#sumAssured').val(), $('#Dureation').val());
+        })
+
+        $('#sumAssured').change(function () {
+            var Dureation;
+            if ($('#Dureation').val() == "") {
+                Dureation = '1';
+            }
+            else {
+                Dureation = $('#Dureation').val();
+            }
+            BindPremium($('#sumAssured').val(), $('#Dureation').val());
+
+        })
+        $('#Dureation').change(function () {
+
+            BindPremium($('#sumAssured').val(), $('#Dureation').val());
+        })
+        // We select for tables universally - you can change the selector to target the tables you want
+        // Basic table
+        $('#basic table').stickySort();
+
+        // Basic table with sort
+        $('#basic-sort table').stickySort({ sortable: true });
+
+        // Biaxial
+        $('#biaxial .bx1').stickySort();
+        $('#biaxial .bx2').stickySort({ sortable: true });
+
+        // Final
+        $('#final table').stickySort({ sortable: true });
+
+        // The codes below has no impact on the functionality of StickySort functionality
+        //-----------------------------------------------------------------------------------------------------------------
+        // Smooth scrolling plugin by Chris Coiyer
+        // Source: http://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        // Section toggle
+        $('section.demo h2')
+        .append('<a href="#" title="Collapse section" class="toggle">Collapse</a>')
+        .on('click', 'a', function (e) {
+            e.preventDefault();
+            if (!$(this).data('state') || $(this).data('state') == 0) {
+                $(this)
+                .data('state', 1)
+                .attr('title', 'Expand section')
+                .text('Expand')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideUp();
+            } else {
+                $(this)
+                .data('state', 0)
+                .attr('title', 'Collapse section')
+                .text('Collapse')
+                .parent()
+                    .siblings()
+                        .stop(true, true).slideDown();
+            }
+        });
+
+        // Unrelated to sticky header function
+        $('table').each(function () {
+            if ($(this).attr('data-color') != undefined) {
+                $(this).find('tbody td').each(function () {
+                    if ($(this).text().match(/^\d+$/)) {
+                        $(this).css({
+                            'background-color': 'hsl(' + parseInt($(this).text()) + ',75%,85%)'
+                        });
+                    }
+                });
+            }
+        });
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+
+        var Gender = $("#hdGender").val();
+        if (Gender == "Male") {
+            $("#male").prop("checked", true);
+        }
+        if (Gender == "Female") {
+            $("#female").prop("checked", true);
+        }
+    })
+    $("#iddetails").click(function () {
+        $("#idtable").css("display", "block");
+    })
+    function HideTable(tablid) {
+        var color = $("#" + tablid).css("display");
+        if (color == "none") {
+            $("#" + tablid).css('display', 'block');
+        }
+        else if (color == "block") {
+            $("#" + tablid).css('display', 'none');
+        }
+        else {
+            $("#" + tablid).css('display', 'none');
+        }
+
+    }
+</script>
+
+

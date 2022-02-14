@@ -1,0 +1,234 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-41117334",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001091132",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400241794",
+    "transactionDate" : "28-01-2020T10:57:52",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V227112EAE06CED841064E1627CF3D5840E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=421DB922C59D777D1BFF069156F6F8A2"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-32970593",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001091133",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400241795",
+    "transactionDate" : "28-01-2020T10:59:06",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V20086F7C5E479727279A1F2F7F836D6B0E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLinkSent" : false,
+    "paymentLink" : "Failed"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-88792199",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001091142",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400241804",
+    "transactionDate" : "28-01-2020T11:03:50",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2C07B6863081B970927C3CB45B9C2BD89E87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=5C48731D3DEF1DFF0ABB187E34A687FD"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-15303729",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001091145",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400241808",
+    "transactionDate" : "28-01-2020T11:04:57",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2C0DF92A0D7A70007546537F2DEE40B9CE87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=28A3B6A87D25F14BAAD37A74CAAC99F5"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {
+  "bookingId" : "retail-2020-26749129",
+  "insuredPersons" : [ {
+    "paxId" : "1",
+    "paymentDetails" : {
+      "policyPremium" : "726.0",
+      "sgst" : "55.0",
+      "cgst" : "55.0",
+      "ugst" : "0.0",
+      "igst" : "0.0",
+      "invoiceNumber" : "IA001091148",
+      "policyNetPremium" : "616.0"
+    },
+    "policyID" : "D400241810",
+    "transactionDate" : "28-01-2020T11:06:47",
+    "status" : {
+      "code" : "200",
+      "message" : "Success"
+    },
+    "policyStatus" : "INCOMPLETE",
+    "applicationId" : "V2CAFBD0768A8BCF6567A541569C2B813BE87091C9EEC4EE46D1A372E0D3476107C7ED1888F9E24B121EFEFCD71BA81104",
+    "paymentLink" : "https://preprod-digitpaymentgateway.godigit.com/DigitPaymentGateway/payments?target=18F8AC9735222DAEFE15CD440FB63D07"
+  } ],
+  "status" : {
+    "code" : "200",
+    "message" : "SUCCESS"
+  }
+}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"14696","totalPremium":"17149.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"485","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"12454","hcbPremium":"1863","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10157","totalPremium":"12236.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"247","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8608","hcbPremium":"1726","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"10157","totalPremium":"12236.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"247","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8608","hcbPremium":"1726","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11357.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"178","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1506","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11425.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"194","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1558","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"22736","totalPremium":"24663.24","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"19268","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"23709","totalPremium":"25769.56","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20092","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"22736","totalPremium":"24663.24","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"19268","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"23709","totalPremium":"25769.56","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20092","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"22736","totalPremium":"24663.24","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"19268","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"23709","totalPremium":"25769.56","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"20092","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"47148","totalPremium":"49817.08","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"39956","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"51760","totalPremium":"54498.52","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"409","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"43864","hcbPremium":"2224","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9882","totalPremium":"11882.5","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"228","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8375","hcbPremium":"1666","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"35660","totalPremium":"37659.6","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"228","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"30220","hcbPremium":"1666","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"36939","totalPremium":"39083.72","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"237","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"31304","hcbPremium":"1802","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"47148","totalPremium":"49817.08","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"39956","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"51760","totalPremium":"54498.52","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"409","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"43864","hcbPremium":"2224","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"47148","totalPremium":"49817.08","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"39956","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"51760","totalPremium":"54498.52","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"409","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"43864","hcbPremium":"2224","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"34390","totalPremium":"36316.92","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"29144","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"35886","totalPremium":"37947.16","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"30412","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"9567","totalPremium":"11494.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"8108","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"34390","totalPremium":"36316.92","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"29144","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"35886","totalPremium":"37947.16","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"30412","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"12753","totalPremium":"15422.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"402","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"10808","hcbPremium":"2161","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"6617","totalPremium":"8544.44","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"5608","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"17288","totalPremium":"19215.18","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"210","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"14651","hcbPremium":"1611","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"18017","totalPremium":"20078.42","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"218","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"15269","hcbPremium":"1737","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"13661","totalPremium":"16450.86","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"11577","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"50698","totalPremium":"53487.52","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"42964","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"pdfName":"","premium":"55691","totalPremium":"58481.28","accidentalDeathPremium":"59","permanentDisabilityPremium":"47","criticalIllnessPremium":"437","premiumWaiver":"0","betterHalfPremium":"0","basePremium":"47196","hcbPremium":"2247","error":null,"isValid":true,"sumAssured":null}

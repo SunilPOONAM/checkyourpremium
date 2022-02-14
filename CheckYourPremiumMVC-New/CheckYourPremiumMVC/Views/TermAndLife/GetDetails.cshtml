@@ -1,0 +1,1165 @@
+﻿@model Domain.ZPModel
+@{
+    ViewBag.Title = "GetDetails";
+    Layout = "~/Views/Shared/_LayoutQuatoPage.cshtml";
+}
+
+<link href="~/Resources/css/buyNowfrm.css" rel="stylesheet" /> @*@Html.HiddenFor(m => m.QuoteNo) @Html.HiddenFor(model => model.OrderNo) @Html.HiddenFor(model => model.IsMobile) @Html.HiddenFor(model => model.Product) @Html.HiddenFor(model => model.Channel) @Html.HiddenFor(model => model.Amount) @Html.HiddenFor(model => model.SearchId) @Html.HiddenFor(model => model.searchId) @Html.HiddenFor(model => model.travelstartdate) @Html.HiddenFor(model => model.travelenddate)*@
+
+
+<style>
+    #PolicyIndiaFirst {
+        background: #a2b0c7;
+        color: #312f2f;
+        text-transform: capitalize;
+        font-size: 13px;
+        padding-top: 3px;
+        border: 1px solid #83868a;
+        box-shadow: 0 1px 4px #bdb7b7;
+        cursor: pointer;
+        width: 100% !important;
+        padding-left: 8px;
+        font-weight: bold;
+    }
+
+
+    label {
+        color: #504e4e;
+    }
+    .rowd >div >h4 {
+       
+        padding: 26px 8px 0 0;
+      
+    }
+    h6 {
+        position: relative;
+        bottom: 0;
+        top: 1rem;
+    }
+
+    .conterty {
+        display: block;
+    }
+
+    .logo {
+        width: 33.2% !important;
+        bottom: 28px !important;
+    }
+
+    input#totalPremium {
+     border: none;
+    pointer-events: none;
+    color: #e85600;
+    letter-spacing: 1px;
+    font-weight: bold;
+    float: right;
+    width: 151px;
+    }
+
+    input#PlanName {
+         border: none;
+    pointer-events: none;
+    color: #e85600;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 15px;
+    line-height: 3rem;
+    }
+
+
+
+    h3 {
+        float: left;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    h4 {
+        color: #fff;
+        padding: 18px 8px;
+        background: none !important;
+    }
+
+    span.namwhf.fgh {
+           color: #504e4e;
+    font-weight: bold;
+    }
+
+    select.healthinpt {
+        border: 1px solid #ccc !important;
+    }
+
+
+    #indiaSa {
+       float: left;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    background: #f7f7f7;
+    border: 1px solid #eaeaea;
+    }
+
+    .ui-widget.ui-widget-content {
+      
+        z-index: 99999 !important;
+    }
+
+
+    .form-group.nbnow.fgrt label {
+        line-height: 25px;
+        padding: 3px;
+    }
+    
+    
+     .form-group.nbnow label.prjsName {
+        box-shadow: none;
+        font-weight: bold;
+        color: #0a3780 !important;
+    }
+
+        #indiaSa:hover {
+            box-shadow: 0 0 5px #333;
+            transition: box-shadow 2s;
+            cursor: pointer;
+        }
+
+    .fa.fa-inr {
+          color: #e85600;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
+    }
+
+
+ label.prjsName {
+                    background: none !important;
+                    color: #000 !important;
+                    text-transform: uppercase !important;
+                    font-size: 1.5rem !important;
+                    width: 100% !important;
+                    position: relative !important;
+                }
+
+                label {
+                    margin-bottom: 0 !important;
+                }
+
+    .bynow.sotlry {
+        background: #2e5caa !important;
+        color: #fff;
+        margin: 1rem 0 1rem -4px;
+        line-height: 31px;
+        border-top-right-radius: 45px;
+        border-bottom-right-radius: 1px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        border: 1px solid #4e4f57;
+    }
+
+    .containerbx {
+        z-index: 999999;
+    }
+
+#PolicyTerm.loading {
+    background: url(http://www.xiconeditor.com/image/icons/loading.gif) no-repeat right center;
+}
+    .form-group.nbnow select {
+        padding-left: 134px;
+        float: inherit !important;
+    }
+
+    h6.ghuo {
+        background: #2b59a5;
+        font-size: 4px;
+        border-bottom: 1px solid #4c4a4a;
+        border-top: 1px solid #4c4a4a;
+        margin-top: 0;
+        top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+</style>
+
+
+@*<script>
+    $(function () {
+        $(".preload").fadeOut(8000, function () {
+            $(".contertg").fadeIn(1000);
+        });
+    });
+</script>
+<link href="~/Resources/css/lodergif.css" rel="stylesheet" />
+
+<div class="preload">
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>*@
+
+@*<script src="~/Content/datatable/jquery-ui.js"></script>
+    <link href="~/Content/datatable/jquery-ui.css" rel="stylesheet" />*@
+
+
+
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<script>
+    $(function () {
+        $('#datetimepicker').datepicker({
+            yearRange: '1949:2002',
+            autoclose: true,
+
+            dateFormat: "dd/mm/yy",
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>
+
+
+<h6 class="ghuo">******</h6>
+
+<div class="container" style="padding:0 0% !important;">
+    <input id="hdbid" type="hidden" value="@ViewData["id"].ToString()">
+    <input id="hdbTid" type="hidden" value="@ViewData["Tid"].ToString()">
+    <input id="policyterm" type="hidden" value="@ViewData["policyterm"].ToString()">
+    <input id="hdFrequency" type="hidden" value="@ViewData["Frequency"].ToString()">
+    <input id="hdnEmail" type="hidden" value="test@gmail.com">
+  @Html.HiddenFor(model=>model.pdfName)
+
+    @*<input id="hdnState" type="hidden" value="Uttar Pradesh">*@
+    <form action="/TermAndLife/GetDetails" method="post" id="frmPayout">
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <div class="col-xs-12 col-sm-6 col-md-8 trfgjh">
+            @Html.HiddenFor(model => model.Company)
+            <div class="rowd ds" id="divEdelWise" style="display:none">
+                <div class="col-md-12">
+                    <div class="logz">
+                        <img src="~/Resources/images/edelwZplus.png" class="img-responsive" />
+                    </div>
+
+                    <h6><span class="namwhf" style="line-height: 40px;">Edelweiss Zindagi Plus </span></h6>
+                </div>
+
+            </div>
+
+            <div class="rowd ds" id="divIndiaFirst" style="display:none">
+               
+               
+                <div class="col-md-12">
+                    <div class="logz">
+                        <img src="~/Logo/IndiaFirstLogo.png" class="img-responsive" />
+                    </div>
+
+                    <h6><span class="namwhf" style="line-height: 40px;"><label style="font-size:25px" id="txtHeaderNAme"></label></span></h6>
+                </div>
+                
+
+            </div>
+            <div class="rowd">
+                <div class="col-md-6">
+
+                    <div class="form-group nbnow">
+                        <label for="email">Name</label>
+                        @Html.TextBoxFor(model => model.FullName, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Gender</label>
+                        @Html.TextBoxFor(x => x.Gender, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="url">DOB <small>(Eldest Member)</small></label>
+                        @Html.TextBoxFor(model => model.DOB, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Phone</label>
+
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+
+                <!--  col-md-6   -->
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="company">Term</label>
+
+                        @Html.TextBoxFor(x => x.PolicyTerm, new { @class = "form-control frmnow",@type="number",@maxlength="2",@minlenght="1" })
+                    </div>
+
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Frequency</label>
+                        @Html.TextBoxFor(model => model.Frequency, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">SA</label>
+                        @Html.TextBoxFor(model => model.sumAssured, new { @class = "form-control frmnow" ,@type="number" })
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+
+                    <div class="form-group nbnow">
+                        <label for="phone">Tobacco</label>
+                        @Html.TextBoxFor(x => x.Smoke, new { @class = "form-control frmnow", @readonly = "" })
+
+                    </div>
+                </div>
+
+
+                <!--  col-md-6   -->
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Income</label>
+
+                        @Html.TextBoxFor(model => model.Earning, new { @class = "form-control frmnow", @readonly = "" })
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="first">Marital Status</label>
+
+                        @Html.DropDownListFor(model => model.MaritialStatus, (SelectList)ViewData["MaterialStatus"], "Select", new { @class = "form-control healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8", required = "required" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowd">
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">State</label>
+                        @Html.DropDownListFor(model => model.State, (SelectList)ViewData["State"], "Select", new { @class = "form-control healthinptd col-xs-7 col-sm-8 col-md-8 col-lg-8", @required = "true" })
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group nbnow">
+                        <label for="last">City</label>
+                        @*@Html.DropDownListFor(model => model.City, (SelectList)ViewData["Cities"], "Select", new { @class = "form-control frmnow", @style = "margin-bottom: 0;", @required = "true" })*@
+                        <select id="City" class="form-control healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                            <option value="">Select</option>
+                        </select>
+
+                    </div>
+                </div>
+
+               
+            </div>
+
+            @*...............................................................................................................................................*@
+          
+
+            <div class="rowd">
+                @*<div id="indiaSa">
+                <div class="col-md-12">
+                    <div class="form-group nbnow">
+                        <div class="col-md-5">
+                            <label class="prjsName" for="last">Product Name</label>
+                        </div>
+                        <div class="col-md-7">
+                            @Html.DropDownListFor(model => model.PolicyIndiaFirst, (SelectList)ViewData["RiskOption"], "Select", new { @class = "form-control col-md-6 frmnow", @style = "margin-bottom: 0;float:left;" })
+                        </div>
+                        </div>
+                </div>
+            </div>*@
+                <h3>-----------------</h3>
+
+
+
+                <div id="DetailsSpouse" style="display:none">
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow fgrt">
+                                <label for="first">Spouse First Name</label>
+
+                                @Html.TextBoxFor(x => x.SpouseFirstName, new { @class = "form-control frmnow", @autocomplete = "off" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow fgrt">
+                                <label for="phone">Spouse Last Name</label>
+                                @Html.TextBoxFor(x => x.SpouseLastName, new { @class = "form-control frmnow", @autocomplete = "off" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow">
+                                <label for="first">DOB</label>
+
+                                @Html.TextBoxFor(x => x.SpouseDOB, new { @class = "form-control frmnow", @id = "datetimepicker", @autocomplete = "off" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow">
+                                <label for="phone">Age</label>
+                                @Html.TextBoxFor(x => x.SpouseAge, new { @class = "form-control frmnow", @autocomplete = "off" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowd">
+                        <div class="col-md-6">
+                            <div class="form-group nbnow">
+                                <label for="first">Gender</label>
+
+                                @*@Html.DropDownListFor(model => model.SpouseGender, (SelectList)ViewData["SpouseGender"], "Select", new { @class = "healthinptd col-xs-12 col-sm-8 col-md-8 col-lg-8"})*@
+                                @Html.DropDownListFor(model => model.SpouseGender, new List<SelectListItem>
+                                    {
+                                    new SelectListItem{ Text="Select", Value = "" },
+                                    new SelectListItem{ Text="Male", Value = "Male" },
+                                    new SelectListItem{ Text="Female", Value = "Female" },
+
+                                    }, new { @class = "healthinpt" })
+                            </div>
+                        </div>
+
+                        <!--  col-md-6   -->
+                        <div class="col-md-6">
+
+                            <div class="form-group nbnow">
+                                <label for="phone">Tobacco</label>
+                                @* @Html.TextBoxFor(x => x.SpouseTobbacoUser, new { @class = "form-control frmnow" })*@
+                                @Html.DropDownListFor(model => model.SpouseTobbacoUser, new List<SelectListItem>{new SelectListItem{ Text="Select", Value = "" },new SelectListItem{ Text="Yes", Value = "true" },new SelectListItem{ Text="No", Value = "false" },
+
+                                    }, new { @class = "healthinpt" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*...............................................................................................................................................*@
+
+                <h3>-----------------</h3>
+
+                <div class="rowd">
+                    <div id="indiaSa">
+                        <div class="col-md-12">
+                            <div class="form-group nbnow">
+                                <div class="col-md-12">
+                                    <label class="prjsName" for="last">
+                                        <div class="col-md-5">
+                                            ADD ON PLAN
+                                            </div>
+                                            <div class="col-md-7">
+                                                @Html.DropDownListFor(model => model.PolicyIndiaFirst, (SelectList)ViewData["RiskOption"], new { @class ="form-control col-md-12 frmnow", @style = "margin-bottom: 0;float:left;width:auto;" })
+                                            </div>
+                                       
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3>-----------------</h3>
+                    <input type="submit" class="btn buyNwsdf" id="buynow" name="buynow" value="BUY THIS PLAN" />
+
+                </div>
+
+            </div>
+        </div>
+<div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="trfguio">
+
+                <div class="rowd">
+                    <div class="col-md-12">
+                        <h4><span class="namwhf fgh">policy details</span></h4>
+
+                    </div>
+                </div>
+
+                @*
+                    <div class="col-xs-12 col-sm-6 col-md-6" style="padding:0px;">
+                        <h5>Proposer</h5>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> Name :</label>
+                            <label>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> DOB :</label>
+                            <label>hrth</label>
+                        </div>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> Age :</label>
+                            <label>hrh</label>
+                        </div>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> Email :</label>
+                            <label>hrhr</label>
+                        </div>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> Mobile :</label>
+                            <label>hrhr</label>
+                        </div>
+                        <div>
+                            <label><i class="fa fa-sort-asc" aria-hidden="true"></i> Use Tobacco : </label>
+                            <label>hrh</label>
+                        </div>
+
+                    </div>*@
+                <div class="col-xs-12 col-sm-12 col-md-12" style="padding:0px;">
+
+                    <div>
+                        <label class="col-md-6 bynow"><i class="fa fa-sort-asc" aria-hidden="true"></i> Policy Premium : </label>
+                        <label class="col-md-6 bynow" style="padding-left:0px;">@*<span id="totalpremium">*@<i class="fa fa-inr" aria-hidden="true"></i> @Html.TextBoxFor(model => model.totalPremium) </label>
+                  
+               </div>
+                    <div>
+                        <label class="col-md-6 bynow sotlry"> Plan Name :</label>
+                        <label class="col-md-12 bynow"><span id="planname"> @Html.TextBoxFor(model => model.PlanName) </span></label>
+                    </div>
+                </div>
+
+
+                <style>
+                    .pdfbrtch{
+                        display:block;
+                    }
+
+                        .pdfbrtch a {
+                            font-family: 'Roboto', sans-serif !important;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                            color: #0c69a7;
+                        }
+                </style>
+
+                <div>
+                    <div class="col-md-12">
+                        <span class="pdfbrtch"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            <a title="download Pdf" href="~/PDF/IndiaFirst%20Anytime%20Plan_Brochure.pdf">IndiaFirst Anytime Plan Brochure</a>
+                        </span>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="pdfbrtch"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            <a title="download Pdf" href="~/PDF/IndiaFirst%20Life%20e-Term%20Plan%20brochure.pdf">IndiaFirst Life e-Term Plan brochure</a>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+    
+        </div>
+
+
+
+
+        @Html.HiddenFor(x => x.Age) @Html.HiddenFor(x => x.Earning) @Html.HiddenFor(x => x.MaritialStatus) @Html.HiddenFor(x => x.PPT) @* @Html.HiddenFor(x => x.Frequency)*@ @Html.HiddenFor(x => x.BHB_Ind) @Html.HiddenFor(x => x.TUB_Ind) @Html.HiddenFor(x => x.PWB_Ind) @Html.HiddenFor(x => x.ADB_Ind) @Html.HiddenFor(x => x.PD_Ind) @Html.HiddenFor(x => x.HCB_ind) @Html.HiddenFor(x => x.DSA_ind) @Html.HiddenFor(x => x.ADB) @Html.HiddenFor(x => x.ATPD) @Html.HiddenFor(x => x.CI) @Html.HiddenFor(x => x.HCB) @Html.HiddenFor(x => x.CIC_Ind) @Html.HiddenFor(x => x.CIC_ClaimOption) @Html.HiddenFor(x => x.TopupRate) @Html.HiddenFor(x => x.TotalBenefit) @Html.HiddenFor(x => x.PolicyOption) @Html.HiddenFor(x => x.SpouseFirstName) @Html.HiddenFor(x => x.SpouseLastName) @Html.HiddenFor(x => x.SpouseDOB) @Html.HiddenFor(x => x.SpouseGender) @Html.HiddenFor(x => x.SpouseAge) @Html.HiddenFor(x => x.SpouseTobbacoUser) @Html.HiddenFor(x => x.AdditionalBenefit) @Html.HiddenFor(x => x.TopUpBenefitPercentage) @Html.HiddenFor(x => x.PayoutOption) @Html.HiddenFor(x => x.PayoutMonths) @Html.HiddenFor(x => x.PayoutPercentageLumpsum) @Html.HiddenFor(x => x.PayoutPercentageLevelIncome) @Html.HiddenFor(x => x.PayoutPercentageIncreasingIncome) @Html.HiddenFor(x => x.TransID) @*A5A067 Pass_partner_code_her*@
+
+        <div style="display:none;">
+            <p>
+                @Html.TextAreaFor(x => x.hdnZindagiPlusdata) @*@Html.HiddenFor(x=>x.MaritialStatus) @Html.HiddenFor(x => x.BHB_Ind) @Html.HiddenFor(x => x.TUB_Ind) @Html.HiddenFor(x => x.PWB_Ind) @Html.HiddenFor(x => x.ADB_Ind) @Html.HiddenFor(x => x.CI_Ind) @Html.HiddenFor(x => x.PD_Ind) @Html.HiddenFor(x => x.HCB_ind) @Html.HiddenFor(x => x.DSA_ind) @Html.HiddenFor(x => x.ADB) @Html.HiddenFor(x => x.ATPD) @Html.HiddenFor(x => x.CI) @Html.HiddenFor(x => x.HCB) @Html.HiddenFor(x => x.CIC_Ind) @Html.HiddenFor(x => x.CIC_ClaimOption) @Html.HiddenFor(x => x.CIC_PolicyTerm) @Html.HiddenFor(x => x.TopupRate) @Html.HiddenFor(x => x.TotalBenefit) @Html.HiddenFor(x => x.PolicyOption) @Html.HiddenFor(x => x.SpouseFirstName) @Html.HiddenFor(x => x.SpouseLastName) @Html.HiddenFor(x => x.SpouseDOB) @Html.HiddenFor(x => x.SpouseGender) @Html.HiddenFor(x => x.SpouseAge) @Html.HiddenFor(x => x.SpouseTobbacoUser) @Html.HiddenFor(x => x.AdditionalBenefit) @Html.HiddenFor(x => x.TopUpBenefitPercentage) @Html.HiddenFor(x => x.PayoutOption) @Html.HiddenFor(x => x.PayoutMonths) @Html.HiddenFor(x => x.PayoutPercentageLumpsum) @Html.HiddenFor(x => x.PayoutPercentageLevelIncome) @Html.HiddenFor(x => x.PayoutPercentageIncreasingIncome) @Html.HiddenFor(x => x.TransID)*@ @*
+
+                    <input type="email" name="hdneId" id="hdneId" value="@Model.Email" class="form-control frmnow" />*@ @Html.TextBoxFor(model => model.Email, new { @class = "form-control frmnow", @type = "email", @name = "hdneId" }) @*
+                        <input name="hdneId" type="email" value="@Session[" Email "]">*@
+                    <font color="red"> * Required</font>
+                </p>
+                @*
+                    <p>
+                        <label>Phone:</label>
+
+                        @Html.TextBoxFor(model => model.Phone, new { @class = "form-control frmnow", @type = "number", @name = "hdnpno" })
+
+                        <font color="red"> * Required</font>
+                    </p>*@
+                <p>
+                    <label>Source:</label>
+                    <input name="src" type="text" value="A5A067"> (Optional for direct and Required for Partners. Get your code from ETLI SPOC)
+                </p>
+                <p>
+                    <label>Tab Index:</label>
+                    <input name="hdntabindex" type="text" value="1">
+                    <font color="red"> * Required</font> (Tab Index: 1 = investment details and 2 = Summary Page)
+                </p>
+                @*
+                    <p>
+                        <textarea name="hdnZindagiPlusdata" id="hdnresponseString"></textarea>
+                    </p>*@
+            </div>
+
+            @*
+                <input type="hidden" value="@Session[" CustID "].ToString()" id="hdnCustId" />*@
+            @Html.TextBoxFor(model => model.SearchId, new { @class = "form-control frmnow", @type = "hidden", @name = "hdnpno" }) @*
+
+                <input type="submit" id="buynow" name="buynow" value="BUY THIS PLAN" />*@ @*"ageSelf": $("#ageself").val(), "Gender": $("#hdnGender").val(), "Smoke": $("#hdnSmoke").val()*@
+                <input type="text" id="hdnDate" style="visibility:hidden" />
+
+     
+            </form>
+         
+        </div>
+
+<style>
+    #loading{
+  display: grid;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+    background: rgba(255,255,255, 0.5);
+    }
+
+        #loading p{
+       display: grid;
+    justify-content: center;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    align-items:flex-start;
+    }
+
+              #loading p img{
+                    position: relative;
+    top: 17rem;
+    right: 50px;
+              }
+</style>
+
+<div id="loading">
+    <p><img src="http://www.xiconeditor.com/image/icons/loading.gif" /></p>
+</div>
+
+
+
+
+<script>
+    $("#PolicyTerm").change(function () {
+
+        GetPremium();
+
+    });
+
+    $("#sumAssured").change(function () {
+
+        GetPremium();
+        var Sumassured = $("#sumAssured").val();
+        if (Sumassured <= 5000000) {
+            $("#txtHeaderNAme").text("Anytime Plan");
+        }
+        else {
+            $("#txtHeaderNAme").text("Online E-term");
+        }
+    })
+    var company = $("#Company").val();
+    if (company == "10007") {
+        function GetPremium() {
+            $('#loading').show();
+            $.ajax({
+                url: "/TermAndLife/GetIndiaFirst",
+                method: "Post",
+                data: {
+                    "Smoke": $("#Smoke").val(),
+                    "fullName": $("#FullName").val(),
+                    "Gender": $("#Gender").val(),
+                    "ageSelf": $("#Age").val(),
+                    "DOB": $("#DOB").val(),
+                    "Email": $("#Email").val(),
+                    "sumInsured": $("#sumAssured").val(),
+                    "Phone": $("#Phone").val(),
+                    "term": $("#PolicyTerm").val(),
+                    "Frequency": $("#Frequency").val(),
+                    "PemiumType": $("#pdfName").val(),
+                    "PolicyIndiaFirst": $("#PolicyIndiaFirst").val(),
+                    "State": $("#State").val(),//pihu
+                    "searchTxt": $("#PolicyIndiaFirst").val(),
+                    "Income": $("#Earning").val(),
+                },
+                success: function (responce) {
+                    console.log(responce);
+                    // var ab =$("#tot").val(responce.premium);
+                    var a = $("#totalPremium").val(responce.premium);
+                    //     alert(responce.premium);
+                    $('#loading').hide();
+
+                }
+            })
+        }
+    }
+    else {
+        function GetPremium() {
+            $('#loading').show();
+            $.ajax({
+                url: "/TermAndLife/GetPremium",
+                method: "Post",
+                data: {
+                    "Smoke": $("#Smoke").val(),
+                    "fullName": $("#FullName").val(),
+                    "Gender": $("#Gender").val(),
+                    "ageSelf": $("#Age").val(),
+                    "DOB": $("#DOB").val(),
+                    "Email": $("#Email").val(),
+                    "sumInsured": $("#sumAssured").val(),
+                    "Phone": $("#Phone").val(),
+                    "term": $("#PolicyTerm").val(),
+                    "Frequency": $("#Frequency").val(),
+
+                },
+                success: function (responseString) {
+                    console.log(responseString);
+                    $("#totalpremium").text(responseString.premium);
+                    // $t.removeClass('loading');
+                    $('#loading').hide();
+
+                }
+            })
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $('#loading').hide();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var Sumassured = $("#sumAssured").val();
+        // alert(Sumassured);
+        if (Sumassured <= 5000000) {
+            $("#txtHeaderNAme").text("Anytime Plan");
+        }
+        else {
+            $("#txtHeaderNAme").text("Online E-term");
+        }
+    })
+</script>
+
+
+
+<script>
+    $('#MaritialStatus').change(function () {
+        var material = $("#MaritialStatus option:selected").val();
+        if (material == "Single") {
+            $("#DetailsSpouse").hide();
+        }
+        else if (material == "Married") {
+            var gender = $("#Gender").val();
+            $("#DetailsSpouse").show();
+
+            if (gender == "Male") {
+                $("#SpouseGender").val("Female");
+            }
+            else if (gender == "Female") {
+                $("#SpouseGender").val("Male");
+            }
+        }
+    });
+    $("#buynow").click(function () {
+
+        if ($("#MaritialStatus option:selected").val() == "Married") {
+            if ($("#SpouseFirstName").val() == "" || $("#SpouseLastName").val() == "" || $("#datetimepicker").val() == "" || $("#SpouseAge").val() == "") {
+                alert("Please Fill All Details")
+                return false;
+            }
+            else if ($("#SpouseTobbacoUser").val() == "") {
+                alert("Please Fill All Details")
+                return false;
+            }
+        }
+    });
+</script>
+<script>
+    $("#datetimepicker").change(function () {
+
+        //var dob = $("#datetimepicker").val();
+        //var d = dob.split("/");
+        //var d = d.pop();
+        //var dtt = $("#hdnDate").val();
+        //var dt = dtt.split("/");
+        //var dt = dt.pop();
+        //var age = Math.floor((dt - d));
+        //var agee = parseInt($("#SpouseAge").val(age));
+
+        var dob = $("#datetimepicker").val();
+        var dtt = $("#hdnDate").val();
+        var array = dob.split('/');
+        var day = parseInt(array[0]);
+        var month = parseInt(array[1]);
+        var year = parseInt(array[2]);
+        var dateObject = new Date(year, month - 1, day);
+        var dob1 = jQuery(this).val();
+        var today = new Date();
+        var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+        var age = parseInt(dayDiff);
+        var agee = $("#SpouseAge").val(age);
+        //..........................
+        var MainDob = $("#DOB").val();
+        var array = MainDob.split('/');
+        var day = parseInt(array[0]);
+        var month = parseInt(array[1]);
+        var year = parseInt(array[2]);
+        var dateObject = new Date(year, month - 1, day);
+        var dob1 = jQuery(this).val();
+        var today = new Date();
+        var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+        var mainage = parseInt(dayDiff);
+        var difage = age - mainage;
+        difage = difage;
+
+        if (difage > 10 || difage < -10) {
+            alert("We can not take this age");
+            $("#SpouseAge").val("");
+            $("#datetimepicker").val();
+        }
+
+        //else if(difage<0)
+        //{
+        //    alert("Please Fill valid age");
+        //    $("#SpouseAge").val() = "";
+        //}
+
+
+
+
+
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var date = $('hdnDate').val();
+        hdnDate.value = Date.now();
+        //      var s = $('#hdnDate').val($.datepicker.formatDate("mm/dd/yy", new Date()))
+        var d1 = new Date();
+        var d2 = d1.toLocaleDateString("en-IN");
+        hdnDate.value = d2;
+
+        var s = hdnDate.value;
+
+    });
+</script>
+@*poonam........*@
+<script>
+    $(document).ready(function () {
+        var company = $("#Company").val();
+        if (company == "10007") {
+            $("#indiaSa").show();
+            // $("#edelSa").hide();
+        }
+        else if (company == "") {
+            $("#indiaSa").hide();
+
+        }
+    })
+</script>
+
+@*poonam...code.....end...*@
+
+<script>
+    $("#buynow").click(function () {
+        //.......................Save DAta...............
+
+        var std = {};
+        std.CustID = $("#hdbTid").val();
+        std.Company = $("#Company").val();
+        alert()
+        $.ajax({
+            type: "POST",
+            url: '/TermAndLife/UpdateData',
+            data: '{std: ' + JSON.stringify(std) + '}',
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+                // alert("Data has been added successfully.");
+                LoadData();
+            },
+            error: function () {
+                alert("Error while inserting data");
+            }
+        });
+        //..............................
+        //..............validation...................
+        var ddlState = $("#State");
+        var ddlCity = $("#City");
+        var ddlMaritialStatus = $("#MaritialStatus");
+        if (ddlState.val() == "") {
+            //If the "Please Select" option is selected display error.
+            alert("Please select State an option !");
+            return false;
+        }
+        else if (ddlCity.val() == "") {
+            //If the "Please Select" option is selected display error.
+            alert("Please select City an option!");
+            return false;
+        }
+        else if (ddlMaritialStatus.val() == "") {
+            //If the "Please Select" option is selected display error.
+            alert("Please select MaritialStatus an option!");
+            return false;
+        }
+        //...............................
+        //  pppppppppppppppppppppppppppppppppppp
+        var company = $("#Company").val();
+        var PlanName = $("#PlanName").val();
+        var frequency = $("#Frequency").val();
+        var Premium = $("#totalPremium").val();
+        var term = $("#pdfName").val();
+
+        alert(term);
+        if (company == "10007") {
+            if (PlanName == "Anytime plan") {
+
+                if (frequency == "Monthly") {
+                    if (Premium >= 206) {
+                        window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+                    }
+                    else {
+                        alert("You cannot buy a policy at this amount. Please increase the amount");
+                        return false;
+                    }
+                }
+
+                else if (frequency == "Half-Yearly") {
+                    if (Premium >= 1209) {
+                        window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+                    }
+                    else {
+                        alert("You cannot buy a policy at this amount. Please increase the amount");
+                        return false;
+                    }
+                }
+                else if (frequency == "Yearly") {
+
+                    if (Premium >= 2360) {
+                        if (term == "Single") {
+                            alert(term);
+                            if (Premium >= 11800) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+                            window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+
+                        }
+                        else {
+                            alert("You cannot buy a policy at this amount. Please increase the amount");
+                            return false;
+                        }
+                    }
+                    else if (term == "Single") {
+                        alert(term);
+                        if (Premium >= 11800) {
+                            window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+
+                        }
+                        else {
+                            alert("You cannot buy a policy at this amount. Please increase the amount");
+                            return false;
+                        }
+                    }
+                }
+                else {
+                    if (company == "10007") {
+                        //var pl=$("#txtHeaderNAme").text();
+                        //alert(pl);
+                        if (frequency == "Monthly") {
+                            if (Premium >= 308) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+                        }
+
+                        else if (frequency == "Half-Yearly") {
+                            if (Premium >= 1813) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+
+                        }
+                        else if (frequency == "Quarterly") {
+                            if (Premium >= 917) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+                        }
+                        else if (frequency == "Yearly") {
+                            if (Premium >= 3540) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+                        }
+                        else if (term == "Single") {
+                            alert(term);
+                            if (Premium >= 17700) {
+                                window.location.href = "https://indiafirstlife.com/buy-online-insurance/term-plan/?src=CYP";
+
+                            }
+                            else {
+                                alert("You cannot buy a policy at this amount. Please increase the amount");
+                                return false;
+                            }
+
+                        }
+
+
+
+                    }
+                }
+            }
+
+
+        };
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var company = $("#Company").val();
+        if (company == "10007") {
+            $("#divIndiaFirst").show();
+            $("#divEdelWise").hide();
+        }
+        else if (company == "") {
+            $("#divIndiaFirst").hide();
+            $("#divEdelWise").show();
+        }
+    })
+</script>
+<script>
+    $("#PolicyIndiaFirst").change(function () {
+        $('#loading').show();
+        var MainDob = $("#DOB").val();
+        var array = MainDob.split('/');
+        var day = parseInt(array[0]);
+        var month = parseInt(array[1]);
+        var year = parseInt(array[2]);
+        var dateObject = new Date(year, month - 1, day);
+        var dob1 = jQuery(this).val();
+        var today = new Date();
+        var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+        var mainage = parseInt(dayDiff);
+        $.ajax({
+            url: "/TermAndLife/GetIndiaFirstData",
+            method: "post",
+            data: { "searchTxt": $("#PolicyIndiaFirst").val(), "ageSelf": mainage, "Gender": $("#Gender").val(), "Smoke": $("#Smoke").val(), "fullName": $("#FullName").val(), "DOB": $("#DOB").val(), "Email": $("#hdnEmail").val(), "Phone": $("#Phone").val(), "Suminsured": $("#sumAssured").val(), "POLICY_TERM": $("#PolicyTerm").val(), "Frequency": $("#Frequency").val(), "State": $("#State").val(), "PemiumType": $("#pdfName").val(), "Income": $("#Earning").val(), "Custid": $("#hdbTid").val() },
+            success: function (response) {
+                console.log(response);
+                var a = $("#totalPremium").val(response.token);
+                ///  alert(response.token);
+                $("#PlanName").val($("#PolicyIndiaFirst").children("option:selected").text());
+                $('#loading').hide();
+            }
+
+        });
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        var state = $("#State").val();
+
+
+        $.ajax({
+            url: "/TermAndLife/GetCity",
+            method: "get",
+            data: { "state": state },
+            success: function (result) {
+
+                $.each(result, function () {
+                    // $("#City").append("<option value='" + result[row].value + "'>" + result[row].text + "</option>");
+                    $("#City").append($("<option></option>").val(this['Value']).html(this['Text']));
+
+                });
+
+            }
+        })
+    })
+    $("#State").change(function () {
+        var ciity = $("#City").val('');
+        var state = $("#State").val();
+
+
+        $.ajax({
+            url: "/TermAndLife/GetCity",
+            method: "get",
+            data: { "state": state },
+            success: function (result) {
+                $('#City option').remove();
+                $.each(result, function () {
+                    // $("#City").append("<option value='" + result[row].value + "'>" + result[row].text + "</option>");
+                    $("#City").append($("<option></option>").val(this['Value']).html(this['Text']));
+
+                });
+
+            }
+        })
+
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+        var Smoke = $("#Smoke").val();
+        if (Smoke == "true") {
+            $("#Smoke").val("Yes");
+        }
+        else {
+            $("#Smoke").val("No");
+        }
+    })
+</script>

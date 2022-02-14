@@ -1,0 +1,452 @@
+﻿@model Domain.RegistrationDetails
+@{
+    ViewBag.Title = "LoginDetails";
+ Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+<link href="~/Resources/css/loginpage.css" rel="stylesheet" />
+<link href="~/Resources/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+<!--===============================================================================================-->
+@*<link rel="stylesheet" type="text/css" href="~/Resources/login/vendor/bootstrap/css/bootstrap.min.css">*@
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+
+<link href="~/Resources/login/vendor/animate/animate.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/login/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/login/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="~/Resources/login/css/util.css">
+<link rel="stylesheet" type="text/css" href="~/Resources/login/css/main.css">
+<!--===============================================================================================-->
+<style>
+    /*header {
+        display: none !important;
+    }*/
+
+    .conterty {
+        display: block;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+    .symbol-input100 .fa {
+        color: #aeafb3;
+        text-shadow: 0 0 0px #000;
+        font-size: 20px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .hide-password {
+        display: none;
+    }
+
+    .fa.fa-envelope {
+        left: -5px;
+        position: relative;
+    }
+
+    .fa.fa-lock {
+        position: relative;
+        bottom: 0px;
+    }
+</style>
+<style>
+    /*html {
+        background: #e9f3ff;
+    }*/
+
+    .cntainer-firsts {
+        background: #1f59bb;
+        min-height: 550px;
+        display: grid;
+        align-content: center;
+    }
+
+    .cntainer-second {
+        background: #1f59bb;
+        min-height: 550px;
+        display: grid;
+    }
+
+        .cntainer-second h5 {
+            font-size: 4rem;
+            font-family: 'Merienda One', cursive;
+            color: #ffffff;
+            line-height: 8rem;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            padding-top: 5rem;
+        }
+
+    .imageBngt {
+        min-width: 26vw;
+        left: -6rem;
+        position: relative;
+    }
+
+        .imageBngt img {
+            width: 100%;
+        }
+
+    .login100-form.validate-form {
+        padding: 1px 3rem 1rem 3rem;
+    }
+
+        .login100-form.validate-form a.fbs {
+            display: inline-block;
+            background: #fff;
+            width: 35px;
+            height: 34px;
+            padding-top: 6px;
+            border-radius: 81px;
+        }
+
+    .preload {
+        display: none;
+    }
+
+    .fa {
+        text-shadow: none !important;
+    }
+
+        .fa.fa-eye {
+            position: absolute;
+            top: 11px;
+            right: 15px;
+            text-shadow: none;
+            font-size: 18px;
+            color: #aba9a9;
+        }
+
+        .fa.fa-eye-slash {
+            position: absolute;
+            top: 11px;
+            right: 15px;
+            text-shadow: none;
+            font-size: 18px;
+            color: #aba9a9;
+        }
+
+    #navbar {
+        display: none;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .overlay-menu {
+        display: none;
+    }
+
+    .contentd {
+        max-width: 800px;
+        margin: 4rem auto;
+    }
+
+    .Omnhyu {
+        display: grid;
+    }
+
+    .hyuoprty {
+        max-width: 200px;
+        margin: 0 auto;
+        display: none;
+    }
+</style>
+
+
+
+
+
+@*<script src="~/Resources/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+    if (window.location.hash.length > 0)
+                    {
+                        window.location = window.location.hash.substring(1);
+    }
+        </script>*@
+<script type="text/javascript">
+    $(function () {
+        $(document).ajaxComplete(function (event, xhr, settings) {
+            var urlHeader = xhr.getResponseHeader("GetDetails", "TermAndLife");
+
+            if (urlHeader != null && urlHeader !== undefined) {
+                window.location = xhr.getResponseHeader("GetDetails", "TermAndLife");
+            }
+        });
+    });
+</script>
+
+<script src="~/Resources/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+
+<div style="background-color: rgb(255, 255, 255); position: fixed; height: 100%; width: 100%; top: 0;">
+</div>
+
+
+<div class="Omnhyu">
+    <div class="contentd">
+        <div class="hidden-xs col-sm-6 col-md-6">
+            <div class="cntainer-firsts">
+                <div class="imageBngt">
+                    <img src="~/Resources/images/2204031.png" />
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="cntainer-second">
+                <h5>Login</h5>
+                <form action="/RegistrationLogin/LoginDetails" method="post" class="login100-form validate-form">
+                    <p id="successMessage" style="color: #bf4747; font-weight: bold">@ViewBag.Accepted</p>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+
+                        @Html.TextBoxFor(model => model.EmailId, new { @class = "input100", @autocomplete = "off", @placeholder = " Email Id/Mobile No.." })
+
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+
+                        @Html.TextBoxFor(model => model.Password, new
+               {
+                   @class = "input100",
+                   @autocomplete = "off",
+                   @type =
+                       "password"
+               })
+
+
+
+                        <span class="focus-input100"></span>
+
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                        <span class="password-showhide">
+                            <span class="show-password"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                            <span class="hide-password"><i class="fa fa-eye-slash" aria-hidden="true"></i></span>
+                        </span>
+
+
+                    </div>
+
+
+                    <style>
+                        .capctcha-content {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+
+                        .cptimg {
+                            position: absolute;
+                            top: 2px;
+                            left: 2px;
+                            width: 26px;
+                        }
+
+                            .cptimg img {
+                                width: 100%;
+                            }
+
+                        #SecurityCode {
+                            padding-left: 3rem;
+                        }
+
+                        .form-control {
+                            display: block;
+                            width: 100%;
+                            height: 34px;
+                            padding: 6px 12px;
+                            font-size: 14px;
+                            line-height: 1.42857143;
+                            color: #fff;
+                            background-color: transparent;
+                            background-image: none;
+                            border-bottom: 1px solid #ccc !important;
+                            border-radius: 0 !important;
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                            transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                            border: none;
+                        }
+
+                        .capltcha {
+                            width: 65%;
+                            margin: 2rem auto;
+                        }
+                    </style>
+
+
+                    <div class="wrap-input100 validate-input capltcha" data-validate="Password is required">
+                        <span class="cptimg">
+                            <img src="~/Resources/images/captc.png" />
+
+                        </span>
+
+                        @Html.TextBoxFor(model => model.SecurityCode, new { @class = "form-control input-sm bounceIn animation-delay4", @placeholder = "Enter the code" })
+
+
+
+                        <div class="capctcha-content">
+                            <img class="capctcha" alt="" src="~/RegistrationLogin/Captcha" />
+                        </div>
+                    </div>
+
+
+
+                    @Html.ValidationMessageFor(model => model.SecurityCode, "", new { @class = "text-danger" })
+
+
+
+                    <div class="container-login100-form-btn">
+                        @*  <input type="submit" name="send" value="Send" id="login" class="btn btn-dark btn-block col-md-6">*@
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="hyuoprty">
+                        <a class="fbs" href="https://www.facebook.com/FacebookforDevelopers/"><span id="fblogin" class="fa fa-facebook"></span></a>
+                        <a class="fbs" href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><span id="gmaillogin " class=" fa fa-google"></span></a>
+                    </div>
+
+                    <div class="text-center p-t-136" style="display:block;">
+                        <a class="txt2" href="Registration">
+                            Create your Account
+                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="alert alert-danger col-md-6 mt-3" role="alert" style="display: none;" id="attemed">
+                <span>You Have Done Three Attemed Please Wait 30 sec</span>
+            </div>
+            @* <div class="text-center p-t-12">
+                    <span class="txt1">
+                        Forgot
+                    </span>
+                    <a class="txt2" href="@Url.Action("ChangePassword", "RegistrationLogin")">
+                        Username / Password?
+                    </a>
+                </div>*@
+
+
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+        $(".show-password, .hide-password").on('click', function () {
+            var passwordId = $(this).parents('li:first').find('input').attr('id');
+            if ($(this).hasClass('show-password')) {
+                $("#Password").attr("type", "text");
+                $(this).parent().find(".show-password").hide();
+                $(this).parent().find(".hide-password").show();
+            } else {
+                $("#Password").attr("type", "password");
+                $(this).parent().find(".hide-password").hide();
+                $(this).parent().find(".show-password").show();
+            }
+        });
+    });
+
+</script>
+<!--===============================================================================================-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script> -->
+<script>
+
+    $(function(){
+        checkAttemed();
+
+    })
+    $('#login').click((e)=> {
+        e.preventDefault();
+    // check => if form is valid and server response (email password not match)
+    let attemed = localStorage.getItem('attemed') ? localStorage.getItem('attemed') : 0;
+    localStorage.setItem('attemed', ++attemed);
+    checkAttemed();
+    });
+
+    function checkAttemed(){
+        let att = localStorage.getItem('attemed');
+        if(att > 3){
+            $("div.alert").show();
+            //disable login button here
+            afterSomeTime();
+        }
+
+    }
+
+    function afterSomeTime(){
+        setTimeout(()=> {
+            $("div.alert").hide();
+        //enable login button here
+        const at = 0
+        localStorage.setItem('attemed', at);
+    }, 30000);
+    }
+
+</script>
+
+<!--===============================================================================================-->
+<script src="~/Resources/login/vendor/bootstrap/js/popper.js"></script>
+<script src="~/Resources/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/Resources/login/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/Resources/login/vendor/tilt/tilt.jquery.min.js"></script>
+
+<!--===============================================================================================-->
+<script src="~/Resources/login/js/main.js"></script>
+

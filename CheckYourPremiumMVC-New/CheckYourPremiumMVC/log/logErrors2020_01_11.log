@@ -1,0 +1,186 @@
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":6274,"serviceTax":1130,"totalPremium":7404}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":352,"serviceTax":64,"totalPremium":416}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":352,"serviceTax":64,"totalPremium":416}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":352,"serviceTax":64,"totalPremium":416}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 15, 2020","travelEndOn":"January 20, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"hgkjg vbn bm","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"78787876866","insureds[0]":{"name":"trryrtyrtyryy","dob":"December 27, 1990","sex":"Female","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"1","assigneeName":"afsg chdfh","assigneeRelationshipId":"MOTHER"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 15, 2020","travelEndOn":"January 20, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"hgkjg vbn bm","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"78787876866","insureds[0]":{"name":"trryrtyrtyryy","dob":"December 27, 1990","sex":"Female","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"1","assigneeName":"afsg chdfh","assigneeRelationshipId":"MOTHER"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 24, 2020","travelEndOn":"January 30, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"assad cbgbn","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"","insureds[0]":{"name":"trryrtyrtyryy","dob":"April 12, 1984","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"1","assigneeName":"daf fgfd","assigneeRelationshipId":"2"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 24, 2020","travelEndOn":"January 30, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"assad cbgbn","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"7878787686","insureds[0]":{"name":"trryrtyrtyryy","dob":"April 12, 1984","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"1","assigneeName":"daf fgfd","assigneeRelationshipId":"19"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 24, 2020","travelEndOn":"January 30, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"assad cbgbn","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"7878787686","insureds[0]":{"name":"trryrtyrtyryy","dob":"April 12, 1984","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"1","assigneeName":"daf fgfd","assigneeRelationshipId":"19"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 24, 2020","travelEndOn":"January 30, 2020","proposerName":"developer","proposerEmail":"divya@gmail.com","proposerPhone":"9058857757","proposerAddressOne":"gdb vnhgfm","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"December 26, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"rgftgretert","physicianContactNumber":"7878787686","insureds[0]":{"name":"trryrtyrtyryy","dob":"April 12, 1984","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"46567676577","passportExpiry":"April 12, 2022","visaType":"2","assigneeName":"adsfd fghfg","assigneeRelationshipId":"20"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : The underlying provider failed on Open.
+InnerExceptionMessage : 
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":14030,"serviceTax":2526,"totalPremium":16556}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":535,"serviceTax":96,"totalPremium":631}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 17, 2020","travelEndOn":"January 20, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 02, 2020","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr abc Abc","physicianContactNumber":"9884776767","insureds[0]":{"name":"test","dob":"January 02, 2020","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"777777","passportExpiry":"January 03, 2022","visaType":"1","assigneeName":"fsd chfgh","assigneeRelationshipId":"3"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 17, 2020","travelEndOn":"January 20, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 02, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr abc Abc","physicianContactNumber":"9884776767","insureds[0]":{"name":"test","dob":"January 02, 1990","sex":"Male","relationshipId":11,"illness":"None","passportNumber":"777777","passportExpiry":"January 03, 2022","visaType":"1","assigneeName":"fsd chfgh","assigneeRelationshipId":""}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":886,"serviceTax":160,"totalPremium":1046}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 21, 2020","travelEndOn":"January 27, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"lucknow fdhf","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 02, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr Ritu","physicianContactNumber":"9887765766","insureds[0]":null}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (500) Internal Server Error.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 23, 2020","travelEndOn":"January 28, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"Lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 01, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"","physicianContactNumber":"9877577656","insureds[0]":{"name":"adgjafhdssg","dob":"January 07, 1990","sex":"Male","relationshipId":12,"illness":"None","passportNumber":"777777","passportExpiry":"January 01, 2022","visaType":"1","assigneeName":"bgffg fghhfg","assigneeRelationshipId":"1"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 23, 2020","travelEndOn":"January 28, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"Lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 01, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr Ritu","physicianContactNumber":"9877577656","insureds[0]":{"name":"adgjafhdssg","dob":"January 07, 1990","sex":"Male","relationshipId":12,"illness":"None","passportNumber":"777777","passportExpiry":"January 01, 2022","visaType":"1","assigneeName":"bgffg fghhfg","assigneeRelationshipId":""}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 23, 2020","travelEndOn":"January 28, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"Lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 01, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr Ritu","physicianContactNumber":"9877577656","insureds[0]":{"name":"adgjafhdssg","dob":"January 07, 1990","sex":"Male","relationshipId":12,"illness":"None","passportNumber":"777777","passportExpiry":"January 01, 2022","visaType":"1","assigneeName":"bgffg fghhfg","assigneeRelationshipId":""}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : https://igsan.starhealth.in/api/policy/proposals
+InnerExceptionMessage : {"APIKEY":"75dc72e57d2148f5a76676895c18ff11","SECRETKEY":"9ad7d6ccb13343c69d0ceb38d13a5d8f","policyTypeName":"OMPIND","travelStartOn":"January 23, 2020","travelEndOn":"January 28, 2020","proposerName":"test","proposerEmail":"test@gmail.com","proposerPhone":"9876565644","proposerAddressOne":"Lucknow","proposerAddressTwo":"Add 2","proposerAreaId":"56607","gstTypeId":"","gstIdNumber":"","eiaNumber":"","proposerDob":"January 01, 1990","planId":5,"placeOfVisit":"CHN","travelDeclaration":1,"travelPurposeId":1,"physicianName":"Dr Ritu","physicianContactNumber":"9877577656","insureds[0]":{"name":"adgjafhdssg","dob":"January 07, 1990","sex":"Male","relationshipId":12,"illness":"None","passportNumber":"777777","passportExpiry":"January 01, 2022","visaType":"1","assigneeName":"bgffg fghhfg","assigneeRelationshipId":"19"}}
+ErrorMessage : getdetail-webexception=
+InnerExceptionMessage : The remote server returned an error: (400) Bad Request.
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"378b892f97aa4886935e188473883706","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"378b892f97aa4886935e188473883706","redirectToken":"e6c2d31ac87b43f8b8d9b4dc9e6a3512"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"7643110ae2d74f77b5bf08c43b9ecccf","premium":606,"serviceTax":110,"totalPremium":716}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"referenceId":"7643110ae2d74f77b5bf08c43b9ecccf","redirectToken":"6ea321fc30f3a3c5167cc462124a6fda"}
+ErrorMessage : dasd=
+InnerExceptionMessage : {"premium":606,"serviceTax":110,"totalPremium":716}

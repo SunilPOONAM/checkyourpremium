@@ -1,0 +1,2309 @@
+﻿@model Domain.RegistrationDetails
+@{
+    ViewBag.Title = "GetHealthBajajDetais";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Resources/css/TermLf-PraposerForm.css" rel="stylesheet" />
+<script src="~/Content/datatable/jquery-ui.js"></script>
+<link href="~/Content/datatable/jquery-ui.css" rel="stylesheet" />
+<link href="~/Resources/css/jquery.multiselect.css" rel="stylesheet" />
+<script src="~/Resources/js/jquery.multiselect.js"></script>
+
+<style>
+    h5 {
+        background: #c7c7c7;
+    }
+
+    .fa {
+        padding-right: 5px;
+    }
+
+    body {
+        background: #0f73c8;
+    }
+
+    .pj {
+        padding: 0px 1px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .headsFrm {
+        display: none;
+    }
+
+    .healthlbl.adsr {
+        height: 27px;
+    }
+
+    .healthinptd.ghjy {
+        text-align: left !important;
+    }
+
+
+    .healthlbl.adsr + textarea {
+        height: 27px;
+    }
+
+    textarea {
+        border-top: 0px solid #333;
+        border-left: 0px solid #333;
+        border-right: 0px solid #333;
+        border-bottom: 1px solid #333;
+        height: 29px;
+        z-index: 1;
+    }
+
+    input {
+        border: none;
+        height: 29px;
+    }
+
+    .label-txt.boghLnheight {
+        padding-top: 5px;
+    }
+
+    .radio-inline input {
+        top: -10px;
+    }
+
+    .btn-success {
+        line-height: 8px;
+    }
+
+    #navbar {
+        position: relative !important;
+    }
+
+    textarea {
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: normal;
+        font-size: 13px;
+        padding-left: 5px !important;
+    }
+
+    .tisa {
+        line-height: 15px !important;
+        padding-top: 4px;
+    }
+
+    input#travelDeclaration {
+        font-weight: normal;
+        height: 14px !important;
+    }
+
+
+    ul.ddeclrtion li span {
+        display: block;
+        text-align: justify;
+        margin-bottom: 3px;
+    }
+
+    .ContButn {
+        background: #fff;
+    }
+
+    .btnsContinues {
+        background-color: #cc0e17 !important;
+        display: block !important;
+        letter-spacing: 1px !important;
+        color: #fff !important;
+        float: right !important;
+        width: 138px !important;
+    }
+</style>
+
+
+
+<div class="container" style="padding: 0 0 !important;">
+
+    <section class="termLife-Proposerfrm">
+        <form method="post" action="/HealthPlan/GetHealthBajajDetais">
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(model => model.period)
+            @Html.HiddenFor(model => model.policyCategory)
+            @Html.HiddenFor(model => model.schemeId)
+            @Html.HiddenFor(model => model.insureds0.sumInsuredId)
+            @Html.HiddenFor(model => model.policyTypeName)
+            @Html.HiddenFor(model => model.searchId)
+            @Html.HiddenFor(model => model.Amount)
+            @Html.HiddenFor(model => model.planId)
+            @Html.HiddenFor(model => model.insureds1.sumInsuredId)
+            @Html.HiddenFor(model => model.insureds2.sumInsuredId)
+            @Html.HiddenFor(model => model.insureds3.sumInsuredId)
+            @Html.HiddenFor(model => model.companyId)
+            @Html.HiddenFor(model => model.sumInsuredId)
+            @Html.HiddenFor(model => model.eiaNumber)
+            @Html.HiddenFor(model => model.appointeeName)
+            @Html.HiddenFor(model => model.appointeeAge)
+            @Html.HiddenFor(model => model.appointeeAgeTwo)
+            @Html.HiddenFor(model => model.socialStatusUnorganized)
+
+            @if (ViewData["Error"] != null)
+            {
+                <script>
+                    alert('@ViewData["Error"]');
+                </script>
+
+            }
+
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" style="background: #fff;margin-bottom: 0em;padding-bottom: 2em;">
+                <div class="praposerInfo bxcDf">
+                    <h5><span>Proposer (Who is paying for the policy)</span></h5>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Proposer Name </p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" />*@
+                                    @Html.TextBoxFor(model => model.proposerName, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @autocomplete = "off" })
+                                
+                                
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerName)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Date Of Birth </p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" />*@
+                                    @Html.TextBoxFor(model => model.proposerDob, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "true", @required = "true" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerDob)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Mobile</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtb" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" />*@
+                                    @Html.TextBoxFor(model => model.proposerPhone, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @maxlength = "10", @minlength = "10" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerPhone)
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Email</p>
+                                    @*<input name="ctl00$main$txtname" type="text" id="main_txtname" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" />*@
+                                    @Html.TextBoxFor(model => model.proposerEmail, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerEmail)
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl adsr">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Address 1</p>
+                                    @Html.TextAreaFor(model => model.proposerAddressOne, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @cols = "1", @rows = "1", @required = "true" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerAddressOne)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl adsr">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Address 2</p>
+                                    @Html.TextAreaFor(model => model.proposerAddressTwo, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @cols = "1", @rows = "1", @required = "true" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerAddressTwo)
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Pin Code</p>
+                                    @Html.TextBoxFor(model => model.proposerAreaPinCode, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @onchange = "BindCity(this.value,'other');", @minlength = "6", @maxlength = "6" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerAreaPinCode)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">City</p>
+                                    @* @Html.TextBox("CityAddress", "", new { @class = "labelhealthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" ,@autocomplete="off"})*@
+                                    <select id="CityAddress" name="CityAddress" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" required="true"></select>
+                                    @Html.HiddenFor(m => m.proposerAreaCityId)
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Area</p>
+                                    <select id="proposerAreaId" name="proposerAreaId" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" required="true">
+                                        <option value="0">Select</option>
+                                    </select>
+
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerAreaId)
+                            </div>
+                        </div>
+                    </div>
+                    <h5><span>Residence Address</span></h5>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+
+                                <label class="healthlbl adsr">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Residence Address1</p>
+                                    @Html.TextAreaFor(model => model.proposerResidenceAddressOne, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @cols = "1", @rows = "1" })
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl adsr">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Residence Address2</p>
+                                    @Html.TextAreaFor(model => model.proposerResidenceAddressTwo, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @cols = "1", @rows = "1" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Pin Code</p>
+                                    @Html.TextBoxFor(model => model.proposerResidenceAreaPinCode, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @onchange = "BindCity(this.value,'residence');" })
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">City</p>
+                                    @*   @Html.TextBox("CityName", "", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "off" })*@
+                                    <select id="CityName" name="CityName" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7"></select>
+                                    @Html.HiddenFor(m => m.proposerResidenceAreaCityId)
+
+
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bvdgt">
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Area</p>
+                                    <select id="proposerResidenceAreaId" name="proposerResidenceAreaId" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                                        <option value="0">Select</option>
+                                    </select>
+                                </label>
+                                @Html.ValidationMessageFor(m => m.proposerResidenceAreaId)
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h5><span>GST</span></h5>
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">GST Type</p>
+                                    @Html.TextBoxFor(model => model.gstTypeId, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">GST Number</p>
+                                    @Html.TextBoxFor(model => model.gstIdNumber, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bvdgt">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Start On</p>
+                                    @Html.TextBoxFor(model => model.startOn, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.startOn)
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl">
+                                    <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">End On</p>
+                                    @Html.TextBoxFor(model => model.endOn, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @autocomplete = "off" })
+                                </label>
+                                @Html.ValidationMessageFor(m => m.travelEndOn)
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="insuredInfo bxcDf">
+                        <h5><span> Primary Information</span></h5>
+
+                        <div class="divdf">
+                            @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl" id="criticalfalse">
+                                        <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Is Critical Illnes</p>
+                                        <select name="criticalIllness" id="criticalIllness" class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" required="true">
+                                            <option value="false">No</option>
+                                            <option value="true">Yes</option>
+
+                                        </select>
+                                    </label>
+                                    <span style="display: block;font-size:9px; font-weight:bold;color:#333;line-height: 12px;">Have you or any member of your family proposed to be insured, suffered or are suffering from any disease/ailment/adverse medical condition of any kind especially Heart/Stroke/Cancer/Renal disorder/Alzheimer's disease/Parkinsons's disease</span>
+
+                                </div>
+                            </div>*@
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Monthly Income</p>
+                                        @Html.TextBoxFor(model => model.annualIncome, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true", @autocomplete = "off" })
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.annualIncome)
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="insuredInfo bxcDf">
+                        <h5><span>Insured Member Details (Choose Tab & Fill Details)</span></h5>
+
+                        <div class="divdf">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Person Name </p>
+                                        @Html.TextBoxFor(model => model.insureds0.name, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.insureds0.name)
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Date Of Birth </p>
+                                        @Html.TextBoxFor(model => model.insureds0.dob, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "true", @required = "true" })
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.insureds0.dob)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="divdf">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Social Status</p>
+                                        <select class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" name="socialStatus" id="socialStatus" required="true">
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl gndr">
+                                        <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.insureds0.sex, "Male")
+                                            Male
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.insureds0.sex, "Female")
+                                            Female
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(x => x.insureds0.sex, "Transgender")
+                                            Transgender
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divdf">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Weight</p>
+                                        @Html.TextBoxFor(model => model.insureds0.weight, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In Kg", @required = "true" })
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Height</p>
+                                        @Html.TextBoxFor(model => model.insureds0.height, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In centimeters", @required = "true" })
+
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="divdf">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Relation<span>?</span></p>
+                                        @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.Relation, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })*@
+                                        @*@Html.DropDownListFor(model => model.insureds0.relationshipId, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })*@
+                                        @Html.DropDownListFor(model => model.nomineeRelationship, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.insureds0.relationshipId)
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Occupation</p>
+
+                                        @*@Html.DropDownListFor(model => model.insureds0.occupationId, (SelectList)ViewData["occupationList"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })*@
+                                        @Html.DropDownListFor(model => model.insureds0.occupationId, (SelectList)ViewData["occupation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+
+
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.insureds0.occupationId)
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="insuredInfo bxcDf">
+                            <h5><span> Nominee Details (Who will receive the claim.)</span></h5>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div class="bvdgt">
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Nominee One Name </p>
+                                            @Html.TextBoxFor(model => model.nomineeName, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.nomineeName)
+                                    </div>
+                              
+                                @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                    <div class="bvdgt">
+                        <label class="healthlbl">
+                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Nominee One Age</p>
+                            @Html.TextBoxFor(model => model.nomineeAge, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+                        </label>
+
+                    </div>
+                </div>*@
+                            </div>
+                               
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Relation </p>
+
+                                                @Html.DropDownListFor(model => model.nomineeRelationshipTwo, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+
+
+                                            </label>
+                                            @Html.ValidationMessageFor(m => m.nomineeRelationship)
+                                        </div>
+                                    </div>
+                               
+                            </div>
+
+                        </div>
+
+
+                        @*<div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    @if (Model.Plan == "Medi Classic Individual")
+                                    {
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Hospital Cash<span>?</span></p>
+
+                                            <select id="insureds0_hospitalCash" name="insureds0.hospitalCash" class="healthinptd col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                        </label>
+                                    }
+
+                                </div>
+                            </div>*@
+
+
+                        <style>
+                            .linehjt {
+                                line-height: 18px !important;
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                            }
+
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                                ul li {
+                                    list-style: none;
+                                    font-size: 13px;
+                                }
+
+                            #eiaNumber {
+                                border: none;
+                                color: #0919d8;
+                                font-weight: bold;
+                                font-size: 20px;
+                            }
+
+                            select#eiaNumber:focus {
+                                background: none;
+                            }
+
+                            select#eiaNumber option {
+                                border: none;
+                            }
+                        </style>
+                        <div class="divdf">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                                
+                                <div id="description" style="display:none">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-12 col-md-12 col-lg-12">Description</p>
+
+                                        @*@Html.DropDownListFor(model => model.insureds0.description, (SelectList)ViewData["desease"], "Select", new { @class = "shwhlths healthinptd col-xs-12 col-sm-12 col-md-12 col-lg-12", @multiple = "true" })*@
+
+                                        @Html.TextBoxFor(model => model.insureds0.description, new { @class = "healthinptd col-xs-12 col-sm-12 col-md-12 col-lg-12" })
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                                <div class="bvdgt" id="socialDataId">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">PAN India Cover</p>
+                                        @Html.DropDownListFor(model => model.socialStatusInformal, new List<SelectListItem>
+            {
+            new SelectListItem{ Text="", Value = "Select" },
+            new SelectListItem{ Text="Yes", Value = "Yes" },
+            new SelectListItem{ Text="No", Value = "No" },
+
+            }, new { @class = "healthinpt" })
+                                    </label>
+
+                                </div>
+                                <div class="bvdgt">
+                                    <label class="healthlbl">
+                                        <p class="label-txt rt linehjt col-xs-12 col-sm-12 col-md-12 col-lg-12 dosmke">Do you smoke cigarettes/bidis or consume tobacco/alcohol in any form?</p>
+                                        @Html.DropDownListFor(model => model.insureds0.hospitalCash, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinp col-xs-12 col-sm-12 col-md-12 col-lg-12", Required = "true" })
+                                        @Html.ValidationMessageFor(model => model.insureds0.hospitalCash, "", new { @class = "text-danger" })
+
+
+
+
+                                    </label>
+                                    @Html.ValidationMessageFor(m => m.insureds0.hospitalCash)
+                                </div>
+                                @*new point*@
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    @if (Model.NoOfAdults == "2")
+                    {
+                        <div class="insuredInfo bxcDf">
+                            <h5><span>Insured Member 2 Details (Choose Tab & Fill Details)</span></h5>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Person Name </p>
+                                            @Html.TextBoxFor(model => model.insureds1.name, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds1.name)
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Date Of Birth </p>
+                                            @Html.TextBoxFor(model => model.insureds1.dob, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "true" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds1.dob)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Social Status</p>
+                                            <select class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" name="socialStatus" id="socialStatus">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl gndr">
+                                            <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds1.sex, "Male")
+                                                Male
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds1.sex, "Female")
+                                                Female
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds1.sex, "Transgender")
+                                                Transgender
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Weight</p>
+                                            @Html.TextBoxFor(model => model.insureds1.weight, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In Kg" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Height</p>
+                                            @Html.TextBoxFor(model => model.insureds1.height, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In centimeters" })
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="divdf">
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Relation<span>?</span></p>
+                                            @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.Relation, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })*@
+                                            @Html.DropDownListFor(model => model.insureds1.engageManualLabour, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds1.relationshipId)
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Occupation</p>
+
+                                            @Html.DropDownListFor(model => model.insureds1.occupationId, (SelectList)ViewData["occupation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds1.occupationId)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insuredInfo bxcDf">
+                                <h5><span> Nominee Details (Who will receive the claim.)</span></h5>
+
+                                <div class="divdf">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Nominee  Name </p>
+                                                @Html.TextBoxFor(model => model.nomineeNameTwo, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7"})
+                                            </label>
+                                           </div>
+                                    </div>
+                                    
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Relation </p>
+
+                                                @Html.DropDownListFor(model => model.criticalIllness, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+
+
+                                            </label>
+                                            </div>
+                                    </div>
+                                  
+                                </div>
+
+                            </div>
+                            <div class="divdf">
+                                @*<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj" style="display:none">
+                                    <div style="display:none">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt linehjt col-xs-12 col-sm-12 col-md-12 col-lg-12">Has any of the persons to be insured suffer from/or investigated for any of the following?Disorder of the heart, or circulatory system, chest pain, high blood pressure, stroke, asthma any respiratory conditions, cancer tumor lump of any kind, diabetes, hepatitis,disorder of urinary tract or kidneys, blood disorder, any mental or psychiatric conditions, any disease of brain or nervous system, fits (epilepsy) slipped disc, backache, any congenital/ birth defects/ urinary diseases, AIDS or positive HIV, If yes, indicate in the table given below. </p>
+                                            <select id="insureds1_illness" name="insureds1.illness" class="healthinpt col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <option>Select</option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                             </label>
+                                        @Html.ValidationMessageFor(m => m.insureds1.illness)
+                                    </div>
+                                    <div id="description1" style="display:none">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-12 col-md-12 col-lg-12"> Description</p>
+
+                                            @Html.TextBoxFor(model => model.insureds1.description, new { @class = "healthinptd col-xs-12 col-sm-12 col-md-12 col-lg-12" })
+                                        </label>
+                                    </div>
+                                </div>*@
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                                    <div class="bvdgt">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you smoke cigarettes/bidis or consume tobacco/alcohol in any form?</p>
+                                            @Html.DropDownListFor(model => model.insureds1.hospitalCash, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6" })
+
+
+
+                                        </label>
+                                        @*@Html.ValidationMessageFor(m => m.insureds0.occupationId)*@
+                                    </div>
+
+                                    @*<div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you or any of the family members to be covered have/had any health complaints/met with any accident in the past and have been taking treatment/ hospitalization?</p>
+                                                @Html.DropDownListFor(model => model.insureds1.isPersonalAccidentApplicable, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6", Required = "true" })
+
+
+                                            </label>
+
+                                        </div>*@
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    }
+                    @if (Model.NoOfChildren == "1" || Model.NoOfChildren == "2")
+                    {
+                        <div class="insuredInfo bxcDf">
+                            <h5><span>Insured Children 2 Details (Choose Tab & Fill Details)</span></h5>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Person Name </p>
+                                            @Html.TextBoxFor(model => model.insureds2.name, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds2.name)
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Date Of Birth </p>
+                                            @Html.TextBoxFor(model => model.insureds2.dob, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "true" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds2.dob)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Social Status</p>
+                                            <select class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" name="socialStatus" id="socialStatus">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl gndr">
+                                            <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds2.sex, "Male")
+                                                Male
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds2.sex, "Female")
+                                                Female
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds2.sex, "Transgender")
+                                                Transgender
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Weight</p>
+                                            @Html.TextBoxFor(model => model.insureds2.weight, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In Kg" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Height</p>
+                                            @Html.TextBoxFor(model => model.insureds2.height, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In centimeters" })
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="divdf">
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Relation<span>?</span></p>
+                                            @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.Relation, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })*@
+                                            @Html.DropDownListFor(model => model.insureds2.engageManualLabour, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds2.relationshipId)
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Occupation</p>
+
+                                            @Html.DropDownListFor(model => model.insureds2.occupationId, (SelectList)ViewData["occupation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds2.occupationId)
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="insuredInfo bxcDf">
+                                <h5><span> Nominee Details (Who will receive the claim.)</span></h5>
+
+                                <div class="divdf">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Nominee Name </p>
+                                                @Html.TextBoxFor(model => model.nomineePercentClaimTwo, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                            </label>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Relation </p>
+
+                                                @Html.DropDownListFor(model => model.previousMedicalInsurance, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @required = "true" })
+
+
+                                            </label>
+                                            @Html.ValidationMessageFor(m => m.nomineeRelationship)
+                                        </div>
+                                    </div>
+                                </div>
+                                    @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                    <div class="bvdgt">
+                        <label class="healthlbl">
+                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Claim(%) </p>
+                            @Html.TextBoxFor(model => model.nomineePercentClaim, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @required = "true" })
+                        </label>
+                        @Html.ValidationMessageFor(m => m.nomineePercentClaim)
+                    </div>
+                </div>*@
+                                
+
+                            </div>
+                            <div class="divdf">
+                                @*<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj" style="display:none">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt linehjt col-xs-12 col-sm-12 col-md-12 col-lg-12">Has any of the persons to be insured suffer from/or investigated for any of the following?Disorder of the heart, or circulatory system, chest pain, high blood pressure, stroke, asthma any respiratory conditions, cancer tumor lump of any kind, diabetes, hepatitis,disorder of urinary tract or kidneys, blood disorder, any mental or psychiatric conditions, any disease of brain or nervous system, fits (epilepsy) slipped disc, backache, any congenital/ birth defects/ urinary diseases, AIDS or positive HIV, If yes, indicate in the table given below. </p>
+                                            <select id="insureds2_illness" name="insureds2.illness" class="healthinptd col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <option>Select</option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                          </label>
+                                        @Html.ValidationMessageFor(m => m.insureds2.illness)
+                                    </div>
+                                    <div id="description2" style="display:none">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-12 col-md-12 col-lg-12"> Description</p>
+                                            @Html.TextBoxFor(model => model.insureds2.description, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                    </div>
+                                </div>*@
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                                    <div class="bvdgt">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you smoke cigarettes/bidis or consume tobacco/alcohol in any form?</p>
+                                            @Html.DropDownListFor(model => model.insureds2.hospitalCash, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6" })
+
+                                        </label>
+
+                                    </div>
+                                    @*new point*@
+                                    @*<div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you or any of the family members to be covered have/had any health complaints/met with any accident in the past and have been taking treatment/ hospitalization?</p>
+                                                @Html.DropDownListFor(model => model.insureds2.isPersonalAccidentApplicable, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6", Required = "true" })
+
+                                            </label>
+
+                                        </div>*@
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    }
+
+                    @if (Model.NoOfChildren == "2")
+                    {
+                        <div class="insuredInfo bxcDf">
+                            <h5><span>Insured Children 2 Details (Choose Tab & Fill Details)</span></h5>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Person Name </p>
+                                            @Html.TextBoxFor(model => model.insureds3.name, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds3.name)
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Date Of Birth </p>
+                                            @Html.TextBoxFor(model => model.insureds3.dob, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @autocomplete = "true" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds3.dob)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Social Status</p>
+                                            <select class="healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" name="socialStatus" id="socialStatus">
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl gndr">
+                                            <p class="label-txt col-xs-12 col-sm-4 col-md-4 col-lg-4">Gender</p>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds3.sex, "Male")
+                                                Male
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds3.sex, "Female")
+                                                Female
+                                            </label>
+                                            <label class="radio-inline">
+                                                @Html.RadioButtonFor(x => x.insureds3.sex, "Transgender")
+                                                Transgender
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divdf">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Weight</p>
+                                            @Html.TextBoxFor(model => model.insureds3.weight, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In Kg" })
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Height</p>
+                                            @Html.TextBoxFor(model => model.insureds3.height, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @placeholder = "In centimeters" })
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="divdf">
+
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Relation<span>?</span></p>
+                                            @*  @Html.DropDownListFor(model => model.InsuredPersonInfo.Relation, (SelectList)ViewData["relations"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })*@
+                                            @Html.DropDownListFor(model => model.insureds3.engageManualLabour, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                        @Html.ValidationMessageFor(m => m.insureds3.relationshipId)
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                    <div>
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-5 col-md-5 col-lg-5">Occupation</p>
+
+                                            @Html.DropDownListFor(model => model.insureds3.occupationId, (SelectList)ViewData["occupation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                        </label>
+                                      
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="insuredInfo bxcDf">
+                                <h5><span> Nominee Details (Who will receive the claim.)</span></h5>
+
+                                <div class="divdf">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5">Nominee One Name </p>
+                                                @Html.TextBoxFor(model => model.socialStatusBpl, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+                                            </label>
+                                           
+                                        </div>
+                                    </div>
+                                   
+                            
+                               
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                                        <div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Relation </p>
+
+                                                @Html.DropDownListFor(model => model.socialStatusDisabled, (SelectList)ViewData["relation"], "Select", new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7" })
+
+
+                                            </label>
+                                         
+                                        </div>
+                                    </div>
+                                    @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                    <div class="bvdgt">
+                        <label class="healthlbl">
+                            <p class="label-txt col-xs-12 col-sm-5 col-md-5 col-lg-5 tisa">Nominee One Claim(%) </p>
+                            @Html.TextBoxFor(model => model.nomineePercentClaim, new { @class = "healthinptd col-xs-12 col-sm-7 col-md-7 col-lg-7", @type = "number", @required = "true" })
+                        </label>
+                        @Html.ValidationMessageFor(m => m.nomineePercentClaim)
+                    </div>
+                </div>*@
+                                </div>
+
+                            </div>
+                            <div class="divdf">
+                               
+                                <style>
+                                    .dosmke {
+                                        line-height: 17px !important;
+                                        padding-top: 4px;
+                                    }
+                                </style>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                                    
+                                    <div class="bvdgt">
+                                        <label class="healthlbl">
+                                            <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you smoke cigarettes/bidis or consume tobacco/alcohol in any form?</p>
+                                            @Html.DropDownListFor(model => model.insureds3.hospitalCash, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6" })
+
+                                        </label>
+
+                                    </div>
+                                    @*new point*@
+                                    @*<div class="bvdgt">
+                                            <label class="healthlbl">
+                                                <p class="label-txt rt col-xs-12 col-sm-6 col-md-6 col-lg-6 dosmke">Do you or any of the family members to be covered have/had any health complaints/met with any accident in the past and have been taking treatment/ hospitalization?</p>
+                                                @Html.DropDownListFor(model => model.insureds3.isPersonalAccidentApplicable, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-6 col-md-6 col-lg-6", Required = "true" })
+
+                                            </label>
+
+                                        </div>*@
+
+                                </div>
+
+                                
+                            </div>
+
+                        </div>
+                    }
+                    @*Descliams----------------------------------------*@
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj" >
+                                 
+                                   
+
+                                </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+                        <div class="bvdgt">
+                            <label class="healthlbl">
+                                <p class="label-txt rt linehjt col-xs-12 col-sm-12 col-md-12 col-lg-12 dosmke">Do you or any of the family members to be covered have/had any health complaints/met with any accident in the past and have been taking treatment/ hospitalization?</p>
+                                @Html.DropDownListFor(model => model.insureds0.isPersonalAccidentApplicable, new List<SelectListItem> { new SelectListItem { Text = "Select", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" }, }, new { @class = "healthinpt col-xs-12 col-sm-12 col-md-12 col-lg-12", Required = "true" })
+                                @Html.ValidationMessageFor(model => model.insureds0.isPersonalAccidentApplicable, "", new { @class = "text-danger" })
+
+                            </label>
+                            @Html.ValidationMessageFor(m => m.insureds0.isPersonalAccidentApplicable)
+                        </div>
+                        
+                        <div>
+                            <label class="healthlbl">
+                                <p class="label-txt rt linehjt col-xs-12 col-sm-12 col-md-12 col-lg-12">Has any of the persons to be insured suffer from/or investigated for any of the following?Disorder of the heart, or circulatory system, chest pain, high blood pressure, stroke, asthma any respiratory conditions, cancer tumor lump of any kind, diabetes, hepatitis,disorder of urinary tract or kidneys, blood disorder, any mental or psychiatric conditions, any disease of brain or nervous system, fits (epilepsy) slipped disc, backache, any congenital/ birth defects/ urinary diseases, AIDS or positive HIV, If yes, indicate in the table given below.</p>
+                                <div id="ForSelf" style="display:none">
+                                    <span>Self</span>
+                                    @Html.DropDownListFor(model => model.insureds0.illness, new List<SelectListItem>
+                                        {
+                                        new SelectListItem{ Text="Select", Value = "" },
+                                        new SelectListItem{ Text="Yes", Value = "1" },
+                                        new SelectListItem{ Text="No", Value = "0" },
+                                      
+                                        }, new { @class = "healthinpt", Required = "true" })
+                                        @*@Html.RadioButtonFor(model => model.insureds0.illness, "Yes", new { @name = "yes1" })Yes
+                                        @Html.RadioButtonFor(model => model.insureds0.illness, "No", new { @name = "yes2" })No*@
+</div>
+                                <div id="ForSopuse" style="display:none">
+                                    <span>Spouse</span>
+                                    @Html.DropDownListFor(model => model.insureds1.illness, new List<SelectListItem>
+                                        {
+                                        new SelectListItem{ Text="Select", Value = "" },
+                                        new SelectListItem{ Text="Yes", Value = "1" },
+                                        new SelectListItem{ Text="No", Value = "0" },
+
+                                        }, new { @class = "healthinpt"})
+                                </div>
+                                <div id="ForChild1" style="display:none">
+                                    <span>Child 1</span>
+                                    @*@Html.RadioButtonFor(model => model.insureds2.illness, "Yes")Yes
+                                    @Html.RadioButtonFor(model => model.insureds2.illness, "No")No*@
+                                    @Html.DropDownListFor(model => model.insureds2.illness, new List<SelectListItem>
+                                        {
+                                        new SelectListItem{ Text="Select", Value = "" },
+                                        new SelectListItem{ Text="Yes", Value = "1" },
+                                        new SelectListItem{ Text="No", Value = "0" },
+
+                                        }, new { @class = "healthinpt" })
+                                </div>
+                                <div id="ForChild2" style="display:none">
+                                    <span>Child 2</span>
+                                    @Html.DropDownListFor(model => model.insureds3.illness, new List<SelectListItem>
+                                        {
+                                        new SelectListItem{ Text="Select", Value = "" },
+                                        new SelectListItem{ Text="Yes", Value = "1" },
+                                        new SelectListItem{ Text="No", Value = "0" },
+
+                                        }, new { @class = "healthinpt"})
+                                    @*@Html.RadioButtonFor(model => model.insureds3.illness, "Yes")Yes
+                                    @Html.RadioButtonFor(model => model.insureds3.illness, "No")No*@
+                                </div>
+                              
+                                    @*<select id="insureds0_illness" name="insureds0.illness" class="healthinptd col-xs-12 col-sm-12 col-md-12 col-lg-12" required="true">
+                <option>Select</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>*@
+</label>
+                            @Html.ValidationMessageFor(m => m.insureds0.illness)
+                        </div><h3>
+                                  <input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />
+
+Terms & Conditions</h3>
+                        <ul class="ddeclrtion">
+                            <li>
+                                <span>
+                                   <b style="color:blue">1: </b> I  hereby  declare,  on  my  behalf  and  on  behalf  of  all  persons  proposed  to  be  insured,  that  the  above  statements,  answers  and/or  particulars  given  by  me  are true  and  complete  in  all respects  to  the best of my knowledge and  that  I am authorised to propose on behalf of these other persons.
+                                </span>
+
+
+                            </li>
+                            <li>
+                                @*<input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />*@
+                                <span>
+                                    <b style="color:blue">2: </b>  I  understand  that  the  information  provided by me will  form  the basis of  the  insurance policy,  is subject  to  the Board approved underwriting  policy  of  the  insurer and  that  the  policy will come into force only after full payment of the premium chargeable. 
+                                </span>
+
+
+                            </li>
+                            <li>
+                               @* <input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />*@
+                                <span>
+                                    <b style="color:blue">3: </b>  I further declare that I will notify in writing any change occurring in  the  occupation  or  general  health  of  the  life  to  be insured/proposer  after  the  proposal  has  been  submitted  but before communication of the risk acceptance by the company. 
+                                </span>
+
+
+                            </li>
+                            <li>
+                               @* <input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />*@
+                                <span>
+                                    <b style="color:blue">4: </b> I  declare  that  I  consent  to  the  company  seeking  medical information  from  any  doctor  or  hospital who/which  at  any  time has attended on  the person  to be insured/proposer or  from any past or present employer  concerning anything which affects the physical or mental health of  the person  to be  insured/proposer  and  seeking  information  from  any  insurer  to  whom  an application  for insurance on  the person  to be  insured  /proposer has  been  made  for  the  purpose  of   underwriting  the  proposal and/or claim settlement. 
+                                </span>
+
+
+                            </li>
+                            <li>
+                                @*<input type="checkbox" name="travelDeclaration" id="travelDeclaration" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />*@
+                                <span>
+                                    <b style="color:blue">5: </b> I  authorize  the  company  to  share  information  pertaining  to my proposal  including  the medical  records of  the  insured/proposer for  the sole purpose of  underwriting  the proposal and/or claims settlement  and  with  any  Governmental  and/or  Regulatory Authority.
+                                </span>
+
+
+                            </li>
+
+                        </ul>
+
+                        @*<input type="checkbox" name="travelDeclaration" id="gfgfg" class="healthinptd col-xs-1 col-sm-1 col-md-1 col-lg-1" />*@
+                        @*<span style="font-size: 20px; color: #171261; display: block; text-align: justify;">
+                            I would like to personally settle @Html.DropDownListFor(model => model.eiaNumber, new List<SelectListItem>
+                                {
+                                new SelectListItem{ Text="0%", Value = "0" },
+                                new SelectListItem{ Text="10%", Value = "10" },
+                                new SelectListItem{ Text="20", Value = "20" },
+
+                                }, new { @class = "healthinpt" }) of the approved amount at the time of a claim.
+                        </span>*@
+
+                    </div>
+                    @*End --------------------------*@
+                </div>
+                    }
+            </div>
+
+
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="padding-right: 0;">
+                <div class="policyDlkls bxcDf">
+                    <h5 style="background:none;"><span style="color:#fff;font-weight:normal;">Policy Details</span></h5>
+                    <div class="divdf">
+                        <div class="col-lg-12 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Plan :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.Plan</label>
+                                    @Html.HiddenFor(model => model.Plan)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Sum Assured :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.sumAssured</label>
+                                    @Html.HiddenFor(model => model.sumAssured)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Premium(Exclusive Tax) :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.Amount</label>
+
+                                </label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Number of Adults :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.NoOfAdults</label>
+                                    @Html.HiddenFor(model => model.NoOfAdults)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Service Tax :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.serviceTax</label>
+                                    @Html.HiddenFor(model => model.serviceTax)
+                                </label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Number of Children :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.NoOfChildren </label>
+                                    @Html.HiddenFor(model => model.NoOfChildren)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj">
+
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i>Total Premium(Inclusive Tax) :</span>
+                                    <label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pj juKds">@Model.totalPremium</label>
+                                    @Html.HiddenFor(model => model.totalPremium)
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="divdf">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+                            <div>
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i><a href="~/PDF/PolicyWordingBajaj.pdf">Policy Wording</a></span>
+
+
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pj">
+
+                            <div>
+
+                                <label class="healthlbl hj">
+                                    <span class="label-txt rt"><i class="fa fa-sort" aria-hidden="true"></i><a href="~/PDF/BrochureBajaj.pdf">Product Brochure/Features</a></span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @if (ViewBag.referenceId == null)
+            {
+
+                <div class="divdf ContButn col-xs-12 col-sm-8 col-md-8 col-lg-8 pj">
+                    <div id="purchaseForm">
+                        <input id="continue" type="submit" value="Continue" class="btnsContinues" />
+                    </div>
+
+                </div>
+
+            }
+
+        </form>
+        <div class="paynow" style="display:none;">
+            <form method="post" id="frm">
+                <input type="hidden" value="@ViewBag.SecretKey" id="hdnSecreyKey" name="APIKEY" />
+                <input type="hidden" value="@ViewBag.apikey" id="hdnApiKey" name="SECRETKEY" />
+                <input type="hidden" value="@ViewBag.referenceId" id="hdnRefId" name="referenceId" />
+                <input type="hidden" value="@ViewBag.RedirectToken" id="hdnRedirectToken" name="redirectToken" />
+                <input type="button" value="Pay Now" style="background-color: #cc0e17 !important; width: 138px !important; letter-spacing: 1px !important; color: #fff !important;  margin-top: 1%; margin-left: 2%; " onclick="pay();" name="paynow" id="paynow" />
+
+                @*<input type="button" value="Pay Now" class="" onclick="pay();" name="paynow" id="paynow" style=" background-color: #e2464a; border-radius: 10%; color: black; padding: 4px 7px 2px 4px; margin-top: 1%; margin-left: 2%" />*@
+            </form>
+        </div>
+
+
+
+    </section>
+
+
+</div>
+
+<div id="dialog" style="display: none;" align="center">
+  
+    <h5 style="text-align: justify;"><b>Note:</b> Presently. For taking treatment in Zone A cities you will need to pay 20% co-payment on admissible claim amount. You can upgrade to a
+     Pan-india cover wothout co-payment by paying additional premium. Premium Will be calculated</h5>
+    <button style="text-align:left" id="btnok" class="btn-group-toggle" value="OK">OK</button>
+</div>
+
+
+
+
+<script>
+    if ($("#hdnRefId").val() != '') {
+        $(".paynow").show();
+    }
+    $('select[multiple]').multiselect({
+        columns: 1,
+        placeholder: 'Select',
+        search: true,
+        maxSelect: true
+    });
+    $("#proposerDob").datepicker({
+        autoclose: true,
+        yearRange: "1950:2025",
+        dateFormat: "dd-mm-yy",
+        changeMonth: true,
+        changeYear: true,
+    });
+    $("#insureds0_dob").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "1950:2025",
+        changeMonth: true,
+        changeYear: true,
+    });
+    $("#insureds1_dob").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "1950:2025",
+        changeMonth: true,
+        changeYear: true,
+    });
+    $("#insureds2_dob").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "1950:2025",
+        changeMonth: true,
+        changeYear: true,
+    });
+    $("#insureds3_dob").datepicker({
+        autoclose: true,
+        dateFormat: "dd-mm-yy",
+        yearRange: "1950:2025",
+        changeMonth: true,
+        changeYear: true,
+    });
+    $("#startOn").datepicker({
+        autoclose: true,
+        minDate: new Date(),
+        dateFormat: "dd-mm-yy"
+    });
+    $("#endOn").datepicker({
+        autoclose: true,
+        minDate: new Date(),
+        dateFormat: "dd-mm-yy"
+    });
+    $("#proposerAreaCityId").change(function () {
+        var cityId = $("#proposerAreaCityId").val();
+        var pinCode = $("#proposerAreaPinCode").val();
+        if (cityId != "0" && pinCode != "") {
+            BindArea(pinCode, cityId, "other");
+        }
+
+    })
+    //$("#nomineePercentClaim").change(function () {
+    //    if ($(this).val() < 100 && ($(this).val() > 0)) {
+    //        $(".nomineee1").show();
+    //        var balancePercent = 100 - parseInt($("#nomineePercentClaim").val());
+    //        $("#nomineePercentClaimTwo").val(balancePercent);
+    //    }
+    //    else if ($(this).val() == 100) {
+    //        $(".nomineee1").hide();
+
+    //    }
+
+    //    else if ($(this).val() == 0 || ($(this).val() > 100)) {
+    //        $(".nomineee1").hide();
+    //        alert("(%)  Percent value should be greater than 0 and less than equal to 100 ");
+    //        $("#nomineePercentClaim").focus();
+
+    //    }
+    //})
+    //$("#insureds0_illness").change(function () {
+    //    if ($(this).val() == "Yes") {
+    //        $("#description").show();
+    //    }
+    //    else {
+    //        $("#description").hide();
+    //    }
+    //})
+    //$("#insureds1_illness").change(function () {
+    //    if ($(this).val() == "Yes") {
+    //        $("#description1").show();
+    //    }
+    //    else {
+    //        $("#description1").hide();
+    //    }
+    //})
+    //$("#insureds2_illness").change(function () {
+    //    if ($(this).val() == "Yes") {
+    //        $("#description2").show();
+    //    }
+    //    else {
+    //        $("#description2").hide();
+    //    }
+    //})
+    //$("#insureds3_illness").change(function () {
+    //    if ($(this).val() == "Yes") {
+    //        $("#description3").show();
+    //    }
+    //    else {
+    //        $("#description3").hide();
+    //    }
+    //})
+
+    $("#ddlinsureds0engageManualLabour").change(function () {
+        if ($("#ddlinsureds0engageManualLabour :selected").val() == "Yes") {
+            $("#insureds0_engageManualLabour").val("");
+            $("#insureds0_engageManualLabour").show();
+        }
+        else {
+
+            $("#insureds0_engageManualLabour").val("Nil");
+            $("#insureds0_engageManualLabour").hide();
+        }
+    })
+    $("#ddlinsureds1engageManualLabour").change(function () {
+        if ($("#ddlinsureds1engageManualLabour :selected").val() == "Yes") {
+            $("#insureds1_engageManualLabour").val("");
+            $("#insureds1_engageManualLabour").show();
+        }
+        else {
+
+            $("#insureds1_engageManualLabour").val("Nil");
+            $("#insureds1_engageManualLabour").hide();
+        }
+    })
+
+
+
+    $("#ddlinsureds1engageWinterSports1").change(function () {
+        if ($("#ddlinsureds1engageWinterSports1 :selected").val() == "Yes") {
+            $("#insureds1_engageWinterSports").val("");
+            $("#insureds1_engageWinterSports").show();
+        }
+        else {
+
+            $("#insureds1_engageWinterSports").val("Nil");
+            $("#insureds1_engageWinterSports").hide();
+        }
+    })
+
+
+
+
+
+
+
+    $("#ddlinsureds2engageManualLabour").change(function () {
+        if ($("#ddlinsureds2engageManualLabour :selected").val() == "Yes") {
+            $("#insureds2_engageManualLabour").val("");
+            $("#insureds2_engageManualLabour").show();
+        }
+        else {
+
+            $("#insureds2_engageManualLabour").val("Nil");
+            $("#insureds2_engageManualLabour").hide();
+        }
+    })
+    $("#ddlinsureds3engageManualLabour").change(function () {
+        if ($("#ddlinsureds3engageManualLabour :selected").val() == "Yes") {
+            $("#insureds3_engageManualLabour").val("");
+            $("#insureds3_engageManualLabour").show();
+        }
+        else {
+
+            $("#insureds3_engageManualLabour").val("Nil");
+            $("#insureds3_engageManualLabour").hide();
+        }
+    })
+
+
+    $("#ddlinsureds0engageWinterSports").change(function () {
+        if ($("#ddlinsureds0engageWinterSports :selected").val() == "Yes") {
+            $("#insureds0_engageWinterSports").val("");
+            $("#insureds0_engageWinterSports").show();
+        }
+        else {
+
+            $("#insureds0_engageWinterSports").val("Nil");
+            $("#insureds0_engageWinterSports").hide();
+        }
+    })
+    $("#ddlinsureds1engageWinterSports").change(function () {
+        if ($("#ddlinsureds1engageWinterSports :selected").val() == "Yes") {
+            $("#insureds1_engageWinterSports").val("");
+            $("#insureds1_engageWinterSports").show();
+        }
+        else {
+
+            $("#insureds1_engageWinterSports").val("Nil");
+            $("#insureds1_engageWinterSports").hide();
+        }
+    })
+    $("#ddlinsureds1engageWinterSports2").change(function () {
+        if ($("#ddlinsureds1engageWinterSports2 :selected").val() == "Yes") {
+            $("#insureds2_engageWinterSports").val("");
+            $("#insureds2_engageWinterSports").show();
+        }
+        else {
+
+            $("#insureds2_engageWinterSports").val("Nil");
+            $("#insureds2_engageWinterSports").hide();
+        }
+    })
+    $("#ddlinsureds1engageWinterSports3").change(function () {
+        if ($("#ddlinsureds1engageWinterSports3 :selected").val() == "Yes") {
+            $("#insureds3_engageWinterSports").val("");
+            $("#insureds3_engageWinterSports").show();
+        }
+        else {
+
+            $("#insureds3_engageWinterSports").val("Nil");
+            $("#insureds3_engageWinterSports").hide();
+        }
+    })
+
+    $("#insureds0_dob").change(function () {
+
+        var today = new Date();
+        var birthDate = new Date($('#insureds0_dob').val());
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        if (age >= 18) {
+            $(".personal_accident").show();
+        }
+        else {
+            $(".personal_accident").hide();
+        }
+    });
+    //$("#appointeeAgeTwo").change(function () {
+    //    if (parseInt($("#appointeeAgeTwo").val()) < 18) {
+    //        $("#fvappointeeAgeTwo").show();
+    //        $("#continue").hide();
+    //        $("#appointeeAgeTwo").focus();
+    //    }
+    //    else {
+    //        $("#fvappointeeAgeTwo").hide();
+    //        $("#continue").show();
+    //    }
+    //})
+    //$("#appointeeAge").change(function () {
+    //    if (parseInt($("#appointeeAge").val()) < 18) {
+    //        $("#fvappointeeAge").show();
+    //        $("#continue").hide();
+    //        $("#appointeeAge").focus();
+    //    }
+    //    else {
+    //        $("#fvappointeeAge").hide();
+    //        $("#continue").show();
+    //    }
+    //})
+    $("#insureds1_dob").change(function () {
+
+        var today = new Date();
+        var birthDate = new Date($('#insureds1_dob').val());
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        if (age >= 18) {
+            $(".personal_accident").show();
+        }
+        else {
+            $(".personal_accident").hide();
+        }
+    });
+    $("#criticalIllness").change(function () {
+        var isCritical = $("#criticalIllness").val();
+        var policytype = $("#policyTypeName").val();
+        if (isCritical == "true") {
+            alert("Policy purchase does not allowed for critical illness.");
+            $(".btn-success").hide();
+        }
+        else if (policytype == "COMPREHENSIVE INDIVIDUAL") {
+            $('#insureds0_isPersonalAccidentApplicable').prop('disabled', true);
+            //   $("#insureds0_isPersonalAccidentApplicable").append("<option value='true'>Yes</option>");
+
+        }
+        else {
+            $(".btn-success").show();
+        }
+    });
+    //$("#nomineeAge").change(function () {
+    //    if ($(this).val() < 18) {
+    //        $(".appointee1").show();
+    //    }
+    //    else {
+    //        $(".appointee1").hide();
+    //    }
+    //})
+    //$("#nomineeAgeTwo").change(function () {
+    //    if ($(this).val() < 18) {
+    //        $(".appointee2").show();
+    //    }
+    //    else {
+    //        $(".appointee2").hide();
+    //    }
+    //})
+    $("#proposerResidenceAreaCityId").change(function () {
+        var cityId = $("#proposerResidenceAreaCityId").val();
+        var pinCode = $("#proposerResidenceAreaPinCode").val();
+        if (cityId != "0" && pinCode != "") {
+            BindArea(pinCode, cityId, "residence");
+        }
+    })
+    //...................City Bind
+    function BindCity(pinCode, addressType) {
+        if (pinCode == "") {
+            Cleared(addressType);
+            return;
+        }
+        else {
+            if (addressType == "other") {
+                $("#CityAddress").empty();
+            }
+            else if (addressType == "residence") {
+                $("#CityName").empty();
+            }
+
+        }
+
+        $.ajax({
+            url: "/HealthPlan/GetCityBajaj",
+            method: "get",
+            dataType: "json",
+            data: { "pinCode": pinCode },
+            success: function (result) {
+                //if (result != null && result.status == "success") {
+                if (result != null) {
+                    $(".btn").removeClass("disabled");
+
+
+                    $.each(result, function (row) {
+                        if (addressType != "residence") {
+                            var a = $("#CityAddress").append("<option value='" + result[row].city_id + "'>" + result[row].city_name + "</option>");
+                        }
+                        else {
+                            $("#CityName").append("<option value='" + result[row].city_id + "'>" + result[row].city_name + "</option>");
+                        }
+                    });
+
+                    //  $("#proposerAreaCityId").val(result.data[0]);
+                    //$("#CityAddress").val(result.data[1]);
+
+
+
+                    //else {
+                    //   $("#proposerResidenceAreaCityId").val(result.data[0]);
+                    //  $("#CityName").val(result.data[1]);
+
+                    // }
+                    // BindArea(pinCode, result.data[0], addressType);
+                }
+                else {
+                    //  alert(result.data[0]);
+                    $(".btn").addClass("disabled");
+                    Cleared(addressType);
+
+                    return;
+                }
+            }
+        })
+
+    }
+
+    $("#CityName").change(function () {
+
+        var pincode = $("#proposerResidenceAreaPinCode").val();
+        var result = $("#CityName option:selected").val();
+
+        BindArea(pincode, result, "residence");
+    })
+    $("#CityAddress").change(function () {
+
+        var pincode = $("#proposerAreaPinCode").val();
+        var result = $("#CityAddress option:selected").val();
+        var result1 = $("#CityAddress option:selected").text();
+
+        $("#proposerAreaCityId").val(result1);
+        BindArea(pincode, result, "Other");
+    })
+    function Cleared(addressType) {
+
+        $("#proposerAreaPinCode").focus();
+        if (addressType != "residence") {
+            $("#proposerAreaId").empty();
+            $("#proposerAreaCityId").val("");
+            $("#CityAddress").val("");
+        }
+        else {
+            $("#proposerResidenceAreaCityId").val("");
+            $("#CityName").val("");
+            $("#proposerResidenceAreaId").empty();
+        }
+    }
+    function BindArea(pinCode, cityId, addressType) {
+        $.ajax({
+            url: "/HealthPlan/GetAreaBajaj",
+            method: "get",
+            data: { "pinCode": pinCode, "cityId": cityId },
+            success: function (result) {
+
+                if (result != null) {
+                    if (addressType != "residence") {
+                        $("#proposerAreaId").empty();
+
+                    }
+                    else {
+                        $("#proposerResidenceAreaId").empty();
+                    }
+                    $.each(result, function (row) {
+
+                        if (addressType != "residence") {
+                            $("#proposerAreaId").append("<option value='" + result[row].areaID + "'>" + result[row].areaName + "</option>");
+
+                        }
+                        else {
+                            $("#proposerResidenceAreaId").append("<option value='" + result[row].areaID + "'>" + result[row].areaName + "</option>");
+
+                        }
+                    });
+                }
+            }
+        })
+    }
+    //...................City Bind
+    function pay() {
+        var gh = $("#hdnRefId").val();
+       
+        $.ajax({
+            url: "GenerateTokenBajaj",
+            method: "post",
+            data: { "refid": $("#hdnRefId").val() },
+            success: function (response) {
+                if (response) {
+
+                    $("#hdnRedirectToken").val(response.token);
+                    https://webservicesint.bajajallianz.com/Insurance/WS/new_cc_payment.jsp?requestId=5031628&Username=bajajwebservicehealth@checkyourpremium.com&sourceName=HEALTH_WS
+
+                        $("#frm").attr("action", "https://general.bajajallianz.com/Insurance/WS/new_cc_payment.jsp?requestId=" + $("#sumInsuredId").val() + "&Username=bajajwebservicehealth@checkyourpremium.com&sourceName=HEALTH_WS");
+                    $("#frm").submit();
+                    // $("#frm").submit();
+                }
+            }
+
+        });
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        var isCritical = $("#criticalIllness").val();
+        var policytype = $("#policyTypeName").val();
+        if (policytype == "COMPREHENSIVEIND") {
+            $('#insureds0_isPersonalAccidentApplicable').prop('disabled', true);
+
+        }
+    });
+</script>
+
+
+<script language="JavaScript">
+    $("#insureds0_height").change(function () {
+        calculateBmi();
+    });
+    $("#insureds0_weight").change(function () {
+        calculateBmi();
+    });
+    function calculateBmi() {
+        var weight = $("#insureds0_weight").val();
+        var height = $("#insureds0_height").val();
+        if (weight > 0 && height > 0) {
+            var finalBmi = weight / (height / 100 * height / 100)
+            var bmi = finalBmi
+            if (finalBmi < 18.5) {
+                alert("That you are too thin.");
+                $("#insureds0_weight").val("");
+                $("#insureds0_height").val("");
+            }
+            if (finalBmi > 18.5 && finalBmi < 25) {
+                //alert("That you are healthy.");
+            }
+            if (finalBmi > 25) {
+                alert("That you have overweight.");
+                $("#insureds0_weight").val("");
+                $("#insureds0_height").val("");
+            }
+        }
+        else {
+            //alert("Please Fill in Height correctly")
+        }
+    }
+    //-->
+    $("#insureds1_height").change(function () {
+        calculateBmi1();
+    })
+    $("#insureds1_weight").change(function () {
+        calculateBmi1();
+    })
+    function calculateBmi1() {
+        var weight = $("#insureds1_weight").val();
+        var height = $("#insureds1_height").val();
+        if (weight > 0 && height > 0) {
+            var finalBmi = weight / (height / 100 * height / 100)
+            var bmi = finalBmi
+            if (finalBmi < 18.5) {
+                alert("That you are too thin.");
+                $("#insureds1_weight").val("");
+                $("#insureds1_height").val("");
+            }
+            if (finalBmi > 18.5 && finalBmi < 25) {
+                //alert("That you are healthy.");
+            }
+            if (finalBmi > 25) {
+                alert("That you have overweight.");
+                $("#insureds1_weight").val("");
+                $("#insureds1_height").val("");
+            }
+        }
+        else {
+            // alert("Please Fill in Height correctly")
+        }
+    }
+    //------
+    $("#insureds2_height").change(function () {
+        calculateBmi1();
+    })
+    $("#insureds2_weight").change(function () {
+        calculateBmi1();
+    })
+    function calculateBmi2() {
+        var weight = $("#insureds2_weight").val();
+        var height = $("#insureds2_height").val();
+        if (weight > 0 && height > 0) {
+            var finalBmi = weight / (height / 100 * height / 100)
+            var bmi = finalBmi
+            if (finalBmi < 18.5) {
+                alert("That you are too thin.");
+                $("#insureds2_weight").val("");
+                $("#insureds2_height").val("");
+            }
+            if (finalBmi > 18.5 && finalBmi < 25) {
+                //alert("That you are healthy.");
+            }
+            if (finalBmi > 25) {
+                alert("That you have overweight.");
+                $("#insureds2_weight").val("");
+                $("#insureds2_height").val("");
+            }
+        }
+        else {
+            //  alert("Please Fill in Height correctly")
+        }
+    }
+    //-------------
+    $("#insureds3_height").change(function () {
+        calculateBmi3();
+    })
+    $("#insureds3_weight").change(function () {
+        calculateBmi3();
+    })
+    function calculateBmi1() {
+        var weight = $("#insureds3_weight").val();
+        var height = $("#insureds3_height").val();
+        if (weight > 0 && height > 0) {
+            var finalBmi = weight / (height / 100 * height / 100)
+            var bmi = finalBmi
+            if (finalBmi < 18.5) {
+                alert("That you are too thin.");
+                $("#insureds3_weight").val("");
+                $("#insureds3_height").val("");
+            }
+            if (finalBmi > 18.5 && finalBmi < 25) {
+                //alert("That you are healthy.");
+            }
+            if (finalBmi > 25) {
+                alert("That you have overweight.");
+                $("#insureds3_weight").val("");
+                $("#insureds3_height").val("");
+            }
+        }
+        else {
+            //alert("Please Fill in Height correctly")
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#proposerPhone").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#proposerAreaPinCode").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('#proposerName').keydown(function (e) {
+            if (e.shiftKey || e.ctrlKey || e.altKey) {
+                e.preventDefault();
+            } else {
+                var key = e.keyCode;
+                if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                    e.preventDefault();
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        var nameself = $("#proposerName").val();
+        var age = $("#proposerDob").val();
+        var age1 = $("#appointeeName").val();
+        var age2 = $("#appointeeAge").val();
+        var age3 = $("#appointeeAgeTwo").val();
+        $("#insureds0_name").val(nameself);
+        $("#insureds0_dob").val(age);
+     
+        $("#insureds1_dob").val(age1);
+       
+        $("#insureds2_dob").val(age2);
+      
+        $("#insureds3_dob").val(age3);
+       
+        $("#nomineeRelationship").val("Self")
+        $("#nomineeRelationship").css("disabled", "true");
+       
+      //  alert(zone);
+        //if (zone == "2") {
+        //    $("#socialDataId").css("display", "block");
+        //}
+        //else {
+        //    $("#socialDataId").css("display", "none");
+        //}
+      
+        /////////////////////////////
+           
+         var noofchild = $("#NoOfChildren").val();
+         var NoOfAdults = $("#NoOfAdults").val();
+        
+         if(NoOfAdults=="1")
+         {
+             $("#ForSelf").css("display", "block");
+         }
+         if (NoOfAdults == "2") {
+             $("#ForSelf").css("display", "block");
+             $("#ForSopuse").css("display", "block");
+         } if (noofchild == "1") {
+             $("#ForChild1").css("display", "block");
+         } if (noofchild == "2") {
+             $("#ForChild1").css("display", "block");
+             $("#ForChild2").css("display", "block");
+         }
+
+    });
+    $("#socialStatusInformal").change(function () {
+        // socialStatusUnorganized
+        var zone = $("#socialStatusInformal").val();
+        if (zone == "Yes") {
+            $("#socialStatusUnorganized").val("1");
+        }
+        //else {
+        //    $("#socialStatusUnorganized").val("2");
+        //}
+    })
+</script>
+<script>
+    $("#socialStatusInformal").change(function () {
+        var panindia = $("#socialStatusInformal").val();
+        if(panindia=="Yes")
+        {
+
+
+        }
+    });
+   
+    $(function () {
+        $("#dialog").dialog({
+            modal: true,
+            autoOpen: false,
+         //   title: "bajaj.bimaforall.com says",
+            width: 500,
+            height: 220
+        });
+     
+        $("#socialStatusInformal").change(function () {
+            var panindia = $("#socialStatusInformal").val();
+            if (panindia == "Yes") {
+
+                $('#dialog').dialog('open');
+            }
+        });
+    });
+    $("#btnok").click(function () {
+        $('#dialog').dialog('close');
+    })
+    </script>
+@*pppppppppppppppppppppppppp*@
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        
+
+        $("#insureds0_illness").change(function () {
+            var pass = $("#insureds0_illness").val();
+
+        if (pass == "1") {
+
+            $("#travelDeclaration").hide();
+            alert('Policy purchase does not allowed for critical illness.');
+        }
+        else {
+            $("#travelDeclaration").show();
+        }
+
+        });
+        $("#insureds1_illness").change(function () {
+            var pass = $("#insureds0_illness").val();
+            var pass1 = $("#insureds1_illness").val();
+
+            if (pass1 == "1" || pass == "1") {
+
+                $("#travelDeclaration").hide();
+                alert("Policy purchase does not allowed for critical illness.");
+            }
+            else {
+                $("#travelDeclaration").show();
+            }
+
+        });
+        $("#insureds2_illness").change(function () {
+            var pass = $("#insureds0_illness").val();
+            var pass1 = $("#insureds1_illness").val();
+            var pass2 = $("#insureds2_illness").val();
+
+            if (pass2 == "1" || pass == "1" || pass1 == "1") {
+
+                $("#travelDeclaration").hide();
+                alert("Policy purchase does not allowed for critical illness.");
+            }
+            else {
+                $("#travelDeclaration").show();
+            }
+
+        });
+        $("#insureds3_illness").change(function () {
+            var pass = $("#insureds0_illness").val();
+            var pass1 = $("#insureds1_illness").val();
+            var pass2 = $("#insureds2_illness").val();
+            var pass3 = $("#insureds3_illness").val();
+            if (pass3 == "1" || pass2 == "1" || pass == "1" || pass1 == "1") {
+
+                $("#travelDeclaration").hide();
+                alert("Policy purchase does not allowed for critical illness.");
+            }
+            else {
+                $("#travelDeclaration").show();
+            }
+
+        });
+    });
+</script>
+
+<script>
+
+    jQuery(function () {
+        var checks = $('#travelDeclaration,#travelDeclaration');
+
+        checks.click(function () {
+            if (checks.filter(':checked').length == checks.length) {
+                $('#purchaseForm').show();
+            } else {
+                $('#purchaseForm').hide();
+            }
+        }).triggerHandler('click')
+
+
+    })
+
+</script>

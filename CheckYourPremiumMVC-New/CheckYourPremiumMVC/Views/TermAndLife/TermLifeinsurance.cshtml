@@ -1,0 +1,914 @@
+﻿@model Domain.GetIndiaFirstResponceDetail
+
+@{
+    ViewBag.Title = "TermLifeinsurance";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string baseURL = System.Configuration.ConfigurationManager.AppSettings["baseURL"].ToString();
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+@*<script src="~/Content/jquery-3.4.1.min.js"></script>*@
+<script src="~/Content/datatable/jquery-ui.js"></script>
+<link href="~/Content/datatable/jquery-ui.css" rel="stylesheet" />
+
+
+
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+
+
+<link rel="stylesheet" href="~/Resources/css/termLife.css">
+<link rel="stylesheet" href="~/Resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Resources/css/button.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<!--Hindi Font Poppins-->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="~/Resources/css/Homepage.css" rel="stylesheet" />
+
+
+
+
+
+
+<script>
+    // WRITE THE VALIDATION SCRIPT.
+    function isNumber(evt) {
+        var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+        if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+            return false;
+
+        return true;
+    }
+</script>
+
+<script>
+    //$(document).ready(function () {
+    function ValidateAge() {
+        // window.location = "quotes_TermLife";
+        //   $("#main_btnsave").click(function () {
+        var nowDate = new Date()
+        var GetPremium = new Object();
+        var fullName = $('#txtname').val();
+        var Phone = $('#txtmobile').val();
+        var Email = $('#email').val();
+        var DOB = $('#datetimepicker').val();
+        var DOB1 = $('#datetimepicker').val();
+        var dtt = $('#hdnDate').val();
+        var Smoke = $('#ddlTobacco').val();
+        var Income = $('#ddlIncome').val();
+        var Gender = $('#ddlGender').val();
+
+        var DOBnew = DOB1.toString("dd/MM/yyyy");
+        var d = DOBnew;
+        var d = d.split("-");
+        var d = d.pop();
+        //  alert(ds);
+        hdnDate.value = dtt.toString("dd/MM/yyyy");
+        var dt = hdnDate.value;
+        var dt = dt.split("/");
+        var dt = dt.pop();
+        //alert(dt);
+        //dob = new Date(DOB);
+        var today = new Date();
+        today = today.toString("dd/MM/yyyy");
+        var age = Math.floor((dt - d));
+        var Ageee = $('#age').html(age + ' years old');
+        var Age = age.toString();
+
+        if (age < 18) {
+            $('.dtmsg').removeClass('hidden');
+            $('.dtmsg').show();
+        }
+        else {
+            // else, do not display message
+            $('.dtmsg').addClass('hidden');
+        }
+        var $phoneno = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+        if (!$('#txtmobile').val().match($phoneno)) {
+            // there is a mismatch, hence show the error message
+            $('.mobmsg').removeClass('hidden');
+            $('.mobmsg').show();
+        }
+        else {
+            // else, do not display message
+            $('.mobmsg').addClass('hidden');
+        }
+        var $emailval = /^([\w-\.]+\u0040([\w-]+\.)+[\w-]{2,4})?$/;
+        if (!$('#email').val().match($emailval)) {
+            // there is a mismatch, hence show the error message
+            $('.emailmsg').removeClass('hidden');
+            $('.emailmsg').show();
+        }
+        else {
+            // else, do not display message
+            $('.emailmsg').addClass('hidden');
+        }
+        //............................................
+        //...........................................
+        var ADB = "0";
+        var ATPD = "0";
+        var CI = "0";
+        var HCB = "0";
+        var LAProposerSame = "false";
+        var PEBased = "";
+        var Term = "";
+        var WOP = "No";
+        var additionalBenefit = "";
+        var age = "34";
+        var betterHalfBenefit = "No";
+        var bond = "";
+        var childAge = "";
+        var childGender = "";
+        var claimsOption = "";
+        var distributionChannel = "Corporate Agent";
+        var flexibleBenefitYear = "";
+        var frequency = "Yearly";
+        var full_Name = " ";
+        var index = "0";
+        var investmentStrategy = "";
+        var largeCap = "";
+        var managed = "";
+        var maturityAge = "0";
+        var maturityOption = "";
+        var moneyMarket = "";
+        var payoutMonths = "";
+        var payoutOption = "LumpSum";
+        var payoutPercentageIncreasingIncome = "0";
+        var payoutPercentageLevelIncome = "0";
+        var payoutPercentageLumpsum = "100";
+        var pdf = "No";
+        var policyOption = "Life Cover with Level Sum Assured";
+        var policyTerm = "36";
+        var postponement = "";
+        var premiumPayingTerm = "36";
+        var product = "Zindagiplus";
+        var risingStar = "No";
+        var spouseAge = "";
+        var spouseDOB = "";
+        var spouseFirstName = "";
+        var spouseGender = "";
+        var spouseLastName = " ";
+        var spouseTobaccoUser = "No";
+        var staff = "No";
+        var sumAssured = "30000000";
+        var top250 = "";
+        var topUpBenefitPercentage = "";
+        var tranId = "";
+        var workSiteFlag = "No";
+
+        var LAFullName = "";
+
+        //.............................................
+        //  $(function insertrecord(){
+        ///./......................Data Insert.................................
+
+        var DataInsert = {};
+        DataInsert.fullName = fullName;
+        DataInsert.Phone = Phone;
+        DataInsert.Email = Email;
+        DataInsert.Smoke = Smoke;
+        DataInsert.Age = Age;
+        DataInsert.Income = Income;
+        DataInsert.Gender = Gender;
+        debugger;
+        DataInsert.DOB = DOB;
+
+        $.ajax({
+            type: "POST",
+            url: "/TermAndLife/InsertDataAPI",
+            data: '{DataInsert: ' + JSON.stringify(DataInsert) + '}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+
+            }
+        });
+
+        var customer = { 'product': 'Zindagiplus', 'fullName': 'abc xyz', 'cliGender': Gender, 'age': Age, 'cliDOB': DOB, 'maturityAge': '0', 'frequency': 'Yearly', 'smoke': Smoke, 'policyTerm': '36', 'premiumPayingTerm': '36', 'sumAssured': '30000000', 'staff': 'No', 'workSiteFlag': 'No', 'index': '0', 'ADB': '0', 'ATPD': '0', 'CI': '0', 'HCB': '0', 'Term': '', 'WOP': 'No', 'pdf': 'No', 'childAge': '', 'childGender': '', 'maturityOption': '', 'flexibleBenefitYear': '', 'postponement': '', 'largeCap': '', 'top250': '', 'bond': '', 'moneyMarket': '', 'PEBased': '', 'managed': '', 'claimsOption': '', 'LAProposerSame': 'false', 'LAFullName': fullName, 'LAEmail': Email, 'LANumber': Phone, 'LATobacco': Smoke, 'LAAge': Age, 'LADOB': DOB, 'investmentStrategy': '', 'LAGender': Gender, 'risingStar': 'No', 'policyOption': 'Life Cover with Level Sum Assured', 'distributionChannel': 'Corporate Agent', 'betterHalfBenefit': 'No', 'spouseFirstName': '', 'spouseLastName': ' ', 'spouseDOB': '', 'spouseGender': '', 'spouseAge': '', 'spouseTobaccoUser': 'No', 'additionalBenefit': '', 'topUpBenefitPercentage': '', 'payoutOption': 'LumpSum', 'payoutMonths': '', 'payoutPercentageLumpsum': '100', 'payoutPercentageLevelIncome': '0', 'payoutPercentageIncreasingIncome': '0', 'tranId': '' };
+        var urlapi = $("#baseurl").val() + "WhitelabelAPI/v2/GetPremium";
+        console.log(JSON.stringify(customer));
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify(customer),
+            //url: "http://103.118.2.17/whitelabelapi/v2/getpremium",
+            url: urlapi,
+            contentType: "application/json",
+
+            success: function (data) {
+
+                console.log(data);
+                //............................Save Responce.........................
+                var user = {};
+                user.Action = "Insert"
+                user.pdfName = data.pdfName;
+                user.premium = data.premium;
+                user.totalPremium = data.totalPremium;
+                user.accidentalDeathPremium = data.accidentalDeathPremium;
+                user.permanentDisabilityPremium = data.permanentDisabilityPremium;
+                user.criticalIllnessPremium = data.criticalIllnessPremium;
+                user.premiumWaiver = data.premiumWaiver;
+                user.betterHalfPremium = data.betterHalfPremium;
+                user.basePremium = data.basePremium;
+                user.hcbPremium = data.hcbPremium;
+                user.error = data.error;
+                user.sumAssured = data.sumAssured;
+                user.Company = "­­Edelweiss Tokio Life Insurance";
+                console.log(JSON.stringify(user));
+                $.ajax({
+                    type: "POST",
+                    url: "TermLifeinsurance",
+                    data: '{user: ' + JSON.stringify(user) + '}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+
+                        document.location.href = "/QuoteTermLf_/QuoteTermLife";
+                    }
+
+                });
+
+            }
+
+
+        });
+
+
+    }
+    //});
+
+    function ValidateIndiaFirst() {
+        var _searchData = "";
+        var nowDate = new Date()
+        var GetPremium = new Object();
+        var fullName = $('#txtname').val();
+        var Phone = $('#txtmobile').val();
+        var Email = $('#email').val();
+        var DOB = $('#datetimepicker').val();
+        var DOB1 = $('#datetimepicker').val();
+        var dtt = $('#hdnDate').val();
+        var Smoke = $('#ddlTobacco').val();
+        var Income = $('#ddlIncome').val();
+        var Gender = $('#ddlGender').val();
+        var DOBnew = DOB1.toString("dd/MM/yyyy");
+        var d = DOBnew;
+        var d = d.split("-");
+        var d = d.pop();
+        hdnDate.value = dtt.toString("dd/MM/yyyy");
+        var dt = hdnDate.value;
+        var dt = dt.split("/");
+        var dt = dt.pop();
+        var today = new Date();
+        today = today.toString("dd/MM/yyyy");
+        var age = Math.floor((dt - d));
+        var Ageee = $('#age').html(age + ' years old');
+        var Age = age.toString();
+        location.href = "/TermAndLife/TermLifeList?ageSelf=" + Age + "&Gender=" + $('#ddlGender').val() + "&Smoke=" + $('#ddlTobacco').val() + "&Suminsured=" + $('#Suminsured').val() + "&POlicyTerm=" + $('#POLICY_TERM').val() + "&Frequency=" + $('#Frequency').val();
+    }
+</script>
+
+
+
+
+
+<style>
+    .bootstrap-datetimepicker-widget {
+        position: fixed !important;
+        z-index: 99999999999999 !important;
+    }
+
+
+    .line-box {
+        display: none;
+    }
+
+    body {
+        overflow: auto !important;
+    }
+
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+    }
+
+
+
+    body {
+        overflow: hidden;
+    }
+
+    #msform input.btn-insidebtn {
+        margin-top: 8rem;
+    }
+
+
+
+    #msform input, #msform textarea {
+        margin-bottom: 0;
+    }
+
+    .middle-two p span {
+        color: red;
+        font-size: 10px;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        text-align: left;
+        float: left;
+    }
+
+    label.healthlbl span {
+        color: red !important;
+        font-size: 10px !important;
+        font-weight: bold !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+
+    .middle-two div {
+        position: relative;
+        float: left;
+        width: 100%;
+        clear: both;
+    }
+
+    span.dtmsg {
+        position: relative;
+    }
+
+    #cssmenu > ul > li > a {
+        width: 164px;
+    }
+
+    #ui-datepicker-div {
+        top: 285.578px !important;
+    }
+
+    #msform input.btn-primary-insbtnerd {
+        text-align: center;
+        position: relative;
+        z-index: 9999999999;
+    }
+
+    .middle-two div {
+        margin-top: 13px;
+    }
+
+    .ghyurf {
+        margin-bottom: 8px !important;
+    }
+
+    #one {
+        color: #fff;
+    }
+
+
+    .contertyf {
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+
+    #msform input {
+        margin-bottom: 13px;
+    }
+
+    .header {
+        height: 38px;
+        line-height: 28px;
+    }
+
+
+    .foklutyheight {
+        position: relative !important;
+    }
+
+    .acount-icon ul li {
+        text-align: left !important;
+    }
+
+    .footer {
+        margin-top: 0rem !important;
+    }
+</style>
+
+
+
+
+
+<input type="hidden" id="baseurl" value="@baseURL" />
+<div class="container dxcfgh">
+
+    <div class="row">
+
+        
+        <form method="post" action="TermLifeinsurance">
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+            @*<input name="__RequestVerificationToken" type="hidden">*@
+            <div class="hidden-xs col-sm-6 col-md-6">
+                <div class="car-insurance">
+                    <figure class="snip1456">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample50.jpg" alt="sample50" />
+                        <div class="title-car">
+                            <div>
+                                <h2><span>Term Life<br />Insurance</span></h2>
+                                @*<h4><span style="color:#000;visibility:hidden;">100% Claims Assistance *</span></h4>*@
+                                <h4>
+                                    <span style="display: block; margin: 0 auto; width: 95%; padding-top: 0px; position: relative; top: 5px; ">
+                                        <img src="~/Resources/images/yoga-pose.png" style="opacity:1;" class="img-responsive" />
+                                    </span>
+
+                                </h4>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="car-insurance-two">
+
+                    <div id="msform">
+                        <!-- progressbar -->
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:1px;">
+                                <span>Help us with your Details</span>
+
+                            </h3>
+
+                            <div class="row-health">
+                                @*<h5>Protection against all forms of death, disease & disability</h5>*@
+
+                                <div class="middle-two">
+
+                                    <div>
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-user"></i>Name</p>
+                                            @* <input id="txtname" class="healthinpt  " required="">*@
+                                            @Html.TextBoxFor(model => model.fullName, new { @placeholder = " ", @class = "healthinpt", @autocomplete = "off" })
+                                            @Html.ValidationMessageFor(model => model.fullName, "", new { @class = "text-danger" })
+
+
+                                            @* <span class="emsg hidden" style="color:red;font-size:10px;font-weight:bold">Please Enter a Valid Name</span>*@
+                                            @*<input type="text" class="healthinpt" id="txtname">*@
+
+                                        </label>
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-envelope" aria-hidden="true"></i>Email</p>
+                                            @*<input id="email" class="healthinpt  ">*@
+                                            @Html.TextBoxFor(model => model.Email, new { @placeholder = " ", @class = "healthinpt", @autocomplete = "off", @required = "true" })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                            @*<span class="emailmsg hidden" style="color:red;font-size:10px;font-weight:bold">Please Enter a Valid Email</span>*@
+                                            @*<input type="text" class="healthinpt" id="email">*@
+
+                                        </label>
+                                    </div>
+
+                                    <div>
+
+                                        <label class="healthlbl ghyurf col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-calendar" aria-hidden="true"></i>DOB</p>
+                                            @*  <input id="datetimepicker" class="healthinpt" required>*@
+
+                                            @*<div id='datetimepicker'>*@
+                                            @*<input type='text' class="form-control" id="datapiker" data-date-format="DD MMMM YYYY" style="margin-bottom: 0;" />*@
+                                            @Html.TextBoxFor(model => model.DOB, new { @class = "healthinpt", @id = "datetimepicker", @autocomplete = "off", Required = "true" })
+                                            @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+                                            @*</div>*@
+
+                                            @*  <span class="dtmsg hidden" style="color:red;font-size:10px;font-weight:bold">Please Enter a Valid Age</span>*@
+                                            @*<input type="text" class="healthinpt" id="txtmobile">*@
+
+                                        </label>
+
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-birthday-cake" aria-hidden="true"></i>Age</p>
+                                            @*<input id="email" class="healthinpt  ">*@
+                                            @Html.TextBoxFor(model => model.Age, new { @placeholder = " ", @class = "healthinpt", @autocomplete = "off", Required = "true", @readonly = "" })
+                                            @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                                            @*  <span class="emailmsg hidden" style="color:red;font-size:10px;font-weight:bold">Please Enter a Valid Email</span>*@
+                                            @*<input type="text" class="healthinpt" id="email">*@
+
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-phone-square" aria-hidden="true"></i>Mobile</p>
+                                            @*<input id="txtmobile" maxlength="10" class="healthinpt" onkeypress="javascript:return isNumber(event)" required>*@
+                                            @Html.TextBoxFor(model => model.Phone, new { @placeholder = " ", @class = "healthinpt", @maxlength = "10", @minlength = "10", @autocomplete = "off", Required = "true" })
+                                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                                            @*  <span class="mobmsg hidden" style="color:red;font-size:10px;font-weight:bold">Please Enter a Valid Phone number</span>*@
+                                            @*<input type="text" class="healthinpt" id="txtmobile">*@
+
+                                        </label>
+
+                                        <label class="healthlbl ghyurf col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-fire"></i>Smoke ?</p>
+                                            @Html.DropDownListFor(model => model.Smoke, new List<SelectListItem>{new SelectListItem{ Text="Select", Value = "" },new SelectListItem{ Text="Yes", Value = "true" },new SelectListItem{ Text="No", Value = "false" },
+
+}, new { @class = "healthinpt", Required = "true" })
+                                            @Html.ValidationMessageFor(model => model.Smoke, "", new { @class = "text-danger" })
+                                            @*<input type="text" class="healthinpt" id="txtname">*@
+
+                                        </label>
+                                    </div>
+
+
+                                    <div>
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-inr" aria-hidden="true"></i>Income</p>
+                                            @* <input ID="TextBox3"  class="healthinpt  ">*@
+                                            @Html.DropDownListFor(model => model.Income, new List<SelectListItem>
+{
+    new SelectListItem{ Text="Select", Value = "" },
+    new SelectListItem{ Text="Upto 3 Lacs Per Annum", Value = "Upto 3 Lacs Per Annum" },
+    new SelectListItem{ Text="3-5 Lacs Per Annum", Value = "3-5 Lacs Per Annum" },
+     new SelectListItem{ Text="5-7 Lacs Per Annum", Value = "5-7 Lacs Per Annum" },
+    new SelectListItem{ Text="7-10 Lacs Per Annum", Value = "7-10 Lacs Per Annum" },
+     new SelectListItem{ Text="10-15 Lacs Per Annum", Value = "10-15 Lacs Per Annum" },
+    new SelectListItem{ Text="15 Lacs+ Per Annum", Value = "15 Lacs+ Per Annum" },
+
+}, new { @class = "healthinpt", Required = "true" })
+
+
+                                        </label>
+
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-users"></i>Gender</p>
+                                            @*<input ID="TextBox1"  class="healthinpt  ">*@
+                                            @Html.DropDownListFor(model => model.Gender, new List<SelectListItem>
+{
+    new SelectListItem{ Text="Select", Value = "" },
+    new SelectListItem{ Text="Male", Value = "Male" },
+    new SelectListItem{ Text="Female", Value = "Female" },
+
+ }, new { @class = "healthinpt", Required = "true" })
+                                            @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="healthlbl col-xs-12 col-sm-6 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-map-marker"></i>State</p>
+                                            @*<input ID="TextBox1"  class="healthinpt  ">*@
+                                            @Html.DropDownListFor(model => model.city, (SelectList)ViewData["State"], "Select", new { @class = "healthinpt", required = "required", @onkeyup = "myFunction()" })
+                                            @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+
+                                        </label>
+                                    </div>
+
+
+                                    <input type="hidden" id="Frequency" value="Yearly"><input type="hidden" id="POLICY_TERM" value="40">
+                                    <input type="hidden" id="Suminsured" value="10000000">
+
+                                    <input type="text" id="hdnDate" style="visibility:hidden" />
+
+                                </div>
+                            </div>
+
+                            @*<input type="text" class="next action-button btn-primary-insbtn btn-lifebtn" id="btnsave" placeholder="View Free Quotes"  onserverclick="Submit_Click" onclick="Submit_Click" />*@
+                            @*<input class="next action-button btn-primary-insbtn btn-lifebtn" id="btnsave" placeholder="View Free Quotes" onclick="ValidateAge();" />*@
+                            @* <input class="nexlt action-button btn-primary-insbtn bltn-lifebtn" style="color:#fff;" id="btnsave" value="View Free Quotes" type="button" placeholder="View Free Quotes" onclick="ValidateAge();" />*@
+                            @* <input class="nexlt action-button btn-primary-insbtn bltn-lifebtn" style="color:#fff;" id="btnsave" value="View Free Quotes" type="button" placeholder="View Free Quotes" onclick="ValidateIndiaFirst();" />*@
+                            <input type="submit" class="btn-custom btn-primary-insbtnerd" placeholder="Proceed" value="Proceed" />
+
+                            <div style="margin: 1% 1% 2%; font-weight: bold; text-align: center; font-size: 12px;">
+                                <span>By clicking you agree to our <a href="/PDF/CYP_Privacy%20Policy_Release.pdf" target="_blank">Privacy policy</a> & <a href="/PDF/CYP%20-%20Terms%20and%20Conditions_Release.pdf" target="_blank">Terms & Conditions</a></span>
+                                <span style="display:block;width:100%;text-align-last:right;font-size:9px;color: #676767;">*(Standard T&C Apply)</span>
+                            </div>
+
+
+
+                        </fieldset>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+</div>
+
+
+@*<script>
+        $(function () {
+            $('#datetimepicker').datepicker({
+                autoclose: true,
+                dateFormat: "dd/mm/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>*@
+@* pppppppppppppppppppppppppppppppp.......................................*@
+<script>
+    $(function () {
+        $('#datetimepicker').datepicker({
+            yearRange: '1939:2002',
+            autoclose: true,
+
+            dateFormat: "dd/mm/yy",
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+</script>
+@*and id ..............................................*@
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var date = $('hdnDate').val();
+        hdnDate.value = Date.now();
+        //      var s = $('#hdnDate').val($.datepicker.formatDate("mm/dd/yy", new Date()))
+        var d1 = new Date();
+        var d2 = d1.toLocaleDateString("en-IN");
+        hdnDate.value = d2;
+
+        var s = hdnDate.value;
+
+    });
+</script>
+
+<script>
+    $("#datetimepicker").change(function () {
+
+        var dob = $("#datetimepicker").val();
+        var dtt = $("#hdnDate").val();
+        var array = dob.split('/');
+        var day = parseInt(array[0]);
+        var month = parseInt(array[1]);
+        var year = parseInt(array[2]);
+        var dateObject = new Date(year, month - 1, day);
+        var dob1 = jQuery(this).val();
+        var today = new Date();
+        var dayDiff = Math.ceil(today - dateObject) / (1000 * 60 * 60 * 24 * 365.25);
+        var age = parseInt(dayDiff);
+        var agee = $("#Age").val(age)
+
+    })
+</script>
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $('#btnsave').click(function () {
+
+
+    //        var name = $("#<%=txtname.ClientID%>").val();
+    //        var MobileNo = $("#<%=txtmobile.ClientID%>").val();
+    //        var EmailID = $("#<%=email.ClientID%>").val();
+    //        var Dob = $("#<%=txtdob.ClientID%>").val();
+
+
+    //        //-----------------------------------INSERT RECORD-------------------------------------//
+
+    //        $.ajax({
+    //            type: 'POST',
+    //            contentType: "application/json; charset=utf-8",
+    //            url: 'TermLife-insurance.aspx/Saved_Record',
+    //            data: "{'name':'" + name + "', 'MobileNo':'" + MobileNo + "', 'EmailID':'" + EmailID + "', 'Dob':'" + Dob + "'}",
+
+    //            async: false,
+
+    //            success: function (response) {
+    //                alert("Record Inserted..!!");
+    //            },
+    //            error: function () {
+
+    //                alert("Error");
+    //            }
+    //        });
+    //        //window.location.href = "quotes_Health.aspx"
+    //    });
+    //});
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $('.healthinpt').focus(function () {
+            $(this).parent().find(".label-txt").addClass('label-active');
+        });
+
+        $(".healthinpt").focusout(function () {
+            if ($(this).val() == '') {
+                $(this).parent().find(".label-txt").removeClass('label-active');
+            };
+        });
+
+    });
+
+</script>
+
+<script>
+
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    $(".next").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+
+        //activate next step on progressbar using the index of next_fs
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50) + "%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({
+                    'transform': 'scale(' + scale + ')',
+                    'position': 'absolute'
+                });
+                next_fs.css({ 'left': left, 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".previous").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+
+        //de-activate current step on progressbar
+        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //show the previous fieldset
+        previous_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1 - now) * 50) + "%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({ 'left': left });
+                previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".submit").click(function () {
+        return false;
+    })
+
+</script>
+
+<script>
+    (function ($) {
+        $.fn.menumaker = function (options) {
+            var cssmenu = $(this), settings = $.extend({
+                format: "dropdown",
+                sticky: false
+            }, options);
+            return this.each(function () {
+                $(this).find(".button").on('click', function () {
+                    $(this).toggleClass('menu-opened');
+                    var mainmenu = $(this).next('ul');
+                    if (mainmenu.hasClass('open')) {
+                        mainmenu.slideToggle().removeClass('open');
+                    }
+                    else {
+                        mainmenu.slideToggle().addClass('open');
+                        if (settings.format === "dropdown") {
+                            mainmenu.find('ul').show();
+                        }
+                    }
+                });
+                cssmenu.find('li ul').parent().addClass('has-sub');
+                multiTg = function () {
+                    cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+                    cssmenu.find('.submenu-button').on('click', function () {
+                        $(this).toggleClass('submenu-opened');
+                        if ($(this).siblings('ul').hasClass('open')) {
+                            $(this).siblings('ul').removeClass('open').slideToggle();
+                        }
+                        else {
+                            $(this).siblings('ul').addClass('open').slideToggle();
+                        }
+                    });
+                };
+                if (settings.format === 'multitoggle') multiTg();
+                else cssmenu.addClass('dropdown');
+                if (settings.sticky === true) cssmenu.css('position', 'fixed');
+                resizeFix = function () {
+                    var mediasize = 1000;
+                    if ($(window).width() > mediasize) {
+                        cssmenu.find('ul').show();
+                    }
+                    if ($(window).width() <= mediasize) {
+                        cssmenu.find('ul').hide().removeClass('open');
+                    }
+                };
+                resizeFix();
+                return $(window).on('resize', resizeFix);
+            });
+        };
+    })(jQuery);
+
+    (function ($) {
+        $(document).ready(function () {
+            $("#cssmenu").menumaker({
+                format: "multitoggle"
+            });
+        });
+    })(jQuery);
+
+
+</script>
+
+
+
+
+@*ppppppppppppppppppppppp.....................................................................................*@
+<script>
+    $(document).ready(function () {
+
+        $("#Phone").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+@* end .......ppppppppppp...........................................................................*@
+<script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("city");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("option");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("option")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+

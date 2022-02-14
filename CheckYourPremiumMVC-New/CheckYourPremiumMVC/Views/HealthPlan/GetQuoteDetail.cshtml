@@ -1,0 +1,770 @@
+﻿@model Domain.HealthPlanDetails
+
+@{
+    ViewBag.Title = "Health";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+@*
+    <script src="~/Content/jquery-3.4.1.min.js"></script>*@
+<script src="~/Content/datatable/jquery-ui.js"></script>
+<link href="~/Content/datatable/jquery-ui.css" rel="stylesheet" />
+
+<script src="~/Resources/js/jquery.easing.min.js"></script>
+
+<link rel="stylesheet" href="~/Resources/css/termLife.css">
+<link rel="stylesheet" href="~/Resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/Resources/css/button.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<!--Hindi Font Poppins-->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="~/Resources/css/Homepage.css" rel="stylesheet" />
+
+<link href="~/Resources/css/inputFocus.css" rel="stylesheet" />
+<link href="~/Resources/css/TravelInsurance.css" rel="stylesheet" />
+
+
+<script>
+    $(function () {
+        $("#tripStartDate").datepicker({
+            dateFormat: 'dd-mm-yy',
+            onSelect: function (dateStr) {
+                var start = $("#tripStartDate").datepicker("getDate");
+                var end = $("#tripEndDate").datepicker("getDate");
+                if (end != null) {
+                    var days = (end - start) / (1000 * 60 * 60 * 24);
+                    $("#stayDays").val(days + 1);
+                }
+            }
+        }).val();
+        $("#tripEndDate").datepicker({
+            dateFormat: 'dd-mm-yy',
+            onSelect: function (dateStr) {
+                var start = $("#tripStartDate").datepicker("getDate");
+                var end = $("#tripEndDate").datepicker("getDate");
+                console.log(dateStr);
+                if (start != null) {
+                    var days = (end - start) / (1000 * 60 * 60 * 24);
+                    $("#stayDays").val(days + 1);
+
+
+                }
+
+            }
+        }).val();
+    });
+
+    function BindCoverAmount() {
+
+    }
+</script>
+
+<style>
+    .middle-two {
+        height: auto;
+    }
+
+    .label {
+        line-height: 0px !important;
+    }
+
+    .form-group {
+        margin-bottom: 3px;
+    }
+
+    #msform input, #msform textarea {
+        text-align: left;
+    }
+
+    #ui-datepicker-div {
+        top: 215.078px !important;
+        z-index: 99999 !important;
+    }
+
+    .healthlbl.gbh input {
+        margin-bottom: 0 !important;
+        /*width: 28px !important;*/
+        height: 28px;
+        padding: 3px !important;
+        text-align: center !important;
+        margin-top: 4px;
+        transition: all 0.2s ease;
+    }
+
+    label.healthlbl.gbh {
+        margin-bottom: 0;
+    }
+
+    input#son {
+        position: relative;
+        left: 7px;
+        width: 70px;
+    }
+
+    #one {
+        color: #fff;
+    }
+
+    #msform input.btn-insidebtn {
+        width: 133px !important;
+    }
+
+    figure.snip1456 {
+        margin-top: 7px;
+        height: 494px;
+    }
+
+    .contertyf {
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+
+
+    .compHeaderd {
+        min-height: 78px !important;
+    }
+
+    .row-health h6 span {
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: #2253a7;
+        position: relative;
+        top: 3px;
+    }
+
+
+ 
+</style>
+
+
+
+<div class="container dxcfgh">
+   
+    <form method="post" action="GetQuoteDetail">
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <div class="row">
+
+
+
+            <div class="hidden-xs hidden-sm col-md-6">
+                <div class="car-insurance">
+                    <figure class="snip1456">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample50.jpg" alt="sample50" />
+                        <div class="title-car">
+                            <div>
+                                <h2><span>Health<br />Insurance</span></h2>
+
+                                <h4>
+                                    <svg id="ticony" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g id="Layer_1">
+                                    <g>
+                                    <path fill="#D50000" d="M64.021,33.241h-5.804c-0.387,0-0.684-0.251-0.932-0.523l-2.174-3.729l-2.577,3.729
+			c-0.22,0.272-0.68,0.523-1.074,0.421c-0.423-0.081-0.74-0.354-0.891-0.758l-3.256-10.51l-6.044,20.816
+			c-0.167,0.476-0.542,0.746-0.995,0.746c-0.063,0-0.063,0-0.063,0c-0.472,0-0.842-0.204-0.979-0.679L32.25,24.988l-4.375,8.612
+			c-0.239,0.406-0.613,0.611-0.983,0.611h-9.766c0.17,0.21,0.238,0.404,0.372,0.608c7.052,10.121,19.905,18.512,22.714,20.274
+			c2.78-1.763,15.652-10.048,22.702-20.274C63.255,34.28,63.663,33.667,64.021,33.241z"></path>
+                                    <path opacity="0.3" fill="#FFFFFF" d="M57.824,39.024h-4.279c-0.299,0-0.526-0.145-0.676-0.406l-1.619-2.712l-1.893,2.712
+			c-0.149,0.262-0.49,0.406-0.754,0.338c-0.341-0.031-0.562-0.271-0.682-0.543l-2.375-7.729l-4.464,15.304
+			c-0.126,0.309-0.398,0.563-0.739,0.563c-0.04,0-0.04,0-0.04,0c-0.32,0-0.598-0.203-0.734-0.543L34.461,32.99l-3.219,6.307
+			c-0.154,0.271-0.451,0.475-0.723,0.475h-7.154c0.1,0.137,0.168,0.271,0.271,0.407c5.155,7.457,14.615,13.626,16.668,14.916
+			c2.056-1.29,11.498-7.391,16.663-14.916C57.259,39.813,57.545,39.362,57.824,39.024z"></path>
+                                    <path opacity="0.5" fill="#A4C4E7" d="M31.434,21.943c0.136-0.346,0.523-0.599,0.983-0.599c0.438,0,0.816,0.321,0.983,0.681
+			l6.65,17.016L46.173,17.8c0.142-0.473,0.614-0.745,1.068-0.745c0.456,0,0.899,0.272,1.04,0.745l3.649,11.8l2.253-3.323
+			c0.18-0.315,0.538-0.473,0.929-0.473c0.351,0,0.752,0.253,0.896,0.542l2.707,4.61h6.438c2.111-4.392,2.713-8.612,1.619-12.479
+			c-1.372-4.679-5.995-9.762-12.807-9.762c-1.823,0-3.717,0.404-5.685,1.081c-4.831,1.809-7.393,3.857-7.393,3.857
+			c-0.375,0.281-0.974,0.281-1.358,0c0,0-2.571-2.049-7.419-3.857c-1.967-0.677-3.866-1.081-5.662-1.081
+			c-6.814,0-11.426,5.083-12.785,9.762c-1.285,4.156-0.472,8.767,2.173,13.632h10.375L31.434,21.943z"></path>
+                                    <path opacity="0.8" fill="#FFFFFF" d="M32.315,23.701c0.136-0.342,0.475-0.542,0.881-0.542c0.409,0,0.745,0.27,0.881,0.609
+			l5.998,15.272l5.485-19.07c0.136-0.408,0.545-0.679,0.954-0.679c0.408,0,0.809,0.271,0.944,0.679l3.269,10.578l2.064-2.982
+			c0.136-0.272,0.48-0.409,0.82-0.409c0.336,0,0.68,0.205,0.81,0.478l2.448,4.133h5.771c1.898-3.931,2.443-7.729,1.427-11.187
+			c-1.223-4.222-5.364-8.798-11.486-8.798c-1.648,0-3.36,0.34-5.123,0.95c-4.33,1.646-6.638,3.489-6.638,3.489
+			c-0.343,0.272-0.887,0.272-1.225,0c0,0-2.329-1.843-6.671-3.489c-1.763-0.61-3.457-0.95-5.083-0.95
+			c-6.139,0-10.275,4.576-11.494,8.798c-1.154,3.728-0.409,7.866,1.967,12.204h9.323L32.315,23.701z"></path>
+                                    <path fill="#30323A" d="M73.494,30.955h-5.896c2.503-5.581,2.167-10.035,1.285-13.087c-1.618-5.424-6.906-11.256-14.842-11.256
+			c-2.11,0-4.22,0.366-6.445,1.222c-3.743,1.422-6.257,2.916-7.32,3.677c-1.14-0.761-3.554-2.255-7.334-3.677
+			c-2.184-0.855-4.321-1.222-6.424-1.222c-7.934,0-13.247,5.832-14.82,11.256c-1.081,3.188-1.378,8.093,1.666,14.24H6.174
+			c-0.609,0-1.068,0.444-1.068,1.03c0,0.596,0.459,1.073,1.068,1.073h8.376c0.393,0.608,0.779,1.22,1.151,1.83
+			c6.882,9.899,21.77,20.615,24.51,21.288v0.106c0,0,0.063,0,0.132-0.106c0.068,0,0.17,0,0.17,0v-0.068
+			c2.342-1.102,16.636-10.354,24.198-21.288c0.688-1.017,1.277-2.044,1.795-2.983h6.987c0.607,0,1.051-0.438,1.051-1.03
+			C74.545,31.432,74.102,30.955,73.494,30.955z M40.212,55.095C37.403,53.332,24.55,44.941,17.498,34.82
+			c-0.134-0.204-0.202-0.398-0.372-0.608h9.766c0.37,0,0.745-0.205,0.983-0.611l4.375-8.612l6.983,17.766
+			c0.136,0.475,0.506,0.679,0.979,0.679c0,0,0,0,0.063,0c0.453,0,0.828-0.271,0.995-0.746l6.044-20.816l3.256,10.51
+			c0.15,0.405,0.468,0.677,0.891,0.758c0.395,0.103,0.854-0.148,1.074-0.421l2.577-3.729l2.174,3.729
+			c0.248,0.272,0.545,0.523,0.932,0.523h5.804c-0.358,0.426-0.767,1.039-1.107,1.579C55.864,45.047,42.992,53.332,40.212,55.095z
+			 M13.665,18.477c1.358-4.679,5.971-9.762,12.785-9.762c1.796,0,3.695,0.404,5.662,1.081c4.849,1.809,7.419,3.857,7.419,3.857
+			c0.384,0.281,0.983,0.281,1.358,0c0,0,2.562-2.049,7.393-3.857c1.968-0.677,3.861-1.081,5.685-1.081
+			c6.812,0,11.435,5.083,12.807,9.762c1.094,3.866,0.492,8.087-1.619,12.479h-6.438l-2.707-4.61
+			c-0.144-0.288-0.545-0.542-0.896-0.542c-0.391,0-0.749,0.158-0.929,0.473L51.931,29.6l-3.649-11.8
+			c-0.141-0.473-0.584-0.745-1.04-0.745c-0.454,0-0.927,0.272-1.068,0.745l-6.122,21.241l-6.65-17.016
+			c-0.167-0.359-0.545-0.681-0.983-0.681c-0.46,0-0.847,0.253-0.983,0.599l-5.221,10.165H15.838
+			C13.192,27.243,12.379,22.633,13.665,18.477z"></path>
+	</g>
+</g>
+<g id="Layer_2">
+                                    <g>
+                                    <path fill="#F6000D" d="M62.2,74.394h-0.009l-2.149,0.917l-1.854-0.813l1.855,0.813l2.148-0.917H62.2
+			c4.556-1.913,8.209-5.271,10.522-9.405C70.354,69.212,66.649,72.514,62.2,74.394z"></path>
+                                    <path fill="#FFFFFF" d="M44.018,43.683l0.593,13.86c0.008,8.624,7.706,15.016,15.615,18.479l3.276-1.782
+			c0,0,5.329-3.217,7.352-5.261c1.769-3.171,5.226-10.811,5.226-14.575l-0.587-10.584l-15.39-8.197L44.018,43.683z"></path>
+                                    <path opacity="0.8" fill="#160707" d="M76.68,42.637L60.481,34c-0.245-0.128-0.527-0.124-0.771,0.008l-15.744,8.629
+			c-0.265,0.133-0.419,0.411-0.419,0.709V54.62c0.008,9.26,5.497,17.646,13.991,21.367l2.19,0.949c0.199,0.079,0.431,0.079,0.639,0
+			l2.459-1.068c8.652-3.637,14.278-12.094,14.28-21.465V43.346C77.106,43.044,76.94,42.765,76.68,42.637z M75.492,54.403
+			c0,3.765-0.983,7.404-2.752,10.565v-0.002c-0.004,0.017-0.018,0.019-0.018,0.021c-2.313,4.134-5.967,7.492-10.521,9.405h-0.01
+			l-2.148,0.917l-1.855-0.813c-7.915-3.451-13.021-11.248-13.026-19.877V43.814l3.457-1.893l0,0l11.484-6.3l15.39,8.197V54.403z"></path>
+                                    <path display="none" fill="#F6000D" d="M65.646,69.774l-2.145,0.94l-1.861-0.813c-7.91-3.466-13.02-11.272-13.022-19.896v-8.085
+			l-3.457,1.893V54.62c0.006,8.629,5.111,16.426,13.026,19.877l1.854,0.813l2.149-0.917H62.2c4.449-1.88,8.153-5.182,10.522-9.405
+			c0-0.003,0.012-0.003,0.018-0.02c-2.023,2.049-4.428,3.686-7.086,4.802L65.646,69.774z"></path>
+                                    <path opacity="0.3" fill="#0E7F44" d="M65.646,69.774l-2.145,0.94l-1.861-0.813c-7.91-3.466-13.02-11.272-13.022-19.896v-8.085
+			l-3.457,1.893V54.62c0.006,8.629,5.111,16.426,13.026,19.877l1.854,0.813l2.149-0.917H62.2c4.449-1.88,8.153-5.182,10.522-9.405
+			c0-0.003,0.012-0.003,0.018-0.02c-2.023,2.049-4.428,3.686-7.086,4.802L65.646,69.774z"></path>
+                                    <path fill="#070707" d="M72.74,64.967v0.002c-0.006,0.017-0.018,0.017-0.018,0.02C72.723,64.985,72.736,64.983,72.74,64.967z"></path>
+                                    <path opacity="0.3" fill="#F6000D" d="M72.74,64.967v0.002c-0.006,0.017-0.018,0.017-0.018,0.02
+			C72.723,64.985,72.736,64.983,72.74,64.967z"></path>
+                                    <polygon fill="#070707" points="48.618,41.922 48.618,41.922 45.161,43.814 45.161,54.62 45.161,43.814 		"></polygon>
+                                    <polygon opacity="0.3" fill="#F6000D" points="48.618,41.922 48.618,41.922 45.161,43.814 45.161,54.62 45.161,43.814 		"></polygon>
+	</g>
+</g>
+<g id="Layer_3">
+</g>
+<g id="Layer_4">
+</g>
+</svg>
+                                </h4>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <p>Insurance is the subject matter of solicitation. Visitors are hereby informed that their information submitted on the website may be shared with insurers.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="car-insurance-two">
+
+                    <div id="msform">
+                        <!-- progressbar -->
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:1px;">
+                                <span>Help Us with your Details </span>
+                            </h3>
+
+                            <div class="row-health">
+                                @*<h5><span>Tell us about you</span></h5>*@
+                                <h6><span>Gender</span></h6>
+                                <div class="middle">
+                                    <label>
+
+
+                                        @Html.RadioButtonFor(model => model.Gender, "Male")
+                                        @*  <input class="gndre" type="radio" id="rdbmale" name="radio1" checked />*@
+                                        <div class="front-end box">
+                                            <span>Male</span>
+                                        </div>
+                                    </label>
+
+                                    <label>
+                                        @Html.RadioButtonFor(model => model.Gender, "Female")
+                                        @*<input class="gndre" type="radio" id="rdbfemale" name="radio1" />*@
+                                        <div class="back-end box">
+                                            <span>Female</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="middle-two">
+                                    <div>
+
+                                        <label class="healthlbl col-xs-12 col-sm-12 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-user"></i>Full Name</p>
+                                            @Html.TextBoxFor(model => model.Full_Name, new { @class = "healthinpt", @autocomplete = "off" })
+                                            <span class="error1" style="color: #d25068; font-size:13px; display: none"> * Only Alphabets digits</span>
+                                        </label>
+
+
+
+                                    </div>
+                                    <div>
+
+                                        <label class="healthlbl col-xs-12 col-sm-12 col-md-6">
+                                            <p class="label-txt"><i class="fa fa-phone-square"></i>Mobile No</p>
+                                            @Html.TextBoxFor(model => model.MobileNo, new { @class = "healthinpt", @maxlength = "10", @minlength = "10", @autocomplete = "off" })
+                                            <span class="error" style="color: #d25068; font-size:13px;  display: none">* Mobile No Input digits (0 - 9)</span>
+                                        </label>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <input type="text" class="next action-button btn-primary-ins btn-primary-insbtnerd" id="savedre" placeholder="Proceed" />
+
+
+                            <div style="margin: 1% 1% 2%; font-weight: bold; text-align: center; font-size: 12px;">
+                                <span>By clicking you agree to our <a href="/PDF/CYP_Privacy%20Policy_Release.pdf" target="_blank">Privacy policy</a> & <a href="/PDF/CYP%20-%20Terms%20and%20Conditions_Release.pdf" target="_blank">Terms & Conditions</a></span>
+                                <span style="display:block;width:100%;text-align-last:right;font-size:9px;color: #676767;">*(Standard T&C Apply)</span>
+                            </div>
+                        </fieldset>
+
+
+
+
+
+
+
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle">
+                                <span>Find the right health plan for you in </span>
+                            </h3>
+
+                            <hr>
+
+                            <div style="float: left;width:100%;">
+                                <div class="col-xs-4 col-sm-5 col-md-5" style="padding:0px;">
+                                    <h6 class="bcvgd">Who would you<br>Like to Insure</h6>
+                                </div>
+
+
+                                <div class="col-xs-8 col-sm-7 col-md-7" style="padding:0px;">
+                                    <label class="healthlbl gbh col-xs-4 col-sm-12 col-md-2">
+                                        <span class="label-gb">Self</span>
+                                        @Html.CheckBoxFor(model => model.chkself)
+                                        <span class="error" style="color: #d25068; font-size:13px;  display: none">* Mobile No Input digits (0 - 9)</span>
+                                    </label>
+
+
+                                    <label class="healthlbl gbh col-xs-4 col-sm-12 col-md-2">
+                                        <span class="label-gb">Spouse</span>
+                                        @Html.CheckBoxFor(model => model.chkspouses)
+                                        <span class="error" style="color: #d25068; font-size:13px;  display: none">* Mobile No Input digits (0 - 9)</span>
+                                    </label>
+                                    <label class="healthlbl gbh col-xs-4 col-sm-12 col-md-2">
+                                        <span class="label-gb">Child</span>
+                                        @Html.TextBoxFor(model => model.son, new { @type = "number" })
+                                        <span class="error" style="color: #d25068; font-size:13px;  display: none">* Mobile No Input digits (0 - 9)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div style="float: left;padding-top:5%;">
+                                <div class="col-xs-4 col-sm-5 col-md-5">
+                                    <h6 class="bcvgd">AGE OF<br>Person(S)</h6>
+                                </div>
+                                <div class="col-xs-8 col-sm-7 col-md-7" style="padding:0px;">
+                                    <div style="float:left;">
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageSelf" class="ageSelf">
+
+                                                @Html.TextBoxFor(model => model.ageSelf, new { @placeholder = " " })
+
+                                                @*<input type="text" id="inp" placeholder="&nbsp;">*@
+                                                @*@Html.TextBoxFor(model => model.ageSelf)*@
+
+                                                <span class="label">Self </span>
+                                                @Html.ValidationMessageFor(model => model.ageSelf, "", new { @class = "field-validation-error" })
+                                            </label>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageSpouse" class="ageSpouse">
+                                                @Html.TextBoxFor(model => model.ageSpouse, new { @placeholder = " " })
+                                                <span class="label">Spouse</span>
+
+                                            </label>
+                                        </div>
+
+
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageChild1" class="ageChild1">
+                                                @Html.TextBoxFor(model => model.ageChild1, new { @placeholder = " " })
+
+                                                <span class="label">Child 1</span>
+
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div style="float:left;">
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageChild2" class="ageChild2">
+
+                                                @Html.TextBoxFor(model => model.ageChild2, new { @placeholder = " " })
+                                                <span class="label">Child 2</span>
+
+                                            </label>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageBrother" class="ageBrother">
+
+                                                @Html.TextBoxFor(model => model.ageBrother, new { @placeholder = " " })
+                                                <span class="label">Child 3</span>
+
+                                            </label>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageMother" class="ageMother">
+
+                                                @Html.TextBoxFor(model => model.ageMother, new { @placeholder = " " })
+                                                <span class="label">Child 4</span>
+
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+
+                                    @*<div class="col-xs-6 col-sm-3 col-md-4">
+                                            <label for="ageFather" class="ageFather">
+
+                                                @Html.TextBoxFor(model => model.ageFather, new { @placeholder = " " })
+                                                <span class="label">Father</span>
+
+                                            </label>
+                                        </div>*@
+
+                                </div>
+                                <hr />
+                            </div>
+
+
+
+
+                            <input type="text" name="previous" class="previous action-button btn-primary-insbtn btn-insidebtn" placeholder="Previous" value="Previous" />
+                            <input type="button" class="next action-button btn-primary-insbtn btn-insidebtn" value="Next" placeholder="Next" />
+                        </fieldset>
+
+
+
+
+
+
+                        <fieldset>
+                            <h3 class="fs-subtitle" style="margin-bottom:3%;"><span>Please Select City</span></h3>
+                            <div class="cityFrhlth col-md-12">
+                                <label class="col-xs-12 col-sm-12 col-md-2" style="line-height: 35px; text-align: left; text-transform: uppercase;">City</label>
+                                @Html.DropDownListFor(model => model.City, (SelectList)ViewData["Cities"], "Select", new { @class = "healthinpt", @style = "margin-bottom: 0;" })
+
+
+                                @*<select class="col-xs-12 col-sm-12 col-md-10" id="ddlCity"></select>*@
+
+                                @*<asp:UpdatePanel runat="server" ID="abc">
+                                        <contenttemplate>
+
+                                            <asp:DropDownList ID="citybind" class="col-xs-12 col-sm-12 col-md-10" runat="server" AppendDataBoundItems="true">
+                                            </asp:DropDownList>
+
+                                        </contenttemplate>
+                                    </asp:UpdatePanel>*@
+                            </div>
+
+
+                            <div class="containerhlths">
+                                <h3 class="fs-subtitle" style="margin-bottom:6%;"><span>Select annual income</span></h3>
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio1" onclick="check()" name="radio" type="radio" />
+                                    <label for="radio1">0 - 3 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio2" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio2">3 - 5 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio3" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio3">5 - 7 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio4" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio4">7 - 10 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio5" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio5">10 - 15 Lacs</label>
+                                </div>
+
+                                <div class="inputGroupbtn col-xs-6 col-sm-6 col-md-4">
+                                    <input id="radio6" name="radio" onclick="check()" type="radio" />
+                                    <label for="radio6">15 Lacs +</label>
+                                </div>
+                            </div>
+
+
+                            <input type="text" name="previous" class="previous action-button btn-primary-insbtn btn-insidebtn" placeholder="Previous" />
+                            <input type="submit" class="next action-button btn-primary-insbtn btn-insidebtn" placeholder="Next" />
+                        </fieldset>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<script>
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+
+    $(function () {
+        $('#datetimepicker2').datetimepicker();
+    });
+</script>
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+        $('.healthinpt').focus(function () {
+            $(this).parent().find(".label-txt").addClass('label-active');
+        });
+
+        $(".healthinpt").focusout(function () {
+            if ($(this).val() == '') {
+                $(this).parent().find(".label-txt").removeClass('label-active');
+            };
+        });
+
+    });
+
+</script>
+
+<script>
+
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    $(".next").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+
+        //activate next step on progressbar using the index of next_fs
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50) + "%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({
+                    'transform': 'scale(' + scale + ')',
+                    'position': 'absolute'
+                });
+                next_fs.css({ 'left': left, 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".previous").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+
+        //de-activate current step on progressbar
+        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //show the previous fieldset
+        previous_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1 - now) * 50) + "%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({ 'left': left });
+                previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".submit").click(function () {
+        return false;
+    })
+
+</script>
+
+<script>
+    (function ($) {
+        $.fn.menumaker = function (options) {
+            var cssmenu = $(this), settings = $.extend({
+                format: "dropdown",
+                sticky: false
+            }, options);
+            return this.each(function () {
+                $(this).find(".button").on('click', function () {
+                    $(this).toggleClass('menu-opened');
+                    var mainmenu = $(this).next('ul');
+                    if (mainmenu.hasClass('open')) {
+                        mainmenu.slideToggle().removeClass('open');
+                    }
+                    else {
+                        mainmenu.slideToggle().addClass('open');
+                        if (settings.format === "dropdown") {
+                            mainmenu.find('ul').show();
+                        }
+                    }
+                });
+                cssmenu.find('li ul').parent().addClass('has-sub');
+                multiTg = function () {
+                    cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+                    cssmenu.find('.submenu-button').on('click', function () {
+                        $(this).toggleClass('submenu-opened');
+                        if ($(this).siblings('ul').hasClass('open')) {
+                            $(this).siblings('ul').removeClass('open').slideToggle();
+                        }
+                        else {
+                            $(this).siblings('ul').addClass('open').slideToggle();
+                        }
+                    });
+                };
+                if (settings.format === 'multitoggle') multiTg();
+                else cssmenu.addClass('dropdown');
+                if (settings.sticky === true) cssmenu.css('position', 'fixed');
+                resizeFix = function () {
+                    var mediasize = 1000;
+                    if ($(window).width() > mediasize) {
+                        cssmenu.find('ul').show();
+                    }
+                    if ($(window).width() <= mediasize) {
+                        cssmenu.find('ul').hide().removeClass('open');
+                    }
+                };
+                resizeFix();
+                return $(window).on('resize', resizeFix);
+            });
+        };
+    })(jQuery);
+
+    (function ($) {
+        $(document).ready(function () {
+            $("#cssmenu").menumaker({
+                format: "multitoggle"
+            });
+        });
+    })(jQuery);
+
+
+</script>
+
+
+
+
+
+@*ppppppppppppppppppppppp.....................................................................................*@
+<script>
+    $(document).ready(function () {
+
+        $("#MobileNo").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function () {
+        $('#Full_Name').keydown(function (e) {
+            if (this.value == '') {
+                var char = String.fromCharCode(e.which);
+                if (char.match(/^\w$/)) {
+                    // If is empty and we pressed a printable key...
+                    this.value = char.toUpperCase();
+                    return false;
+                }
+            }
+          else  if (e.shiftKey || e.ctrlKey || e.altKey) {
+                e.preventDefault();
+            } else {
+                var key = e.keyCode;
+                if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                    e.preventDefault();
+                }
+
+            }
+        });
+       
+    });
+</script>
+@* end .......ppppppppppp...........................................................................*@
+
+
+
+
+
+
+
+
+
